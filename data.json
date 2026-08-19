@@ -1,11 +1,10 @@
 {
-  "generatedAt": "2026-08-19T19:35:55.279Z",
+  "generatedAt": "2026-08-19T19:55:14.884Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
     "Custom field \"Lost Reason\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Cash Collected\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
-    "Pipeline \"Sales Pipeline\" not found -- outbound/funnel/won metrics will be empty until it exists.",
     "Calendar \"Jercori / High-Ticket Calendar\" not found -- appointment/no-show metrics for it will be empty."
   ],
   "data": {
@@ -52,6 +51,10 @@
   "history": [
     {
       "t": "2026-08-19T19:35:55.279Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-08-19T19:55:14.884Z",
       "closeRate": 0
     }
   ]
