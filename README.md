@@ -28,6 +28,42 @@ own queue between closing calls, so the dashboard shows her in both the
 Setters and Closers tables with her real numbers in each, not one or the
 other.
 
+## Reporting checklist vs. the org plan (section 23)
+
+What the dashboard covers today, reconciled against the exact KPI list in
+the approved sales org plan:
+
+**Setter Performance** — Activity points ✅ · Outbound attempts ✅ ·
+Connections ✅ · Qualified prospects ✅ · Appointments booked ✅ (KPI tile
+only, not yet a table column) · Qualified Held Calls ✅ · Attributed sales
+✅ (attribution chains) — **not built**: unique contacts attempted,
+meaningful conversations, show rate, speed to lead, attributed collected
+revenue (cash collected is only closer-attributed right now, not setter-attributed).
+
+**Closer Performance** — Qualified Held Calls ✅ · Close rate ✅ · Sales
+closed ✅ · Contracted revenue ✅ · Cash collected ✅ — **not built**:
+average sale, revenue per held call, open follow-up opportunities.
+
+**Company** — Sales closed ✅ · Cash collected ✅ · Close rate ✅ · Revenue
+by rep ✅ — **not built**: new leads, lead-source volume, show rate,
+average sale, revenue per held call, revenue by source/product, refunds,
+chargebacks. Most of these need fields we're not fetching yet (Original
+Lead Source, Product, invoice-level refund status) — buildable, just ask
+for the specific one that matters next.
+
+## Activity points (200/day standard)
+
+Computed per the org plan's exact formula: 1 pt per outbound call (from the
+call log), 15 pts per held qualification call (a "showed" event on the
+**Setter Qualification Calendar**), 40 pts per held closing call for Jen
+only (a "showed" event on **Jen Sales Calendar**). Jercori has no points
+quota in the org plan, so she's excluded.
+
+The goal shown is `200 × windowDays` — a working-day approximation. It
+doesn't know about weekends or PTO, so a 7-day window assumes 7 full working
+days. If that's not accurate enough, the fix is tracking daily buckets
+instead of one weekly total — a bigger change, ask if you want it.
+
 ## Private Integration scopes
 
 The code only calls these endpoints — grant exactly these, nothing else:

@@ -199,6 +199,36 @@ function renderTables(reps, closerNames, knownSetterNames) {
   }, { liveTransferAttempted: 0, liveTransferAccepted: 0, appointmentsBooked: 0, noShows: 0 }) };
 }
 
+function renderActivityPoints(activityPoints, windowDays) {
+  const rows = document.getElementById("pointsRows");
+  const sub = document.getElementById("pointsSub");
+  const names = Object.keys(activityPoints ?? {});
+  if (sub) sub.textContent = `This window's progress — goal scales with the sync window (200 × ${windowDays} days)`;
+  if (!names.length) {
+    rows.innerHTML = `<div style="text-align:center; color:var(--ink-faint); font-size:12.5px;">No setter roster configured</div>`;
+    return;
+  }
+
+  rows.innerHTML = names
+    .map((name, i) => {
+      const p = activityPoints[name];
+      const pct = p.goal > 0 ? (p.points / p.goal) * 100 : 0;
+      const tone = pct >= 100 ? "good" : pct >= 70 ? "primary" : "warn";
+      const captionParts = [`${fmtInt(p.outboundCalls)} outbound`];
+      if (p.heldQualCalls > 0) captionParts.push(`${fmtInt(p.heldQualCalls)} held qualification call${p.heldQualCalls === 1 ? "" : "s"} (${p.heldQualCalls * 15} pts)`);
+      if (p.heldClosingCalls > 0) captionParts.push(`${fmtInt(p.heldClosingCalls)} held closing call${p.heldClosingCalls === 1 ? "" : "s"} (${p.heldClosingCalls * 40} pts)`);
+      return `<div class="points-row">
+        <div class="points-row-head">
+          <span class="points-name"><span class="rep-dot" style="background:${colorFor(i)}"></span>${esc(name)}</span>
+          <span class="points-value tone-${tone}">${fmtInt(p.points)} / ${fmtInt(p.goal)} pts</span>
+        </div>
+        <div class="points-track"><div class="points-fill tone-${tone}" style="width:${Math.min(pct, 100)}%"></div></div>
+        <span class="points-caption">${captionParts.join(" &middot; ")}</span>
+      </div>`;
+    })
+    .join("");
+}
+
 function renderChains(chains) {
   const list = document.getElementById("chainList");
   if (!chains?.length) {
@@ -474,6 +504,7 @@ async function main() {
   renderTables(d.reps, d.closerNames ?? [], d.setterNames ?? []);
   renderChains(d.attributionChains);
   renderCallLog(d.callLog);
+  renderActivityPoints(d.activityPoints, payload.windowDays);
   renderTrend(payload.history);
   renderKpiBand(d, "all");
   wireControls(() => d);

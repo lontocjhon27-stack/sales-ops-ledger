@@ -186,6 +186,13 @@ export async function computeMetrics({ client, shape, config, warnings, since })
   }
 
   // ---------------- Calendar events: appointments, no-shows, held calls ----------------
+  // Which calendar an appointment lives on tells us what KIND of held call it
+  // is for activity-point purposes (org plan section: Setter/Jen Daily
+  // Activity Standard) -- a showed event on the Setter Qualification
+  // Calendar is a held qualification call (15 pts); a showed event on Jen's
+  // own sales calendar is a held closing call for her (40 pts).
+  const heldQualByRep = new Map();
+  const heldClosingByRep = new Map();
   const calendarEntries = Object.entries(calendarId).filter(([, id]) => id);
   for (const [calKey, calId] of calendarEntries) {
     try {
@@ -198,8 +205,15 @@ export async function computeMetrics({ client, shape, config, warnings, since })
         const ownerName = shape.usersById.get(ev.assignedUserId)?.name
           ?? `${shape.usersById.get(ev.assignedUserId)?.firstName ?? ""}`.trim();
         const row = ownerName ? getRow(ownerName) : null;
-        if (ev.appointmentStatus === "showed" || ev.appointmentStatus === "confirmed") {
+        const showed = ev.appointmentStatus === "showed" || ev.appointmentStatus === "confirmed";
+        if (showed) {
           if (row) row.appointmentsBooked += 1;
+          if (ownerName && calKey === "setterQualification") {
+            heldQualByRep.set(ownerName, (heldQualByRep.get(ownerName) ?? 0) + 1);
+          }
+          if (ownerName && calKey === "jenSales") {
+            heldClosingByRep.set(ownerName, (heldClosingByRep.get(ownerName) ?? 0) + 1);
+          }
         }
         if (ev.appointmentStatus === "noshow") {
           if (row) row.noShows += 1;
@@ -269,6 +283,41 @@ export async function computeMetrics({ client, shape, config, warnings, since })
     warnings.push(`Call log has ${callLog.length} entries this window -- showing the most recent ${CALL_LOG_LIMIT} only.`);
   }
 
+  // ---------------- Activity points (org plan: 200/day standard) ----------------
+  // 1 pt / outbound attempt, 15 pts / held qualification call, 40 pts / held
+  // closing call (Jen only -- she's the only setter who also closes).
+  // Outbound count comes from the call log (per-setter, most accurate);
+  // held-call counts come from which calendar the appointment showed on.
+  // Goal is 200 * windowDays as a working-day approximation -- it doesn't
+  // know about weekends/PTO, so treat it as directional, not exact.
+  const POINTS_PER_OUTBOUND = 1;
+  const POINTS_PER_HELD_QUAL = 15;
+  const POINTS_PER_HELD_CLOSE = 40;
+  const GOAL_PER_DAY = 200;
+
+  const outboundBySetter = new Map();
+  for (const c of callLog) {
+    outboundBySetter.set(c.setter, (outboundBySetter.get(c.setter) ?? 0) + 1);
+  }
+
+  const activityPoints = {};
+  for (const name of config.reps.setters ?? []) {
+    const outboundCalls = outboundBySetter.get(name) ?? 0;
+    const heldQualCalls = heldQualByRep.get(name) ?? 0;
+    const heldClosingCalls = name === "Jen" ? (heldClosingByRep.get(name) ?? 0) : 0;
+    const points =
+      outboundCalls * POINTS_PER_OUTBOUND +
+      heldQualCalls * POINTS_PER_HELD_QUAL +
+      heldClosingCalls * POINTS_PER_HELD_CLOSE;
+    activityPoints[name] = {
+      points,
+      goal: GOAL_PER_DAY * config.windowDays,
+      outboundCalls,
+      heldQualCalls,
+      heldClosingCalls,
+    };
+  }
+
   return {
     funnel: {
       outboundAttempts: rawOutboundCalls || funnel.outbound,
@@ -294,5 +343,6 @@ export async function computeMetrics({ client, shape, config, warnings, since })
     closerNames: config.reps.closers,
     setterNames: config.reps.setters,
     callLog: callLog.slice(0, CALL_LOG_LIMIT),
+    activityPoints,
   };
 }

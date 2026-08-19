@@ -634,6 +634,22 @@
   .cell-good { color: var(--good); font-weight: 600; }
   .cell-warn { color: var(--warn); font-weight: 600; }
 
+  /* ---------- Activity points ---------- */
+  .points-rows { display: flex; flex-direction: column; gap: 18px; }
+  .points-row { display: flex; flex-direction: column; gap: 7px; }
+  .points-row-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+  .points-name { font-weight: 700; color: var(--ink); display: flex; align-items: center; gap: 8px; font-size: 13px; }
+  .points-value { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 12.5px; }
+  .points-track { height: 11px; border-radius: 999px; background: var(--surface-sunken); overflow: hidden; }
+  .points-fill { height: 100%; border-radius: 999px; transition: width 500ms cubic-bezier(.22,.9,.3,1); }
+  .points-fill.tone-good { background: var(--good); }
+  .points-fill.tone-primary { background: var(--primary); }
+  .points-fill.tone-warn { background: var(--warn); }
+  .points-value.tone-good { color: var(--good); }
+  .points-value.tone-primary { color: var(--primary); }
+  .points-value.tone-warn { color: var(--warn); }
+  .points-caption { font-size: 11.5px; color: var(--ink-faint); }
+
   /* ---------- Call log ---------- */
   .log-scroll { max-height: 360px; overflow-y: auto; }
   .log-scroll table thead { position: sticky; top: 0; background: var(--surface); z-index: 1; }
@@ -887,6 +903,46 @@
           <span class="kpi-delta up">&#9650; $62.3k vs last wk</span>
         </div>
 
+      </div>
+    </section>
+
+    <section aria-labelledby="points-head">
+      <div class="section-head">
+        <h2 id="points-head">Activity points &mdash; daily standard</h2>
+        <span class="hint">200 pts/day &middot; 1 outbound + 15 held qualification call + 40 held closing call (Jen)</span>
+      </div>
+      <div class="panel">
+        <div class="panel-title-row">
+          <span class="panel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v9l6 3"/><circle cx="12" cy="12" r="9"/></svg></span>
+          <h3>Setter &amp; hybrid activity vs. goal</h3>
+        </div>
+        <p class="sub" id="pointsSub">Sample progress &mdash; goal scales with the sync window (200 &times; 7 days)</p>
+        <div class="points-rows" id="pointsRows">
+          <div class="points-row">
+            <div class="points-row-head">
+              <span class="points-name"><span class="rep-dot" style="background:var(--primary)"></span>Marshell</span>
+              <span class="points-value tone-primary">1,180 / 1,400 pts</span>
+            </div>
+            <div class="points-track"><div class="points-fill tone-primary" style="width:84%"></div></div>
+            <span class="points-caption">1,048 outbound &middot; 8 held qualification calls (120 pts)</span>
+          </div>
+          <div class="points-row">
+            <div class="points-row-head">
+              <span class="points-name"><span class="rep-dot" style="background:var(--accent)"></span>Rianna</span>
+              <span class="points-value tone-good">1,455 / 1,400 pts</span>
+            </div>
+            <div class="points-track"><div class="points-fill tone-good" style="width:100%"></div></div>
+            <span class="points-caption">1,365 outbound &middot; 6 held qualification calls (90 pts)</span>
+          </div>
+          <div class="points-row">
+            <div class="points-row-head">
+              <span class="points-name"><span class="rep-dot" style="background:var(--good)"></span>Jen</span>
+              <span class="points-value tone-warn">860 / 1,400 pts</span>
+            </div>
+            <div class="points-track"><div class="points-fill tone-warn" style="width:61%"></div></div>
+            <span class="points-caption">420 outbound &middot; 4 held qualification calls (60 pts) &middot; 9 held closing calls (360 pts)</span>
+          </div>
+        </div>
       </div>
     </section>
 
