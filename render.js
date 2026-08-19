@@ -135,10 +135,14 @@ function buildRepRow(name, row, columns, color) {
   </tr>`;
 }
 
-function renderTables(reps, closerNames) {
+function renderTables(reps, closerNames, knownSetterNames) {
   const names = Object.keys(reps);
-  const setterNames = names.filter((n) => !closerNames.includes(n));
-  const closerRows = names.filter((n) => closerNames.includes(n));
+  // Membership isn't mutually exclusive -- Jen is a hybrid setter/closer, so
+  // she can legitimately appear in both tables. A rep shows in a table if
+  // they're on the known roster for that role OR they have real activity
+  // there (covers anyone not yet added to the roster).
+  const setterNames = names.filter((n) => (knownSetterNames ?? []).includes(n) || reps[n].outbound > 0);
+  const closerRows = names.filter((n) => closerNames.includes(n) || reps[n].heldCalls > 0 || reps[n].won > 0);
 
   const setterCols = (r) => [
     { value: fmtInt(r.outbound) },
@@ -350,8 +354,15 @@ function computeFilteredKpis(d, filterKey) {
 
   const r = d.reps[filterKey];
   if (!r) return computeFilteredKpis(d, "all");
+  // Jen is a hybrid setter/closer -- if she has any outbound activity, show
+  // her real setter-side numbers instead of "—". A pure closer (Jercori)
+  // naturally reports 0 here since she never appears as a setter.
+  const isHybrid = r.outbound > 0;
   return {
-    outboundAttempts: null, qualified: null, liveTransferAttempted: null, liveTransferAccepted: null,
+    outboundAttempts: isHybrid ? r.outbound : null,
+    qualified: isHybrid ? r.qualified : null,
+    liveTransferAttempted: isHybrid ? r.liveTransferAttempted : null,
+    liveTransferAccepted: isHybrid ? r.liveTransferAccepted : null,
     appointmentsBooked: r.appointmentsBooked,
     heldCall: r.heldCalls,
     noShows: r.noShows,
@@ -460,7 +471,7 @@ async function main() {
   const d = payload.data;
   renderFunnel(d.funnel);
   renderRouting(d.routingMix, d.highTicketFlagged);
-  renderTables(d.reps, d.closerNames ?? []);
+  renderTables(d.reps, d.closerNames ?? [], d.setterNames ?? []);
   renderChains(d.attributionChains);
   renderCallLog(d.callLog);
   renderTrend(payload.history);

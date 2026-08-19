@@ -96,6 +96,13 @@ export const CONFIG = {
   ],
 
   reps: {
+    // Per the approved sales org plan: Jercori is Head of Sales / closer,
+    // Jen is a hybrid setter-closer (closes her own opportunities $5k and
+    // under, otherwise routes up), Marshell and Rianna are dedicated
+    // setters. Jen intentionally appears in BOTH lists -- the dashboard
+    // shows her in both the Setters and Closers tables, not one or the
+    // other, because she genuinely does both jobs.
+    setters: ["Marshell", "Rianna", "Jen"],
     closers: ["Jen", "Jercori"],
   },
 };

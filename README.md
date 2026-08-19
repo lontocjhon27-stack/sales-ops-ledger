@@ -19,6 +19,15 @@ client-side. No server, no exposed token.
 
 After that it runs automatically every 30 minutes and commits `data.json` only when something changed.
 
+## Rep roster
+
+Per the approved sales org plan: **Jercori** (Head of Sales) and **Jen**
+(hybrid) are closers; **Marshell**, **Rianna**, and **Jen** are setters. Jen
+is intentionally on both lists in `scripts/config.mjs` — she prospects her
+own queue between closing calls, so the dashboard shows her in both the
+Setters and Closers tables with her real numbers in each, not one or the
+other.
+
 ## Private Integration scopes
 
 The code only calls these endpoints — grant exactly these, nothing else:

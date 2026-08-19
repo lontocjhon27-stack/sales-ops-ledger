@@ -292,6 +292,7 @@ export async function computeMetrics({ client, shape, config, warnings, since })
     },
     attributionChains: attributionChains.slice(0, 10),
     closerNames: config.reps.closers,
+    setterNames: config.reps.setters,
     callLog: callLog.slice(0, CALL_LOG_LIMIT),
   };
 }
