@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-19T22:54:36.596Z",
+  "generatedAt": "2026-08-19T23:48:57.418Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [],
   "data": {
     "funnel": {
-      "outboundAttempts": 6,
+      "outboundAttempts": 7,
       "connected": 1,
       "qualified": 0,
       "heldCall": 0,
@@ -108,6 +108,10 @@
     },
     {
       "t": "2026-08-19T22:54:36.596Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-08-19T23:48:57.418Z",
       "closeRate": 0
     }
   ]
