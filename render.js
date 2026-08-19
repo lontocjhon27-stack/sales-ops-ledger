@@ -75,9 +75,18 @@ function renderFunnel(funnel) {
     return { name: s.name, value, widthPct, pctLabel };
   });
 
+  const FUNNEL_ICONS = [
+    '<path d="M7 17 17 7"/><path d="M9 7h8v8"/>',
+    '<path d="M9 15l6-6"/><path d="M8 12.5 5.8 14.7a3 3 0 1 0 4.2 4.2L12.2 16.7"/><path d="M16 11.5l2.2-2.2a3 3 0 1 0-4.2-4.2L11.8 7.3"/>',
+    '<circle cx="12" cy="12" r="8.2"/><path d="M8.5 12.3l2.3 2.3 4.7-4.9"/>',
+    '<path d="M4.5 13.2a7.5 7.5 0 0 1 15 0"/><rect x="3.2" y="13" width="4" height="6.2" rx="1.6"/><rect x="16.8" y="13" width="4" height="6.2" rx="1.6"/><path d="M19.3 19.2v.6a2.2 2.2 0 0 1-2.2 2.2h-2.6"/>',
+    '<path d="M12 3.2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 15.5l-4.8 2.6.9-5.4-3.9-3.8 5.4-.8z"/>',
+  ];
+
   document.getElementById("funnelRows").innerHTML = rows
     .map((r, i) => `
       <div class="funnel-row">
+        <span class="funnel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${FUNNEL_ICONS[i]}</svg></span>
         <span class="funnel-name">${esc(r.name)}</span>
         <div class="funnel-track"><div class="funnel-fill" style="width:${r.widthPct}%"><span>${fmtInt(r.value)}</span></div></div>
         <span class="funnel-pct${i === worstIdx ? " worst" : ""}">${r.pctLabel}</span>
@@ -94,14 +103,25 @@ function renderFunnel(funnel) {
 
 function renderRouting(routingMix, highTicketFlagged) {
   const total = routingMix.reduce((s, t) => s + t.count, 0);
-  const colors = ["var(--primary)", "linear-gradient(90deg, var(--primary), var(--accent))", "var(--accent)"];
+  const colors = ["var(--primary)", "color-mix(in srgb, var(--primary) 50%, var(--accent) 50%)", "var(--accent)"];
+  const CIRCUMFERENCE = 339.3; // 2 * pi * r54
 
-  document.getElementById("routingBar").innerHTML = total
-    ? routingMix.map((t, i) => `<div class="routing-seg" style="width:${((t.count / total) * 100).toFixed(2)}%; background:${colors[i] ?? "var(--accent)"};">${esc(t.closer)} &middot; ${fmtInt(t.count)}</div>`).join("")
-    : `<div class="routing-seg" style="width:100%; background:var(--surface-sunken); color:var(--ink-faint);">No routed leads yet this window</div>`;
+  document.getElementById("routingTotal").textContent = fmtInt(total);
+
+  let cursor = 0;
+  routingMix.forEach((t, i) => {
+    const circle = document.getElementById(`routingSeg${i}`);
+    if (!circle) return;
+    const share = total > 0 ? t.count / total : 0;
+    const arc = share * CIRCUMFERENCE;
+    circle.setAttribute("stroke-dasharray", `${arc.toFixed(1)} ${CIRCUMFERENCE}`);
+    circle.setAttribute("stroke-dashoffset", `${-cursor.toFixed(1)}`);
+    circle.style.opacity = total === 0 ? "0" : "1";
+    cursor += arc;
+  });
 
   document.getElementById("routingLegend").innerHTML = routingMix
-    .map((t, i) => `<div class="routing-item"><span class="routing-swatch" style="background:${colors[i] ?? "var(--accent)"}"></span><span class="who">${esc(t.label)} TAC</span><span class="count mono">${fmtInt(t.count)} leads</span></div>`)
+    .map((t, i) => `<div class="routing-item"><span class="routing-swatch" style="background:${colors[i] ?? "var(--accent)"}"></span><span class="who">${esc(t.label)} TAC &middot; ${esc(t.closer)}</span><span class="count mono">${fmtInt(t.count)} leads</span></div>`)
     .join("");
 
   document.getElementById("highTicketNote").textContent =

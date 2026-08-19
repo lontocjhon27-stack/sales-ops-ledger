@@ -68,8 +68,9 @@
     --warn-soft: #F5E9D0;
     --critical: #AA3E3E;
     --critical-soft: #F5DEDE;
+    --on-accent: #FFFFFF;
     --shadow-1: 0 1px 2px rgba(18,25,43,0.06), 0 1px 1px rgba(18,25,43,0.04);
-    --shadow-2: 0 4px 16px rgba(18,25,43,0.08), 0 1px 2px rgba(18,25,43,0.05);
+    --shadow-2: 0 10px 28px rgba(18,25,43,0.10), 0 2px 6px rgba(18,25,43,0.06);
   }
 
   @media (prefers-color-scheme: dark) {
@@ -91,8 +92,9 @@
       --warn-soft: #332A15;
       --critical: #E17E7E;
       --critical-soft: #331C1C;
+      --on-accent: #0D1320;
       --shadow-1: 0 1px 2px rgba(0,0,0,0.3);
-      --shadow-2: 0 8px 24px rgba(0,0,0,0.4);
+      --shadow-2: 0 16px 32px rgba(0,0,0,0.45), 0 2px 8px rgba(0,0,0,0.3);
     }
   }
   :root[data-theme="dark"] {
@@ -113,15 +115,19 @@
     --warn-soft: #332A15;
     --critical: #E17E7E;
     --critical-soft: #331C1C;
+    --on-accent: #0D1320;
     --shadow-1: 0 1px 2px rgba(0,0,0,0.3);
-    --shadow-2: 0 8px 24px rgba(0,0,0,0.4);
+    --shadow-2: 0 16px 32px rgba(0,0,0,0.45), 0 2px 8px rgba(0,0,0,0.3);
   }
 
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
   body {
     margin: 0;
-    background: var(--paper);
+    background:
+      radial-gradient(1100px 520px at 12% -8%, var(--primary-soft), transparent 60%),
+      radial-gradient(900px 460px at 100% 0%, var(--accent-soft), transparent 55%),
+      var(--paper);
     color: var(--ink);
     font-family: 'Archivo', ui-sans-serif, system-ui, sans-serif;
     font-weight: 500;
@@ -160,23 +166,25 @@
     padding: 16px 0;
     background: var(--paper);
     border-bottom: 1px solid var(--line);
+    box-shadow: 0 16px 24px -20px rgba(18,25,43,0.35);
     flex-wrap: wrap;
   }
   .brand {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 11px;
   }
   .brand-mark {
-    width: 30px; height: 30px;
-    border-radius: 7px;
-    background: var(--primary);
+    width: 32px; height: 32px;
+    border-radius: 9px;
+    background: linear-gradient(135deg, var(--primary), color-mix(in srgb, var(--primary) 40%, var(--accent)));
     display: flex; align-items: center; justify-content: center;
-    color: var(--surface);
+    color: var(--on-accent);
     font-weight: 800;
     font-size: 14px;
     letter-spacing: -0.02em;
     flex: none;
+    box-shadow: var(--shadow-1);
   }
   .brand-text h1 {
     margin: 0;
@@ -277,29 +285,52 @@
   /* ---------- KPI band ---------- */
   .kpi-band {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(188px, 1fr));
     gap: 10px;
   }
   .kpi-tile {
     background: var(--surface);
     border: 1px solid var(--line);
-    border-radius: 10px;
-    padding: 14px 14px 12px;
+    border-radius: 12px;
+    padding: 15px 15px 13px;
     box-shadow: var(--shadow-1);
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
     min-width: 0;
+    transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
   }
+  .kpi-tile:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-2);
+    border-color: transparent;
+  }
+  .kpi-head-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .kpi-icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+  }
+  .kpi-icon svg { width: 14px; height: 14px; }
+  .kpi-icon.tone-primary { background: var(--primary-soft); color: var(--primary); }
+  .kpi-icon.tone-good { background: var(--good-soft); color: var(--good); }
+  .kpi-icon.tone-accent { background: var(--accent-soft); color: var(--accent); }
+  .kpi-icon.tone-warn { background: var(--warn-soft); color: var(--warn); }
   .kpi-label {
     font-size: 10.5px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.045em;
     color: var(--ink-muted);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    line-height: 1.25;
   }
   .kpi-value-row {
     display: flex;
@@ -308,9 +339,9 @@
     gap: 8px;
   }
   .kpi-value {
-    font-size: 22px;
+    font-size: 27px;
     font-weight: 600;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
     line-height: 1;
   }
   .kpi-spark { flex: none; }
@@ -330,18 +361,38 @@
   .panel {
     background: var(--surface);
     border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 18px 20px 20px;
+    border-radius: 16px;
+    padding: 20px 22px 22px;
     box-shadow: var(--shadow-1);
     min-width: 0;
+    transition: box-shadow 200ms ease;
   }
+  .panel:hover { box-shadow: var(--shadow-2); }
+  .panel-title-row {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 3px;
+  }
+  .panel-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    background: var(--primary-soft);
+    color: var(--primary);
+  }
+  .panel-icon svg { width: 13px; height: 13px; }
   .panel h3 {
-    margin: 0 0 3px;
-    font-size: 14px;
+    margin: 0;
+    font-size: 14.5px;
     font-weight: 700;
   }
   .panel .sub {
-    margin: 0 0 16px;
+    margin: 0 0 18px;
     font-size: 12px;
     color: var(--ink-muted);
   }
@@ -356,45 +407,78 @@
   }
 
   /* ---------- Funnel ---------- */
-  .funnel-rows { display: flex; flex-direction: column; gap: 10px; }
+  .funnel-rows { display: flex; flex-direction: column; gap: 4px; }
   .funnel-row {
     display: grid;
-    grid-template-columns: 108px 1fr 76px;
+    grid-template-columns: 32px 100px 1fr 72px;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    padding: 7px 0;
+    position: relative;
   }
+  .funnel-row:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 100%;
+    width: 1px;
+    height: 6px;
+    background: var(--line);
+  }
+  .funnel-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    color: var(--on-accent);
+  }
+  .funnel-icon svg { width: 16px; height: 16px; }
+  .funnel-row:nth-child(1) .funnel-icon, .funnel-row:nth-child(1) .funnel-fill { background: var(--primary); }
+  .funnel-row:nth-child(2) .funnel-icon, .funnel-row:nth-child(2) .funnel-fill { background: color-mix(in srgb, var(--primary) 72%, var(--accent) 28%); }
+  .funnel-row:nth-child(3) .funnel-icon, .funnel-row:nth-child(3) .funnel-fill { background: color-mix(in srgb, var(--primary) 48%, var(--accent) 52%); }
+  .funnel-row:nth-child(4) .funnel-icon, .funnel-row:nth-child(4) .funnel-fill { background: color-mix(in srgb, var(--primary) 24%, var(--accent) 76%); }
+  .funnel-row:nth-child(5) .funnel-icon, .funnel-row:nth-child(5) .funnel-fill { background: var(--accent); }
   .funnel-name { font-size: 12.5px; font-weight: 600; color: var(--ink); }
   .funnel-track {
     background: var(--surface-sunken);
-    border-radius: 6px;
-    height: 26px;
+    border-radius: 999px;
+    height: 28px;
     position: relative;
     overflow: hidden;
   }
   .funnel-fill {
-    height: 100%;
-    border-radius: 6px;
-    background: linear-gradient(90deg, var(--primary), var(--accent));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 999px;
     display: flex;
     align-items: center;
-    padding: 0 10px;
+    justify-content: center;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.22);
+    transition: width 500ms cubic-bezier(.22,.9,.3,1);
   }
   .funnel-fill span {
     font-family: 'IBM Plex Mono', monospace;
     font-variant-numeric: tabular-nums;
-    color: #fff;
+    color: var(--on-accent);
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 700;
     white-space: nowrap;
   }
   .funnel-pct {
     font-family: 'IBM Plex Mono', monospace;
     font-variant-numeric: tabular-nums;
-    font-size: 12px;
+    font-size: 12.5px;
+    font-weight: 600;
     color: var(--ink-muted);
     text-align: right;
   }
-  .funnel-pct.worst { color: var(--critical); font-weight: 600; }
+  .funnel-pct.worst { color: var(--critical); }
   .funnel-note {
     margin-top: 14px;
     padding: 10px 12px;
@@ -409,29 +493,43 @@
   .funnel-note svg { flex: none; margin-top: 1px; }
 
   /* ---------- Routing panel ---------- */
-  .routing-bar {
-    display: flex;
-    height: 34px;
-    border-radius: 8px;
-    overflow: hidden;
-    border: 1px solid var(--line);
-  }
-  .routing-seg {
+  .routing-layout {
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11.5px;
-    font-weight: 600;
-    color: #fff;
-    white-space: nowrap;
-    overflow: hidden;
+    gap: 22px;
   }
-  .routing-legend {
-    margin-top: 14px;
+  .routing-donut { flex: none; position: relative; width: 132px; height: 132px; }
+  .routing-donut svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+  .routing-donut-center {
+    position: absolute;
+    inset: 0;
     display: flex;
     flex-direction: column;
-    gap: 9px;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+  }
+  .routing-donut-total {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--ink);
+  }
+  .routing-donut-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-top: 2px;
+  }
+  .routing-legend {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    min-width: 0;
   }
   .routing-item {
     display: flex;
@@ -443,7 +541,7 @@
   .routing-item .who { color: var(--ink-muted); flex: 1; }
   .routing-item .count { font-family: 'IBM Plex Mono', monospace; font-weight: 600; }
   .routing-footnote {
-    margin-top: 14px;
+    margin-top: 16px;
     padding-top: 12px;
     border-top: 1px dashed var(--line);
     font-size: 11.5px;
@@ -451,6 +549,9 @@
     display: flex;
     align-items: center;
     gap: 8px;
+  }
+  @media (max-width: 420px) {
+    .routing-layout { flex-direction: column; align-items: flex-start; }
   }
   .tag {
     display: inline-flex;
@@ -494,10 +595,13 @@
     color: var(--ink);
   }
   tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover td { background: var(--surface-sunken); }
+  tbody tr.total:hover td { background: var(--surface-sunken); }
   tbody tr.total td {
     background: var(--surface-sunken);
     font-weight: 700;
     color: var(--ink);
+    border-top: 1px solid var(--line);
   }
   .rep-name {
     display: flex;
@@ -533,7 +637,7 @@
   .chain-chip .avatar {
     width: 20px; height: 20px; border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
-    color: #fff; font-size: 10px; font-weight: 700; flex: none;
+    color: var(--on-accent); font-size: 10px; font-weight: 700; flex: none;
   }
   .chain-arrow { color: var(--ink-faint); flex: none; }
   .chain-outcome {
@@ -598,7 +702,10 @@
       <div class="kpi-band">
 
         <div class="kpi-tile" id="kpi-outboundAttempts">
-          <span class="kpi-label">Outbound Attempts</span>
+          <div class="kpi-head-row">
+            <span class="kpi-icon tone-primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span>
+            <span class="kpi-label">Outbound Attempts</span>
+          </div>
           <div class="kpi-value-row">
             <span class="kpi-value mono">1,842</span>
             <svg class="kpi-spark" width="46" height="20" viewBox="0 0 46 20"><polyline points="0,14 8,15 16,11 24,12 32,7 39,8 46,3" fill="none" stroke="var(--primary)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -607,7 +714,10 @@
         </div>
 
         <div class="kpi-tile" id="kpi-qualified">
-          <span class="kpi-label">Qualified Prospects</span>
+          <div class="kpi-head-row">
+            <span class="kpi-icon tone-primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.2"/><path d="M8.5 12.3l2.3 2.3 4.7-4.9"/></svg></span>
+            <span class="kpi-label">Qualified Prospects</span>
+          </div>
           <div class="kpi-value-row">
             <span class="kpi-value mono">248</span>
             <svg class="kpi-spark" width="46" height="20" viewBox="0 0 46 20"><polyline points="0,16 8,13 16,14 24,9 32,10 39,5 46,4" fill="none" stroke="var(--primary)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -616,7 +726,10 @@
         </div>
 
         <div class="kpi-tile" id="kpi-liveTransferAttempted">
-          <span class="kpi-label">Live Transfers Attempted</span>
+          <div class="kpi-head-row">
+            <span class="kpi-icon tone-primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="12" r="2"/><path d="M9.5 12h6"/><path d="M13 8.7l2.5 3.3-2.5 3.3"/></svg></span>
+            <span class="kpi-label">Live Transfers Attempted</span>
+          </div>
           <div class="kpi-value-row">
             <span class="kpi-value mono">61</span>
             <svg class="kpi-spark" width="46" height="20" viewBox="0 0 46 20"><polyline points="0,6 8,8 16,7 24,11 32,10 39,13 46,13" fill="none" stroke="var(--ink-faint)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -625,7 +738,10 @@
         </div>
 
         <div class="kpi-tile" id="kpi-liveTransferAccepted">
-          <span class="kpi-label">Live Transfers Accepted</span>
+          <div class="kpi-head-row">
+            <span class="kpi-icon tone-good"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h7"/><path d="M7 8.7l2.5 3.3L7 15.3"/><path d="M14 12h2.5"/><path d="M15.5 15.2l2.3 2.3 4-5.2"/></svg></span>
+            <span class="kpi-label">Live Transfers Accepted</span>
+          </div>
           <div class="kpi-value-row">
             <span class="kpi-value mono">48</span>
             <svg class="kpi-spark" width="46" height="20" viewBox="0 0 46 20"><polyline points="0,15 8,12 16,13 24,10 32,8 39,6 46,4" fill="none" stroke="var(--good)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -634,7 +750,10 @@
         </div>
 
         <div class="kpi-tile" id="kpi-appointmentsBooked">
-          <span class="kpi-label">Appointments Booked</span>
+          <div class="kpi-head-row">
+            <span class="kpi-icon tone-primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5.5" width="16" height="15" rx="2.2"/><path d="M4 10.2h16"/><path d="M8 3.5v4"/><path d="M16 3.5v4"/><path d="M9 14.7l2 2 4.5-4.7"/></svg></span>
+            <span class="kpi-label">Appointments Booked</span>
+          </div>
           <div class="kpi-value-row">
             <span class="kpi-value mono">145</span>
             <svg class="kpi-spark" width="46" height="20" viewBox="0 0 46 20"><polyline points="0,14 8,13 16,10 24,11 32,8 39,7 46,5" fill="none" stroke="var(--primary)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -643,7 +762,10 @@
         </div>
 
         <div class="kpi-tile" id="kpi-heldCall">
-          <span class="kpi-label">Qualified Held Calls</span>
+          <div class="kpi-head-row">
+            <span class="kpi-icon tone-good"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 13.2a7.5 7.5 0 0 1 15 0"/><rect x="3.2" y="13" width="4" height="6.2" rx="1.6"/><rect x="16.8" y="13" width="4" height="6.2" rx="1.6"/><path d="M19.3 19.2v.6a2.2 2.2 0 0 1-2.2 2.2h-2.6"/></svg></span>
+            <span class="kpi-label">Qualified Held Calls</span>
+          </div>
           <div class="kpi-value-row">
             <span class="kpi-value mono">137</span>
             <svg class="kpi-spark" width="46" height="20" viewBox="0 0 46 20"><polyline points="0,15 8,12 16,12 24,9 32,8 39,7 46,4" fill="none" stroke="var(--primary)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -652,7 +774,10 @@
         </div>
 
         <div class="kpi-tile" id="kpi-noShows">
-          <span class="kpi-label">No-Shows</span>
+          <div class="kpi-head-row">
+            <span class="kpi-icon tone-warn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5.5" width="16" height="15" rx="2.2"/><path d="M4 10.2h16"/><path d="M8 3.5v4"/><path d="M16 3.5v4"/><path d="M9.3 14.3l5 5"/><path d="M14.3 14.3l-5 5"/></svg></span>
+            <span class="kpi-label">No-Shows</span>
+          </div>
           <div class="kpi-value-row">
             <span class="kpi-value mono">19</span>
             <svg class="kpi-spark" width="46" height="20" viewBox="0 0 46 20"><polyline points="0,4 8,6 16,7 24,9 32,10 39,13 46,15" fill="none" stroke="var(--good)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -661,7 +786,10 @@
         </div>
 
         <div class="kpi-tile" id="kpi-won">
-          <span class="kpi-label">Sales &mdash; Won</span>
+          <div class="kpi-head-row">
+            <span class="kpi-icon tone-good"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 15.5l-4.8 2.6.9-5.4-3.9-3.8 5.4-.8z"/></svg></span>
+            <span class="kpi-label">Sales &mdash; Won</span>
+          </div>
           <div class="kpi-value-row">
             <span class="kpi-value mono">36</span>
             <svg class="kpi-spark" width="46" height="20" viewBox="0 0 46 20"><polyline points="0,15 8,14 16,11 24,12 32,8 39,6 46,3" fill="none" stroke="var(--good)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -670,7 +798,10 @@
         </div>
 
         <div class="kpi-tile" id="kpi-closeRate">
-          <span class="kpi-label">Close Rate</span>
+          <div class="kpi-head-row">
+            <span class="kpi-icon tone-good"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.2" cy="7.2" r="2.1"/><circle cx="16.8" cy="16.8" r="2.1"/><path d="M6 18 18 6"/></svg></span>
+            <span class="kpi-label">Close Rate</span>
+          </div>
           <div class="kpi-value-row">
             <span class="kpi-value mono">26.3%</span>
             <svg class="kpi-spark" width="46" height="20" viewBox="0 0 46 20"><polyline points="0,13 8,14 16,12 24,10 32,9 39,7 46,6" fill="none" stroke="var(--good)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -679,7 +810,10 @@
         </div>
 
         <div class="kpi-tile" id="kpi-contractValue">
-          <span class="kpi-label">Contract Value</span>
+          <div class="kpi-head-row">
+            <span class="kpi-icon tone-accent"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.2h6.5l3.5 3.5v14.1H7z"/><path d="M13.5 3.2v3.5H17"/><path d="M9.3 12h5.4"/><path d="M9.3 15h5.4"/><path d="M9.3 9h2.6"/></svg></span>
+            <span class="kpi-label">Contract Value</span>
+          </div>
           <div class="kpi-value-row">
             <span class="kpi-value mono">$584.6k</span>
             <svg class="kpi-spark" width="46" height="20" viewBox="0 0 46 20"><polyline points="0,15 8,13 16,12 24,10 32,9 39,6 46,4" fill="none" stroke="var(--primary)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -688,7 +822,10 @@
         </div>
 
         <div class="kpi-tile" id="kpi-cashCollected">
-          <span class="kpi-label">Cash Collected</span>
+          <div class="kpi-head-row">
+            <span class="kpi-icon tone-accent"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7.2" width="18" height="9.6" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.4v.02"/><path d="M18 14.6v.02"/></svg></span>
+            <span class="kpi-label">Cash Collected</span>
+          </div>
           <div class="kpi-value-row">
             <span class="kpi-value mono">$444.1k</span>
             <svg class="kpi-spark" width="46" height="20" viewBox="0 0 46 20"><polyline points="0,16 8,14 16,13 24,11 32,9 39,7 46,5" fill="none" stroke="var(--good)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -705,30 +842,38 @@
       </div>
       <div class="two-col">
         <div class="panel">
-          <h3>Conversion funnel</h3>
+          <div class="panel-title-row">
+            <span class="panel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16l-6 8v6l-4 2v-8z"/></svg></span>
+            <h3>Conversion funnel</h3>
+          </div>
           <p class="sub">Outbound attempt &rarr; held call &rarr; won, this week, all reps</p>
           <div class="funnel-rows" id="funnelRows">
             <div class="funnel-row">
+              <span class="funnel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span>
               <span class="funnel-name">Outbound Attempts</span>
               <div class="funnel-track"><div class="funnel-fill" style="width:100%"><span>1,842</span></div></div>
               <span class="funnel-pct">&mdash;</span>
             </div>
             <div class="funnel-row">
+              <span class="funnel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 15l6-6"/><path d="M8 12.5 5.8 14.7a3 3 0 1 0 4.2 4.2L12.2 16.7"/><path d="M16 11.5l2.2-2.2a3 3 0 1 0-4.2-4.2L11.8 7.3"/></svg></span>
               <span class="funnel-name">Connected</span>
               <div class="funnel-track"><div class="funnel-fill" style="width:33%"><span>612</span></div></div>
               <span class="funnel-pct worst">33.2%</span>
             </div>
             <div class="funnel-row">
+              <span class="funnel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.2"/><path d="M8.5 12.3l2.3 2.3 4.7-4.9"/></svg></span>
               <span class="funnel-name">Qualified</span>
               <div class="funnel-track"><div class="funnel-fill" style="width:13%"><span>248</span></div></div>
               <span class="funnel-pct">40.5%</span>
             </div>
             <div class="funnel-row">
+              <span class="funnel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 13.2a7.5 7.5 0 0 1 15 0"/><rect x="3.2" y="13" width="4" height="6.2" rx="1.6"/><rect x="16.8" y="13" width="4" height="6.2" rx="1.6"/><path d="M19.3 19.2v.6a2.2 2.2 0 0 1-2.2 2.2h-2.6"/></svg></span>
               <span class="funnel-name">Held Call</span>
               <div class="funnel-track"><div class="funnel-fill" style="width:9%"><span>171</span></div></div>
               <span class="funnel-pct">69.0%</span>
             </div>
             <div class="funnel-row">
+              <span class="funnel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 15.5l-4.8 2.6.9-5.4-3.9-3.8 5.4-.8z"/></svg></span>
               <span class="funnel-name">Won</span>
               <div class="funnel-track"><div class="funnel-fill" style="width:3%"><span>42</span></div></div>
               <span class="funnel-pct">24.6%</span>
@@ -741,17 +886,29 @@
         </div>
 
         <div class="panel">
-          <h3>Routing mix &mdash; by Total Accessible Capital</h3>
-          <p class="sub">Approved tiers: &lt;$10k &rarr; Jen &middot; $10k&ndash;19,999 &rarr; 50/50 &middot; $20k+ &rarr; Jercori</p>
-          <div class="routing-bar" id="routingBar">
-            <div class="routing-seg" style="width:35%; background:var(--primary);">Jen &middot; 54</div>
-            <div class="routing-seg" style="width:25%; background:linear-gradient(90deg, var(--primary), var(--accent));">50/50 &middot; 38</div>
-            <div class="routing-seg" style="width:40%; background:var(--accent);">Jercori &middot; 61</div>
+          <div class="panel-title-row">
+            <span class="panel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 8 8h-8z"/></svg></span>
+            <h3>Routing mix &mdash; by Total Accessible Capital</h3>
           </div>
-          <div class="routing-legend" id="routingLegend">
-            <div class="routing-item"><span class="routing-swatch" style="background:var(--primary)"></span><span class="who">Under $10k TAC</span><span class="count mono">54 leads</span></div>
-            <div class="routing-item"><span class="routing-swatch" style="background:linear-gradient(135deg, var(--primary), var(--accent))"></span><span class="who">$10k&ndash;$19,999 TAC (alternating)</span><span class="count mono">38 leads</span></div>
-            <div class="routing-item"><span class="routing-swatch" style="background:var(--accent)"></span><span class="who">$20k+ TAC</span><span class="count mono">61 leads</span></div>
+          <p class="sub">Approved tiers: &lt;$10k &rarr; Jen &middot; $10k&ndash;19,999 &rarr; 50/50 &middot; $20k+ &rarr; Jercori</p>
+          <div class="routing-layout">
+            <div class="routing-donut" id="routingDonut">
+              <svg viewBox="0 0 140 140">
+                <circle cx="70" cy="70" r="54" fill="none" stroke="var(--surface-sunken)" stroke-width="18"/>
+                <circle id="routingSeg0" cx="70" cy="70" r="54" fill="none" stroke="var(--primary)" stroke-width="18" stroke-dasharray="118.7 339.3" stroke-dashoffset="0"/>
+                <circle id="routingSeg1" cx="70" cy="70" r="54" fill="none" stroke="color-mix(in srgb, var(--primary) 50%, var(--accent) 50%)" stroke-width="18" stroke-dasharray="83.7 339.3" stroke-dashoffset="-118.7"/>
+                <circle id="routingSeg2" cx="70" cy="70" r="54" fill="none" stroke="var(--accent)" stroke-width="18" stroke-dasharray="136.9 339.3" stroke-dashoffset="-202.4"/>
+              </svg>
+              <div class="routing-donut-center">
+                <span class="routing-donut-total mono" id="routingTotal">153</span>
+                <span class="routing-donut-label">leads</span>
+              </div>
+            </div>
+            <div class="routing-legend" id="routingLegend">
+              <div class="routing-item"><span class="routing-swatch" style="background:var(--primary)"></span><span class="who">Under $10k TAC &middot; Jen</span><span class="count mono">54 leads</span></div>
+              <div class="routing-item"><span class="routing-swatch" style="background:color-mix(in srgb, var(--primary) 50%, var(--accent) 50%)"></span><span class="who">$10k&ndash;$19,999 TAC &middot; 50/50</span><span class="count mono">38 leads</span></div>
+              <div class="routing-item"><span class="routing-swatch" style="background:var(--accent)"></span><span class="who">$20k+ TAC &middot; Jercori</span><span class="count mono">61 leads</span></div>
+            </div>
           </div>
           <div class="routing-footnote">
             <span class="tag">FLAGGED, NOT ROUTED</span>
@@ -768,7 +925,10 @@
       </div>
       <div class="two-col">
         <div class="panel">
-          <h3>Setters</h3>
+          <div class="panel-title-row">
+            <span class="panel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.4"/><path d="M5 20a7 7 0 0 1 14 0"/></svg></span>
+            <h3>Setters</h3>
+          </div>
           <p class="sub">Outbound through hand-off</p>
           <div class="table-wrap">
             <table>
@@ -813,7 +973,10 @@
         </div>
 
         <div class="panel">
-          <h3>Closers</h3>
+          <div class="panel-title-row">
+            <span class="panel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.4"/><path d="M5 19.5a7 7 0 0 1 9-6.7"/><path d="M15 17l1.5 1.5L20 15"/></svg></span>
+            <h3>Closers</h3>
+          </div>
           <p class="sub">Held call through cash collected</p>
           <div class="table-wrap">
             <table>
@@ -869,7 +1032,10 @@
       </div>
       <div class="two-col">
         <div class="panel">
-          <h3>Setter credit survives reassignment</h3>
+          <div class="panel-title-row">
+            <span class="panel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 15l6-6"/><path d="M8 12.5 5.8 14.7a3 3 0 1 0 4.2 4.2L12.2 16.7"/><path d="M16 11.5l2.2-2.2a3 3 0 1 0-4.2-4.2L11.8 7.3"/></svg></span>
+            <h3>Setter credit survives reassignment</h3>
+          </div>
           <p class="sub">Sample chains &mdash; original setter stays attached after hand-off to closer</p>
           <div class="chain-list" id="chainList">
             <div class="chain-row">
@@ -894,7 +1060,10 @@
         </div>
 
         <div class="panel">
-          <h3>Close rate trend</h3>
+          <div class="panel-title-row">
+            <span class="panel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16l5-5 4 4 7-8"/><path d="M15 6h5v5"/></svg></span>
+            <h3>Close rate trend</h3>
+          </div>
           <p class="sub">Last 8 weeks, team-wide</p>
           <div class="trend-wrap">
             <div class="trend-figures">
