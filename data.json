@@ -1,8 +1,58 @@
 {
-  "generatedAt": null,
+  "generatedAt": "2026-08-19T19:35:55.279Z",
   "windowDays": 7,
-  "ok": false,
-  "warnings": ["Never synced -- run the Refresh Sales Data workflow, or wait for its schedule."],
-  "data": null,
-  "history": []
+  "ok": true,
+  "warnings": [
+    "Custom field \"Lost Reason\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Cash Collected\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Pipeline \"Sales Pipeline\" not found -- outbound/funnel/won metrics will be empty until it exists.",
+    "Calendar \"Jercori / High-Ticket Calendar\" not found -- appointment/no-show metrics for it will be empty."
+  ],
+  "data": {
+    "funnel": {
+      "outboundAttempts": 7,
+      "connected": 0,
+      "qualified": 0,
+      "heldCall": 0,
+      "won": 0
+    },
+    "routingMix": [
+      {
+        "label": "Under $10k",
+        "closer": "Jen",
+        "count": 0
+      },
+      {
+        "label": "$10k-$19,999",
+        "closer": "50/50",
+        "count": 0
+      },
+      {
+        "label": "$20k+",
+        "closer": "Jercori",
+        "count": 0
+      }
+    ],
+    "highTicketFlagged": {
+      "count": 0,
+      "routedNormally": 0
+    },
+    "reps": {},
+    "totals": {
+      "contractValue": 0,
+      "cashCollected": 0,
+      "closeRate": 0
+    },
+    "attributionChains": [],
+    "closerNames": [
+      "Jen",
+      "Jercori"
+    ]
+  },
+  "history": [
+    {
+      "t": "2026-08-19T19:35:55.279Z",
+      "closeRate": 0
+    }
+  ]
 }
