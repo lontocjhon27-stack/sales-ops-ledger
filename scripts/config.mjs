@@ -80,8 +80,11 @@ export const CONFIG = {
     liveTransferAttempted: env("GHL_FIELD_LT_ATTEMPTED", "Live Transfer Attempted?"),
     liveTransferAcceptedBy: env("GHL_FIELD_LT_ACCEPTED_BY", "Live Transfer Accepted By"),
     qualifiedHeldCall: env("GHL_FIELD_QUALIFIED_HELD", "Qualified Held Call"),
-    lostReason: env("GHL_FIELD_LOST_REASON", "Lost Reason"),
     cashCollected: env("GHL_FIELD_CASH_COLLECTED", "Cash Collected"),
+    // "Lost Reason" is intentionally not here: it's a native opportunity
+    // field ({{opportunity.lost_reason}}), not a custom field, so it isn't
+    // resolved through the customFields lookup at all. Read it directly
+    // off the opportunity as opp.lostReason if it's ever needed here.
   },
 
   routingTiers: [
