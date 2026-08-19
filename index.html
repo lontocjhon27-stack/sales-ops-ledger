@@ -246,6 +246,29 @@
     cursor: pointer;
   }
   .range-chip svg { flex: none; }
+  .range-note {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    width: 260px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    box-shadow: var(--shadow-2);
+    padding: 12px 14px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--ink-muted);
+    z-index: 30;
+  }
+  .range-note code {
+    background: var(--surface-sunken);
+    border-radius: 4px;
+    padding: 1px 5px;
+    color: var(--ink);
+  }
+  tbody tr.dim { opacity: 0.32; transition: opacity 150ms ease; }
+  tbody tr.dim:hover td { background: transparent; }
   .sample-badge {
     display: flex;
     align-items: center;
@@ -453,8 +476,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     border-radius: 999px;
     display: flex;
     align-items: center;
@@ -680,10 +702,15 @@
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M12 9v4M12 16.5h.01M10.3 3.9 1.8 18.5a1.8 1.8 0 0 0 1.55 2.7h17.3a1.8 1.8 0 0 0 1.55-2.7L13.7 3.9a1.8 1.8 0 0 0-3.4 0Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         SAMPLE DATA &middot; NOT YET LIVE
       </div>
-      <button class="range-chip" type="button">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 9.5h18M8 3v3M16 3v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-        <span id="rangeLabel">This Week &middot; Aug 11&ndash;17</span>
-      </button>
+      <div style="position:relative;">
+        <button class="range-chip" type="button" id="rangeChipBtn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 9.5h18M8 3v3M16 3v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <span id="rangeLabel">This Week &middot; Aug 11&ndash;17</span>
+        </button>
+        <div class="range-note" id="rangeNote" hidden>
+          Custom date ranges aren't wired up yet. Every sync covers a fixed trailing window (currently set by <code class="mono">GHL_WINDOW_DAYS</code>) &mdash; ask to add multi-range history if you need to compare specific weeks.
+        </div>
+      </div>
       <div class="pill-group" role="group" aria-label="Filter by rep">
         <button class="pill" aria-pressed="true" type="button">All</button>
         <button class="pill" aria-pressed="false" type="button">Jen</button>
@@ -846,7 +873,7 @@
             <span class="panel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16l-6 8v6l-4 2v-8z"/></svg></span>
             <h3>Conversion funnel</h3>
           </div>
-          <p class="sub">Outbound attempt &rarr; held call &rarr; won, this week, all reps</p>
+          <p class="sub" id="funnelSub">Outbound attempt &rarr; held call &rarr; won, this week, all reps</p>
           <div class="funnel-rows" id="funnelRows">
             <div class="funnel-row">
               <span class="funnel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span>
@@ -890,7 +917,7 @@
             <span class="panel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 8 8h-8z"/></svg></span>
             <h3>Routing mix &mdash; by Total Accessible Capital</h3>
           </div>
-          <p class="sub">Approved tiers: &lt;$10k &rarr; Jen &middot; $10k&ndash;19,999 &rarr; 50/50 &middot; $20k+ &rarr; Jercori</p>
+          <p class="sub" id="routingSub">Approved tiers: &lt;$10k &rarr; Jen &middot; $10k&ndash;19,999 &rarr; 50/50 &middot; $20k+ &rarr; Jercori</p>
           <div class="routing-layout">
             <div class="routing-donut" id="routingDonut">
               <svg viewBox="0 0 140 140">

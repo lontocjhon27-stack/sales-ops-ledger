@@ -257,12 +257,136 @@ function renderTrend(history) {
   document.getElementById("trendCaption").textContent = `current sync · ${trendWord} ${first}% on ${firstWhen}`;
 }
 
+const sum = (arr) => arr.reduce((a, b) => a + b, 0);
+
+// Recomputes the KPI band for a rep-filter selection. Funnel and routing
+// stay team-wide regardless of filter -- that breakdown isn't captured
+// per-rep in data.json yet, so tiles that don't apply to the selection
+// show "—" instead of a misleading 0.
+function computeFilteredKpis(d, filterKey) {
+  const closerNames = d.closerNames ?? [];
+  const names = Object.keys(d.reps);
+  const setterNames = names.filter((n) => !closerNames.includes(n));
+
+  if (filterKey === "all") {
+    return {
+      outboundAttempts: d.funnel.outboundAttempts,
+      qualified: d.funnel.qualified,
+      liveTransferAttempted: sum(setterNames.map((n) => d.reps[n].liveTransferAttempted)),
+      liveTransferAccepted: sum(setterNames.map((n) => d.reps[n].liveTransferAccepted)),
+      appointmentsBooked: sum(names.map((n) => d.reps[n].appointmentsBooked)),
+      heldCall: d.funnel.heldCall,
+      noShows: sum(names.map((n) => d.reps[n].noShows)),
+      won: d.funnel.won,
+      closeRate: d.totals.closeRate,
+      contractValue: d.totals.contractValue,
+      cashCollected: d.totals.cashCollected,
+      note: "this window",
+    };
+  }
+
+  if (filterKey === "setters") {
+    const rows = setterNames.map((n) => d.reps[n]);
+    return {
+      outboundAttempts: sum(rows.map((r) => r.outbound)),
+      qualified: sum(rows.map((r) => r.qualified)),
+      liveTransferAttempted: sum(rows.map((r) => r.liveTransferAttempted)),
+      liveTransferAccepted: sum(rows.map((r) => r.liveTransferAccepted)),
+      appointmentsBooked: null, heldCall: null, noShows: null, won: null,
+      closeRate: null, contractValue: null, cashCollected: null,
+      note: "setters only",
+    };
+  }
+
+  const r = d.reps[filterKey];
+  if (!r) return computeFilteredKpis(d, "all");
+  return {
+    outboundAttempts: null, qualified: null, liveTransferAttempted: null, liveTransferAccepted: null,
+    appointmentsBooked: r.appointmentsBooked,
+    heldCall: r.heldCalls,
+    noShows: r.noShows,
+    won: r.won,
+    closeRate: r.heldCalls > 0 ? Number(((r.won / r.heldCalls) * 100).toFixed(1)) : 0,
+    contractValue: r.contractValue,
+    cashCollected: r.cashCollected,
+    note: filterKey,
+  };
+}
+
+function renderKpiBand(d, filterKey) {
+  const k = computeFilteredKpis(d, filterKey);
+  const na = `not tracked for ${filterKey === "setters" ? "setters" : filterKey}`;
+
+  setKpi("kpi-outboundAttempts", k.outboundAttempts === null ? "—" : fmtInt(k.outboundAttempts), k.outboundAttempts === null ? na : k.note);
+  setKpi("kpi-qualified", k.qualified === null ? "—" : fmtInt(k.qualified), k.qualified === null ? na : k.note);
+  setKpi("kpi-liveTransferAttempted", k.liveTransferAttempted === null ? "—" : fmtInt(k.liveTransferAttempted), k.liveTransferAttempted === null ? na : k.note);
+  setKpi("kpi-liveTransferAccepted", k.liveTransferAccepted === null ? "—" : fmtInt(k.liveTransferAccepted),
+    k.liveTransferAccepted === null ? na : (k.liveTransferAttempted > 0 ? `${((k.liveTransferAccepted / k.liveTransferAttempted) * 100).toFixed(1)}% accept rate` : k.note));
+  setKpi("kpi-appointmentsBooked", k.appointmentsBooked === null ? "—" : fmtInt(k.appointmentsBooked), k.appointmentsBooked === null ? na : k.note);
+  setKpi("kpi-heldCall", k.heldCall === null ? "—" : fmtInt(k.heldCall), k.heldCall === null ? na : k.note);
+  setKpi("kpi-noShows", k.noShows === null ? "—" : fmtInt(k.noShows), k.noShows === null ? na : k.note);
+  setKpi("kpi-won", k.won === null ? "—" : fmtInt(k.won), k.won === null ? na : k.note);
+  setKpi("kpi-closeRate", k.closeRate === null ? "—" : `${k.closeRate}%`, k.closeRate === null ? na : k.note);
+  setKpi("kpi-contractValue", k.contractValue === null ? "—" : fmtMoney(k.contractValue), k.contractValue === null ? na : k.note);
+  setKpi("kpi-cashCollected", k.cashCollected === null ? "—" : fmtMoney(k.cashCollected), k.cashCollected === null ? na : k.note);
+}
+
+function dimRepRows(filterKey) {
+  document.querySelectorAll("#settersBody tr, #closersBody tr").forEach((row) => {
+    if (filterKey === "all") { row.classList.remove("dim"); return; }
+    const isSetterTable = row.closest("table")?.querySelector("thead th")?.textContent === "Setter";
+    let show;
+    if (row.classList.contains("total")) {
+      show = filterKey === "setters" ? isSetterTable : !isSetterTable; // opposite table's total is noise once filtered
+    } else if (filterKey === "setters") {
+      show = isSetterTable;
+    } else {
+      show = row.querySelector(".rep-name")?.textContent?.trim() === filterKey;
+    }
+    row.classList.toggle("dim", !show);
+  });
+}
+
+function updateScopeNotes(filterKey) {
+  const suffix = filterKey === "all" ? "" : " · funnel &amp; routing stay team-wide (not filterable by rep yet)";
+  const funnelSub = document.getElementById("funnelSub");
+  const routingSub = document.getElementById("routingSub");
+  if (funnelSub) funnelSub.innerHTML = "Outbound attempt &rarr; held call &rarr; won, this window, all reps" + suffix;
+  if (routingSub) routingSub.innerHTML = "Approved tiers: &lt;$10k &rarr; Jen &middot; $10k&ndash;19,999 &rarr; 50/50 &middot; $20k+ &rarr; Jercori" + suffix;
+}
+
+function wireControls(getData) {
+  const pills = document.querySelectorAll(".pill-group .pill");
+  pills.forEach((pill) => {
+    pill.addEventListener("click", () => {
+      pills.forEach((p) => p.setAttribute("aria-pressed", String(p === pill)));
+      const filterKey = pill.textContent.trim() === "All" ? "all" : pill.textContent.trim() === "Setters" ? "setters" : pill.textContent.trim();
+      const d = getData();
+      if (d) renderKpiBand(d, filterKey);
+      dimRepRows(filterKey);
+      updateScopeNotes(filterKey);
+    });
+  });
+
+  const rangeBtn = document.getElementById("rangeChipBtn");
+  const rangeNote = document.getElementById("rangeNote");
+  rangeBtn?.addEventListener("click", (e) => {
+    e.stopPropagation();
+    rangeNote.hidden = !rangeNote.hidden;
+  });
+  document.addEventListener("click", (e) => {
+    if (!rangeNote || rangeNote.hidden) return;
+    if (!rangeNote.contains(e.target) && e.target !== rangeBtn && !rangeBtn.contains(e.target)) rangeNote.hidden = true;
+  });
+}
+
 async function main() {
   let payload;
   try {
     const res = await fetch("./data.json", { cache: "no-store" });
     payload = await res.json();
   } catch {
+    wireControls(() => null);
     return; // network hiccup -- leave the static sample markup in place
   }
 
@@ -275,6 +399,7 @@ async function main() {
       ? `Last sync attempt failed at ${new Date(payload.generatedAt).toLocaleString("en-US")} — see sync notes above.`
       : "No sync has run yet — showing sample data below.";
     renderWarnings(payload.warnings);
+    wireControls(() => null); // rows can still be dimmed by name on the sample table
     return;
   }
 
@@ -285,22 +410,11 @@ async function main() {
   const d = payload.data;
   renderFunnel(d.funnel);
   renderRouting(d.routingMix, d.highTicketFlagged);
-  const { totalsForKpi } = renderTables(d.reps, d.closerNames ?? []);
+  renderTables(d.reps, d.closerNames ?? []);
   renderChains(d.attributionChains);
   renderTrend(payload.history);
-
-  setKpi("kpi-outboundAttempts", fmtInt(d.funnel.outboundAttempts), "this window");
-  setKpi("kpi-qualified", fmtInt(d.funnel.qualified), "this window");
-  setKpi("kpi-liveTransferAttempted", fmtInt(totalsForKpi.liveTransferAttempted), "this window");
-  setKpi("kpi-liveTransferAccepted", fmtInt(totalsForKpi.liveTransferAccepted),
-    totalsForKpi.liveTransferAttempted > 0 ? `${((totalsForKpi.liveTransferAccepted / totalsForKpi.liveTransferAttempted) * 100).toFixed(1)}% accept rate` : "this window");
-  setKpi("kpi-appointmentsBooked", fmtInt(totalsForKpi.appointmentsBooked), "this window");
-  setKpi("kpi-heldCall", fmtInt(d.funnel.heldCall), "this window");
-  setKpi("kpi-noShows", fmtInt(totalsForKpi.noShows), "this window");
-  setKpi("kpi-won", fmtInt(d.funnel.won), "this window");
-  setKpi("kpi-closeRate", `${d.totals.closeRate}%`, "this window");
-  setKpi("kpi-contractValue", fmtMoney(d.totals.contractValue), "this window");
-  setKpi("kpi-cashCollected", fmtMoney(d.totals.cashCollected), "this window");
+  renderKpiBand(d, "all");
+  wireControls(() => d);
 }
 
 main();
