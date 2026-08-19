@@ -1,0 +1,8 @@
+{
+  "generatedAt": null,
+  "windowDays": 7,
+  "ok": false,
+  "warnings": ["Never synced -- run the Refresh Sales Data workflow, or wait for its schedule."],
+  "data": null,
+  "history": []
+}

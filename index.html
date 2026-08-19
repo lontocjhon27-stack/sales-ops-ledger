@@ -572,13 +572,13 @@
       </div>
     </div>
     <div class="cmdbar-right">
-      <div class="sample-badge" title="Static preview built with representative sample data">
+      <div class="sample-badge" id="statusBadge" title="Static preview built with representative sample data">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M12 9v4M12 16.5h.01M10.3 3.9 1.8 18.5a1.8 1.8 0 0 0 1.55 2.7h17.3a1.8 1.8 0 0 0 1.55-2.7L13.7 3.9a1.8 1.8 0 0 0-3.4 0Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         SAMPLE DATA &middot; NOT YET LIVE
       </div>
       <button class="range-chip" type="button">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 9.5h18M8 3v3M16 3v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-        This Week &middot; Aug 11&ndash;17
+        <span id="rangeLabel">This Week &middot; Aug 11&ndash;17</span>
       </button>
       <div class="pill-group" role="group" aria-label="Filter by rep">
         <button class="pill" aria-pressed="true" type="button">All</button>
@@ -597,7 +597,7 @@
       </div>
       <div class="kpi-band">
 
-        <div class="kpi-tile">
+        <div class="kpi-tile" id="kpi-outboundAttempts">
           <span class="kpi-label">Outbound Attempts</span>
           <div class="kpi-value-row">
             <span class="kpi-value mono">1,842</span>
@@ -606,7 +606,7 @@
           <span class="kpi-delta up">&#9650; 6.2% vs last wk</span>
         </div>
 
-        <div class="kpi-tile">
+        <div class="kpi-tile" id="kpi-qualified">
           <span class="kpi-label">Qualified Prospects</span>
           <div class="kpi-value-row">
             <span class="kpi-value mono">248</span>
@@ -615,7 +615,7 @@
           <span class="kpi-delta up">&#9650; 11.4% vs last wk</span>
         </div>
 
-        <div class="kpi-tile">
+        <div class="kpi-tile" id="kpi-liveTransferAttempted">
           <span class="kpi-label">Live Transfers Attempted</span>
           <div class="kpi-value-row">
             <span class="kpi-value mono">61</span>
@@ -624,7 +624,7 @@
           <span class="kpi-delta down">&#9660; 3.1% vs last wk</span>
         </div>
 
-        <div class="kpi-tile">
+        <div class="kpi-tile" id="kpi-liveTransferAccepted">
           <span class="kpi-label">Live Transfers Accepted</span>
           <div class="kpi-value-row">
             <span class="kpi-value mono">48</span>
@@ -633,7 +633,7 @@
           <span class="kpi-delta up">&#9650; 78.7% accept rate</span>
         </div>
 
-        <div class="kpi-tile">
+        <div class="kpi-tile" id="kpi-appointmentsBooked">
           <span class="kpi-label">Appointments Booked</span>
           <div class="kpi-value-row">
             <span class="kpi-value mono">145</span>
@@ -642,7 +642,7 @@
           <span class="kpi-delta up">&#9650; 9 vs last wk</span>
         </div>
 
-        <div class="kpi-tile">
+        <div class="kpi-tile" id="kpi-heldCall">
           <span class="kpi-label">Qualified Held Calls</span>
           <div class="kpi-value-row">
             <span class="kpi-value mono">137</span>
@@ -651,7 +651,7 @@
           <span class="kpi-delta up">&#9650; 14 vs last wk</span>
         </div>
 
-        <div class="kpi-tile">
+        <div class="kpi-tile" id="kpi-noShows">
           <span class="kpi-label">No-Shows</span>
           <div class="kpi-value-row">
             <span class="kpi-value mono">19</span>
@@ -660,7 +660,7 @@
           <span class="kpi-delta down is-good">&#9660; 4 vs last wk</span>
         </div>
 
-        <div class="kpi-tile">
+        <div class="kpi-tile" id="kpi-won">
           <span class="kpi-label">Sales &mdash; Won</span>
           <div class="kpi-value-row">
             <span class="kpi-value mono">36</span>
@@ -669,7 +669,7 @@
           <span class="kpi-delta up">&#9650; 5 vs last wk</span>
         </div>
 
-        <div class="kpi-tile">
+        <div class="kpi-tile" id="kpi-closeRate">
           <span class="kpi-label">Close Rate</span>
           <div class="kpi-value-row">
             <span class="kpi-value mono">26.3%</span>
@@ -678,7 +678,7 @@
           <span class="kpi-delta up">&#9650; 1.8 pts vs last wk</span>
         </div>
 
-        <div class="kpi-tile">
+        <div class="kpi-tile" id="kpi-contractValue">
           <span class="kpi-label">Contract Value</span>
           <div class="kpi-value-row">
             <span class="kpi-value mono">$584.6k</span>
@@ -687,7 +687,7 @@
           <span class="kpi-delta up">&#9650; $71.2k vs last wk</span>
         </div>
 
-        <div class="kpi-tile">
+        <div class="kpi-tile" id="kpi-cashCollected">
           <span class="kpi-label">Cash Collected</span>
           <div class="kpi-value-row">
             <span class="kpi-value mono">$444.1k</span>
@@ -707,7 +707,7 @@
         <div class="panel">
           <h3>Conversion funnel</h3>
           <p class="sub">Outbound attempt &rarr; held call &rarr; won, this week, all reps</p>
-          <div class="funnel-rows">
+          <div class="funnel-rows" id="funnelRows">
             <div class="funnel-row">
               <span class="funnel-name">Outbound Attempts</span>
               <div class="funnel-track"><div class="funnel-fill" style="width:100%"><span>1,842</span></div></div>
@@ -736,26 +736,26 @@
           </div>
           <div class="funnel-note">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 9v4M12 16.5h.01M10.3 3.9 1.8 18.5a1.8 1.8 0 0 0 1.55 2.7h17.3a1.8 1.8 0 0 0 1.55-2.7L13.7 3.9a1.8 1.8 0 0 0-3.4 0Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span>Biggest drop is Attempt &rarr; Connected (66.8% lost). Fresh-lead queue priority (Setter Work Queues, item 11) targets this stage directly.</span>
+            <span id="funnelNote">Biggest drop is Attempt &rarr; Connected (66.8% lost). Fresh-lead queue priority (Setter Work Queues, item 11) targets this stage directly.</span>
           </div>
         </div>
 
         <div class="panel">
           <h3>Routing mix &mdash; by Total Accessible Capital</h3>
           <p class="sub">Approved tiers: &lt;$10k &rarr; Jen &middot; $10k&ndash;19,999 &rarr; 50/50 &middot; $20k+ &rarr; Jercori</p>
-          <div class="routing-bar">
+          <div class="routing-bar" id="routingBar">
             <div class="routing-seg" style="width:35%; background:var(--primary);">Jen &middot; 54</div>
             <div class="routing-seg" style="width:25%; background:linear-gradient(90deg, var(--primary), var(--accent));">50/50 &middot; 38</div>
             <div class="routing-seg" style="width:40%; background:var(--accent);">Jercori &middot; 61</div>
           </div>
-          <div class="routing-legend">
+          <div class="routing-legend" id="routingLegend">
             <div class="routing-item"><span class="routing-swatch" style="background:var(--primary)"></span><span class="who">Under $10k TAC</span><span class="count mono">54 leads</span></div>
             <div class="routing-item"><span class="routing-swatch" style="background:linear-gradient(135deg, var(--primary), var(--accent))"></span><span class="who">$10k&ndash;$19,999 TAC (alternating)</span><span class="count mono">38 leads</span></div>
             <div class="routing-item"><span class="routing-swatch" style="background:var(--accent)"></span><span class="who">$20k+ TAC</span><span class="count mono">61 leads</span></div>
           </div>
           <div class="routing-footnote">
             <span class="tag">FLAGGED, NOT ROUTED</span>
-            <span>9 leads marked High-Ticket Fit this week &mdash; held for review, routing unchanged per policy.</span>
+            <span id="highTicketNote">9 leads marked High-Ticket Fit this week &mdash; held for review, routing unchanged per policy.</span>
           </div>
         </div>
       </div>
@@ -782,7 +782,7 @@
                   <th>Handed Off</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody id="settersBody">
                 <tr>
                   <td><span class="rep-name"><span class="rep-dot" style="background:var(--primary)"></span>Priya R.</span></td>
                   <td>968</td>
@@ -828,7 +828,7 @@
                   <th>Cash Collected</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody id="closersBody">
                 <tr>
                   <td><span class="rep-name"><span class="rep-dot" style="background:var(--primary)"></span>Jen</span></td>
                   <td>58</td>
@@ -871,7 +871,7 @@
         <div class="panel">
           <h3>Setter credit survives reassignment</h3>
           <p class="sub">Sample chains &mdash; original setter stays attached after hand-off to closer</p>
-          <div class="chain-list">
+          <div class="chain-list" id="chainList">
             <div class="chain-row">
               <span class="chain-chip"><span class="avatar" style="background:var(--primary)">PR</span>Priya R.</span>
               <svg class="chain-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -898,17 +898,17 @@
           <p class="sub">Last 8 weeks, team-wide</p>
           <div class="trend-wrap">
             <div class="trend-figures">
-              <span class="trend-current">26.3%</span>
-              <span class="trend-caption">current week &middot; up from 18.9% eight weeks ago</span>
+              <span class="trend-current" id="trendCurrent">26.3%</span>
+              <span class="trend-caption" id="trendCaption">current week &middot; up from 18.9% eight weeks ago</span>
             </div>
-            <svg width="100%" height="120" viewBox="0 0 400 120" preserveAspectRatio="none" style="overflow:visible">
+            <svg width="100%" height="120" viewBox="0 0 400 120" preserveAspectRatio="none" style="overflow:visible" id="trendSvg">
               <line x1="0" y1="20" x2="400" y2="20" stroke="var(--line)" stroke-width="1"/>
               <line x1="0" y1="60" x2="400" y2="60" stroke="var(--line)" stroke-width="1"/>
               <line x1="0" y1="100" x2="400" y2="100" stroke="var(--line)" stroke-width="1"/>
-              <polygon points="0,84 57,80 114,74 171,70 228,60 285,54 342,44 400,38 400,120 0,120" fill="var(--primary)" opacity="0.12"/>
-              <polyline points="0,84 57,80 114,74 171,70 228,60 285,54 342,44 400,38" fill="none" stroke="var(--primary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="400" cy="38" r="4.5" fill="var(--primary)"/>
-              <circle cx="400" cy="38" r="8" fill="var(--primary)" opacity="0.18"/>
+              <polygon id="trendArea" points="0,84 57,80 114,74 171,70 228,60 285,54 342,44 400,38 400,120 0,120" fill="var(--primary)" opacity="0.12"/>
+              <polyline id="trendLine" points="0,84 57,80 114,74 171,70 228,60 285,54 342,44 400,38" fill="none" stroke="var(--primary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle id="trendDotCore" cx="400" cy="38" r="4.5" fill="var(--primary)"/>
+              <circle id="trendDotHalo" cx="400" cy="38" r="8" fill="var(--primary)" opacity="0.18"/>
             </svg>
           </div>
         </div>
@@ -918,6 +918,8 @@
 
   <footer>
     <span>Source: GoHighLevel Private Integration (read-only) &middot; contacts, opportunities, calendars, conversations</span>
-    <span>Preview built Aug 18, 2026 &middot; wire-up pending</span>
+    <span id="syncStatus">Preview built Aug 18, 2026 &middot; wire-up pending</span>
   </footer>
 </div>
+
+<script type="module" src="./render.js"></script>
