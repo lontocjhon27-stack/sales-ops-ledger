@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T21:29:12.010Z",
+  "generatedAt": "2026-08-19T21:44:43.322Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [],
@@ -42,7 +42,13 @@
     "closerNames": [
       "Jen",
       "Jercori"
-    ]
+    ],
+    "setterNames": [
+      "Marshell",
+      "Rianna",
+      "Jen"
+    ],
+    "callLog": []
   },
   "history": [
     {
@@ -67,6 +73,10 @@
     },
     {
       "t": "2026-08-19T21:29:12.010Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-08-19T21:44:43.322Z",
       "closeRate": 0
     }
   ]
