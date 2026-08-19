@@ -1,11 +1,8 @@
 {
-  "generatedAt": "2026-08-19T20:33:25.930Z",
+  "generatedAt": "2026-08-19T20:36:53.508Z",
   "windowDays": 7,
   "ok": true,
-  "warnings": [
-    "Custom field \"Cash Collected\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
-    "Calendar \"Jercori / High-Ticket Calendar\" not found -- appointment/no-show metrics for it will be empty."
-  ],
+  "warnings": [],
   "data": {
     "funnel": {
       "outboundAttempts": 7,
@@ -38,7 +35,7 @@
     "reps": {},
     "totals": {
       "contractValue": 0,
-      "cashCollected": 0,
+      "cashCollected": 18441,
       "closeRate": 0
     },
     "attributionChains": [],
@@ -62,6 +59,10 @@
     },
     {
       "t": "2026-08-19T20:33:25.930Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-08-19T20:36:53.508Z",
       "closeRate": 0
     }
   ]
