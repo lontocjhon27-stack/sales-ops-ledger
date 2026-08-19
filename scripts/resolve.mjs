@@ -4,12 +4,22 @@
 
 const norm = (s) => (s ?? "").toString().trim().toLowerCase();
 
+async function safe(label, promise, warnings, fallback = []) {
+  const result = await Promise.allSettled([promise]);
+  const [outcome] = result;
+  if (outcome.status === "fulfilled") return outcome.value;
+  warnings.push(`Failed to fetch ${label}: ${outcome.reason?.message ?? outcome.reason}`);
+  return fallback;
+}
+
 export async function resolveAccountShape(client, config, warnings) {
+  // Each call fails independently so one wrong endpoint doesn't hide
+  // whether the other three actually worked.
   const [users, customFields, pipelines, calendars] = await Promise.all([
-    client.listUsers(),
-    client.listCustomFields(),
-    client.listPipelines(),
-    client.listCalendars(),
+    safe("users", client.listUsers(), warnings),
+    safe("custom fields", client.listCustomFields(), warnings),
+    safe("pipelines", client.listPipelines(), warnings),
+    safe("calendars", client.listCalendars(), warnings),
   ]);
 
   // --- users: map id -> display name, and find Jen / Jercori by name ---

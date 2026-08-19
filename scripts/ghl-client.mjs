@@ -86,7 +86,7 @@ export function createClient({ token, locationId }) {
     listCustomFields: () =>
       request(`/locations/${locationId}/customFields`).then((b) => b.customFields ?? []),
 
-    listPipelines: () => request("/pipelines/", { query: { locationId } }).then((b) => b.pipelines ?? []),
+    listPipelines: () => request("/opportunities/pipelines", { query: { locationId } }).then((b) => b.pipelines ?? []),
 
     listCalendars: () => request("/calendars/", { query: { locationId } }).then((b) => b.calendars ?? []),
 
