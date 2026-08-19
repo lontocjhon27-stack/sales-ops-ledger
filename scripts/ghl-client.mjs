@@ -114,5 +114,28 @@ export function createClient({ token, locationId }) {
     // each opportunity's contactId.
     getContact: (contactId) =>
       request(`/contacts/${contactId}`).then((b) => b.contact ?? null),
+
+    // Cash Collected comes from actual GHL Payments transactions, not a
+    // custom field. NOTE: GHL's Payments API is documented (elsewhere) to
+    // use altId/altType instead of locationId on some endpoints -- that
+    // convention is applied here on best knowledge, not confirmed against
+    // a live response yet. If this 400s, the fix is almost certainly the
+    // query param names below, not the overall approach.
+    listTransactions: async ({ startAt, endAt }) => {
+      const items = [];
+      let offset = 0;
+      const limit = 100;
+      for (;;) {
+        const body = await request("/payments/transactions", {
+          query: { altId: locationId, altType: "location", startAt, endAt, limit, offset },
+        });
+        const batch = body.data ?? body.transactions ?? [];
+        items.push(...batch);
+        if (batch.length < limit) break;
+        offset += limit;
+        if (offset > 5000) break; // safety backstop
+      }
+      return items;
+    },
   };
 }

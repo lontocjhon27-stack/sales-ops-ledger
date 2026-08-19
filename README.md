@@ -31,8 +31,9 @@ The code only calls these endpoints — grant exactly these, nothing else:
 - View Calendar Events — `calendars/events.readonly`
 - View Conversations — `conversations.readonly`
 - View Users — `users.readonly`
+- View Payment Transactions — `payments/transactions.readonly` (Cash Collected is read from real GHL Payments transactions, not a custom field)
 
-No `.write` scopes anywhere — this integration only ever reads. Add `invoices.readonly` and/or `payments/transactions.readonly` only if "Cash Collected" ends up tracked via GHL's native invoicing/payments instead of a custom field.
+No `.write` scopes anywhere — this integration only ever reads.
 
 ## What's genuinely uncertain
 
@@ -43,6 +44,14 @@ is also known to mix camelCase and snake_case across a few endpoints. If a
 call 400s, the Action log includes GHL's own error message; that's almost
 always a one-line fix in `ghl-client.mjs`. Paste the log output back to me
 and I'll fix it directly.
+
+**Payments/transactions is the newest, least-verified piece.** It assumes
+GHL's Payments API takes `altId`/`altType=location` instead of `locationId`
+(a real quirk on some GHL Payments endpoints, per general knowledge, not
+confirmed against a live response), and that transaction amounts are plain
+decimal dollars, not cents. If the Action log shows a 400 here, or "Cash
+Collected" comes back 100x too big/small, that's the first thing to check
+in `ghl-client.mjs`'s `listTransactions`.
 
 **"Outbound Attempts" is the shakiest metric.** It's read from GHL's native
 Conversations API filtered to outbound calls. If your setters dial through

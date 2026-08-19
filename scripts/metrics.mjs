@@ -89,6 +89,10 @@ export async function computeMetrics({ client, shape, config, warnings, since })
       }
     });
 
+    // contactId -> closer name, so payment transactions (keyed by contact,
+    // not opportunity) can be attributed to the right closer afterward.
+    const contactToCloser = new Map();
+
     for (const opp of opportunities) {
       const bucket = stageBucketById.get(opp.pipelineStageId);
       const cf = [...(contactFieldsById.get(opp.contactId) ?? []), ...(opp.customFields ?? [])];
@@ -100,7 +104,6 @@ export async function computeMetrics({ client, shape, config, warnings, since })
       const liveTransferAttempted = String(fieldValue(cf, fieldId.liveTransferAttempted) ?? "").toLowerCase() === "true";
       const liveTransferAcceptedBy = fieldValue(cf, fieldId.liveTransferAcceptedBy);
       const qualifiedHeldCall = String(fieldValue(cf, fieldId.qualifiedHeldCall) ?? "").toLowerCase() === "true";
-      const cashCollected = toNumber(fieldValue(cf, fieldId.cashCollected));
       const contractValue = toNumber(opp.monetaryValue);
 
       if (bucket === "connected_attempted") funnel.outbound += 1;
@@ -124,13 +127,16 @@ export async function computeMetrics({ client, shape, config, warnings, since })
         if (opp.status === "won") {
           row.won += 1;
           row.contractValue += contractValue;
-          row.cashCollected += cashCollected;
+        }
+        // Prefer the won opportunity if a contact has more than one, so a
+        // stale/abandoned opportunity doesn't steal the payment credit.
+        if (opp.contactId && (opp.status === "won" || !contactToCloser.has(opp.contactId))) {
+          contactToCloser.set(opp.contactId, closer);
         }
       }
 
       if (opp.status === "won") {
         contractValueTotal += contractValue;
-        cashCollectedTotal += cashCollected;
       }
 
       if (tac > 0) {
@@ -150,6 +156,32 @@ export async function computeMetrics({ client, shape, config, warnings, since })
           value: opp.status === "won" ? contractValue : null,
         });
       }
+    }
+
+    // ---------------- Payments: real cash collected, by contact ----------------
+    try {
+      const transactions = await client.listTransactions({
+        startAt: since.toISOString(),
+        endAt: new Date().toISOString(),
+      });
+      const successful = transactions.filter((t) =>
+        ["succeeded", "success", "paid", "completed"].includes(String(t.status ?? "").toLowerCase())
+      );
+      if (successful.length === 0 && transactions.length > 0) {
+        warnings.push(`Found ${transactions.length} payment transaction(s) this window but none matched a known "successful" status -- check the actual status value and adjust ghl-client.mjs/metrics.mjs.`);
+      }
+      const cashByContact = new Map();
+      for (const txn of successful) {
+        const amount = toNumber(txn.amount);
+        cashByContact.set(txn.contactId, (cashByContact.get(txn.contactId) ?? 0) + amount);
+        cashCollectedTotal += amount;
+      }
+      for (const [contactId, amount] of cashByContact) {
+        const closer = contactToCloser.get(contactId);
+        if (closer) getRow(closer).cashCollected += amount;
+      }
+    } catch (err) {
+      warnings.push(`Failed to fetch payment transactions: ${err.message}`);
     }
   }
 

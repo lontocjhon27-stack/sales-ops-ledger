@@ -49,7 +49,7 @@ export const CONFIG = {
   calendars: {
     setterQualification: env("GHL_CAL_SETTER", "Setter Qualification Calendar"),
     jenSales: env("GHL_CAL_JEN", "Jen Sales Calendar"),
-    jercoriHighTicket: env("GHL_CAL_JERCORI", "Jercori / High-Ticket Calendar"),
+    jercoriHighTicket: env("GHL_CAL_JERCORI", "Jercori Sales Calendar"),
   },
 
   // Custom field labels exactly as specified for SALES | QUALIFICATION and
@@ -80,11 +80,13 @@ export const CONFIG = {
     liveTransferAttempted: env("GHL_FIELD_LT_ATTEMPTED", "Live Transfer Attempted?"),
     liveTransferAcceptedBy: env("GHL_FIELD_LT_ACCEPTED_BY", "Live Transfer Accepted By"),
     qualifiedHeldCall: env("GHL_FIELD_QUALIFIED_HELD", "Qualified Held Call"),
-    cashCollected: env("GHL_FIELD_CASH_COLLECTED", "Cash Collected"),
     // "Lost Reason" is intentionally not here: it's a native opportunity
     // field ({{opportunity.lost_reason}}), not a custom field, so it isn't
     // resolved through the customFields lookup at all. Read it directly
     // off the opportunity as opp.lostReason if it's ever needed here.
+    // "Cash Collected" is intentionally not here either -- it comes from
+    // real GHL Payments transactions (client.listTransactions), not a
+    // custom field. See metrics.mjs.
   },
 
   routingTiers: [
