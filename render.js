@@ -216,6 +216,56 @@ function renderChains(chains) {
     .join("");
 }
 
+const STATUS_TONE = {
+  completed: ["Connected", "good"],
+  connected: ["Connected", "good"],
+  "no-answer": ["No Answer", "warn"],
+  noanswer: ["No Answer", "warn"],
+  busy: ["Busy", "warn"],
+  voicemail: ["Voicemail", "muted"],
+  failed: ["Failed", "critical"],
+  canceled: ["Canceled", "muted"],
+  cancelled: ["Canceled", "muted"],
+  logged: ["Logged", "muted"],
+};
+
+function fmtDuration(sec) {
+  if (sec === null || sec === undefined || Number.isNaN(sec)) return "—";
+  const n = Number(sec);
+  if (n <= 0) return "—";
+  const m = Math.floor(n / 60);
+  const s = Math.round(n % 60);
+  return m > 0 ? `${m}m ${String(s).padStart(2, "0")}s` : `${s}s`;
+}
+
+function renderCallLog(callLog) {
+  const body = document.getElementById("callLogBody");
+  const sub = document.getElementById("callLogSub");
+  if (!callLog?.length) {
+    body.innerHTML = `<tr><td colspan="5" style="text-align:center; color:var(--ink-faint); font-family:'Archivo',sans-serif;">No outbound calls logged this window</td></tr>`;
+    if (sub) sub.textContent = "No outbound calls logged this window";
+    return;
+  }
+  if (sub) sub.textContent = "Every logged outbound call this window, newest first";
+
+  body.innerHTML = callLog
+    .map((c, i) => {
+      const key = String(c.status ?? "logged").toLowerCase().replace(/\s+/g, "-");
+      const [label, tone] = STATUS_TONE[key] ?? [esc(c.status ?? "Logged"), "muted"];
+      const time = c.time
+        ? new Date(c.time).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" })
+        : "—";
+      return `<tr>
+        <td>${time}</td>
+        <td><span class="rep-name"><span class="rep-dot" style="background:${colorFor(i)}"></span>${esc(c.setter)}</span></td>
+        <td>${esc(c.contact)}</td>
+        <td><span class="status-chip tone-${tone}">${label}</span></td>
+        <td class="num mono">${fmtDuration(c.durationSec)}</td>
+      </tr>`;
+    })
+    .join("");
+}
+
 function renderTrend(history) {
   const points = (history ?? []).filter((h) => Number.isFinite(h.closeRate));
   const current = points.at(-1);
@@ -412,6 +462,7 @@ async function main() {
   renderRouting(d.routingMix, d.highTicketFlagged);
   renderTables(d.reps, d.closerNames ?? []);
   renderChains(d.attributionChains);
+  renderCallLog(d.callLog);
   renderTrend(payload.history);
   renderKpiBand(d, "all");
   wireControls(() => d);

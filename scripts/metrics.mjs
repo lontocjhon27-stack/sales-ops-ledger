@@ -210,22 +210,63 @@ export async function computeMetrics({ client, shape, config, warnings, since })
     }
   }
 
-  // ---------------- Conversations: raw outbound call attempts ----------------
+  // ---------------- Conversations: raw outbound call attempts + call log ----------------
   let rawOutboundCalls = 0;
+  const callLog = [];
   try {
     const conversations = await client.searchConversations({
       startAfterDate: since.getTime(),
     });
-    rawOutboundCalls = conversations.filter(
+    const callConversations = conversations.filter(
       (c) => c.lastMessageType === "TYPE_CALL" && c.lastMessageDirection === "outbound"
-    ).length;
+    );
+    rawOutboundCalls = callConversations.length;
     if (rawOutboundCalls === 0 && conversations.length > 0) {
       warnings.push(
         "No outbound calls found in conversations for this window -- if dialing happens outside GHL's native phone system, raw attempt counts won't appear here."
       );
     }
+
+    // Per-call detail: who called, when, what happened. Bounded concurrency
+    // since this is one extra request per conversation with an outbound call.
+    let missingFieldsSeen = false;
+    await mapWithConcurrency(callConversations, 5, async (conv) => {
+      try {
+        const messages = await client.getConversationMessages(conv.id);
+        const callMsgs = messages.filter((m) => (m.type ?? m.messageType) === "TYPE_CALL" && m.direction === "outbound");
+        for (const m of callMsgs) {
+          const userId = m.userId ?? m.addedBy ?? null;
+          const setterName = userId
+            ? (shape.usersById.get(userId)?.name ?? `${shape.usersById.get(userId)?.firstName ?? ""}`.trim())
+            : null;
+          const status = m.status ?? m.callStatus ?? null;
+          const durationSec = m.callDuration ?? m.duration ?? null;
+          if (!setterName && !status && durationSec == null) missingFieldsSeen = true;
+          callLog.push({
+            time: m.dateAdded ?? m.timestamp ?? m.createdAt ?? conv.dateUpdated ?? null,
+            setter: setterName ?? "Unknown",
+            contact: conv.contactName ?? conv.fullName ?? conv.contactId ?? "Unknown contact",
+            status: status ?? "logged",
+            durationSec,
+          });
+        }
+      } catch (err) {
+        warnings.push(`Failed to fetch messages for conversation ${conv.id}: ${err.message}`);
+      }
+    });
+    if (missingFieldsSeen) {
+      warnings.push(
+        "Call log entries are missing setter/status/duration fields -- the message object's field names for these may differ from what's assumed in metrics.mjs. Check one real message payload and adjust."
+      );
+    }
+    callLog.sort((a, b) => new Date(b.time ?? 0) - new Date(a.time ?? 0));
   } catch (err) {
     warnings.push(`Failed to fetch conversations: ${err.message}`);
+  }
+
+  const CALL_LOG_LIMIT = 150;
+  if (callLog.length > CALL_LOG_LIMIT) {
+    warnings.push(`Call log has ${callLog.length} entries this window -- showing the most recent ${CALL_LOG_LIMIT} only.`);
   }
 
   return {
@@ -251,5 +292,6 @@ export async function computeMetrics({ client, shape, config, warnings, since })
     },
     attributionChains: attributionChains.slice(0, 10),
     closerNames: config.reps.closers,
+    callLog: callLog.slice(0, CALL_LOG_LIMIT),
   };
 }

@@ -30,6 +30,7 @@ The code only calls these endpoints — grant exactly these, nothing else:
 - View Calendars — `calendars.readonly`
 - View Calendar Events — `calendars/events.readonly`
 - View Conversations — `conversations.readonly`
+- View Conversation Messages — `conversations/message.readonly` (needed for the per-call log — who called, when, outcome, duration)
 - View Users — `users.readonly`
 - View Payment Transactions — `payments/transactions.readonly` (Cash Collected is read from real GHL Payments transactions, not a custom field)
 
@@ -52,6 +53,13 @@ confirmed against a live response), and that transaction amounts are plain
 decimal dollars, not cents. If the Action log shows a 400 here, or "Cash
 Collected" comes back 100x too big/small, that's the first thing to check
 in `ghl-client.mjs`'s `listTransactions`.
+
+**The call log (`data.callLog`) is the newest and least-verified piece.**
+It reads `userId`/`status`/`callDuration` off each call message and assumes
+those exact field names — I couldn't confirm them against a live response.
+If entries show "Unknown" setters or every duration comes back "—", that's
+the signal to open one real message payload (log it in `fetch-data.mjs`
+temporarily) and fix the field names in `metrics.mjs`'s call-log block.
 
 **"Outbound Attempts" is the shakiest metric.** It's read from GHL's native
 Conversations API filtered to outbound calls. If your setters dial through

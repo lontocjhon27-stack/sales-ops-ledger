@@ -115,6 +115,12 @@ export function createClient({ token, locationId }) {
     getContact: (contactId) =>
       request(`/contacts/${contactId}`).then((b) => b.contact ?? null),
 
+    // Per-call detail (who called, when, what happened) for the setter
+    // call log. Requires the conversations/message.readonly scope, which
+    // isn't in the original minimal scope list -- add it if this 400s.
+    getConversationMessages: (conversationId) =>
+      request(`/conversations/${conversationId}/messages`).then((b) => b.messages?.messages ?? b.messages ?? []),
+
     // Cash Collected comes from actual GHL Payments transactions, not a
     // custom field. NOTE: GHL's Payments API is documented (elsewhere) to
     // use altId/altType instead of locationId on some endpoints -- that

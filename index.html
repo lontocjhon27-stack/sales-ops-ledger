@@ -634,6 +634,33 @@
   .cell-good { color: var(--good); font-weight: 600; }
   .cell-warn { color: var(--warn); font-weight: 600; }
 
+  /* ---------- Call log ---------- */
+  .log-scroll { max-height: 360px; overflow-y: auto; }
+  .log-scroll table thead { position: sticky; top: 0; background: var(--surface); z-index: 1; }
+  .log-scroll th, .log-scroll td { text-align: left; }
+  .log-scroll td.num, .log-scroll th.num { text-align: right; }
+  .log-scroll td:first-child, .log-scroll th:first-child { font-weight: inherit; color: inherit; font-family: 'IBM Plex Mono', monospace; }
+  .status-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 9px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    font-family: 'Archivo', sans-serif;
+    white-space: nowrap;
+  }
+  .status-chip::before { content: ""; width: 6px; height: 6px; border-radius: 50%; flex: none; }
+  .status-chip.tone-good { background: var(--good-soft); color: var(--good); }
+  .status-chip.tone-good::before { background: var(--good); }
+  .status-chip.tone-warn { background: var(--warn-soft); color: var(--warn); }
+  .status-chip.tone-warn::before { background: var(--warn); }
+  .status-chip.tone-critical { background: var(--critical-soft); color: var(--critical); }
+  .status-chip.tone-critical::before { background: var(--critical); }
+  .status-chip.tone-muted { background: var(--surface-sunken); color: var(--ink-muted); }
+  .status-chip.tone-muted::before { background: var(--ink-faint); }
+
   /* ---------- Attribution chain ---------- */
   .chain-list { display: flex; flex-direction: column; gap: 10px; }
   .chain-row {
@@ -1049,6 +1076,63 @@
               </tbody>
             </table>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="calllog-head">
+      <div class="section-head">
+        <h2 id="calllog-head">Call log by setter</h2>
+        <span class="hint">most recent outbound calls this window</span>
+      </div>
+      <div class="panel">
+        <div class="panel-title-row">
+          <span class="panel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span>
+          <h3>Outbound call activity</h3>
+        </div>
+        <p class="sub" id="callLogSub">Sample entries &mdash; every logged outbound call this window, newest first</p>
+        <div class="log-scroll table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Setter</th>
+                <th>Contact</th>
+                <th>Outcome</th>
+                <th class="num">Duration</th>
+              </tr>
+            </thead>
+            <tbody id="callLogBody">
+              <tr>
+                <td>2:14 PM</td>
+                <td><span class="rep-name"><span class="rep-dot" style="background:var(--primary)"></span>Marshell</span></td>
+                <td>Dana Whitfield</td>
+                <td><span class="status-chip tone-good">Connected</span></td>
+                <td class="num mono">4m 12s</td>
+              </tr>
+              <tr>
+                <td>1:52 PM</td>
+                <td><span class="rep-name"><span class="rep-dot" style="background:var(--accent)"></span>Rianna</span></td>
+                <td>Marcus Ibe</td>
+                <td><span class="status-chip tone-muted">Voicemail</span></td>
+                <td class="num mono">0m 38s</td>
+              </tr>
+              <tr>
+                <td>1:47 PM</td>
+                <td><span class="rep-name"><span class="rep-dot" style="background:var(--primary)"></span>Marshell</span></td>
+                <td>Priya Sethi</td>
+                <td><span class="status-chip tone-warn">No Answer</span></td>
+                <td class="num mono">&mdash;</td>
+              </tr>
+              <tr>
+                <td>1:30 PM</td>
+                <td><span class="rep-name"><span class="rep-dot" style="background:var(--accent)"></span>Rianna</span></td>
+                <td>Leo Farrow</td>
+                <td><span class="status-chip tone-good">Connected</span></td>
+                <td class="num mono">7m 03s</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
