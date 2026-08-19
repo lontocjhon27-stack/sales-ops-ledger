@@ -19,6 +19,21 @@ client-side. No server, no exposed token.
 
 After that it runs automatically every 30 minutes and commits `data.json` only when something changed.
 
+## Private Integration scopes
+
+The code only calls these endpoints — grant exactly these, nothing else:
+
+- View Contacts — `contacts.readonly`
+- View Custom Fields — `locations/customFields.readonly`
+- View Opportunities — `opportunities.readonly`
+- pipelinesreadonly — `pipelines.readonly`
+- View Calendars — `calendars.readonly`
+- View Calendar Events — `calendars/events.readonly`
+- View Conversations — `conversations.readonly`
+- View Users — `users.readonly`
+
+No `.write` scopes anywhere — this integration only ever reads. Add `invoices.readonly` and/or `payments/transactions.readonly` only if "Cash Collected" ends up tracked via GHL's native invoicing/payments instead of a custom field.
+
 ## What's genuinely uncertain
 
 I built `scripts/ghl-client.mjs` against my best knowledge of GHL's v2 API

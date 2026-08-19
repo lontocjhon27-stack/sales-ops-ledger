@@ -107,5 +107,12 @@ export function createClient({ token, locationId }) {
       request("/conversations/search", {
         query: { locationId, limit, startAfterDate },
       }).then((b) => b.conversations ?? []),
+
+    // SALES | QUALIFICATION and SALES | HANDOFF (checklist items 2-3) are
+    // built as Contact custom fields, not Opportunity custom fields -- so
+    // qualification/handoff data has to be read off the contact, keyed by
+    // each opportunity's contactId.
+    getContact: (contactId) =>
+      request(`/contacts/${contactId}`).then((b) => b.contact ?? null),
   };
 }

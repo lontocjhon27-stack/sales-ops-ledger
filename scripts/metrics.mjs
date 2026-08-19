@@ -7,6 +7,22 @@ const toNumber = (v) => {
 
 const dollars = (n) => Math.round(n);
 
+// Runs `fn` over `items` with at most `limit` in flight at once -- GHL rate
+// limits per-location API calls, and this can mean one contact fetch per
+// opportunity in the window.
+async function mapWithConcurrency(items, limit, fn) {
+  const results = new Array(items.length);
+  let next = 0;
+  async function worker() {
+    while (next < items.length) {
+      const i = next++;
+      results[i] = await fn(items[i], i);
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, worker));
+  return results;
+}
+
 function emptyRepRow() {
   return {
     outbound: 0,
@@ -57,9 +73,25 @@ export async function computeMetrics({ client, shape, config, warnings, since })
 
     opportunities = opportunities.filter((o) => new Date(o.updatedAt ?? o.createdAt ?? 0) >= since);
 
+    // Qualification/handoff fields live on the Contact, not the
+    // Opportunity (see checklist items 2-3) -- fetch each distinct contact
+    // once, bounded, and merge contact fields ahead of opportunity fields
+    // so contact data wins if a field somehow exists in both places.
+    const contactIds = [...new Set(opportunities.map((o) => o.contactId).filter(Boolean))];
+    const contactFieldsById = new Map();
+    await mapWithConcurrency(contactIds, 5, async (contactId) => {
+      try {
+        const contact = await client.getContact(contactId);
+        contactFieldsById.set(contactId, contact?.customFields ?? []);
+      } catch (err) {
+        warnings.push(`Failed to fetch contact ${contactId}: ${err.message}`);
+        contactFieldsById.set(contactId, []);
+      }
+    });
+
     for (const opp of opportunities) {
       const bucket = stageBucketById.get(opp.pipelineStageId);
-      const cf = opp.customFields ?? [];
+      const cf = [...(contactFieldsById.get(opp.contactId) ?? []), ...(opp.customFields ?? [])];
 
       const setter = fieldValue(cf, fieldId.setterAttribution);
       const closer = fieldValue(cf, fieldId.closerAssignment);
