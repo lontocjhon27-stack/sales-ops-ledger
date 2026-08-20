@@ -1,13 +1,20 @@
 {
-  "generatedAt": "2026-08-20T21:01:42.548Z",
+  "generatedAt": "2026-08-20T22:50:39.283Z",
   "windowDays": 7,
   "ok": true,
-  "warnings": [],
+  "warnings": [
+    "Custom field \"Overall Qualification\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Handoff Type\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Prospect Available Now?\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Live Transfer Attempted?\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Live Transfer Accepted By\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Qualified Held Call\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?"
+  ],
   "data": {
     "funnel": {
-      "outboundAttempts": 10,
+      "outboundAttempts": 13,
       "connected": 2,
-      "qualified": 0,
+      "qualified": 1,
       "heldCall": 0,
       "won": 0
     },
@@ -20,7 +27,7 @@
       {
         "label": "$10k-$19,999",
         "closer": "50/50",
-        "count": 0
+        "count": 1
       },
       {
         "label": "$20k+",
@@ -33,6 +40,32 @@
       "routedNormally": 0
     },
     "reps": {
+      "Marshell Williams": {
+        "outbound": 1,
+        "connected": 1,
+        "qualified": 1,
+        "liveTransferAttempted": 0,
+        "liveTransferAccepted": 0,
+        "appointmentsBooked": 0,
+        "heldCalls": 0,
+        "noShows": 0,
+        "won": 0,
+        "contractValue": 0,
+        "cashCollected": 0
+      },
+      "Jennifer Pascual": {
+        "outbound": 0,
+        "connected": 0,
+        "qualified": 0,
+        "liveTransferAttempted": 0,
+        "liveTransferAccepted": 0,
+        "appointmentsBooked": 1,
+        "heldCalls": 0,
+        "noShows": 0,
+        "won": 0,
+        "contractValue": 0,
+        "cashCollected": 0
+      },
       "Rianna Nava": {
         "outbound": 1,
         "connected": 1,
@@ -40,6 +73,19 @@
         "liveTransferAttempted": 0,
         "liveTransferAccepted": 0,
         "appointmentsBooked": 0,
+        "heldCalls": 0,
+        "noShows": 0,
+        "won": 0,
+        "contractValue": 0,
+        "cashCollected": 0
+      },
+      "Jercori Freeman": {
+        "outbound": 0,
+        "connected": 0,
+        "qualified": 0,
+        "liveTransferAttempted": 0,
+        "liveTransferAccepted": 0,
+        "appointmentsBooked": 1,
         "heldCalls": 0,
         "noShows": 0,
         "won": 0,
@@ -170,6 +216,10 @@
     },
     {
       "t": "2026-08-20T21:01:42.548Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-08-20T22:50:39.283Z",
       "closeRate": 0
     }
   ]
