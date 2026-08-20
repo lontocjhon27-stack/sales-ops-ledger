@@ -1,10 +1,8 @@
 {
-  "generatedAt": "2026-08-20T11:58:08.839Z",
+  "generatedAt": "2026-08-20T14:10:08.548Z",
   "windowDays": 7,
   "ok": true,
-  "warnings": [
-    "Failed to fetch messages for conversation n5jfDdxSVpfK7LrKnaZF: GHL API 401 on /conversations/n5jfDdxSVpfK7LrKnaZF/messages: Command timed out"
-  ],
+  "warnings": [],
   "data": {
     "funnel": {
       "outboundAttempts": 7,
@@ -138,6 +136,10 @@
     },
     {
       "t": "2026-08-20T11:58:08.839Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-08-20T14:10:08.548Z",
       "closeRate": 0
     }
   ]
