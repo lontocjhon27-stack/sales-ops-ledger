@@ -1,8 +1,12 @@
 {
-  "generatedAt": "2026-08-20T14:10:08.548Z",
+  "generatedAt": "2026-08-20T16:01:32.696Z",
   "windowDays": 7,
   "ok": true,
-  "warnings": [],
+  "warnings": [
+    "Failed to fetch users: GHL API 401 on /users/: Command timed out",
+    "No GHL user found matching rep name \"Jen\" -- check users are named/invited as expected.",
+    "No GHL user found matching rep name \"Jercori\" -- check users are named/invited as expected."
+  ],
   "data": {
     "funnel": {
       "outboundAttempts": 7,
@@ -140,6 +144,10 @@
     },
     {
       "t": "2026-08-20T14:10:08.548Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-08-20T16:01:32.696Z",
       "closeRate": 0
     }
   ]
