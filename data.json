@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T21:53:03.085Z",
+  "generatedAt": "2026-08-21T22:54:52.861Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -9,6 +9,7 @@
     "Custom field \"Live Transfer Accepted By\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Qualified Held Call\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Failed to fetch contact 3wEwuFmQJOnHO33ykdkz: GHL API 429 on /contacts/3wEwuFmQJOnHO33ykdkz: Too Many Requests",
+    "Failed to fetch contact VZSfjWMrwU2qx5sFpnS2: GHL API 429 on /contacts/VZSfjWMrwU2qx5sFpnS2: Too Many Requests",
     "Failed to fetch payment transactions: GHL API 429 on /payments/transactions: Too Many Requests",
     "Failed to fetch events for calendar \"setterQualification\": GHL API 429 on /calendars/events: Too Many Requests",
     "Failed to fetch events for calendar \"jenSales\": GHL API 429 on /calendars/events: Too Many Requests",
@@ -17,7 +18,7 @@
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 88,
+      "outboundAttempts": 89,
       "connected": 6,
       "qualified": 1,
       "heldCall": 0,
@@ -45,23 +46,10 @@
       "routedNormally": 0
     },
     "reps": {
-      "Marshell Williams": {
+      "Jercori Freeman": {
         "outbound": 1,
         "connected": 1,
         "qualified": 1,
-        "liveTransferAttempted": 0,
-        "liveTransferAccepted": 0,
-        "appointmentsBooked": 0,
-        "heldCalls": 0,
-        "noShows": 0,
-        "won": 0,
-        "contractValue": 0,
-        "cashCollected": 0
-      },
-      "Jercori Freeman": {
-        "outbound": 0,
-        "connected": 0,
-        "qualified": 0,
         "liveTransferAttempted": 0,
         "liveTransferAccepted": 0,
         "appointmentsBooked": 0,
@@ -264,6 +252,10 @@
     },
     {
       "t": "2026-08-21T21:53:03.085Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-08-21T22:54:52.861Z",
       "closeRate": 0
     }
   ]
