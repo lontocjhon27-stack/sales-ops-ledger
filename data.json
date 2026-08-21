@@ -1,16 +1,45 @@
 {
-  "generatedAt": "2026-08-21T19:57:57.695Z",
+  "generatedAt": "2026-08-21T20:54:59.618Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
-    "Failed to fetch users: GHL API 401 on /users/: Command timed out",
-    "No GHL user found matching rep name \"Jen\" -- check users are named/invited as expected.",
-    "No GHL user found matching rep name \"Jercori\" -- check users are named/invited as expected.",
     "Custom field \"Overall Qualification\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Prospect Available Now?\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Live Transfer Attempted?\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Live Transfer Accepted By\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
-    "Custom field \"Qualified Held Call\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?"
+    "Custom field \"Qualified Held Call\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Failed to fetch messages for conversation guS8br2aaShq2cG7jOcW: GHL API 429 on /conversations/guS8br2aaShq2cG7jOcW/messages: Too Many Requests",
+    "Failed to fetch messages for conversation u7hj3nfPBsvHVbWVZuB5: GHL API 429 on /conversations/u7hj3nfPBsvHVbWVZuB5/messages: Too Many Requests",
+    "Failed to fetch messages for conversation vgkGsdUZOQhxpeSeBGcQ: GHL API 429 on /conversations/vgkGsdUZOQhxpeSeBGcQ/messages: Too Many Requests",
+    "Failed to fetch messages for conversation RfKKxJl8EsAGSJm2mNl9: GHL API 429 on /conversations/RfKKxJl8EsAGSJm2mNl9/messages: Too Many Requests",
+    "Failed to fetch messages for conversation a1Y51dRIuCtBVFfb1ApG: GHL API 429 on /conversations/a1Y51dRIuCtBVFfb1ApG/messages: Too Many Requests",
+    "Failed to fetch messages for conversation uNrS9WSePxxzZ2pG0W9W: GHL API 429 on /conversations/uNrS9WSePxxzZ2pG0W9W/messages: Too Many Requests",
+    "Failed to fetch messages for conversation tflIAtGJST6gdv0of2cH: GHL API 429 on /conversations/tflIAtGJST6gdv0of2cH/messages: Too Many Requests",
+    "Failed to fetch messages for conversation JANjavGkoy5dD1MXEU9m: GHL API 429 on /conversations/JANjavGkoy5dD1MXEU9m/messages: Too Many Requests",
+    "Failed to fetch messages for conversation RLGn8Cm4pZTix1Obuww5: GHL API 429 on /conversations/RLGn8Cm4pZTix1Obuww5/messages: Too Many Requests",
+    "Failed to fetch messages for conversation Jed7IgSQaPb2SUWGTOCj: GHL API 429 on /conversations/Jed7IgSQaPb2SUWGTOCj/messages: Too Many Requests",
+    "Failed to fetch messages for conversation cCofRyeqflPpPMhJ3ARB: GHL API 429 on /conversations/cCofRyeqflPpPMhJ3ARB/messages: Too Many Requests",
+    "Failed to fetch messages for conversation 0EP44dPZcqwljPOI6opt: GHL API 429 on /conversations/0EP44dPZcqwljPOI6opt/messages: Too Many Requests",
+    "Failed to fetch messages for conversation FlnvhoQh4OBnyUDTZaj2: GHL API 429 on /conversations/FlnvhoQh4OBnyUDTZaj2/messages: Too Many Requests",
+    "Failed to fetch messages for conversation xLweoPk6HzXZNB6EaLxs: GHL API 429 on /conversations/xLweoPk6HzXZNB6EaLxs/messages: Too Many Requests",
+    "Failed to fetch messages for conversation HwXiUZ8mmuYsfnsIcr7R: GHL API 429 on /conversations/HwXiUZ8mmuYsfnsIcr7R/messages: Too Many Requests",
+    "Failed to fetch messages for conversation zZORLkMIIif8gy5tXCMk: GHL API 429 on /conversations/zZORLkMIIif8gy5tXCMk/messages: Too Many Requests",
+    "Failed to fetch messages for conversation MHIVvHVmWEYYrrvlQVFU: GHL API 429 on /conversations/MHIVvHVmWEYYrrvlQVFU/messages: Too Many Requests",
+    "Failed to fetch messages for conversation 0dpYBZcL0KKmFvsJZoNe: GHL API 429 on /conversations/0dpYBZcL0KKmFvsJZoNe/messages: Too Many Requests",
+    "Failed to fetch messages for conversation 4DEmCbMuVefgwNoWUULh: GHL API 429 on /conversations/4DEmCbMuVefgwNoWUULh/messages: Too Many Requests",
+    "Failed to fetch messages for conversation rc49P97bzsYomRP1bLwr: GHL API 429 on /conversations/rc49P97bzsYomRP1bLwr/messages: Too Many Requests",
+    "Failed to fetch messages for conversation eOXbSAsKMTguBWvyNGzD: GHL API 429 on /conversations/eOXbSAsKMTguBWvyNGzD/messages: Too Many Requests",
+    "Failed to fetch messages for conversation ix4brmHIUQK9TFaynRBL: GHL API 429 on /conversations/ix4brmHIUQK9TFaynRBL/messages: Too Many Requests",
+    "Failed to fetch messages for conversation DcQlJgPDslxjqFrVKcuk: GHL API 429 on /conversations/DcQlJgPDslxjqFrVKcuk/messages: Too Many Requests",
+    "Failed to fetch messages for conversation tHNVHqu1BdqGHASRVzTJ: GHL API 429 on /conversations/tHNVHqu1BdqGHASRVzTJ/messages: Too Many Requests",
+    "Failed to fetch messages for conversation s3UvDFK7pHAr13tfgB48: GHL API 429 on /conversations/s3UvDFK7pHAr13tfgB48/messages: Too Many Requests",
+    "Failed to fetch messages for conversation YUmCSNGNcVDjMw761Vb2: GHL API 429 on /conversations/YUmCSNGNcVDjMw761Vb2/messages: Too Many Requests",
+    "Failed to fetch messages for conversation OVdUZArf3TohltzoPjpg: GHL API 429 on /conversations/OVdUZArf3TohltzoPjpg/messages: Too Many Requests",
+    "Failed to fetch messages for conversation FsPAUox6yPlk8tk9Wml9: GHL API 429 on /conversations/FsPAUox6yPlk8tk9Wml9/messages: Too Many Requests",
+    "Failed to fetch messages for conversation Ba0ScJRLNtL5dJEIXJcd: GHL API 429 on /conversations/Ba0ScJRLNtL5dJEIXJcd/messages: Too Many Requests",
+    "Failed to fetch messages for conversation jMxBpKXMR1wws3NECDAL: GHL API 429 on /conversations/jMxBpKXMR1wws3NECDAL/messages: Too Many Requests",
+    "Failed to fetch messages for conversation YSBpDWcya6NDw6SczbNk: GHL API 429 on /conversations/YSBpDWcya6NDw6SczbNk/messages: Too Many Requests",
+    "Failed to fetch messages for conversation 8dEawcNWZ4ESdiEU8IDC: GHL API 429 on /conversations/8dEawcNWZ4ESdiEU8IDC/messages: Too Many Requests"
   ],
   "data": {
     "funnel": {
@@ -61,7 +90,7 @@
         "qualified": 0,
         "liveTransferAttempted": 0,
         "liveTransferAccepted": 0,
-        "appointmentsBooked": 0,
+        "appointmentsBooked": 1,
         "heldCalls": 0,
         "noShows": 0,
         "won": 0,
@@ -71,6 +100,19 @@
       "Rianna Nava": {
         "outbound": 1,
         "connected": 1,
+        "qualified": 0,
+        "liveTransferAttempted": 0,
+        "liveTransferAccepted": 0,
+        "appointmentsBooked": 0,
+        "heldCalls": 0,
+        "noShows": 0,
+        "won": 0,
+        "contractValue": 0,
+        "cashCollected": 0
+      },
+      "Jercori Freeman": {
+        "outbound": 0,
+        "connected": 0,
         "qualified": 0,
         "liveTransferAttempted": 0,
         "liveTransferAccepted": 0,
@@ -253,6 +295,10 @@
     },
     {
       "t": "2026-08-21T19:57:57.695Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-08-21T20:54:59.618Z",
       "closeRate": 0
     }
   ]
