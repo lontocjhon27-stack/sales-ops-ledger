@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T23:54:06.548Z",
+  "generatedAt": "2026-08-21T03:30:59.522Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -12,7 +12,7 @@
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 17,
+      "outboundAttempts": 20,
       "connected": 2,
       "qualified": 1,
       "heldCall": 0,
@@ -85,7 +85,7 @@
         "qualified": 0,
         "liveTransferAttempted": 0,
         "liveTransferAccepted": 0,
-        "appointmentsBooked": 1,
+        "appointmentsBooked": 0,
         "heldCalls": 0,
         "noShows": 0,
         "won": 0,
@@ -224,6 +224,10 @@
     },
     {
       "t": "2026-08-20T23:54:06.548Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-08-21T03:30:59.522Z",
       "closeRate": 0
     }
   ]
