@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T15:51:06.257Z",
+  "generatedAt": "2026-08-21T17:06:27.486Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -8,12 +8,13 @@
     "Custom field \"Prospect Available Now?\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Live Transfer Attempted?\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Live Transfer Accepted By\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
-    "Custom field \"Qualified Held Call\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?"
+    "Custom field \"Qualified Held Call\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Failed to fetch messages for conversation Fy9wU0jVqHItymVuooef: GHL API 429 on /conversations/Fy9wU0jVqHItymVuooef/messages: Too Many Requests"
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 21,
-      "connected": 2,
+      "outboundAttempts": 29,
+      "connected": 3,
       "qualified": 1,
       "heldCall": 0,
       "won": 0
@@ -252,6 +253,10 @@
     },
     {
       "t": "2026-08-21T15:51:06.257Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-08-21T17:06:27.486Z",
       "closeRate": 0
     }
   ]
