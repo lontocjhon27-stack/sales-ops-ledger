@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T03:30:59.522Z",
+  "generatedAt": "2026-08-21T05:20:17.439Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -95,7 +95,7 @@
     },
     "totals": {
       "contractValue": 0,
-      "cashCollected": 2691,
+      "cashCollected": 5691,
       "closeRate": 0
     },
     "attributionChains": [],
@@ -228,6 +228,10 @@
     },
     {
       "t": "2026-08-21T03:30:59.522Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-08-21T05:20:17.439Z",
       "closeRate": 0
     }
   ]
