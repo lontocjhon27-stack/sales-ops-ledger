@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T20:52:42.659Z",
+  "generatedAt": "2026-08-22T21:44:55.593Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -8,6 +8,7 @@
     "Custom field \"Live Transfer Attempted?\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Live Transfer Accepted By\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Qualified Held Call\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Failed to fetch contact 5jHcs3EvRz2FotE8m9u6: GHL API 429 on /contacts/5jHcs3EvRz2FotE8m9u6: Too Many Requests",
     "Failed to fetch contact 3wEwuFmQJOnHO33ykdkz: GHL API 429 on /contacts/3wEwuFmQJOnHO33ykdkz: Too Many Requests",
     "Failed to fetch payment transactions: GHL API 429 on /payments/transactions: Too Many Requests",
     "Failed to fetch events for calendar \"setterQualification\": GHL API 429 on /calendars/events: Too Many Requests",
@@ -323,6 +324,10 @@
     },
     {
       "t": "2026-08-22T20:52:42.659Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-08-22T21:44:55.593Z",
       "closeRate": 0
     }
   ]
