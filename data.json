@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T10:01:27.961Z",
+  "generatedAt": "2026-08-22T11:01:42.506Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -8,9 +8,10 @@
     "Custom field \"Live Transfer Attempted?\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Live Transfer Accepted By\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Qualified Held Call\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Failed to fetch contact 3wEwuFmQJOnHO33ykdkz: GHL API 429 on /contacts/3wEwuFmQJOnHO33ykdkz: Too Many Requests",
     "Failed to fetch payment transactions: GHL API 429 on /payments/transactions: Too Many Requests",
     "Failed to fetch events for calendar \"setterQualification\": GHL API 429 on /calendars/events: Too Many Requests",
-    "Failed to fetch events for calendar \"jenSales\": GHL API 429 on /calendars/events: Too Many Requests",
+    "Failed to fetch events for calendar \"jenSales\": GHL API 401 on /calendars/events: Command timed out",
     "Failed to fetch events for calendar \"jercoriHighTicket\": GHL API 429 on /calendars/events: Too Many Requests",
     "Failed to fetch conversations: GHL API 429 on /conversations/search: Too Many Requests"
   ],
@@ -282,6 +283,10 @@
     },
     {
       "t": "2026-08-22T10:01:27.961Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-08-22T11:01:42.506Z",
       "closeRate": 0
     }
   ]
