@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-08-23T21:43:07.228Z",
+  "generatedAt": "2026-08-23T22:51:16.782Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
+    "Failed to fetch users: GHL API 401 on /users/: Command timed out",
+    "No GHL user found matching rep name \"Jen\" -- check users are named/invited as expected.",
+    "No GHL user found matching rep name \"Jercori\" -- check users are named/invited as expected.",
     "Custom field \"Overall Qualification\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Prospect Available Now?\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Live Transfer Attempted?\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Live Transfer Accepted By\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Qualified Held Call\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
-    "Failed to fetch contact 5jHcs3EvRz2FotE8m9u6: GHL API 429 on /contacts/5jHcs3EvRz2FotE8m9u6: Too Many Requests",
-    "Failed to fetch contact VZSfjWMrwU2qx5sFpnS2: GHL API 429 on /contacts/VZSfjWMrwU2qx5sFpnS2: Too Many Requests",
-    "Failed to fetch payment transactions: GHL API 429 on /payments/transactions: Too Many Requests",
     "Failed to fetch events for calendar \"setterQualification\": GHL API 429 on /calendars/events: Too Many Requests",
     "Failed to fetch events for calendar \"jenSales\": GHL API 429 on /calendars/events: Too Many Requests",
     "Failed to fetch events for calendar \"jercoriHighTicket\": GHL API 429 on /calendars/events: Too Many Requests",
@@ -75,7 +75,7 @@
     },
     "totals": {
       "contractValue": 0,
-      "cashCollected": 0,
+      "cashCollected": 6150,
       "closeRate": 0
     },
     "attributionChains": [],
@@ -400,6 +400,10 @@
     },
     {
       "t": "2026-08-23T21:43:07.228Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-08-23T22:51:16.782Z",
       "closeRate": 0
     }
   ]
