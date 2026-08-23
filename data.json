@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T03:30:37.951Z",
+  "generatedAt": "2026-08-23T05:16:00.929Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -7,11 +7,17 @@
     "Custom field \"Prospect Available Now?\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Live Transfer Attempted?\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Live Transfer Accepted By\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
-    "Custom field \"Qualified Held Call\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?"
+    "Custom field \"Qualified Held Call\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Failed to fetch contact hYK0ewQUJ2ZVLw4eBN6T: GHL API 429 on /contacts/hYK0ewQUJ2ZVLw4eBN6T: Too Many Requests",
+    "Failed to fetch payment transactions: GHL API 429 on /payments/transactions: Too Many Requests",
+    "Failed to fetch events for calendar \"setterQualification\": GHL API 429 on /calendars/events: Too Many Requests",
+    "Failed to fetch events for calendar \"jenSales\": GHL API 429 on /calendars/events: Too Many Requests",
+    "Failed to fetch events for calendar \"jercoriHighTicket\": GHL API 429 on /calendars/events: Too Many Requests",
+    "Failed to fetch conversations: GHL API 429 on /conversations/search: Too Many Requests"
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 27,
+      "outboundAttempts": 89,
       "connected": 6,
       "qualified": 1,
       "heldCall": 0,
@@ -47,7 +53,7 @@
         "liveTransferAccepted": 0,
         "appointmentsBooked": 0,
         "heldCalls": 0,
-        "noShows": 1,
+        "noShows": 0,
         "won": 0,
         "contractValue": 0,
         "cashCollected": 0
@@ -64,24 +70,11 @@
         "won": 0,
         "contractValue": 0,
         "cashCollected": 0
-      },
-      "Jennifer Pascual": {
-        "outbound": 0,
-        "connected": 0,
-        "qualified": 0,
-        "liveTransferAttempted": 0,
-        "liveTransferAccepted": 0,
-        "appointmentsBooked": 2,
-        "heldCalls": 0,
-        "noShows": 0,
-        "won": 0,
-        "contractValue": 0,
-        "cashCollected": 0
       }
     },
     "totals": {
       "contractValue": 0,
-      "cashCollected": 6591,
+      "cashCollected": 0,
       "closeRate": 0
     },
     "attributionChains": [],
@@ -346,6 +339,10 @@
     },
     {
       "t": "2026-08-23T03:30:37.951Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-08-23T05:16:00.929Z",
       "closeRate": 0
     }
   ]
