@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T21:04:46.268Z",
+  "generatedAt": "2026-08-24T22:48:28.035Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -8,18 +8,24 @@
     "Custom field \"Live Transfer Attempted?\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Live Transfer Accepted By\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Qualified Held Call\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Failed to fetch contact e0tsZaivIMTICasDxjPc: GHL API 429 on /contacts/e0tsZaivIMTICasDxjPc: Too Many Requests",
+    "Failed to fetch contact rhYqhPNummbXD38izrCd: GHL API 429 on /contacts/rhYqhPNummbXD38izrCd: Too Many Requests",
+    "Failed to fetch contact 3JtaS2uF5ZUZPbzH2oQT: GHL API 429 on /contacts/3JtaS2uF5ZUZPbzH2oQT: Too Many Requests",
+    "Failed to fetch contact 3ljxlXrocoADabiaAp42: GHL API 429 on /contacts/3ljxlXrocoADabiaAp42: Too Many Requests",
+    "Failed to fetch contact DL46mDiKKowEy36PEF8F: GHL API 429 on /contacts/DL46mDiKKowEy36PEF8F: Too Many Requests",
+    "Failed to fetch contact AEiA4JQxElfOK1hD4DLM: GHL API 429 on /contacts/AEiA4JQxElfOK1hD4DLM: Too Many Requests",
+    "Failed to fetch contact UWd2hKCsTrvVV3ZmU8Gl: GHL API 429 on /contacts/UWd2hKCsTrvVV3ZmU8Gl: Too Many Requests",
     "Failed to fetch contact PlZHLYEdGyPzgw3v9DLc: GHL API 429 on /contacts/PlZHLYEdGyPzgw3v9DLc: Too Many Requests",
     "Failed to fetch contact Bv1Ey1b0HCvG8t3aZTyM: GHL API 429 on /contacts/Bv1Ey1b0HCvG8t3aZTyM: Too Many Requests",
     "Failed to fetch contact EKLWTnA8OMqc6M9aSqKj: GHL API 429 on /contacts/EKLWTnA8OMqc6M9aSqKj: Too Many Requests",
-    "Failed to fetch contact p58vUXb3qlHJogYhbgET: GHL API 429 on /contacts/p58vUXb3qlHJogYhbgET: Too Many Requests",
     "Failed to fetch contact GXXnTQrAQhFuJ8Z1lhmI: GHL API 429 on /contacts/GXXnTQrAQhFuJ8Z1lhmI: Too Many Requests",
-    "Failed to fetch contact hYK0ewQUJ2ZVLw4eBN6T: GHL API 429 on /contacts/hYK0ewQUJ2ZVLw4eBN6T: Too Many Requests",
-    "Failed to fetch contact VWjTzFmnm3eVZJFSVaPO: GHL API 429 on /contacts/VWjTzFmnm3eVZJFSVaPO: Too Many Requests",
+    "Failed to fetch contact p58vUXb3qlHJogYhbgET: GHL API 429 on /contacts/p58vUXb3qlHJogYhbgET: Too Many Requests",
     "Failed to fetch contact VZSfjWMrwU2qx5sFpnS2: GHL API 429 on /contacts/VZSfjWMrwU2qx5sFpnS2: Too Many Requests",
+    "Failed to fetch contact VWjTzFmnm3eVZJFSVaPO: GHL API 429 on /contacts/VWjTzFmnm3eVZJFSVaPO: Too Many Requests",
+    "Failed to fetch contact hYK0ewQUJ2ZVLw4eBN6T: GHL API 429 on /contacts/hYK0ewQUJ2ZVLw4eBN6T: Too Many Requests",
     "Failed to fetch contact 3NIe9vH73sazMcokfCLQ: GHL API 429 on /contacts/3NIe9vH73sazMcokfCLQ: Too Many Requests",
-    "Failed to fetch contact 3wEwuFmQJOnHO33ykdkz: GHL API 429 on /contacts/3wEwuFmQJOnHO33ykdkz: Too Many Requests",
     "Failed to fetch contact 5jHcs3EvRz2FotE8m9u6: GHL API 429 on /contacts/5jHcs3EvRz2FotE8m9u6: Too Many Requests",
-    "Failed to fetch contact 3JtaS2uF5ZUZPbzH2oQT: GHL API 429 on /contacts/3JtaS2uF5ZUZPbzH2oQT: Too Many Requests",
+    "Failed to fetch contact 3wEwuFmQJOnHO33ykdkz: GHL API 429 on /contacts/3wEwuFmQJOnHO33ykdkz: Too Many Requests",
     "Failed to fetch payment transactions: GHL API 429 on /payments/transactions: Too Many Requests",
     "Failed to fetch events for calendar \"setterQualification\": GHL API 429 on /calendars/events: Too Many Requests",
     "Failed to fetch events for calendar \"jenSales\": GHL API 429 on /calendars/events: Too Many Requests",
@@ -28,8 +34,8 @@
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 96,
-      "connected": 7,
+      "outboundAttempts": 101,
+      "connected": 8,
       "qualified": 2,
       "heldCall": 0,
       "won": 0
@@ -458,6 +464,10 @@
     },
     {
       "t": "2026-08-24T21:04:46.268Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-08-24T22:48:28.035Z",
       "closeRate": 0
     }
   ]
