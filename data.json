@@ -1,22 +1,18 @@
 {
-  "generatedAt": "2026-08-25T20:53:31.918Z",
+  "generatedAt": "2026-08-25T21:07:28.801Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
-    "Failed to fetch calendars: GHL API 401 on /calendars/: Command timed out",
     "Custom field \"Overall Qualification\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Prospect Available Now?\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Live Transfer Attempted?\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Live Transfer Accepted By\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
-    "Custom field \"Qualified Held Call\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
-    "Calendar \"Setter Qualification Calendar\" not found -- appointment/no-show metrics for it will be empty.",
-    "Calendar \"Jen Sales Calendar\" not found -- appointment/no-show metrics for it will be empty.",
-    "Calendar \"Jercori Sales Calendar\" not found -- appointment/no-show metrics for it will be empty."
+    "Custom field \"Qualified Held Call\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?"
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 19,
-      "connected": 11,
+      "outboundAttempts": 17,
+      "connected": 12,
       "qualified": 2,
       "heldCall": 0,
       "won": 0
@@ -62,9 +58,22 @@
         "qualified": 0,
         "liveTransferAttempted": 0,
         "liveTransferAccepted": 0,
-        "appointmentsBooked": 0,
+        "appointmentsBooked": 3,
         "heldCalls": 0,
         "noShows": 0,
+        "won": 0,
+        "contractValue": 0,
+        "cashCollected": 0
+      },
+      "Jercori Freeman": {
+        "outbound": 0,
+        "connected": 0,
+        "qualified": 0,
+        "liveTransferAttempted": 0,
+        "liveTransferAccepted": 0,
+        "appointmentsBooked": 2,
+        "heldCalls": 0,
+        "noShows": 1,
         "won": 0,
         "contractValue": 0,
         "cashCollected": 0
@@ -111,10 +120,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-19T19:35:55.279Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-19T19:55:14.884Z",
       "closeRate": 0
@@ -509,6 +514,10 @@
     },
     {
       "t": "2026-08-25T20:53:31.918Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-08-25T21:07:28.801Z",
       "closeRate": 0
     }
   ],
@@ -2775,6 +2784,222 @@
           }
         ],
         "cachedAt": "2026-08-25T20:49:42.415Z"
+      },
+      "wyTxVRx48A8K28T9pmEv": {
+        "fields": [
+          {
+            "id": "ZbAnImdexdzvCvi2UUVx",
+            "value": "fb"
+          },
+          {
+            "id": "dbUTgrW5dQKVZVsuwM8v",
+            "value": "paid"
+          },
+          {
+            "id": "mgsmQlxFBNWYuip1l8p7",
+            "value": "52541583877769"
+          },
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 3
+          },
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Facebook Ads"
+          },
+          {
+            "id": "T4ZT5aAZtG33vDyaBjPb",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=OHyqkXkfW1E6EH8XTnwTR0XlZ0VhZW7m8h95c5bVNdQ.DQkAAAAUkTIerBZZeFJzUUJKZ1FjV0trWEMzZVcwUjl3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "TFsovIwk95EombaFai6b",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=OHyqkXkfW1E6EH8XTnwTR0XlZ0VhZW7m8h95c5bVNdQ.DQkAAAAUkTIerBZZeFJzUUJKZ1FjV0trWEMzZVcwUjl3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "aCvXpWdkghIqmtA4Mtbx",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=OHyqkXkfW1E6EH8XTnwTR0XlZ0VhZW7m8h95c5bVNdQ.DQkAAAAUkTIerBZZeFJzUUJKZ1FjV0trWEMzZVcwUjl3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "azlatcryAviD4l2HgOm2",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=OHyqkXkfW1E6EH8XTnwTR0XlZ0VhZW7m8h95c5bVNdQ.DQkAAAAUkTIerBZZeFJzUUJKZ1FjV0trWEMzZVcwUjl3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "tHiNIUaWLbLaOQ2sG6lC",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=OHyqkXkfW1E6EH8XTnwTR0XlZ0VhZW7m8h95c5bVNdQ.DQkAAAAUkTIerBZZeFJzUUJKZ1FjV0trWEMzZVcwUjl3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "lXBcdsaqCaLyo5dOpNkm",
+            "value": "August 26 2026 17:00:00"
+          },
+          {
+            "id": "7gikZhd5m3ODkXrxAYGK",
+            "value": "https://www.google.com/calendar/event?eid=c2QxNG5hbTVsYW5uOGhoM3A3bGdkZ25kaGMgamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
+          },
+          {
+            "id": "PLwmO9HRpVtMQgJCCz3x",
+            "value": 1
+          }
+        ],
+        "cachedAt": "2026-08-25T21:07:32.735Z"
+      },
+      "9KvnJ8FPCtto10UHUDBY": {
+        "fields": [
+          {
+            "id": "ZbAnImdexdzvCvi2UUVx",
+            "value": "fb"
+          },
+          {
+            "id": "dbUTgrW5dQKVZVsuwM8v",
+            "value": "paid"
+          },
+          {
+            "id": "mgsmQlxFBNWYuip1l8p7",
+            "value": "52541583877769"
+          },
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 3
+          },
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Facebook Ads"
+          },
+          {
+            "id": "T4ZT5aAZtG33vDyaBjPb",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=7NbeJCQANOVKKoQ6mu1I-0OzF-694_NcjvZ3UFJNYS4.DQkAAAAUkTIerBZSbnBTbWptX1J4UzFWSGFobTNoWWFBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "TFsovIwk95EombaFai6b",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=7NbeJCQANOVKKoQ6mu1I-0OzF-694_NcjvZ3UFJNYS4.DQkAAAAUkTIerBZSbnBTbWptX1J4UzFWSGFobTNoWWFBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "aCvXpWdkghIqmtA4Mtbx",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=7NbeJCQANOVKKoQ6mu1I-0OzF-694_NcjvZ3UFJNYS4.DQkAAAAUkTIerBZSbnBTbWptX1J4UzFWSGFobTNoWWFBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "azlatcryAviD4l2HgOm2",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=7NbeJCQANOVKKoQ6mu1I-0OzF-694_NcjvZ3UFJNYS4.DQkAAAAUkTIerBZSbnBTbWptX1J4UzFWSGFobTNoWWFBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "tHiNIUaWLbLaOQ2sG6lC",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=7NbeJCQANOVKKoQ6mu1I-0OzF-694_NcjvZ3UFJNYS4.DQkAAAAUkTIerBZSbnBTbWptX1J4UzFWSGFobTNoWWFBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "lXBcdsaqCaLyo5dOpNkm",
+            "value": "August 26 2026 17:00:00"
+          },
+          {
+            "id": "7gikZhd5m3ODkXrxAYGK",
+            "value": "https://www.google.com/calendar/event?eid=cHRnbmtjZTc3dDE5ZzdsNDlyOTVqZzc5cGMgamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
+          }
+        ],
+        "cachedAt": "2026-08-25T21:07:32.746Z"
+      },
+      "NiKenFdNKzioL0TECGpz": {
+        "fields": [
+          {
+            "id": "ZbAnImdexdzvCvi2UUVx",
+            "value": "fb"
+          },
+          {
+            "id": "dbUTgrW5dQKVZVsuwM8v",
+            "value": "paid"
+          },
+          {
+            "id": "mgsmQlxFBNWYuip1l8p7",
+            "value": "52541583877769"
+          },
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 3
+          },
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Facebook Ads"
+          },
+          {
+            "id": "T4ZT5aAZtG33vDyaBjPb",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=6097sSUSQzNK2NkqTKtqJWtnaOFvCubg055C4tHC2Zk.DQkAAAAUkTIerBZ2bVBXaXNIc1Q4S0J5U2o0TjVKcjZBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "TFsovIwk95EombaFai6b",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=6097sSUSQzNK2NkqTKtqJWtnaOFvCubg055C4tHC2Zk.DQkAAAAUkTIerBZ2bVBXaXNIc1Q4S0J5U2o0TjVKcjZBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "aCvXpWdkghIqmtA4Mtbx",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=6097sSUSQzNK2NkqTKtqJWtnaOFvCubg055C4tHC2Zk.DQkAAAAUkTIerBZ2bVBXaXNIc1Q4S0J5U2o0TjVKcjZBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "azlatcryAviD4l2HgOm2",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=6097sSUSQzNK2NkqTKtqJWtnaOFvCubg055C4tHC2Zk.DQkAAAAUkTIerBZ2bVBXaXNIc1Q4S0J5U2o0TjVKcjZBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "tHiNIUaWLbLaOQ2sG6lC",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=6097sSUSQzNK2NkqTKtqJWtnaOFvCubg055C4tHC2Zk.DQkAAAAUkTIerBZ2bVBXaXNIc1Q4S0J5U2o0TjVKcjZBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "lXBcdsaqCaLyo5dOpNkm",
+            "value": "August 26 2026 17:00:00"
+          },
+          {
+            "id": "7gikZhd5m3ODkXrxAYGK",
+            "value": "https://www.google.com/calendar/event?eid=djR1N2czamVoM2xlYjZvZHZtNXR1dWxwaTggamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
+          }
+        ],
+        "cachedAt": "2026-08-25T21:07:32.825Z"
+      },
+      "LjJ0nxvgb6TRuvZXkXQh": {
+        "fields": [
+          {
+            "id": "ZbAnImdexdzvCvi2UUVx",
+            "value": "fb"
+          },
+          {
+            "id": "dbUTgrW5dQKVZVsuwM8v",
+            "value": "paid"
+          },
+          {
+            "id": "mgsmQlxFBNWYuip1l8p7",
+            "value": "52541583877769"
+          },
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 2
+          },
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Facebook Ads"
+          },
+          {
+            "id": "T4ZT5aAZtG33vDyaBjPb",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=vxpflXuFP2cVSPWhtxpXoiN1k1Tj8hDBet24dfUL2MM.DQkAAAAUkTIerBZXaEVoR0pqY1FSeUNFOEstcjk5VXZ3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "TFsovIwk95EombaFai6b",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=vxpflXuFP2cVSPWhtxpXoiN1k1Tj8hDBet24dfUL2MM.DQkAAAAUkTIerBZXaEVoR0pqY1FSeUNFOEstcjk5VXZ3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "aCvXpWdkghIqmtA4Mtbx",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=vxpflXuFP2cVSPWhtxpXoiN1k1Tj8hDBet24dfUL2MM.DQkAAAAUkTIerBZXaEVoR0pqY1FSeUNFOEstcjk5VXZ3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "azlatcryAviD4l2HgOm2",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=vxpflXuFP2cVSPWhtxpXoiN1k1Tj8hDBet24dfUL2MM.DQkAAAAUkTIerBZXaEVoR0pqY1FSeUNFOEstcjk5VXZ3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "tHiNIUaWLbLaOQ2sG6lC",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=vxpflXuFP2cVSPWhtxpXoiN1k1Tj8hDBet24dfUL2MM.DQkAAAAUkTIerBZXaEVoR0pqY1FSeUNFOEstcjk5VXZ3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "lXBcdsaqCaLyo5dOpNkm",
+            "value": "August 26 2026 17:00:00"
+          },
+          {
+            "id": "7gikZhd5m3ODkXrxAYGK",
+            "value": "https://www.google.com/calendar/event?eid=bXFpYTY5N2JyaGdibTFxdWkwY2x0b2FiaTQgamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
+          }
+        ],
+        "cachedAt": "2026-08-25T21:07:33.096Z"
       }
     },
     "processedConversations": {
