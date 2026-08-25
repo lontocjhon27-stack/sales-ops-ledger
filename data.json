@@ -1,20 +1,16 @@
 {
-  "generatedAt": "2026-08-25T21:56:10.771Z",
+  "generatedAt": "2026-08-25T22:27:15.569Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
-    "Custom field \"Overall Qualification\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
-    "Custom field \"Prospect Available Now?\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
-    "Custom field \"Live Transfer Attempted?\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
-    "Custom field \"Live Transfer Accepted By\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
-    "Custom field \"Qualified Held Call\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?"
+    "\"Live Transfers Accepted\" always reads 0 -- SALES | HANDOFF (the field that tracked this) was deleted and nothing replaces it. \"Live Transfers Attempted\" still works (inferred from the \"Qualified - Live Transfer\" pipeline stage). Fixing Accepted needs either a new field or logging stage-transition history."
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 14,
+      "outboundAttempts": 9,
       "connected": 12,
       "qualified": 2,
-      "heldCall": 0,
+      "heldCall": 1,
       "won": 0
     },
     "routingMix": [
@@ -39,26 +35,13 @@
       "routedNormally": 0
     },
     "reps": {
-      "Rianna": {
-        "outbound": 2,
-        "connected": 2,
-        "qualified": 1,
-        "liveTransferAttempted": 0,
-        "liveTransferAccepted": 0,
-        "appointmentsBooked": 0,
-        "heldCalls": 0,
-        "noShows": 0,
-        "won": 0,
-        "contractValue": 0,
-        "cashCollected": 0
-      },
       "Jen": {
         "outbound": 0,
         "connected": 0,
         "qualified": 0,
         "liveTransferAttempted": 0,
         "liveTransferAccepted": 0,
-        "appointmentsBooked": 3,
+        "appointmentsBooked": 4,
         "heldCalls": 0,
         "noShows": 0,
         "won": 0,
@@ -74,6 +57,19 @@
         "appointmentsBooked": 2,
         "heldCalls": 0,
         "noShows": 1,
+        "won": 0,
+        "contractValue": 0,
+        "cashCollected": 0
+      },
+      "Rianna": {
+        "outbound": 2,
+        "connected": 2,
+        "qualified": 1,
+        "liveTransferAttempted": 0,
+        "liveTransferAccepted": 0,
+        "appointmentsBooked": 0,
+        "heldCalls": 0,
+        "noShows": 0,
         "won": 0,
         "contractValue": 0,
         "cashCollected": 0
@@ -94,7 +90,71 @@
       "Rianna",
       "Jen"
     ],
-    "callLog": [],
+    "callLog": [
+      {
+        "time": "2026-08-18T22:04:26.136Z",
+        "setter": "Jen",
+        "contact": "Arletha Mariland",
+        "status": "completed",
+        "durationSec": 51
+      },
+      {
+        "time": "2026-08-18T22:04:15.835Z",
+        "setter": "Jen",
+        "contact": "Arletha Mariland",
+        "status": "completed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-18T22:04:09.540Z",
+        "setter": "Jen",
+        "contact": "Tonya Poynter",
+        "status": "completed",
+        "durationSec": 51
+      },
+      {
+        "time": "2026-08-18T22:03:55.723Z",
+        "setter": "Jen",
+        "contact": "Arletha Mariland",
+        "status": "completed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-18T19:00:10.626Z",
+        "setter": "Jen",
+        "contact": "Tonya Poynter",
+        "status": "failed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-18T18:59:07.671Z",
+        "setter": "Jen",
+        "contact": "Tonya Poynter",
+        "status": "failed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-18T18:56:29.194Z",
+        "setter": "Jen",
+        "contact": "Tonya Poynter",
+        "status": "failed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-07-30T21:51:50.000Z",
+        "setter": "Jen",
+        "contact": "Tonya Poynter",
+        "status": "completed",
+        "durationSec": 28
+      },
+      {
+        "time": "2026-05-23T17:56:00.461Z",
+        "setter": "Jen",
+        "contact": "Arletha Mariland",
+        "status": "completed",
+        "durationSec": 31
+      }
+    ],
     "activityPoints": {
       "Marshell": {
         "points": 0,
@@ -111,19 +171,15 @@
         "heldClosingCalls": 0
       },
       "Jen": {
-        "points": 120,
+        "points": 169,
         "goal": 1400,
-        "outboundCalls": 0,
+        "outboundCalls": 9,
         "heldQualCalls": 0,
-        "heldClosingCalls": 3
+        "heldClosingCalls": 4
       }
     }
   },
   "history": [
-    {
-      "t": "2026-08-19T21:48:26.223Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-19T22:54:36.596Z",
       "closeRate": 0
@@ -519,9 +575,41 @@
     {
       "t": "2026-08-25T21:56:10.771Z",
       "closeRate": 0
+    },
+    {
+      "t": "2026-08-25T22:27:15.569Z",
+      "closeRate": 0
     }
   ],
   "callLogHistory": [
+    {
+      "time": "2026-08-18T22:04:26.136Z",
+      "setter": "Jen",
+      "contact": "Arletha Mariland",
+      "status": "completed",
+      "durationSec": 51
+    },
+    {
+      "time": "2026-08-18T22:04:15.835Z",
+      "setter": "Jen",
+      "contact": "Arletha Mariland",
+      "status": "completed",
+      "durationSec": null
+    },
+    {
+      "time": "2026-08-18T22:04:09.540Z",
+      "setter": "Jen",
+      "contact": "Tonya Poynter",
+      "status": "completed",
+      "durationSec": 51
+    },
+    {
+      "time": "2026-08-18T22:03:55.723Z",
+      "setter": "Jen",
+      "contact": "Arletha Mariland",
+      "status": "completed",
+      "durationSec": null
+    },
     {
       "time": "2026-08-18T21:03:52.663Z",
       "setter": "The Processing Team",
@@ -541,6 +629,27 @@
       "setter": "Sophia Cruz",
       "contact": "TOLL FREE CALL",
       "status": "completed",
+      "durationSec": null
+    },
+    {
+      "time": "2026-08-18T19:00:10.626Z",
+      "setter": "Jen",
+      "contact": "Tonya Poynter",
+      "status": "failed",
+      "durationSec": null
+    },
+    {
+      "time": "2026-08-18T18:59:07.671Z",
+      "setter": "Jen",
+      "contact": "Tonya Poynter",
+      "status": "failed",
+      "durationSec": null
+    },
+    {
+      "time": "2026-08-18T18:56:29.194Z",
+      "setter": "Jen",
+      "contact": "Tonya Poynter",
+      "status": "failed",
       "durationSec": null
     },
     {
@@ -663,11 +772,25 @@
       "durationSec": 377
     },
     {
+      "time": "2026-07-30T21:51:50.000Z",
+      "setter": "Jen",
+      "contact": "Tonya Poynter",
+      "status": "completed",
+      "durationSec": 28
+    },
+    {
       "time": "2026-07-27T16:54:21.862Z",
       "setter": "Jen",
       "contact": "Arthnez parkinson",
       "status": "no-answer",
       "durationSec": null
+    },
+    {
+      "time": "2026-05-23T17:56:00.461Z",
+      "setter": "Jen",
+      "contact": "Arletha Mariland",
+      "status": "completed",
+      "durationSec": 31
     },
     {
       "time": "2026-05-21T19:33:44.585Z",
@@ -3657,7 +3780,9 @@
       "y6ffpECDvLDVvUL4JQPb": 1786998516693,
       "O2r8rqS0TqRSH47u6P25": 1786998465886,
       "1f515Tnpop5EryAaf2wU": 1786998431132,
-      "7ABWDsn87X0KdFaJpSDA": 1786998486151
+      "7ABWDsn87X0KdFaJpSDA": 1786998486151,
+      "p7nJabcZrnosRKQGUZq5": 1787682315309,
+      "Fk2KXYSPFjsCUhAy02fJ": 1787681232947
     }
   }
 }
