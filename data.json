@@ -1,11 +1,8 @@
 {
-  "generatedAt": "2026-08-25T20:35:28.568Z",
+  "generatedAt": "2026-08-25T20:49:27.874Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
-    "Failed to fetch users: GHL API 401 on /users/: Command timed out",
-    "No GHL user found matching rep name \"Jen\" -- check users are named/invited as expected.",
-    "No GHL user found matching rep name \"Jercori\" -- check users are named/invited as expected.",
     "Custom field \"Overall Qualification\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Prospect Available Now?\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Live Transfer Attempted?\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
@@ -14,8 +11,8 @@
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 20,
-      "connected": 10,
+      "outboundAttempts": 19,
+      "connected": 11,
       "qualified": 2,
       "heldCall": 0,
       "won": 0
@@ -61,9 +58,22 @@
         "qualified": 0,
         "liveTransferAttempted": 0,
         "liveTransferAccepted": 0,
-        "appointmentsBooked": 0,
+        "appointmentsBooked": 3,
         "heldCalls": 0,
         "noShows": 0,
+        "won": 0,
+        "contractValue": 0,
+        "cashCollected": 0
+      },
+      "Jercori Freeman": {
+        "outbound": 0,
+        "connected": 0,
+        "qualified": 0,
+        "liveTransferAttempted": 0,
+        "liveTransferAccepted": 0,
+        "appointmentsBooked": 2,
+        "heldCalls": 0,
+        "noShows": 1,
         "won": 0,
         "contractValue": 0,
         "cashCollected": 0
@@ -497,7 +507,2297 @@
     {
       "t": "2026-08-25T20:35:28.568Z",
       "closeRate": 0
+    },
+    {
+      "t": "2026-08-25T20:49:27.874Z",
+      "closeRate": 0
     }
   ],
-  "callLogHistory": []
+  "callLogHistory": [],
+  "cache": {
+    "contactFields": {
+      "oe7yrmqbpTinH1UhTpX4": {
+        "fields": [
+          {
+            "id": "ZbAnImdexdzvCvi2UUVx",
+            "value": "fb"
+          },
+          {
+            "id": "dbUTgrW5dQKVZVsuwM8v",
+            "value": "paid"
+          },
+          {
+            "id": "mgsmQlxFBNWYuip1l8p7",
+            "value": "52541583877769"
+          },
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 3
+          },
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Facebook Ads"
+          },
+          {
+            "id": "T4ZT5aAZtG33vDyaBjPb",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=jg5xLQ7ByGWoWqanqm5a1TbJKYwuBDAonmJ4W2W0OzM.DQkAAAAUkTIerBYzdzBDZTBMT1JTMmFEcTZ0dVRSWWJBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "TFsovIwk95EombaFai6b",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=jg5xLQ7ByGWoWqanqm5a1TbJKYwuBDAonmJ4W2W0OzM.DQkAAAAUkTIerBYzdzBDZTBMT1JTMmFEcTZ0dVRSWWJBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "aCvXpWdkghIqmtA4Mtbx",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=jg5xLQ7ByGWoWqanqm5a1TbJKYwuBDAonmJ4W2W0OzM.DQkAAAAUkTIerBYzdzBDZTBMT1JTMmFEcTZ0dVRSWWJBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "azlatcryAviD4l2HgOm2",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=jg5xLQ7ByGWoWqanqm5a1TbJKYwuBDAonmJ4W2W0OzM.DQkAAAAUkTIerBYzdzBDZTBMT1JTMmFEcTZ0dVRSWWJBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "tHiNIUaWLbLaOQ2sG6lC",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=jg5xLQ7ByGWoWqanqm5a1TbJKYwuBDAonmJ4W2W0OzM.DQkAAAAUkTIerBYzdzBDZTBMT1JTMmFEcTZ0dVRSWWJBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "lXBcdsaqCaLyo5dOpNkm",
+            "value": "August 26 2026 17:00:00"
+          },
+          {
+            "id": "7gikZhd5m3ODkXrxAYGK",
+            "value": "https://www.google.com/calendar/event?eid=ZnA5Ym1tbzl0aDZuYnUyaTYxNTZla2lqMTAgamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:29.589Z"
+      },
+      "BY2Mwn6aqxFYBND76F7p": {
+        "fields": [
+          {
+            "id": "ZbAnImdexdzvCvi2UUVx",
+            "value": "fb"
+          },
+          {
+            "id": "dbUTgrW5dQKVZVsuwM8v",
+            "value": "paid"
+          },
+          {
+            "id": "mgsmQlxFBNWYuip1l8p7",
+            "value": "52541583877769"
+          },
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 3
+          },
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Facebook Ads"
+          },
+          {
+            "id": "T4ZT5aAZtG33vDyaBjPb",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=wg0g-j_IgX2PsI1uvrbE8nXgAYlDPT0pMmKJ9z1LwXM.DQkAAAAUkTIerBZqYmtSVl9NQlMwS3VfVTBiaVd0dGFBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "TFsovIwk95EombaFai6b",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=wg0g-j_IgX2PsI1uvrbE8nXgAYlDPT0pMmKJ9z1LwXM.DQkAAAAUkTIerBZqYmtSVl9NQlMwS3VfVTBiaVd0dGFBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "aCvXpWdkghIqmtA4Mtbx",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=wg0g-j_IgX2PsI1uvrbE8nXgAYlDPT0pMmKJ9z1LwXM.DQkAAAAUkTIerBZqYmtSVl9NQlMwS3VfVTBiaVd0dGFBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "azlatcryAviD4l2HgOm2",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=wg0g-j_IgX2PsI1uvrbE8nXgAYlDPT0pMmKJ9z1LwXM.DQkAAAAUkTIerBZqYmtSVl9NQlMwS3VfVTBiaVd0dGFBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "tHiNIUaWLbLaOQ2sG6lC",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=wg0g-j_IgX2PsI1uvrbE8nXgAYlDPT0pMmKJ9z1LwXM.DQkAAAAUkTIerBZqYmtSVl9NQlMwS3VfVTBiaVd0dGFBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "lXBcdsaqCaLyo5dOpNkm",
+            "value": "August 26 2026 17:00:00"
+          },
+          {
+            "id": "7gikZhd5m3ODkXrxAYGK",
+            "value": "https://www.google.com/calendar/event?eid=MmMwOG41M2IyOTd0NWh1YnFqNTY1Nm9paDAgamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:29.600Z"
+      },
+      "5GifjK0yVR5hmdovxhfn": {
+        "fields": [
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 3
+          },
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Organic Leads"
+          },
+          {
+            "id": "T4ZT5aAZtG33vDyaBjPb",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=ZXpcbggFLrWTr36B6gwz0aKktCDf6kMWTBlL1Rmps3Y.DQkAAAAUkTIerBZPSy1ZTnVla1FnQ2U1cmVrNm5FY1B3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "TFsovIwk95EombaFai6b",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=ZXpcbggFLrWTr36B6gwz0aKktCDf6kMWTBlL1Rmps3Y.DQkAAAAUkTIerBZPSy1ZTnVla1FnQ2U1cmVrNm5FY1B3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "aCvXpWdkghIqmtA4Mtbx",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=ZXpcbggFLrWTr36B6gwz0aKktCDf6kMWTBlL1Rmps3Y.DQkAAAAUkTIerBZPSy1ZTnVla1FnQ2U1cmVrNm5FY1B3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "azlatcryAviD4l2HgOm2",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=ZXpcbggFLrWTr36B6gwz0aKktCDf6kMWTBlL1Rmps3Y.DQkAAAAUkTIerBZPSy1ZTnVla1FnQ2U1cmVrNm5FY1B3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "tHiNIUaWLbLaOQ2sG6lC",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=ZXpcbggFLrWTr36B6gwz0aKktCDf6kMWTBlL1Rmps3Y.DQkAAAAUkTIerBZPSy1ZTnVla1FnQ2U1cmVrNm5FY1B3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "lXBcdsaqCaLyo5dOpNkm",
+            "value": "August 26 2026 17:00:00"
+          },
+          {
+            "id": "7gikZhd5m3ODkXrxAYGK",
+            "value": "https://www.google.com/calendar/event?eid=ZjM1Mm00bDlpNG5vc2owN2RrNGpwa3MwbW8gamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:29.603Z"
+      },
+      "tc5gdF6udAEDklZHpHap": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 7614
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Tamsir Ba was approached with multiple offers and invitations to webinars and masterclasses focused on business funding, credit repair, and real estate investment strategies, aiming to help him access funding and improve his credit profile. The messages provided details on upcoming events, special promotions (such as discounts on credit coaching and software), and options for personalized credit and funding reviews. Tamsir was asked if he was interested in joining these sessions or wanted more information about the services. The conversation concluded with an open invitation for a direct conversation to discuss his financial goals and how the team could assist him further."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:29.694Z"
+      },
+      "aAxxargFQ7S5My3f8abo": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 303879
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Sterling Stegall was repeatedly invited to attend webinars and masterclasses focused on accessing business funding, improving credit, and investing in real estate with little or no money down. The messages provided details about event times, registration links, and special offers such as discounted credit coaching and real estate investment software. Sterling was also asked if he was interested in discussing credit repair and funding strategies, with contact information and social media links provided for further engagement. The conversation concluded with reminders about limited-time discounts and enrollment spots, encouraging Sterling to respond if interested."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:29.697Z"
+      },
+      "Uaa4FL8QQJJgi1s7CszJ": {
+        "fields": [
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 3
+          },
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Organic Leads"
+          },
+          {
+            "id": "T4ZT5aAZtG33vDyaBjPb",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=8rb0WwmIXgN5d7SJzIb8wES1bKYbG1bOBZc4f06o6IA.DQkAAAAUkTIerBZ5azZiZnEtSlI3bWdSQTRfamVrUVV3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "TFsovIwk95EombaFai6b",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=8rb0WwmIXgN5d7SJzIb8wES1bKYbG1bOBZc4f06o6IA.DQkAAAAUkTIerBZ5azZiZnEtSlI3bWdSQTRfamVrUVV3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "aCvXpWdkghIqmtA4Mtbx",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=8rb0WwmIXgN5d7SJzIb8wES1bKYbG1bOBZc4f06o6IA.DQkAAAAUkTIerBZ5azZiZnEtSlI3bWdSQTRfamVrUVV3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "azlatcryAviD4l2HgOm2",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=8rb0WwmIXgN5d7SJzIb8wES1bKYbG1bOBZc4f06o6IA.DQkAAAAUkTIerBZ5azZiZnEtSlI3bWdSQTRfamVrUVV3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "tHiNIUaWLbLaOQ2sG6lC",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=8rb0WwmIXgN5d7SJzIb8wES1bKYbG1bOBZc4f06o6IA.DQkAAAAUkTIerBZ5azZiZnEtSlI3bWdSQTRfamVrUVV3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "lXBcdsaqCaLyo5dOpNkm",
+            "value": "August 26 2026 17:00:00"
+          },
+          {
+            "id": "7gikZhd5m3ODkXrxAYGK",
+            "value": "https://www.google.com/calendar/event?eid=MWlxMDZrbTRyODV1azVoNzloaWZkbzlra28gamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:29.716Z"
+      },
+      "s7fqsd5pRx0n7k2bR9pG": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 145
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Donnell Holmes was targeted with a series of messages promoting masterclasses and webinars focused on securing business funding and investing in real estate with little or no money down. The communications offered registration links, reminders, and special promotions for credit coaching, counseling, and software, and also inquired about Donnell’s specific challenges with business funding and credit approval. Donnell was invited to join live sessions, receive personalized support, and take advantage of limited-time discounts, with technical information provided about event times, access links, and program details. The conversation concluded with offers for a Credit & Funding Review and an invitation for a quick conversation to discuss Donnell’s financial goals and potential solutions."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:29.794Z"
+      },
+      "XKwny3tBWR12HZkXfJDP": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 82058
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Cortez Adams was contacted multiple times with offers and reminders about masterclasses and webinars focused on securing business funding and investing in real estate, including strategies for $0 down investing. The communications also promoted discounted services for credit coaching, counseling, and REI Ready software, with limited-time offers and enrollment caps highlighted. Cortez was asked about his biggest challenges in obtaining business funding and invited to respond for more details or to secure his spot in various programs. The conversation concluded with follow-ups emphasizing the urgency of the limited-time discounts and remaining spots."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:29.826Z"
+      },
+      "30yCyslDOHGbvcIuO211": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 111
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "D’vaunyia Greenland was contacted multiple times by Will Roundtree and the WE Management team with offers and invitations to webinars and masterclasses focused on accessing business funding, improving credit, and investing in real estate with little or no personal capital. The communications included reminders about upcoming events, special promotions (such as 50% off credit repair and discounted software), and questions about D’vaunyia’s specific challenges with business funding. The technical information requested centered on D’vaunyia’s obstacles to obtaining funding and interest in credit repair or real estate investment strategies. The conversation concluded with ongoing follow-ups and limited-time offers, encouraging D’vaunyia to respond for more details or to secure a spot in the programs."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:29.832Z"
+      },
+      "TutkxBlpaLivuU7Fml3g": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 47
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Ryanmccready Mccready was approached with multiple offers and invitations to join masterclasses and webinars focused on securing business funding, improving credit, and investing in real estate with little or no money down. The communications included reminders about upcoming events, special promotions (such as discounts on credit coaching and software), and requests to discuss his specific funding challenges and financial goals. The technical information requested centered on whether Ryan was interested in learning about credit repair, funding approval processes, and real estate investment strategies. The conversation concluded with an open invitation for a personalized credit and funding review, aiming to support Ryan in building his credit profile and accessing funding opportunities."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:29.893Z"
+      },
+      "cgt4uIYdikxeJ7qu6Am6": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 206
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Gustavo was seeking ways to secure business funding and overcome credit issues that were preventing approval. He received multiple invitations to webinars and masterclasses focused on funding strategies, credit repair, and real estate investing, along with offers for discounted credit coaching and software. The conversation included requests for Gustavo to share his biggest funding challenges and to enroll in credit monitoring services for a personalized funding plan. The interaction concluded with follow-ups about limited-time discounts and reminders to take advantage of the offers before spots filled up."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:29.934Z"
+      },
+      "NsYWKV2u8sWoPouj5chz": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 56
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Ceecee Brown was contacted multiple times by Will Roundtree and his team about opportunities to access funding, improve credit, and invest in real estate with little or no money down. The messages promoted free masterclasses, live webinars, and special offers on credit coaching and REI software, emphasizing limited-time discounts and enrollment caps. Ceecee was asked about her biggest funding challenges and invited to reply for more details or to secure her spot in various programs. The conversation concluded with reminders about the ongoing promotional offers and encouragement to respond for further information."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:29.953Z"
+      },
+      "2jOI3tLFLpx6MZKgDyaH": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 8327
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Levell Bogan was seeking information and opportunities to improve credit, secure business funding, and learn about real estate investing, primarily through webinars, masterclasses, and coaching programs offered by Will Roundtree and WE Management Services. Throughout the conversation, Levell received details about various events, including registration links, payment options, and special promotions (such as discounts on credit repair and real estate coaching). Technical information requested or provided included webinar access procedures, payment plan options, and steps for credit and funding analysis. The conversation concluded with ongoing offers for discounted enrollment in credit coaching and real estate programs, as well as invitations for follow-up calls to discuss Levell’s goals and next steps."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:30.039Z"
+      },
+      "wv13wZdZnSyW5JaDfKcA": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 3394
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Raymond Gratereaux was seeking ways to secure business funding and overcome credit challenges, particularly to invest in real estate. Throughout the conversation, he was offered information about masterclasses, webinars, and credit repair/coaching services, with specific technical details requested about his credit issues and funding obstacles. The conversation included invitations to register for events, links to credit monitoring services, and promotional offers for credit repair and real estate investment tools. The interaction concluded with follow-ups about limited-time discounts and encouragement to take advantage of ongoing offers to address his credit and funding needs."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:30.043Z"
+      },
+      "rB4W3EH2WiU0u5i53nVR": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 13340
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Kierra Craig was repeatedly contacted with offers to join webinars and masterclasses about securing business funding and investing in real estate with little or no money down, as well as promotions for credit coaching and related services. The messages included invitations to register for events, reminders about limited spots, and special discounts on credit repair and software. Kierra did not request any specific technical information and instead responded with clear requests to stop the communications. The conversation concluded with continued promotional messages despite Kierra's repeated requests to end contact."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:30.133Z"
+      },
+      "zmUP3O4SXodpXlSERJXU": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 428904
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Christian Squires was seeking ways to secure business funding and overcome credit challenges, particularly to invest in real estate. Throughout the conversation, he was invited to multiple webinars and masterclasses focused on funding strategies, credit repair, and $0 down real estate investing. The team specifically inquired about his credit issues, offered technical details about credit report disputes, funding plan setup, and promoted discounted credit coaching and software. The conversation concluded with an offer for a personalized Credit & Funding Review to assess his credit profile and discuss potential funding solutions."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:30.136Z"
+      },
+      "C7gvY5lssJROCEZjzNr9": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 78042
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:30.144Z"
+      },
+      "vsLyjOjyw8V5NeU2M0Ml": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 32181
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Zerome Cage was contacted multiple times by Will Roundtree and WE Management Services regarding opportunities to access business funding, improve credit, and invest in real estate through various masterclasses, webinars, and coaching programs. The communications included invitations to free and paid events, special promotions (such as 50% off credit repair and discounted coaching), and offers for personalized credit and funding analysis. Specific technical information provided included event registration links, details on funding amounts, credit improvement strategies, and program pricing/financing options. The conversation concluded with ongoing follow-ups and open invitations for Zerome to reply or schedule a call to discuss next steps or take advantage of current offers."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:30.247Z"
+      },
+      "1qX4ClXtA0tAy7v9MmEG": {
+        "fields": [
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Jeremiah Golston was approached with multiple offers and invitations to webinars, masterclasses, and coaching sessions focused on accessing business funding, improving credit, and investing in real estate with little or no personal capital. The communications provided details about upcoming events, special promotions (such as discounts on credit coaching and software), and opportunities for personalized credit and funding reviews. Jeremiah was asked if he was interested in learning more, registering for events, or having a conversation about his financial goals and credit situation. The conversation concluded with an open invitation for Jeremiah to respond if he wanted further details or to take advantage of the offers."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:30.248Z"
+      },
+      "WA5C8D9gROHMkbJ8LMQC": {
+        "fields": [
+          {
+            "id": "ZbAnImdexdzvCvi2UUVx",
+            "value": "fb"
+          },
+          {
+            "id": "dbUTgrW5dQKVZVsuwM8v",
+            "value": "paid"
+          },
+          {
+            "id": "mgsmQlxFBNWYuip1l8p7",
+            "value": "52541583877769"
+          },
+          {
+            "id": "T4ZT5aAZtG33vDyaBjPb",
+            "value": "https://us02web.zoom.us/w/81935788120?tk=BHrJ_9wKxyfj7ShD6ScEoCSzXF3G3pD1b8esQGZaAhE.DQkAAAATE8DoWBZYMXFvT2J6NlJZaS1wVkRCd3oxNjNBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=MmjIbXWhceV2Yj3TfbLmMnNN5Go3bY.1"
+          },
+          {
+            "id": "TFsovIwk95EombaFai6b",
+            "value": "https://us02web.zoom.us/w/81935788120?tk=BHrJ_9wKxyfj7ShD6ScEoCSzXF3G3pD1b8esQGZaAhE.DQkAAAATE8DoWBZYMXFvT2J6NlJZaS1wVkRCd3oxNjNBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=MmjIbXWhceV2Yj3TfbLmMnNN5Go3bY.1"
+          },
+          {
+            "id": "azlatcryAviD4l2HgOm2",
+            "value": "https://us02web.zoom.us/w/81935788120?tk=BHrJ_9wKxyfj7ShD6ScEoCSzXF3G3pD1b8esQGZaAhE.DQkAAAATE8DoWBZYMXFvT2J6NlJZaS1wVkRCd3oxNjNBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=MmjIbXWhceV2Yj3TfbLmMnNN5Go3bY.1"
+          },
+          {
+            "id": "tHiNIUaWLbLaOQ2sG6lC",
+            "value": "https://us02web.zoom.us/w/81935788120?tk=BHrJ_9wKxyfj7ShD6ScEoCSzXF3G3pD1b8esQGZaAhE.DQkAAAATE8DoWBZYMXFvT2J6NlJZaS1wVkRCd3oxNjNBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=MmjIbXWhceV2Yj3TfbLmMnNN5Go3bY.1"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Wanjrioa Wilkins was contacted by the team regarding her interest in the Fundable CEO Masterclass after missing a webinar. She explained she was experiencing personal challenges and requested a follow-up in two weeks. No specific technical information was requested during the conversation. The agent confirmed they would reach out again on August 28th and offered flexibility if Wanjrioa was ready sooner, concluding the conversation on a supportive note."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:30.263Z"
+      },
+      "SfBcpxJdZLjTb8EnEBha": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 46086
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Freddy Rodriguez was contacted multiple times with offers and reminders to join various masterclasses and webinars focused on business funding, real estate investing, and credit repair. The communications highlighted opportunities to learn about accessing up to $1M in 0% interest funding, strategies for $0 down real estate investing, and special promotions for credit coaching and software. Freddy was invited to register for events, take advantage of limited-time discounts, and was provided with contact information for further assistance. The conversation concluded with follow-up messages emphasizing the urgency of the offers and encouraging Freddy to respond if interested."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:30.335Z"
+      },
+      "uC7Pf9CBUJk9PDzMVl9B": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 60951
+          },
+          {
+            "id": "PLwmO9HRpVtMQgJCCz3x",
+            "value": 1
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Hassan Swann was contacted multiple times with offers and reminders about masterclasses and training sessions focused on business funding, real estate investing, and credit repair. The communications aimed to get Hassan to register for webinars, masterclasses, and a 3-day business funding challenge, as well as to take advantage of special promotions on credit coaching and REI software. Specific technical information requested included details about funding approval processes, how $0 down investing works, and the benefits of credit repair services. The conversation concluded with ongoing follow-ups and limited-time offers, but there is no indication that Hassan responded or completed a registration."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:30.378Z"
+      },
+      "zGG5QFYdbRPFimD8dPNq": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 4224
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Karlos Brown was contacted multiple times by Will Roundtree and the WE Management Services team with offers and invitations to webinars, masterclasses, and live training sessions focused on business funding, credit repair, and real estate investment strategies. The communications included details about accessing up to $1M in 0% interest funding, learning $0 down real estate investing, and special promotions such as discounted credit coaching and REI Ready software. Karlos was provided with registration links, event schedules, and pricing options, and was encouraged to reply for more information or to secure his spot. The conversation concluded with follow-up reminders about limited-time offers and enrollment capacity, but there is no indication that Karlos responded or that any technical questions were asked."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:30.398Z"
+      },
+      "nnKHmCkvlVjjVKmwz2y4": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 9707
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "John Archer was seeking help to improve his credit and secure funding for real estate investment, but faced challenges due to 14 recent collections on his credit report. He requested information about addressing these collections and was offered details on a Personal Optimization Service (Credit Repair Program) that specializes in disputing negative items and rebuilding credit. The conversation included offers for free credit assessments, discounted enrollment, and invitations to webinars and masterclasses on funding and real estate strategies. The discussion concluded with an invitation for John to schedule a call to review his credit profile and take advantage of ongoing promotional offers."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:30.447Z"
+      },
+      "WrdP0sEfZDOgPTF8nRRm": {
+        "fields": [
+          {
+            "id": "PLwmO9HRpVtMQgJCCz3x",
+            "value": 1
+          },
+          {
+            "id": "3nBxtcJsSdKEXEhjVl96",
+            "value": "NO"
+          },
+          {
+            "id": "1mQ2gyxJhFGtbtwWWa6V",
+            "value": "4000"
+          },
+          {
+            "id": "FXwdHlPDWgqDW2CgdJLU",
+            "value": "Immediate"
+          },
+          {
+            "id": "PJTVjxsz7b1yqw5LUki2",
+            "value": "Sole Decision-Maker"
+          },
+          {
+            "id": "Uw9caZDuJisnwupHNz0c",
+            "value": 4000
+          },
+          {
+            "id": "dbONS8jsTmaC85wBOF5S",
+            "value": "Wants to consolidate business debt"
+          },
+          {
+            "id": "q52wfanOhSWqduRKOG3G",
+            "value": 4000
+          },
+          {
+            "id": "t96kuubfJm6tBI9Fg9kO",
+            "value": "Credit profile too thin for current lender requirements"
+          },
+          {
+            "id": "y4X1dgdrkPJushJAD6c7",
+            "value": 5000
+          },
+          {
+            "id": "zjywmjKcb9pVEKVCuZfV",
+            "value": "6000"
+          },
+          {
+            "id": "zmj8c6twZPFop62mnlJV",
+            "value": "15000"
+          },
+          {
+            "id": "zokuVotCuCNcLndTp6S0",
+            "value": 4000
+          },
+          {
+            "id": "Mn9BO8pDr6XrsZFlcQjR",
+            "value": 17000
+          },
+          {
+            "id": "3zdjIv5n0DSCYC8FTkP9",
+            "value": "Rianna Nava"
+          },
+          {
+            "id": "AxpKzi9hEtGvHciJH6YH",
+            "value": "$10k-$19,999"
+          },
+          {
+            "id": "LjvzAPtsqJVnP2KV0KuA",
+            "value": "Jennifer Pascual"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:30.507Z"
+      },
+      "iVcIzPpTSIsnF1Ih4kQL": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 3232
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Lamont Hunt was contacted multiple times with offers to join real estate investment and funding masterclasses, as well as promotions for credit coaching, counseling, and software to help build wealth and improve credit. The communications included invitations to webinars, reminders about limited-time discounts, and opportunities for personalized credit and funding reviews. Lamont was specifically asked if he wanted more details, to reply with keywords for offers, or to schedule a conversation about his financial goals. The conversation concluded with an offer for a Credit & Funding Review and an invitation for a quick discussion to explore how WE Management Services could assist him."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:30.516Z"
+      },
+      "3p3MJHKP2ice1M5JYbYR": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 86
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Garry Dorcelus was contacted multiple times by Will Roundtree and WE Management Services, who were inviting him to register for various masterclasses and webinars focused on real estate investing, business funding, and credit improvement. The outreach included offers for 0% interest funding, $0 down real estate investing strategies, and discounted credit coaching and software. The team also asked Garry about his biggest challenges in securing business funding and offered a complimentary Credit & Funding Review to discuss his financial goals and potential funding options. The conversation concluded with an invitation for a quick conversation to assess how they could support Garry in building his credit profile."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:30.552Z"
+      },
+      "204UeM8daVJjlsMRVErf": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 0
+          },
+          {
+            "id": "PLwmO9HRpVtMQgJCCz3x",
+            "value": 1
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Antwoinette Anderson was contacted multiple times with offers and invitations to webinars, masterclasses, and challenges focused on business funding, credit repair, and real estate investing. The communications aimed to help her access funding (up to $1M at 0% interest), fix her credit, and invest in real estate with little or no money down. She was provided with details about event dates, pricing for VIP and general access, and special promotional discounts (such as 50% off credit coaching and $1,000 off software). The conversation concluded with repeated follow-ups encouraging her to take advantage of limited-time offers and register for upcoming events."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:30.631Z"
+      },
+      "L1FYfC0tXeLHxAzg8ruY": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 2287
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Charday Bean was seeking guidance on obtaining business funding and overcoming credit issues to invest in real estate. Throughout the conversation, she received multiple invitations to webinars and masterclasses focused on funding strategies, credit repair, and real estate investment, as well as promotional offers for credit coaching and related software. The specific technical information requested centered around credit approval challenges and how to improve credit scores for funding eligibility. The conversation concluded with ongoing offers and follow-ups, encouraging Charday to take advantage of discounted credit repair and coaching services before spots filled up."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:30.651Z"
+      },
+      "1YcB5Rn6tfI3zz3RwfYz": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 48165
+          },
+          {
+            "id": "K2YvF1Z6YeS6m7jYQD3h",
+            "value": 120
+          },
+          {
+            "id": "0tSgBul1fft5XaO0rC8H",
+            "value": "Yes"
+          },
+          {
+            "id": "ShwTIxgylsdlyW9AmBVV",
+            "value": "Full-time job"
+          },
+          {
+            "id": "VJbi1VGZfESm1bMXXyM1",
+            "value": "I want to fix my credit"
+          },
+          {
+            "id": "Vn72zf45R5YxmYzwdJ4R",
+            "value": "Need credit fixed"
+          },
+          {
+            "id": "yy7vmyBDaB4k4O7oCBvc",
+            "value": "130645643"
+          },
+          {
+            "id": "PLwmO9HRpVtMQgJCCz3x",
+            "value": 1
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "No Answer"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:30.682Z"
+      },
+      "A6Jb6qDtfTpRN4LyiFJq": {
+        "fields": [
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Eliakim Isilayeli interacted with WE Management Services regarding a webinar, credit monitoring registration, and received invoices for services. The customer was prompted to share what they hoped to learn from the webinar and whether they had previously applied for business funding. Specific technical information requested included registration for IdentityIQ credit monitoring and details about invoice payments. The conversation concluded with a follow-up question about Eliakim's experience with business funding, indicating ongoing engagement."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:30.753Z"
+      },
+      "uy45B9IOjqBb10BDNzw2": {
+        "fields": [
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 2
+          },
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Organic Leads"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "JOSEPH ROBINSON reached out to WE Management Services, mentioning that his sister is already in their program. He provided his credit report credentials for assessment and was seeking assistance with his credit situation. The agent confirmed receipt of his information, completed an initial assessment, and requested to schedule a call to discuss the findings. JOSEPH responded that he is available to talk, concluding the conversation with readiness for further discussion."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:30.801Z"
+      },
+      "TNntRIevwxRDUeLL4m52": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 95
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Jaron James was seeking guidance and opportunities to improve his credit, secure business funding, and start investing in real estate. He received detailed information about live training sessions, coaching programs (such as the REI90 Elite Program), credit repair services, and various limited-time discounts and financing options. The conversation included invitations to webinars, offers for free credit and funding analyses, and explanations of payment plans and program benefits. The interaction concluded with multiple follow-ups encouraging Jaron to enroll in programs or schedule a call to discuss his goals and next steps."
+          },
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 3
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:30.864Z"
+      },
+      "V9qoDeeYEp3JaWtNW9sm": {
+        "fields": [
+          {
+            "id": "T4ZT5aAZtG33vDyaBjPb",
+            "value": "https://us02web.zoom.us/w/81935788120?tk=N4CFaP_xutFgWPL0lptD-KwB5TafLQbSzFLOa7pQPK8.DQkAAAATE8DoWBZ5ZVR4NTNoMlRwTzdJMUxNQ0pRY0tnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=MmjIbXWhceV2Yj3TfbLmMnNN5Go3bY.1"
+          },
+          {
+            "id": "TFsovIwk95EombaFai6b",
+            "value": "https://us02web.zoom.us/w/81935788120?tk=N4CFaP_xutFgWPL0lptD-KwB5TafLQbSzFLOa7pQPK8.DQkAAAATE8DoWBZ5ZVR4NTNoMlRwTzdJMUxNQ0pRY0tnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=MmjIbXWhceV2Yj3TfbLmMnNN5Go3bY.1"
+          },
+          {
+            "id": "azlatcryAviD4l2HgOm2",
+            "value": "https://us02web.zoom.us/w/81935788120?tk=N4CFaP_xutFgWPL0lptD-KwB5TafLQbSzFLOa7pQPK8.DQkAAAATE8DoWBZ5ZVR4NTNoMlRwTzdJMUxNQ0pRY0tnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=MmjIbXWhceV2Yj3TfbLmMnNN5Go3bY.1"
+          },
+          {
+            "id": "tHiNIUaWLbLaOQ2sG6lC",
+            "value": "https://us02web.zoom.us/w/81935788120?tk=N4CFaP_xutFgWPL0lptD-KwB5TafLQbSzFLOa7pQPK8.DQkAAAATE8DoWBZ5ZVR4NTNoMlRwTzdJMUxNQ0pRY0tnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=MmjIbXWhceV2Yj3TfbLmMnNN5Go3bY.1"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Jermaine Cottrell was contacted to discuss whether he had previously applied for business funding. He requested to schedule a call at 3 pm but did not specify the time zone, prompting a follow-up for clarification. After an unsuccessful call attempt, additional messages were sent offering to reschedule. The conversation concluded with an open invitation for Jermaine to confirm a new time for the call."
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "No Answer"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:30.897Z"
+      },
+      "3xRYxYEQnFUCIuenTn6P": {
+        "fields": [
+          {
+            "id": "xEzocmcISRp5TYq1MUXa",
+            "value": "Yes, LLC or Corporation"
+          },
+          {
+            "id": "SRncczGfHWMPyAWLn8qN",
+            "value": "Over 1 year"
+          },
+          {
+            "id": "Nu8xztQJ7xP3SzwAXnrz",
+            "value": "$1–$5K"
+          },
+          {
+            "id": "9L06Ft5uU1ArpXm64dxW",
+            "value": "615"
+          },
+          {
+            "id": "wHwbfTcveD9F4EUz2gzn",
+            "value": "$25K–$50K"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Omar Dunn was contacted by representatives from WE Management Services regarding his interest in a Credit Repair Program. The team provided him with payment links and inquired whether he could use Klarna or Afterpay as payment options, requesting feedback on his experience with the links. Additionally, Omar was asked about his prior experience with business funding and his current challenges. The conversation concluded with open-ended questions, awaiting Omar's response for further assistance."
+          },
+          {
+            "id": "PLwmO9HRpVtMQgJCCz3x",
+            "value": 1
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:30.984Z"
+      },
+      "jNTOWeLVuFMRmaFDAo9f": {
+        "fields": [
+          {
+            "id": "1xOIejzoVSJjNPBVlV4d",
+            "value": {}
+          },
+          {
+            "id": "FgVTfcFPJn2HI8QCzzUr",
+            "value": {}
+          },
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 3352
+          },
+          {
+            "id": "PLwmO9HRpVtMQgJCCz3x",
+            "value": 1
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Christopher Copeland was seeking assistance with credit repair and funding opportunities, expressing interest in webinars and coaching programs offered by WE Management Services. He requested information on how to sign up for a webinar and provided his credit monitoring login details, including his username, password, and the last four digits of his SSN, to facilitate a credit assessment. The conversation included scheduling calls, discussing program options, and receiving multiple invoices related to credit repair and coaching services. The interaction concluded with ongoing follow-ups and reminders about program enrollment and payment schedules."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:30.984Z"
+      },
+      "dbdY4pltwF4mXt1U768M": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 481
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Michael Sanchez was seeking ways to secure business funding and overcome credit issues that were preventing approval. Throughout the conversation, he was offered information about masterclasses, webinars, and special promotions focused on credit repair, funding strategies, and real estate investment, with specific technical details about credit coaching, counseling, and software discounts. The conversation included invitations to live events, offers for credit and funding reviews, and requests for Michael to share his credit report login for a personalized funding plan. The discussion concluded with an offer for a Credit & Funding Review and an invitation to connect further about his financial goals."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.003Z"
+      },
+      "LeSnKYZiNBL74gCGiJwp": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 5122
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Lutherrufus Rufus was approached with multiple offers and reminders about webinars, masterclasses, and special promotions focused on accessing funding, improving credit, and investing in real estate without using personal funds. The communications included invitations to register for live events, details about limited-time discounts on credit coaching and REI software, and offers for personalized credit and funding reviews. The specific technical information requested centered on Lutherrufus’s challenges with business funding and credit approval, as well as his interest in learning more about funding strategies. The conversation concluded with an open invitation for a quick conversation to discuss his financial goals and explore how credit and funding services could support him."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.079Z"
+      },
+      "g2Kua0AmRVV5id7Z7KXS": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 7003
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Voltaireus Newsome was contacted multiple times with offers and reminders about webinars, masterclasses, and special promotions focused on accessing business funding, real estate investment strategies, and credit repair/coaching services. The communications included invitations to register for live events, details on limited-time discounts (such as 50% off credit coaching and $1,000 off REI Ready software), and requests for feedback on funding challenges. Voltaireus was specifically asked if he wanted more information or to reserve a spot, but there is no indication in the conversation that he made a request for technical information or responded to the offers. The conversation concluded with follow-up reminders about the expiring promotions and remaining enrollment spots."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.092Z"
+      },
+      "2AEHSW5OKtJJDuI4rL17": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 616
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Jason Mccraw was contacted multiple times by Will Roundtree and the WE Management Services team with offers to join webinars and masterclasses focused on accessing business funding and investing in real estate with little or no money down. The communications included invitations to register for live training sessions, special promotions on credit coaching and counseling, and offers for discounted enrollment in credit repair services. The team also inquired about Jason's specific challenges with business funding and offered a personalized Credit & Funding Review. The conversation concluded with an open invitation for Jason to discuss his financial goals and explore how the team could assist him in improving his credit and securing funding."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.106Z"
+      },
+      "qOMJKRjcTIrHm3syVFSn": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 5405
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Bralyn Beathea was repeatedly contacted with offers to join real estate investment and funding masterclasses, as well as promotions for credit coaching and counseling services. The messages included invitations to webinars, special discounts, and requests for feedback on funding challenges. Bralyn clarified that the sender had the wrong number. The conversation concluded with continued follow-up messages about ongoing promotions, despite Bralyn’s response."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.189Z"
+      },
+      "fgsus4uanwnSqGQq0IMD": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 623
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Dagineaux Thomas was approached with multiple offers and invitations to join masterclasses, webinars, and coaching sessions focused on accessing business funding, improving credit, and investing in real estate with little or no personal capital. The communications included details about event dates, registration links, pricing for VIP and general access, and special promotions such as discounts on credit coaching and software. The customer was asked if they were interested in learning more, joining events, or having a conversation about their financial goals and credit situation. The conversation concluded with an open invitation for Dagineaux to respond if interested in further details or a personalized credit and funding review."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.208Z"
+      },
+      "cbqX6m409IKhSi06SjVa": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 467023
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Nateisha Franklin was contacted multiple times with offers and reminders about masterclasses and webinars focused on obtaining business funding and investing in real estate with little or no money down. The communications included invitations to register for live training sessions, special promotions on credit coaching and REI software, and follow-ups about limited-time discounts. The specific technical information offered included strategies for getting approved for funding, understanding lender requirements, and using credit repair services. The conversation concluded with ongoing reminders about expiring promotions and limited enrollment spots, encouraging Nateisha to respond for more details."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.227Z"
+      },
+      "k6Iu4r0yf9Y8xhJJn2RC": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 312773
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Frank Littleton was contacted by Will Roundtree and the WE Management Services team with offers and invitations to webinars, masterclasses, and live events focused on business funding, real estate investing, and credit improvement. The communications aimed to help Frank access funding (up to $1M at 0% interest), learn about $0 down real estate investing, and improve his credit profile, with several limited-time discounts and enrollment opportunities. Specific technical information offered included details about credit coaching, funding strategies, software tools, and event registration links. The conversation concluded with an invitation for a personalized Credit & Funding Review and an offer to discuss Frank’s financial goals further."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.311Z"
+      },
+      "ZVIzLjMVkjbN2p8uvwLD": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 723
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Savannah Cotton was contacted multiple times with offers and reminders about webinars and masterclasses focused on business funding, real estate investing, and credit coaching. She was encouraged to register for events promising strategies to access funding, invest with $0 down, and improve credit, with several time-sensitive discounts and VIP options presented. Specific technical information requested included details on business funding approval processes, lender criteria, and credit repair services. The conversation concluded with ongoing follow-ups about limited-time offers and enrollment spots, inviting Savannah to respond for more details or assistance."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.320Z"
+      },
+      "pWLJobBpgn21Z3a4S9HC": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 80
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Deshawnah Springer was contacted multiple times with offers to join webinars and masterclasses focused on securing business funding and investing in real estate with little or no money down. She was invited to register for events, receive step-by-step guidance, and take advantage of limited-time discounts on credit coaching, counseling, and REI Ready software. The communications included reminders, special promotions, and requests for feedback about her funding challenges, but there is no indication that Deshawnah requested specific technical information or responded to the offers. The conversation concluded with continued follow-ups and promotional reminders, but no resolution or customer engagement was documented."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.379Z"
+      },
+      "9WDNJVORWLL3bvqsUYWA": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 437
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Shakir Nabors was contacted multiple times by WE Management Services and Will Roundtree regarding opportunities to access funding, improve credit, and invest in real estate, primarily through webinars, masterclasses, and special promotions. The communications focused on helping Shakir overcome credit issues that were preventing business funding approvals, with offers for credit repair, coaching, and discounted enrollment. Specific technical information requested included details about Shakir's credit challenges and whether he continued to face issues with credit approvals. The conversation concluded with an invitation for a personalized Credit & Funding Review to discuss inquiry removal, credit improvement, and funding options, offering to connect for a quick conversation."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.419Z"
+      },
+      "UwVCy6qsuJpj485BgrmT": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 390044
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Michael Finley was contacted multiple times by Will Roundtree and the WE Management Services team with offers and invitations to webinars, masterclasses, and special promotions focused on business funding, credit repair, and real estate investment strategies. The communications aimed to help Michael access funding (up to $1M at 0% interest), fix his credit, and invest in real estate with little or no personal money down. Specific technical information requested included details about credit repair, funding approval processes, and the mechanics of $0 down real estate investing. The conversation concluded with ongoing follow-ups about limited-time discounts and enrollment opportunities, but there is no indication that Michael responded or completed any registration."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.469Z"
+      },
+      "zoUAJh4skiVzHXTvESoE": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 901
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Tyrone Harrison was contacted multiple times by Will Roundtree’s team and WE Management Services, inviting him to attend various free masterclasses and webinars focused on accessing business funding, improving credit, and investing in real estate with little or no money down. The communications included reminders, registration links, and special offers such as discounted credit coaching and REI software. Tyrone was also offered opportunities for a personalized credit and funding review, with team members requesting a conversation to discuss his financial goals and potential solutions. The conversation concluded with an open invitation for Tyrone to respond if interested in learning more or taking advantage of the ongoing promotions."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.500Z"
+      },
+      "2sW3CsqD8w2H6zNvStTk": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 27
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Mike Sagesse was contacted multiple times by Will Roundtree and the WE Management Services team with offers and invitations to webinars, masterclasses, and live training sessions focused on business funding, real estate investing, and credit repair. The communications provided details on how to access up to $1M in 0% interest funding, strategies for $0 down real estate investing, and special promotions for credit coaching and REI software. Mike was given specific registration links, pricing options, and was invited to ask questions or request more information if needed. The conversation concluded with follow-ups about limited-time offers and reminders to secure spots in upcoming events or take advantage of discounts."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.552Z"
+      },
+      "XDWgQWrOtifGW6dyhwnM": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 858380
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Donte Harris was contacted multiple times with offers and reminders to join masterclasses and webinars focused on obtaining business funding and investing in real estate with little or no money down. The communications included invitations to register for live training sessions, special promotions on credit coaching and real estate investment software, and follow-ups about limited-time discounts. Donte was asked about his biggest challenges with business funding and offered opportunities to discuss credit repair and funding solutions. The conversation concluded with reminders about expiring promotions and limited enrollment spots, encouraging Donte to reply if interested."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.578Z"
+      },
+      "PFSFwLXRsZaUMBOL0HGQ": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 576
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Maling was contacted multiple times by WE Management Services and Will Roundtree with offers to join real estate funding masterclasses and credit repair programs, aiming to help individuals secure business funding and invest in real estate with little or no money down. The communications highlighted special promotions, such as 50% off credit repair services and discounted software, and repeatedly invited Maling to live webinars and masterclasses. The agents specifically inquired about Maling's ongoing credit issues and challenges in obtaining business funding, offering personalized assistance and requesting feedback or a reply to proceed. The conversation concluded with reminders about limited-time offers and follow-ups to encourage Maling to take advantage of the promotions before spots filled up."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.616Z"
+      },
+      "8cG5K146SzH6kMaTCafg": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 60722
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Malik Rogers was contacted multiple times by Will Roundtree and the WE Management Services team about opportunities to access funding, improve credit, and invest in real estate with little or no money down. The messages promoted masterclasses, webinars, and special offers (such as 50% off credit repair and discounted software) aimed at helping individuals overcome credit challenges and secure business funding. Malik was invited to register for events, reply for more information, or take advantage of limited-time promotions. The conversation concluded with follow-up reminders about expiring offers and limited spots remaining, but there is no record of Malik responding or requesting specific technical information."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.666Z"
+      },
+      "s5R8k8y91X7c9y9jhGvg": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 2
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Victoria Parker was contacted multiple times with offers and reminders about webinars, masterclasses, and special promotions related to business funding, credit coaching, and real estate investment strategies. The communications aimed to encourage her to register for events that teach how to access funding (up to $1M at 0% interest), improve credit scores, and invest in real estate with little or no money down. She was provided with technical details about event times, pricing for VIP and general access, and limited-time discounts on credit repair and software products. The conversation concluded with follow-ups about ongoing promotions and an invitation to respond for more details or assistance with enrollment."
+          },
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 3
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.692Z"
+      },
+      "Rqchz7HxIkjHMKwA7lZ7": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 3
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.729Z"
+      },
+      "8W7hRhKdj920YXq3hqAn": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 349382
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Donald Miano was contacted multiple times with offers to join real estate investment and funding masterclasses, as well as promotions for credit coaching and counseling services. The communications aimed to help him access up to $1M in 0% interest funding, learn about $0 down real estate investing, and overcome credit-related barriers to business funding. Specific technical information offered included details about masterclass schedules, enrollment limits, and discounted pricing for credit repair and REI software. The conversation concluded with reminders about limited-time offers and requests for Donald to reply if interested in learning more or securing a spot."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.789Z"
+      },
+      "EYbSVLhmsSXag8C7xU24": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 745
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Latoya Akana was contacted by WE Management Services and Will Roundtree’s team to encourage her to attend various webinars and masterclasses focused on business funding, credit building, and real estate investment, including offers for $0 down investing and credit coaching. Throughout the conversation, Latoya was provided with multiple registration links, reminders about event times, and details about special promotions such as 50% off credit counseling and discounts on REI Ready software. The team also offered personalized support, inviting her to discuss her financial goals and participate in a Credit & Funding Review, which would cover inquiry removal, credit improvement, and funding options. The conversation concluded with an open invitation for Latoya to connect further and take advantage of ongoing promotions and support services."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.809Z"
+      },
+      "wOU0UubvpNI2rADBs2iS": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 335
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Jordan Denard was contacted multiple times by Will Roundtree and the WE Management Services team with offers and invitations to webinars, masterclasses, and live trainings focused on accessing business funding, fixing credit, and investing in real estate with little or no money down. The communications included details about upcoming events, special promotions (such as 50% off credit coaching and discounted software), and registration links. Jordan was asked if he was interested in learning more or participating, but there is no indication in the conversation that he requested specific technical information or responded with questions. The conversation concluded with follow-up reminders about limited-time offers and remaining spots for discounted services."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.832Z"
+      },
+      "cnCpb89ukVK38FBcHYPt": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 63
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Liz Louis was contacted multiple times with offers and reminders about webinars, masterclasses, and live training sessions focused on accessing business funding, improving credit, and investing in real estate with little or no personal money. The communications provided details about event dates, registration links, pricing for VIP and general access, and limited-time discounts on credit coaching and software. Liz was also asked if she wanted more information or to confirm her interest by replying to the messages. The conversation concluded with ongoing follow-ups and reminders about limited spots and expiring promotions, but there is no indication that Liz responded or that her specific technical questions were addressed."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.913Z"
+      },
+      "bWUTlFfokg7q5IP7rrb1": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 239
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Leslie Spann-Milling was seeking assistance with obtaining business funding and overcoming credit issues that were preventing approval. Throughout the conversation, Leslie was invited to multiple webinars and masterclasses focused on funding strategies, credit repair, and real estate investment, and was offered technical information about credit improvement, dispute processes, and funding plan development. The conversation included several promotional offers for credit coaching, counseling, and software, with requests for Leslie to provide login details for a credit monitoring service to build a personalized funding plan. The discussion concluded with an invitation for a Credit & Funding Review to assess Leslie's credit profile and explore potential funding opportunities."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.928Z"
+      },
+      "ByePijNPjY3x7QEI3gmE": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 1
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Everton Allen was targeted with a series of messages inviting him to webinars and masterclasses focused on securing business funding, improving credit, and investing in real estate with little or no money down. The communications provided technical information about accessing $50K–$1M in 0% interest funding, lender approval criteria, building a fundable profile, and special offers on credit repair and real estate investment software. Everton was repeatedly encouraged to register for live sessions, book strategy calls, and take advantage of limited-time discounts. The conversation concluded with personal outreach offering a Credit & Funding Review and an invitation to discuss his financial goals further."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:31.954Z"
+      },
+      "llCucfKHAMVbkvU9yNeg": {
+        "fields": [
+          {
+            "id": "ao2dN8bMjzTP8UtMrm1V",
+            "value": [
+              "I’ve never tried—I assumed I wouldn’t qualify"
+            ]
+          },
+          {
+            "id": "5laODfK7uxyHzgX5a2Xh",
+            "value": "No just started"
+          },
+          {
+            "id": "YKR3MzgyIOWNw32c3weK",
+            "value": [
+              "I’m not sure—I need a clear plan"
+            ]
+          },
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 50022
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Brittany Thomas was interested in learning how to secure business funding and improve her credit, responding to multiple invitations for masterclasses and special promotions on credit coaching and funding strategies. She specifically requested technical details about a Memorial Day 50% off credit coaching and counseling offer, asking for the information to be sent to her email (bt709@yahoo.com). The conversation concluded with the service provider acknowledging her interest and offering to connect further to discuss her financial goals and provide a credit and funding review. Brittany was left with an open invitation for a follow-up conversation to explore personalized support."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.042Z"
+      },
+      "zjdZbP0KOIGES0iYKO9n": {
+        "fields": [
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Loyce Lee was contacted multiple times by Will Roundtree and the WE Management Services team with offers and invitations to webinars and masterclasses focused on business funding, credit repair, and real estate investment strategies, including opportunities to access funding with $0 down or 0% interest. The communications included details about upcoming live events, special discounts on credit coaching and REI software, and enrollment updates for limited-time promotions. Loyce was encouraged to register for these events and reach out for more information or assistance with enrollment. The conversation concluded with reminders about expiring offers and open invitations to participate or request further details."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.042Z"
+      },
+      "EEjncLJWA6JPgU0anxhQ": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 6759
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Daniel Dumas was seeking guidance on improving his credit, accessing business funding, and starting a real estate investment journey. He received detailed information about live training sessions, coaching programs (such as the REI90 Elite Program), credit repair services, and special promotional offers, including flexible payment options and free credit/funding analyses. The conversation included invitations to webinars, opportunities for personalized strategy calls, and ongoing follow-ups to schedule calls for further assistance. The interaction concluded with an offer for a Credit & Funding Review and an invitation for a quick conversation to discuss Daniel’s financial goals and potential solutions."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.050Z"
+      },
+      "HmziEXUd8NPe2CFargxr": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 8027
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Derrick Brown was contacted multiple times by Will Roundtree and the WE Management Services team, who were offering opportunities to access business funding, improve credit, and invest in real estate with little or no money down. The messages promoted masterclasses, webinars, and special offers on credit coaching, funding reviews, and real estate investment tools, with details about pricing, enrollment limits, and discounts. Derrick was invited to register for events, reply for more information, or schedule a conversation to discuss his financial goals and credit situation. The conversation concluded with an open invitation for Derrick to connect for a personalized credit and funding review."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.190Z"
+      },
+      "x9sC1fM1j6asZGjJPERp": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 6488
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Torin Smith was seeking ways to secure business funding and invest in real estate, but faced challenges due to credit issues. Throughout the conversation, he received multiple invitations to webinars and masterclasses about funding strategies, as well as offers for credit repair, coaching, and discounted enrollment in related services. The technical information requested centered on credit improvement, funding approval processes, and specific offers for credit counseling and software. The conversation concluded with an offer for a personalized Credit & Funding Review to assess inquiry removal, credit improvement, and funding options, inviting Torin to a direct conversation about his financial goals."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.292Z"
+      },
+      "VI7gzywxX2Zz0RC9myDo": {
+        "fields": [
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Evelyn Rivera was contacted by WE Management Services to help her improve her credit and access funding, with offers including credit repair, business funding, and real estate coaching. The team invited her to participate in a free credit and funding analysis and attend multiple live training sessions on acquiring property using other people’s money. Technical information requested centered on her current credit situation and obstacles to funding approval. The conversation concluded with repeated follow-ups and promotional offers for discounted credit coaching and related services, encouraging Evelyn to respond or join the training sessions."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.296Z"
+      },
+      "lT9gf1WsAeU7pS2KfUF0": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 781721
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Keisha Taylor was contacted multiple times by Will Roundtree and the WE Management Services team with offers and invitations to webinars, masterclasses, and live training sessions focused on business funding, real estate investment, and credit improvement. The communications included details about accessing up to $1M in 0% interest funding, strategies for $0 down real estate investing, and special promotions for credit coaching and REI Ready software. Keisha was invited to register for events, take advantage of limited-time discounts, and was offered personal assistance for her credit goals. The conversation concluded with follow-ups about ongoing promotions and reminders to secure her spot before capacity was reached."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.379Z"
+      },
+      "SG4LQgiF8V666XE3UUvC": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 71
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Jonathanabad Abad was targeted with multiple messages promoting webinars and masterclasses focused on obtaining business funding and investing in real estate with little or no money down. The communications offered registration links, special discounts on credit coaching and software, and invitations to live events, while also inquiring about Jonathanabad's challenges with business funding and credit approval. Specific technical information requested included whether Jonathanabad was interested in learning more about funding strategies, credit repair, and participating in a Credit & Funding Review. The conversation concluded with a personal outreach from Rianna, offering a one-on-one discussion to assess Jonathanabad's financial goals and credit improvement opportunities."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.403Z"
+      },
+      "Ocd810CTLQrLP3nVYdyi": {
+        "fields": [
+          {
+            "id": "PLwmO9HRpVtMQgJCCz3x",
+            "value": 1
+          },
+          {
+            "id": "yy7vmyBDaB4k4O7oCBvc",
+            "value": "654036956"
+          },
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 2
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Andrew Seale was seeking updates on the status of his credit dispute and wanted to know if there were any results. He was asked to provide updated TransUnion and Equifax credit reports, as the service provider was unable to access them through his Credit Karma and Equifax accounts, and he supplied his login credentials and a one-time passcode to assist. The conversation included troubleshooting access issues with his Equifax account, with Andrew agreeing to try logging in himself later. The exchange concluded with the service provider acknowledging the access difficulties and reiterating the need for Andrew's assistance, while also sending reminders about upcoming invoice payments."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.413Z"
+      },
+      "TYalfaQViuAeJE95qA3m": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 56896
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Ken Seveur was seeking guidance on improving his credit, accessing business funding, and starting or advancing his real estate investment journey. He received multiple invitations to live webinars and coaching programs focused on obtaining funding, building wealth in real estate using other people’s money, and improving credit. Specific technical information offered included credit and funding analyses, strategies for credit repair, and step-by-step systems for acquiring property within 90 days. The conversation concluded with ongoing offers for discounted coaching, credit counseling, and invitations to schedule a call or join live training sessions to further discuss his goals and available solutions."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.478Z"
+      },
+      "nMkFL9o0lZ9fk3Y7Z1QE": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 5278
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Corsavius Jackson was contacted multiple times by Will Roundtree’s team and WE Management Services, inviting him to attend various free masterclasses and webinars focused on accessing business funding, improving credit, and investing in real estate with little or no money down. The communications included reminders, registration links, and special offers such as discounts on credit coaching and REI Ready software. The team also reached out personally to discuss Corsavius’s financial goals and offered a complimentary Credit & Funding Review. The conversation concluded with an open invitation for Corsavius to engage further, either by joining a session, replying for more details, or scheduling a call to discuss his credit and funding opportunities."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.506Z"
+      },
+      "KWSwqreK3KV3kiocdt26": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 326
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Mark Rivas was contacted multiple times by Will Roundtree’s team, offering opportunities to join masterclasses and webinars focused on accessing business funding, improving credit, and investing in real estate with little or no money down. The communications included invitations to register for events, special promotions on credit coaching and software, and offers for personalized credit and funding reviews. Mark was asked about his biggest challenges with business funding and whether he would be interested in learning more or having a conversation about improving his credit and funding options. The conversation concluded with an open invitation for Mark to connect and discuss his financial goals, with several offers and promotions still available."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.508Z"
+      },
+      "FBsyHPzAGEKGOXjNzfZB": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 11
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Taqueena Wilkes was contacted multiple times by Will Roundtree and the WE Management Services team with offers and invitations to webinars and masterclasses focused on business funding, credit repair, and real estate investment strategies, including $0 down investing. The communications provided specific details about upcoming events, pricing for VIP and general access, and special promotions such as discounts on credit counseling and real estate software. The team also asked if Taqueena had questions or needed help registering, and offered direct contact options for further assistance. The conversation concluded with a final promotional offer and a request to confirm interest for follow-up."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.582Z"
+      },
+      "SM0C0NwJrd2IxFvroRXS": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 38083
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Phyllis H. was contacted multiple times to encourage her to register for and attend webinars and masterclasses focused on business funding, credit repair, and real estate investing, including special offers for credit coaching and software. She was provided with technical details such as registration links, Zoom access instructions, and information about required registration steps for webinars. The conversation included reminders about limited-time discounts and enrollment caps, with several follow-ups to prompt a response or registration. The conversation concluded with a final reminder about the extended Memorial Day promotion and a call to reply for more details."
+          },
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 2
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.598Z"
+      },
+      "rFIsIbo2YKheXZ0OlKqy": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 583
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Sherrone Palmer was contacted multiple times by Will Roundtree and the WE Management Services team with offers to help improve credit, access business funding, and invest in real estate, often through free or paid masterclasses and coaching programs. The communications included invitations to webinars, masterclasses, and special promotions (such as discounted credit repair and software), aiming to help Sherrone secure funding without using personal credit. Specific technical information offered included strategies for $0 down real estate investing, credit improvement, inquiry removal, and accessing up to $1M in 0% interest funding. The conversation concluded with an open invitation for Sherrone to connect for a Credit & Funding Review and to discuss her financial goals further."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.623Z"
+      },
+      "iAXtFEUPNQ7Jdv8Deqwp": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 690
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Brian Thomas was repeatedly invited to join webinars and masterclasses focused on accessing funding and investing in real estate with little or no money down. He was offered technical information about credit coaching, funding strategies, and credit repair services, including details on special promotions and enrollment opportunities. The conversation included invitations to live events, offers for discounted services, and a proposal for a personalized credit and funding review. The exchange concluded with an offer to connect for a conversation about Brian’s financial goals and how WE Management Services could assist him."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.681Z"
+      },
+      "5Cqu0l9EJOo0pTsci8lo": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 0
+          },
+          {
+            "id": "PLwmO9HRpVtMQgJCCz3x",
+            "value": 1
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Juan Hood was contacted multiple times by Will Roundtree and his team, who were promoting webinars and masterclasses focused on accessing funding, improving credit, and investing in real estate with little or no money down. The messages encouraged Juan to register for events, take advantage of limited-time discounts on credit repair and coaching services, and participate in a Credit & Funding Review. The team also asked Juan about his biggest challenges with business funding and offered to discuss personalized solutions. The conversation concluded with an invitation for a quick conversation to review Juan's credit and funding opportunities."
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.716Z"
+      },
+      "tvPiTnQFzXkCSL7ez5Ry": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 3458
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Christian Nobles-Turner was targeted with a series of promotional messages aimed at encouraging him to register for webinars and masterclasses focused on obtaining business funding and investing in real estate with little or no money down. The messages included invitations to live events, reminders about registration deadlines, and special offers on credit coaching and real estate investment software. The communications also sought to engage Christian by asking about his challenges with business funding and offering personalized follow-up. The conversation concluded with ongoing offers and requests for Christian to reply if interested, but there is no indication that Christian responded or requested specific technical information."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.723Z"
+      },
+      "tK260V5e59MmbXb0ybc6": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 95
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Brandy Burnom was contacted multiple times by Will Roundtree and the WE Management Services team with offers and invitations to webinars, masterclasses, and live training sessions focused on business funding, real estate investing, and credit improvement. The communications included details about accessing up to $1M in 0% interest funding, strategies for $0 down real estate investing, and special promotions on credit coaching and REI Ready software. Brandy was provided with registration links, pricing options, and contact information for further assistance, but there is no indication that she requested specific technical information or responded with particular questions. The conversation concluded with ongoing follow-ups and reminders about limited-time offers and enrollment capacity, encouraging Brandy to take action if interested."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.782Z"
+      },
+      "9j3XMbDfw0xKvXHrKE5w": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 1491
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "No Answer"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Latisha Hawkins was seeking guidance on securing business funding and building wealth through real estate, particularly after facing funding denials. She received multiple invitations to live webinars and masterclasses focused on obtaining $50K–$100K in funding, lender criteria, and acquiring property using other people’s money (OPM), as well as follow-ups about credit coaching and related software. The communications included reminders, special offers (such as discounts on credit coaching and software), and requests for feedback on her funding challenges. The conversation concluded with ongoing offers for discounted enrollment in credit coaching and encouragement to reply for more details or assistance."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.826Z"
+      },
+      "ezUTcVGsn8xhf6HFptmo": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 55
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Fredericde Jesus was seeking ways to secure business funding and invest in real estate but faced challenges due to credit issues. Throughout the conversation, Fredericde received multiple invitations to webinars and masterclasses focused on funding strategies, credit repair, and real estate investment, as well as promotional offers for credit coaching and related software. The specific technical information requested centered on overcoming credit obstacles to improve funding approval chances. The conversation concluded with ongoing offers for discounted credit repair services and encouragement to take advantage of limited-time enrollment opportunities."
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "No Answer"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.861Z"
+      },
+      "WvA4uucK1RhcjPxjZRCf": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 0
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Crystalmurray Murray was contacted multiple times by Will Roundtree and his team regarding opportunities to access business funding, improve credit, and invest in real estate with little or no money down. The messages promoted various masterclasses, webinars, and special offers (such as discounted credit coaching and REI software) and encouraged registration or replies to secure spots or receive more information. The technical information requested centered on whether Crystalmurray was interested in learning about funding strategies, fixing credit, or taking advantage of promotional offers. The conversation concluded with follow-up reminders about limited-time discounts and enrollment spots, but there is no indication that Crystalmurray responded or that any further action was taken."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.868Z"
+      },
+      "at6FJCIgypKrHX1kQhRm": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 879
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Carolyn Thorpe was contacted multiple times with offers and reminders to join webinars and masterclasses focused on securing business funding and investing in real estate with little or no money down. She was invited to live training sessions, offered special discounts on credit coaching, counseling, and real estate investment software, and asked about her challenges in obtaining business funding. The technical information requested centered around how to get approved for funding, what lenders look for, and strategies for real estate investment without personal capital. The conversation concluded with ongoing follow-ups and limited-time promotional offers, encouraging Carolyn to reply for more details or to secure her spot."
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "No Answer"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.922Z"
+      },
+      "871XVO7WqXILZYC1i4Or": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 45
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Howard Leslie was repeatedly invited to attend webinars and masterclasses focused on accessing business funding, improving credit, and investing in real estate with little or no money down. The communications included offers for discounted credit coaching, software, and funding reviews, as well as details about upcoming events and enrollment limits. Howard was asked if he was interested in learning more, participating in a conversation about his financial goals, or taking advantage of special offers. The conversation concluded with an invitation for a quick discussion to review his credit and funding options."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.955Z"
+      },
+      "jgP2evz0Kk4wcEHuKqJ8": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 271
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Tremeca Cohea was contacted multiple times by Will Roundtree and the WE Management Services team with offers to join masterclasses and webinars focused on accessing business funding, improving credit, and investing in real estate with little or no money down. The messages included invitations to free and paid events, details about special promotions (such as discounts on credit coaching and software), and offers for personalized credit and funding reviews. Tremeca was asked if she was interested in learning more about fixing her credit, accessing funding, and participating in these programs. The conversation concluded with an open invitation for Tremeca to connect for a quick conversation about her financial goals and potential support options."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:32.968Z"
+      },
+      "YDIBbfLvwQfjXkLRK0Eg": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 5
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Kalynn Fields was contacted multiple times with offers and reminders about webinars, masterclasses, and special promotions focused on business funding, credit repair, and real estate investment strategies. The communications aimed to help her access up to $1M in 0% interest funding, learn about $0 down real estate investing, and improve her credit to secure funding. Specific technical information offered included details about live training sessions, pricing for VIP and general access, and discounts on credit coaching and REI software. The conversation concluded with ongoing follow-ups and limited-time offers, encouraging Kalynn to respond or register for upcoming events and promotions."
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:33.053Z"
+      },
+      "hmIjFeEuYe4jEa8j6K58": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 928393
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Chris Code was seeking ways to secure business funding and invest in real estate, but faced challenges due to credit issues. Throughout the conversation, Chris received multiple invitations to webinars and masterclasses focused on funding strategies, credit repair, and real estate investing, as well as promotional offers for credit coaching and related software. The technical information requested centered on overcoming credit obstacles to gain funding approval, with specific guidance offered on credit repair processes and funding plan development. The conversation concluded with ongoing follow-ups and limited-time offers, encouraging Chris to take advantage of discounted credit repair and coaching services to address his funding challenges."
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:33.063Z"
+      },
+      "p1fkGT2pgXXugDoybptU": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 77
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Ciara Brown was contacted multiple times by Will Roundtree’s team and WE Management Services regarding opportunities to access funding, improve credit, and invest in real estate, including invitations to masterclasses and webinars. The communications focused on promoting events that teach strategies for obtaining up to $1M in 0% interest funding, buying property with $0 down, and improving credit to qualify for funding. Specific technical information offered included details about credit coaching, counseling, REI Ready software, and limited-time discounts on these services. The conversation concluded with follow-ups about ongoing promotions and requests for Ciara to respond if interested in learning more or enrolling."
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "No Answer"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:33.095Z"
+      },
+      "EjWD2kl4bJJPrdhtjLIY": {
+        "fields": [
+          {
+            "id": "3zdjIv5n0DSCYC8FTkP9",
+            "value": "Rianna Nava"
+          },
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Organic Leads"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Maurice Ellis-Mckinney was seeking business funding and was informed by WE Management Services that his pre-qualification assessment was complete and the results were available. The company requested a suitable time to discuss the funding results with him. Maurice responded that he would wait to reapply until he lowers his Bank of America credit utilization. The conversation concluded with Maurice indicating he will try again in the future."
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Connected – Follow-Up"
+          },
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 4
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:33.160Z"
+      },
+      "H14hWBWVta36igswSALz": {
+        "fields": [
+          {
+            "id": "3nBxtcJsSdKEXEhjVl96",
+            "value": "NO"
+          },
+          {
+            "id": "PLwmO9HRpVtMQgJCCz3x",
+            "value": 1
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Qualified – Live Transfer"
+          },
+          {
+            "id": "9pzooL63WShDNDyiR5cl",
+            "value": "Yes"
+          },
+          {
+            "id": "Oyuy96K22DMekNOd0IUt",
+            "value": "Yes"
+          },
+          {
+            "id": "cnn3K8m8028wSp4vl2QP",
+            "value": "Live Transfer"
+          },
+          {
+            "id": "fNQdSfFsKLTjYBcZLlE2",
+            "value": "Yes"
+          },
+          {
+            "id": "fkNDRlMxhLiRxsc3B1mA",
+            "value": "Jercori Freeman"
+          },
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 3
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:33.183Z"
+      },
+      "m3x95ho9zYS4dY6pBJLa": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 62567
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Regina Cole was contacted multiple times with offers and reminders about webinars, masterclasses, and live trainings focused on accessing business funding, improving credit, and investing in real estate with little or no money down. She was invited to register for various events, including the Full-Time CEO Funding masterclass, REI90 masterclass, and a 3-Day Business Funding Challenge, with details on pricing and access options provided. The messages also included limited-time promotions for credit coaching, counseling, and real estate investment software, with specific instructions to reply for more information. The conversation concluded with follow-ups about enrollment capacity and extended discounts, but there is no indication that Regina requested specific technical information or responded with further questions."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:33.213Z"
+      },
+      "siT3jD5HqnaHyCk5SlA8": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 1
+          },
+          {
+            "id": "PLwmO9HRpVtMQgJCCz3x",
+            "value": 1
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Nedrick Nedrick was contacted by multiple representatives from WE Management Services and Will Roundtree, offering opportunities to join real estate funding masterclasses and credit repair programs. The communications focused on helping Nedrick access up to $1M in 0% interest funding, improve his credit, and learn how to invest in real estate with little or no money down. Specific technical information requested included whether Nedrick was still experiencing credit issues, what his biggest funding challenges were, and if he would be interested in a Credit & Funding Review to assess inquiry removal and funding options. The conversation concluded with an invitation for a quick conversation to discuss Nedrick’s financial goals and how WE Management could support his credit and funding needs."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:33.269Z"
+      },
+      "gfiSiNiuHcG0e6hkjK1h": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 50
+          },
+          {
+            "id": "PLwmO9HRpVtMQgJCCz3x",
+            "value": 1
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Cyriacus Igwilo was repeatedly invited to join webinars and masterclasses about obtaining business funding and real estate investment, with a focus on overcoming credit issues. The messages offered promotions on credit repair and coaching services, and Cyriacus was asked about his ongoing challenges with credit approval. Cyriacus responded negatively, expressing frustration and accusing the senders of scamming. The conversation concluded with continued promotional follow-ups from the service providers, despite Cyriacus's objection."
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "No Answer"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:40.897Z"
+      },
+      "lj7preDO1lSG09scl6u7": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 9
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Ashley Hall was seeking ways to secure business funding and invest in real estate, but faced challenges due to credit issues. Throughout the conversation, Ashley received multiple invitations to webinars and masterclasses focused on obtaining funding, fixing credit, and leveraging $0 down real estate strategies. The technical information requested centered on credit repair, funding approval processes, and available discounts for credit coaching and software. The conversation concluded with ongoing offers for discounted credit repair services and encouragement to take advantage of limited-time enrollment opportunities."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:40.991Z"
+      },
+      "G5Jcn266yvBw47vqykH9": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 7911
+          },
+          {
+            "id": "PLwmO9HRpVtMQgJCCz3x",
+            "value": 1
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "No Answer"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Nicole Tard was contacted multiple times by Will Roundtree and the WE Management Services team with offers and invitations to webinars, masterclasses, and live training sessions focused on business funding, credit repair, and real estate investment strategies. The communications aimed to help Nicole access funding (up to $1M at 0% interest), improve her credit, and learn how to invest in real estate with little or no money down. Specific technical information offered included details on credit coaching, funding approval processes, software discounts, and enrollment promotions. The conversation concluded with an invitation for a personalized Credit & Funding Review and an offer to discuss Nicole’s financial goals in a quick conversation."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:41.034Z"
+      },
+      "Uyaje0vHu5Cz4I2CLifu": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 682
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Renee Spence was invited to multiple webinars and masterclasses focused on accessing business funding, improving credit, and investing in real estate with little or no money down. The communications provided technical details about registration processes, Zoom access, and special offers on credit coaching and real estate investment software. Renee was also offered personalized assistance and follow-up opportunities, including discounted services and direct contact information for further inquiries. The conversation concluded with reminders about limited-time promotions and encouragement to respond for more details or to secure a spot in the programs."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:41.050Z"
+      },
+      "qK3ssp3uHCAzNw1gkNYE": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 929437
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Stacey Jean-françois was seeking guidance on securing business funding and building wealth through real estate, especially after experiencing funding denials. The conversation provided detailed information about upcoming webinars and masterclasses covering lender criteria, building a fundable profile, and step-by-step approval processes, as well as offers for credit coaching and real estate investment software. Stacey received multiple reminders, registration links, and follow-ups about these educational sessions and special promotions. The conversation concluded with continued outreach offering support, follow-up on credit issues, and limited-time discounts on coaching services."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:41.133Z"
+      },
+      "tEoA13BwNKJYq0xFGaPz": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 493
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Darrell Mitchell was contacted multiple times with offers and reminders about webinars and masterclasses focused on securing business funding and investing in real estate with little or no money down. The messages included invitations to register for events, special promotions on credit coaching and software, and follow-ups about limited-time discounts. The technical information requested centered on Darrell’s challenges with obtaining business funding and whether credit issues were a barrier. The conversation concluded with ongoing offers for discounted credit repair services and encouragement to reply for more details before spots filled up."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:41.133Z"
+      },
+      "qJKVwKSrW6qrkbrtewLM": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 974
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Cory Griffin was contacted with multiple offers and reminders about webinars and masterclasses focused on accessing business funding and investing in real estate with little or no money down. The communications included invitations to register for events, special promotions on credit coaching and real estate investment software, and requests for feedback on funding challenges. Cory was asked if he wanted more information or to reserve a spot, but there is no indication he responded or requested specific technical details. The conversation concluded with continued follow-ups and limited-time offers, but no direct engagement from Cory."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:41.176Z"
+      },
+      "kHWN00SmQj0NOdhQdZaZ": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 839
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Donnie Burton was contacted multiple times with offers and reminders about webinars and masterclasses focused on obtaining business funding and investing in real estate with little or no money down. The messages included invitations to register for events, special promotions on credit coaching and counseling, and requests for Donnie to share his biggest challenges with business funding. No specific technical information was requested by Donnie during the conversation. The conversation concluded with ongoing follow-ups and limited-time offers, but there was no indication that Donnie responded or that any action was taken."
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "No Answer"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:41.233Z"
+      },
+      "GgszAAjjA5OcasPdIKq9": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 615
+          },
+          {
+            "id": "PLwmO9HRpVtMQgJCCz3x",
+            "value": 1
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Randy Hoppensteadt was seeking ways to secure business funding and invest in real estate, but faced challenges due to credit issues. Throughout the conversation, he was offered information about masterclasses, webinars, and promotions focused on credit repair, funding strategies, and real estate investment, with several invitations to join live events and take advantage of discounted services. The specific technical information requested centered on credit improvement, funding approval processes, and available support for overcoming credit-related obstacles. The conversation concluded with an offer for a personalized Credit & Funding Review and an invitation for a direct conversation to discuss Randy’s financial goals and potential solutions."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:41.275Z"
+      },
+      "xrphntP2eHFuK7CX9kqy": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 204086
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Marquita Buchanan was contacted multiple times with offers and reminders about webinars, masterclasses, and live trainings focused on accessing business funding, improving credit, and investing in real estate with little or no money down. She was invited to register for various events, including the Full-Time CEO Funding masterclass, REI90 Masterclass, and a 3-Day Business Funding Challenge, and was presented with special promotions on credit coaching and real estate investment software. The communications included specific details about event times, registration links, pricing for VIP and general access, and limited-time discounts. The conversation concluded with follow-up messages emphasizing limited availability for discounted credit services and encouraging Marquita to respond if interested."
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:41.281Z"
+      },
+      "4jyo9DjVUeMtBdjxbX30": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 966
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Varrel Mitchell was contacted multiple times by representatives from WE Management Services and Will Roundtree, offering opportunities to join real estate investment masterclasses, webinars, and coaching programs, as well as credit repair and funding solutions. The outreach included invitations to live events, special promotions (such as discounted coaching and credit services), and offers for personalized credit and funding analyses. Varrel was asked about his interest in improving his credit, accessing funding, and participating in various programs, with options for follow-up calls and direct support. The conversation concluded with an open invitation for Varrel to connect for a Credit & Funding Review to discuss his financial goals and potential next steps."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:41.322Z"
+      },
+      "4nvPJhUBgs0BJgsFJw7H": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 14355
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "No Answer"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Crystal Boles was contacted multiple times with offers and reminders about webinars, masterclasses, and special promotions focused on business funding, credit repair, and real estate investment strategies. She was invited to register for events teaching how to access funding (up to $1M at 0% interest), invest in real estate with $0 down, and improve credit to secure business funding. Specific technical information offered included details on event registration, pricing for VIP and general access, and discounts on credit coaching and REI software. The conversation concluded with ongoing follow-ups about limited-time discounts and enrollment spots, encouraging Crystal to respond for more details or to secure her participation."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:41.377Z"
+      },
+      "8WrxWNSOGqVhDHVYzucG": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 608
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Aaronburks Burks was targeted with a series of messages promoting masterclasses and services aimed at helping individuals access business funding, improve credit, and invest in real estate with little or no money down. The communications included invitations to webinars, special offers on credit coaching and software, and requests to discuss his specific funding challenges. Aaronburks was asked about his biggest obstacles in obtaining business funding and offered a free credit and funding review to identify improvement areas and funding options. The conversation concluded with an invitation for a direct conversation to better understand his financial goals and offer personalized support."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:41.385Z"
+      },
+      "3qu7z3z4L5l4Uix77RTh": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 7
+          },
+          {
+            "id": "PLwmO9HRpVtMQgJCCz3x",
+            "value": 1
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Julius Mccollum was seeking ways to secure business funding and invest in real estate, but faced challenges due to credit issues. Throughout the conversation, he received multiple invitations to webinars and masterclasses focused on obtaining funding, improving credit, and leveraging $0 down strategies, as well as offers for discounted credit repair and coaching services. The technical information requested centered on credit approval processes, overcoming credit obstacles, and specific program details for funding and credit improvement. The conversation concluded with ongoing follow-ups and limited-time offers encouraging Julius to enroll in credit repair or coaching services to help resolve his funding challenges."
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:41.432Z"
+      },
+      "pa0Ro5RKHJaO3EIsFcCr": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 5
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Carlandos Finney was contacted multiple times by Will Roundtree and WE Management Services with offers and invitations to webinars and masterclasses focused on business funding, real estate investing, and credit improvement. The communications promoted opportunities to access up to $1M in 0% interest funding, learn about $0 down real estate investing, and take advantage of limited-time discounts on credit coaching and software. Specific technical information offered included details about credit repair, funding approval processes, and credit profile improvement strategies. The conversation concluded with an invitation for a personalized Credit & Funding Review to discuss Carlandos's financial goals and potential support options."
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:41.494Z"
+      },
+      "BiDgWNUOA9Ja9sjQ26kv": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 3
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Jasmine Bryant was contacted multiple times by WE Management and Will Roundtree regarding opportunities to access funding and invest in real estate, with a focus on overcoming credit challenges. The communications promoted free masterclasses, live webinars, and special offers on credit repair and real estate investment software, while also inquiring about Jasmine's specific struggles with credit and funding approvals. Jasmine was encouraged to register for events, share her credit report information, and take advantage of limited-time discounts. The conversation concluded with reminders about expiring promotions and requests for Jasmine to reply if she wanted more details or to enroll."
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:41.554Z"
+      },
+      "AkPb7UWWoZ5lFN4glTz4": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 380
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Blaircartlidge Cartlidge was contacted by Will Roundtree and the WE Management Services team with offers and invitations to webinars, masterclasses, and coaching programs focused on business funding, real estate investing, and credit improvement. The communications included details about upcoming events, special discounts on credit coaching and REI software, and opportunities for personalized credit and funding reviews. Blaircartlidge was encouraged to register for events, reply for more information, or schedule a conversation to discuss financial goals and credit strategies. The conversation concluded with an open invitation for a quick discussion to explore how the team could support Blaircartlidge’s credit and funding needs."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:41.597Z"
+      },
+      "rhYqhPNummbXD38izrCd": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 8930
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Leah Dunston was contacted multiple times with offers and reminders about webinars and masterclasses focused on obtaining business funding and investing in real estate with little or no money down. She was invited to register for live training sessions, including the Full-Time CEO Funding masterclass and REI90 masterclass, and was also offered discounts on credit coaching, counseling, and REI Ready software. The communications included requests for Leah to indicate her interest, share her funding challenges, and respond for more details or to secure her spot. The conversation concluded with follow-up messages emphasizing limited-time offers and urging Leah to reply if interested."
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "No Answer"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:41.663Z"
+      },
+      "3JtaS2uF5ZUZPbzH2oQT": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 437
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Craig Thomas was targeted with a series of messages promoting webinars, masterclasses, and special offers related to real estate investing, business funding, and credit improvement. The communications aimed to get Craig to register for events, take advantage of discounted services, and engage in a credit and funding review. Specific technical information requested included Craig’s biggest challenges with business funding and his interest in learning about credit repair and funding strategies. The conversation concluded with an invitation for a personal conversation to discuss Craig’s financial goals and explore how WE Management Services could assist him."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:41.753Z"
+      },
+      "xTImZ80wwsEEha8FUfvW": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 91229
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Craigjones Jones was contacted multiple times with offers and reminders about webinars, masterclasses, and special promotions related to business funding, credit coaching, and real estate investing, including opportunities to learn about $0 down investing and discounted services. The messages aimed to get Craigjones to register for events, take advantage of limited-time offers, and share challenges related to business funding. No specific technical information was requested by Craigjones; the conversation was primarily promotional. Craigjones responded by politely declining to engage directly and referred all further inquiries to his assistant, providing her contact information for future communication."
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "No Answer"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:41.808Z"
+      },
+      "e0tsZaivIMTICasDxjPc": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 31525
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "No Answer"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Orlando Veguilla was seeking ways to secure business funding and overcome credit issues that were preventing approval for real estate investments. Throughout the conversation, he received multiple invitations to webinars and masterclasses focused on funding strategies, credit repair, and real estate investing, as well as promotional offers for credit coaching and related software. The technical information requested centered on understanding credit approval processes, resolving credit report issues, and accessing funding with $0 down. The conversation concluded with ongoing follow-ups and limited-time offers for discounted credit repair and coaching services, encouraging Orlando to take action to resolve his credit challenges and access funding."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:41.836Z"
+      },
+      "3ljxlXrocoADabiaAp42": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 84
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Dukes Tatiana was contacted multiple times by Will Roundtree and WE Management Services regarding opportunities to access business funding, improve credit, and invest in real estate, including invitations to webinars and masterclasses. The communications highlighted offers such as 0% interest funding, $0 down real estate investing, and discounted credit coaching and software. Specific technical information requested included Dukes’ biggest challenges with business funding and interest in credit and funding reviews. The conversation concluded with an invitation for a quick conversation to discuss Dukes’ financial goals and potential support options."
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "No Answer"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:41.862Z"
+      },
+      "DL46mDiKKowEy36PEF8F": {
+        "fields": [
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Organic Leads"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Devin Brown was trying to provide access to his Experian credit monitoring account. He shared his email address and password, then provided a verification code upon request. The specific technical information requested was the Experian account login credentials and the verification code. The conversation concluded with Devin supplying all requested details for account access."
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Connected – Follow-Up"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:41.904Z"
+      },
+      "AEiA4JQxElfOK1hD4DLM": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 5
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Daivonharris Harris was contacted multiple times by Will Roundtree and WE Management Services with offers and invitations to webinars and masterclasses focused on obtaining business funding, improving credit, and investing in real estate with little or no money down. The communications included details about upcoming events, special promotions (such as discounts on credit coaching and software), and requests for Daivonharris to express interest or share challenges related to business funding. Specific technical information offered included credit repair, inquiry removal, and funding strategies. The conversation concluded with a personal outreach from Rianna, offering a Credit & Funding Review and inviting Daivonharris to discuss financial goals and potential support options."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:41.941Z"
+      },
+      "PlZHLYEdGyPzgw3v9DLc": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 609
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "No Answer"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Terrence Robinson was contacted multiple times by WE Management and Will Roundtree’s team with offers to join real estate and funding masterclasses, as well as promotions for credit repair and coaching services. The communications focused on helping Terrence overcome credit issues to secure business funding and invest in real estate with little or no money down. Specific technical information requested included whether Terrence was still experiencing credit approval problems and what his biggest funding challenges were. The conversation concluded with ongoing offers for discounted credit coaching and reminders about limited enrollment spots, but there was no indication that Terrence responded or took action."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:41.996Z"
+      },
+      "EKLWTnA8OMqc6M9aSqKj": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 592407
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "James Hall was seeking ways to secure business funding and overcome credit challenges, particularly to invest in real estate. Throughout the conversation, he was offered information about masterclasses, webinars, and coaching programs focused on credit repair, funding strategies, and real estate investment, with several promotions and discounts highlighted. The technical information requested or implied centered on how to improve credit scores, remove inquiries, and qualify for funding. The conversation concluded with an invitation for a personalized Credit & Funding Review to discuss his financial goals and potential solutions."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:42.041Z"
+      },
+      "Bv1Ey1b0HCvG8t3aZTyM": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 91
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Vernon Gentry was seeking ways to secure funding for real estate investment, particularly overcoming challenges related to credit approval. Throughout the conversation, he was invited to multiple webinars and masterclasses focused on obtaining $0 down funding, improving credit, and leveraging credit repair services, with several promotional offers highlighted. The technical information requested centered on credit issues, funding approval processes, and specific steps for credit improvement, including inquiry removal and funding plan development. The conversation concluded with an offer for a personalized Credit & Funding Review and an invitation to discuss Vernon’s financial goals further."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:42.081Z"
+      },
+      "UWd2hKCsTrvVV3ZmU8Gl": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 7448
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Videra Washington was contacted multiple times by Will Roundtree and the WE Management Services team, who were offering opportunities to access business funding, improve credit, and invest in real estate with little or no money down. The messages included invitations to webinars, masterclasses, and a 3-day business funding challenge, as well as promotional offers for credit coaching and REI Ready software. The team requested information about Videra’s interest in fixing credit, accessing funding, and participating in their programs, and offered to answer questions or assist with registration. The conversation concluded with an offer for a Credit & Funding Review and an invitation to connect for a discussion about Videra’s financial goals."
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:42.139Z"
+      },
+      "p58vUXb3qlHJogYhbgET": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 12
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "No Answer"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Chris Ballard was seeking ways to secure business funding and overcome credit challenges that were preventing approval. Throughout the conversation, he was invited to multiple webinars and masterclasses focused on funding strategies, credit repair, and real estate investment, and was offered various promotions on credit coaching and related services. The technical information requested centered on how to improve credit scores, get approved for funding, and utilize $0 down real estate investing. The conversation concluded with ongoing offers for discounted credit repair and coaching services, encouraging Chris to take action before spots filled up."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:42.156Z"
+      },
+      "GXXnTQrAQhFuJ8Z1lhmI": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 7
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Tumarrow Lucas was seeking guidance and opportunities to improve credit, secure business funding, and start investing in real estate, particularly through programs that teach how to acquire property with little or no money down. The conversation included detailed information about various programs (REI90 Masterclass, Elite Coaching, Credit Optimization), event invitations, pricing, payment plans, and special discounts, as well as offers for free credit and funding analyses. Tumarrow was repeatedly invited to live webinars, masterclasses, and in-person events, and was offered multiple ways to connect for further assistance. The conversation concluded with ongoing follow-ups and limited-time offers, encouraging Tumarrow to enroll or schedule a call to take the next step."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:42.180Z"
+      },
+      "VZSfjWMrwU2qx5sFpnS2": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 478
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Charles Cunningham was targeted with a series of messages promoting webinars and masterclasses focused on securing business funding and investing in real estate with little or no money down. The communications encouraged him to register for live training sessions, join webinars, and take advantage of limited-time offers on credit coaching and real estate investment software. The specific technical information offered included step-by-step guidance on lender criteria, building a fundable profile, and credit repair services. The conversation concluded with repeated reminders about enrollment deadlines and special discounts, inviting Charles to reply for more details or to secure his spot."
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:42.267Z"
+      },
+      "VWjTzFmnm3eVZJFSVaPO": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 961
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Arnold Hardy was seeking ways to improve his credit, access business funding, and invest in real estate with little or no money down. Throughout the conversation, he received invitations to webinars, masterclasses, and coaching programs, as well as offers for credit repair, funding analysis, and real estate investment training. Specific technical information provided included details on program pricing, payment options, registration processes, and the benefits of credit and funding analysis. The conversation concluded with ongoing follow-ups and offers for discounted enrollment in credit coaching and real estate programs, along with invitations for a personal consultation to assess Arnold’s financial goals and needs."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:42.293Z"
+      },
+      "hYK0ewQUJ2ZVLw4eBN6T": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 3
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Gabriel Wright was contacted multiple times with offers to join masterclasses and webinars focused on securing business funding and investing in real estate with little or no money down. The messages provided technical information about accessing up to $1M in 0% interest funding, strategies for $0 down investing, and special promotions for credit repair and funding software. Gabriel was also invited to discuss his specific challenges with business funding and offered personalized credit and funding reviews. The conversation concluded with ongoing invitations to connect for further support and take advantage of limited-time discounts on credit coaching and related services."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:42.293Z"
+      },
+      "3NIe9vH73sazMcokfCLQ": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 287349
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "No Answer"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Jenay Binion was contacted multiple times with offers and reminders about masterclasses and promotions focused on accessing business funding, improving credit, and investing in real estate with little or no money down. The messages provided details on upcoming webinars, special discounts on credit coaching and REI software, and limited-time enrollment opportunities. Jenay was invited to register for events, reply for more information, or take advantage of the promotional offers. The conversation concluded with follow-up reminders about the limited availability of discounted services, encouraging Jenay to respond if interested."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:42.375Z"
+      },
+      "3wEwuFmQJOnHO33ykdkz": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 349798
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Earlswiney Swiney was contacted multiple times by Will Roundtree and the WE Management Services team with offers to join webinars and masterclasses focused on accessing funding, improving credit, and investing in real estate with little or no money down. The communications included invitations to register for live events, special promotions for credit coaching and REI software, and offers for discounted enrollment in credit repair services. The team also asked Earlswiney about his biggest challenges with business funding and offered a personalized credit and funding review. The conversation concluded with an open invitation for Earlswiney to discuss his financial goals and explore how the team could assist with credit improvement and funding opportunities."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:42.377Z"
+      },
+      "5jHcs3EvRz2FotE8m9u6": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 330
+          },
+          {
+            "id": "8barbLvAVtokO2l88Ucn",
+            "value": "Voicemail Left"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Gloria Youngblood was seeking information and support regarding business funding, credit improvement, and real estate investment opportunities. Throughout the conversation, she received multiple invitations to webinars, masterclasses, and special promotions focused on accessing funding, improving credit, and learning $0 down real estate strategies. She was also offered technical details about credit coaching, counseling, and software discounts, as well as options for personalized credit and funding reviews. The conversation concluded with an offer to connect directly to discuss her financial goals and provide tailored support."
+          }
+        ],
+        "cachedAt": "2026-08-25T20:49:42.415Z"
+      }
+    },
+    "processedConversations": {
+      "w7VMKGXtEtOdQHXdP7Gw": 1787682909427,
+      "03pWw8clrEXRP6JiuLop": 1787681163848,
+      "N74P8Yw48vMBOHYe8LUy": 1787681243121,
+      "gwL79cdHHlpcN1u5v7ig": 1787681145666,
+      "ytLL7g5wTt2i0XsJWlwT": 1787681195133,
+      "TcXLhHORIeBjspuZTvbl": 1787681405503,
+      "hOeduFqjzCXdXtc8vfs0": 1787681409453,
+      "RZQkiDqmppI9yDhpCFdD": 1787681410508,
+      "389fcxlcwUbPT19mVRVQ": 1787681233300,
+      "A0BG5rXdXIjtQkSZWLHN": 1787681162625,
+      "oYF56mOz9UIeKj6RI0lN": 1786998527072,
+      "y6ffpECDvLDVvUL4JQPb": 1786998516693,
+      "7ABWDsn87X0KdFaJpSDA": 1786998486151,
+      "O2r8rqS0TqRSH47u6P25": 1786998465886,
+      "1f515Tnpop5EryAaf2wU": 1786998431132,
+      "RT8QMifXag9PNv7FZTd7": 1786998319633,
+      "bwzoBzrIgku2dhTE6QDe": 1786998281946,
+      "aRr6m6Wllf1fPBngjEVa": 1786998242013,
+      "Xo45bbCX7V4pifm7JKpR": 1786998391698
+    }
+  }
 }
