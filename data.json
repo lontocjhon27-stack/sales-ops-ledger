@@ -1,16 +1,38 @@
 {
-  "generatedAt": "2026-08-25T23:00:00.795Z",
+  "generatedAt": "2026-08-25T23:54:06.517Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
-    "\"Live Transfers Accepted\" always reads 0 -- SALES | HANDOFF (the field that tracked this) was deleted and nothing replaces it. \"Live Transfers Attempted\" still works (inferred from the \"Qualified - Live Transfer\" pipeline stage). Fixing Accepted needs either a new field or logging stage-transition history."
+    "Failed to fetch custom fields: fetch failed",
+    "Failed to fetch users: fetch failed",
+    "Failed to fetch pipelines: fetch failed",
+    "No GHL user found matching rep name \"Jen\" -- check users are named/invited as expected.",
+    "No GHL user found matching rep name \"Jercori\" -- check users are named/invited as expected.",
+    "Custom field \"Primary Goal\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Primary Problem / Gap\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Timing / Urgency\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Decision-Maker Status\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Personal Monthly Income\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Business Monthly Income / Cash Flow\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Personal Monthly Expenses\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Personal Liquid Capital\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Business Liquid Capital\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Available Personal Credit\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Available Business Credit\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Total Accessible Capital\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Routing Tier\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Potential High-Ticket Fit\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Setter Attribution\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Closer Assignment\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Handoff Type\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Pipeline \"Sales Pipeline\" not found -- outbound/funnel/won metrics will be empty until it exists."
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 9,
-      "connected": 12,
-      "qualified": 2,
-      "heldCall": 1,
+      "outboundAttempts": 10,
+      "connected": 0,
+      "qualified": 0,
+      "heldCall": 0,
       "won": 0
     },
     "routingMix": [
@@ -22,7 +44,7 @@
       {
         "label": "$10k-$19,999",
         "closer": "50/50",
-        "count": 1
+        "count": 0
       },
       {
         "label": "$20k+",
@@ -34,50 +56,10 @@
       "count": 0,
       "routedNormally": 0
     },
-    "reps": {
-      "Jen": {
-        "outbound": 0,
-        "connected": 0,
-        "qualified": 0,
-        "liveTransferAttempted": 0,
-        "liveTransferAccepted": 0,
-        "appointmentsBooked": 4,
-        "heldCalls": 0,
-        "noShows": 0,
-        "won": 0,
-        "contractValue": 0,
-        "cashCollected": 0
-      },
-      "Jercori": {
-        "outbound": 0,
-        "connected": 0,
-        "qualified": 0,
-        "liveTransferAttempted": 0,
-        "liveTransferAccepted": 0,
-        "appointmentsBooked": 2,
-        "heldCalls": 0,
-        "noShows": 1,
-        "won": 0,
-        "contractValue": 0,
-        "cashCollected": 0
-      },
-      "Rianna": {
-        "outbound": 2,
-        "connected": 2,
-        "qualified": 1,
-        "liveTransferAttempted": 0,
-        "liveTransferAccepted": 0,
-        "appointmentsBooked": 0,
-        "heldCalls": 0,
-        "noShows": 0,
-        "won": 0,
-        "contractValue": 0,
-        "cashCollected": 0
-      }
-    },
+    "reps": {},
     "totals": {
       "contractValue": 0,
-      "cashCollected": 6150,
+      "cashCollected": 0,
       "closeRate": 0
     },
     "attributionChains": [],
@@ -90,7 +72,22 @@
       "Rianna",
       "Jen"
     ],
-    "callLog": [],
+    "callLog": [
+      {
+        "time": "2026-08-18T23:17:36.955Z",
+        "setter": "Unknown",
+        "contact": "Ali Ali",
+        "status": "completed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-03-09T21:08:29.873Z",
+        "setter": "Unknown",
+        "contact": "Ali Ali",
+        "status": "completed",
+        "durationSec": 99
+      }
+    ],
     "activityPoints": {
       "Marshell": {
         "points": 0,
@@ -107,19 +104,15 @@
         "heldClosingCalls": 0
       },
       "Jen": {
-        "points": 160,
+        "points": 0,
         "goal": 1400,
         "outboundCalls": 0,
         "heldQualCalls": 0,
-        "heldClosingCalls": 4
+        "heldClosingCalls": 0
       }
     }
   },
   "history": [
-    {
-      "t": "2026-08-19T23:48:57.418Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-20T03:13:09.876Z",
       "closeRate": 0
@@ -515,9 +508,20 @@
     {
       "t": "2026-08-25T23:00:00.795Z",
       "closeRate": 0
+    },
+    {
+      "t": "2026-08-25T23:54:06.517Z",
+      "closeRate": 0
     }
   ],
   "callLogHistory": [
+    {
+      "time": "2026-08-18T23:17:36.955Z",
+      "setter": "Unknown",
+      "contact": "Ali Ali",
+      "status": "completed",
+      "durationSec": null
+    },
     {
       "time": "2026-08-18T22:04:26.136Z",
       "setter": "Jen",
@@ -3718,7 +3722,8 @@
       "1f515Tnpop5EryAaf2wU": 1786998431132,
       "7ABWDsn87X0KdFaJpSDA": 1786998486151,
       "p7nJabcZrnosRKQGUZq5": 1787682315309,
-      "Fk2KXYSPFjsCUhAy02fJ": 1787681232947
+      "Fk2KXYSPFjsCUhAy02fJ": 1787681232947,
+      "Ch91VJb2ufpwLFN1SaXZ": 1787687774170
     }
   }
 }
