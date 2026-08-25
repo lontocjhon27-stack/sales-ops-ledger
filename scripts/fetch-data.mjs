@@ -6,14 +6,35 @@ import { CONFIG } from "./config.mjs";
 
 const DATA_PATH = new URL("../data.json", import.meta.url);
 const MAX_HISTORY = 100;
+const MAX_CALL_LOG_HISTORY = 5000;
+const CALL_LOG_HISTORY_MAX_AGE_DAYS = 120;
 
-async function loadPreviousHistory() {
+async function loadPrevious() {
   try {
     const prev = JSON.parse(await readFile(DATA_PATH, "utf8"));
-    return Array.isArray(prev?.history) ? prev.history : [];
+    return {
+      history: Array.isArray(prev?.history) ? prev.history : [],
+      callLogHistory: Array.isArray(prev?.callLogHistory) ? prev.callLogHistory : [],
+    };
   } catch {
-    return [];
+    return { history: [], callLogHistory: [] };
   }
+}
+
+// Each sync only re-fetches the trailing windowDays, so the same real calls
+// show up again every run -- merge into the running history instead of
+// replacing it, deduped by a stable key, so a date-range picker on the
+// frontend has more than just the current window to filter.
+function mergeCallLogHistory(previous, freshCalls) {
+  const byKey = new Map(previous.map((c) => [`${c.time}|${c.setter}|${c.contact}`, c]));
+  for (const c of freshCalls) {
+    byKey.set(`${c.time}|${c.setter}|${c.contact}`, c);
+  }
+  const cutoff = Date.now() - CALL_LOG_HISTORY_MAX_AGE_DAYS * 24 * 60 * 60 * 1000;
+  return [...byKey.values()]
+    .filter((c) => c.time && new Date(c.time).getTime() >= cutoff)
+    .sort((a, b) => new Date(b.time) - new Date(a.time))
+    .slice(0, MAX_CALL_LOG_HISTORY);
 }
 
 async function main() {
@@ -21,13 +42,15 @@ async function main() {
   const locationId = process.env.GHL_LOCATION_ID;
   const warnings = [];
 
+  const previous = await loadPrevious();
   const output = {
     generatedAt: new Date().toISOString(),
     windowDays: CONFIG.windowDays,
     ok: false,
     warnings,
     data: null,
-    history: await loadPreviousHistory(),
+    history: previous.history,
+    callLogHistory: previous.callLogHistory,
   };
 
   try {
@@ -42,6 +65,7 @@ async function main() {
       ...output.history,
       { t: output.generatedAt, closeRate: metrics.totals.closeRate },
     ].slice(-MAX_HISTORY);
+    output.callLogHistory = mergeCallLogHistory(previous.callLogHistory, metrics.callLog ?? []);
   } catch (err) {
     const detail = err instanceof GhlError
       ? `${err.message} -- ${JSON.stringify(err.body)}`

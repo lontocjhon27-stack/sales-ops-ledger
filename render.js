@@ -272,22 +272,45 @@ function fmtDuration(sec) {
   return m > 0 ? `${m}m ${String(s).padStart(2, "0")}s` : `${s}s`;
 }
 
-function renderCallLog(callLog) {
+const CALL_LOG_DISPLAY_LIMIT = 200;
+
+function renderCallSummary(callLog) {
+  const host = document.getElementById("callSummary");
+  if (!host) return;
+  if (!callLog?.length) { host.innerHTML = ""; return; }
+
+  const counts = new Map();
+  for (const c of callLog) counts.set(c.setter, (counts.get(c.setter) ?? 0) + 1);
+  const rows = [...counts.entries()].sort((a, b) => b[1] - a[1]);
+
+  host.innerHTML = rows
+    .map(([name, count], i) => `<span class="call-summary-chip"><span class="rep-dot" style="background:${colorFor(i)}"></span>${esc(name)} <span class="count mono">${fmtInt(count)}</span></span>`)
+    .join("") + `<span class="call-summary-chip"><strong>Total</strong> <span class="count mono">${fmtInt(callLog.length)}</span></span>`;
+}
+
+function renderCallLog(callLog, rangeLabel) {
   const body = document.getElementById("callLogBody");
   const sub = document.getElementById("callLogSub");
+  renderCallSummary(callLog);
+
   if (!callLog?.length) {
-    body.innerHTML = `<tr><td colspan="5" style="text-align:center; color:var(--ink-faint); font-family:'Archivo',sans-serif;">No outbound calls logged this window</td></tr>`;
-    if (sub) sub.textContent = "No outbound calls logged this window";
+    body.innerHTML = `<tr><td colspan="5" style="text-align:center; color:var(--ink-faint); font-family:'Archivo',sans-serif;">No outbound calls logged${rangeLabel ? ` ${rangeLabel}` : " this window"}</td></tr>`;
+    if (sub) sub.textContent = `No outbound calls logged${rangeLabel ? ` ${rangeLabel}` : " this window"}`;
     return;
   }
-  if (sub) sub.textContent = "Every logged outbound call this window, newest first";
+  const shown = callLog.slice(0, CALL_LOG_DISPLAY_LIMIT);
+  if (sub) {
+    sub.textContent = callLog.length > CALL_LOG_DISPLAY_LIMIT
+      ? `Showing the most recent ${CALL_LOG_DISPLAY_LIMIT} of ${fmtInt(callLog.length)} calls${rangeLabel ? ` ${rangeLabel}` : ""}, newest first`
+      : `${fmtInt(callLog.length)} call${callLog.length === 1 ? "" : "s"}${rangeLabel ? ` ${rangeLabel}` : " this window"}, newest first`;
+  }
 
-  body.innerHTML = callLog
+  body.innerHTML = shown
     .map((c, i) => {
       const key = String(c.status ?? "logged").toLowerCase().replace(/\s+/g, "-");
       const [label, tone] = STATUS_TONE[key] ?? [esc(c.status ?? "Logged"), "muted"];
       const time = c.time
-        ? new Date(c.time).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" })
+        ? new Date(c.time).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })
         : "—";
       return `<tr>
         <td>${time}</td>
@@ -298,6 +321,42 @@ function renderCallLog(callLog) {
       </tr>`;
     })
     .join("");
+}
+
+function isoDate(d) { return d.toISOString().slice(0, 10); }
+
+function wireCallLogRange(callLogHistory, windowDays) {
+  const fromInput = document.getElementById("rangeFrom");
+  const toInput = document.getElementById("rangeTo");
+  const applyBtn = document.getElementById("rangeApply");
+  const noHistoryNote = document.getElementById("rangeNoHistory");
+  if (!fromInput || !toInput || !applyBtn) return;
+
+  const today = new Date();
+  const defaultFrom = new Date(today.getTime() - (windowDays - 1) * 24 * 60 * 60 * 1000);
+  fromInput.value = isoDate(defaultFrom);
+  toInput.value = isoDate(today);
+  fromInput.max = isoDate(today);
+  toInput.max = isoDate(today);
+
+  if (noHistoryNote) noHistoryNote.hidden = (callLogHistory?.length ?? 0) > 0;
+
+  const apply = () => {
+    const from = fromInput.value ? new Date(fromInput.value + "T00:00:00") : null;
+    const to = toInput.value ? new Date(toInput.value + "T23:59:59") : null;
+    const filtered = (callLogHistory ?? []).filter((c) => {
+      if (!c.time) return false;
+      const t = new Date(c.time);
+      return (!from || t >= from) && (!to || t <= to);
+    });
+    const label = fromInput.value === toInput.value
+      ? `on ${fromInput.value}`
+      : `from ${fromInput.value} to ${toInput.value}`;
+    renderCallLog(filtered, label);
+  };
+
+  applyBtn.addEventListener("click", apply);
+  apply(); // render the default range immediately so the panel isn't empty on load
 }
 
 function renderTrend(history) {
@@ -478,6 +537,7 @@ async function main() {
     payload = await res.json();
   } catch {
     wireControls(() => null);
+    wireCallLogRange([], 7);
     return; // network hiccup -- leave the static sample markup in place
   }
 
@@ -491,6 +551,7 @@ async function main() {
       : "No sync has run yet — showing sample data below.";
     renderWarnings(payload.warnings);
     wireControls(() => null); // rows can still be dimmed by name on the sample table
+    wireCallLogRange(payload.callLogHistory ?? [], payload.windowDays ?? 7);
     return;
   }
 
@@ -503,11 +564,11 @@ async function main() {
   renderRouting(d.routingMix, d.highTicketFlagged);
   renderTables(d.reps, d.closerNames ?? [], d.setterNames ?? []);
   renderChains(d.attributionChains);
-  renderCallLog(d.callLog);
   renderActivityPoints(d.activityPoints, payload.windowDays);
   renderTrend(payload.history);
   renderKpiBand(d, "all");
   wireControls(() => d);
+  wireCallLogRange(payload.callLogHistory?.length ? payload.callLogHistory : d.callLog, payload.windowDays);
 }
 
 main();

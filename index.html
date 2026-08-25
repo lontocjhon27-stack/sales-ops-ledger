@@ -250,7 +250,7 @@
     position: absolute;
     top: calc(100% + 8px);
     right: 0;
-    width: 260px;
+    width: 300px;
     background: var(--surface);
     border: 1px solid var(--line);
     border-radius: 10px;
@@ -267,6 +267,55 @@
     padding: 1px 5px;
     color: var(--ink);
   }
+  .range-note-title { font-weight: 700; color: var(--ink); font-size: 12.5px; margin-bottom: 4px; }
+  .range-note-hint { margin: 0 0 10px; font-size: 11px; }
+  .range-note-empty { margin: 8px 0 0; font-size: 11px; }
+  .range-inputs { display: flex; gap: 8px; margin-bottom: 10px; }
+  .range-inputs label {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-size: 10.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--ink-faint);
+    flex: 1;
+  }
+  .range-inputs input[type="date"] {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    padding: 6px 8px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: var(--surface-sunken);
+    color: var(--ink);
+    width: 100%;
+  }
+  .range-apply {
+    width: 100%;
+    padding: 7px 0;
+    background: var(--primary);
+    color: var(--on-accent);
+    border: none;
+    border-radius: 6px;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .range-apply:hover { opacity: 0.9; }
+  .call-summary { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+  .call-summary-chip {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background: var(--surface-sunken);
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 12.5px;
+  }
+  .call-summary-chip .count { font-family: 'IBM Plex Mono', monospace; font-weight: 700; color: var(--ink); }
   tbody tr.dim { opacity: 0.32; transition: opacity 150ms ease; }
   tbody tr.dim:hover td { background: transparent; }
   .sample-badge {
@@ -751,7 +800,14 @@
           <span id="rangeLabel">This Week &middot; Aug 11&ndash;17</span>
         </button>
         <div class="range-note" id="rangeNote" hidden>
-          Custom date ranges aren't wired up yet. Every sync covers a fixed trailing window (currently set by <code class="mono">GHL_WINDOW_DAYS</code>) &mdash; ask to add multi-range history if you need to compare specific weeks.
+          <div class="range-note-title">Call history range</div>
+          <p class="range-note-hint">Every other panel still reflects the last sync's fixed window &mdash; this only changes the call log below.</p>
+          <div class="range-inputs">
+            <label>From<input type="date" id="rangeFrom"></label>
+            <label>To<input type="date" id="rangeTo"></label>
+          </div>
+          <button type="button" class="range-apply" id="rangeApply">Apply</button>
+          <p class="range-note-empty" id="rangeNoHistory" hidden>No call history has accumulated yet &mdash; this fills in as syncs run over time.</p>
         </div>
       </div>
       <div class="pill-group" role="group" aria-label="Filter by rep">
@@ -1147,6 +1203,7 @@
           <h3>Outbound call activity</h3>
         </div>
         <p class="sub" id="callLogSub">Sample entries &mdash; every logged outbound call this window, newest first</p>
+        <div class="call-summary" id="callSummary"></div>
         <div class="log-scroll table-wrap">
           <table>
             <thead>

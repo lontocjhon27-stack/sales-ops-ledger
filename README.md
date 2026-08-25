@@ -51,6 +51,22 @@ chargebacks. Most of these need fields we're not fetching yet (Original
 Lead Source, Product, invoice-level refund status) — buildable, just ask
 for the specific one that matters next.
 
+## Call history & date range
+
+Every sync only re-fetches the trailing `windowDays` window, but
+`fetch-data.mjs` now merges each run's calls into a persistent
+`callLogHistory` array in `data.json` (deduped, capped at 5000 entries /
+120 days) instead of overwriting it. The date-range picker on the "Call log
+by setter" panel (click the date chip top-right) filters that accumulated
+history client-side and shows a per-setter call count for whatever range
+you pick — that's how you see "how many calls did Marshell make last
+Tuesday" instead of just the current week.
+
+This only affects the call log panel. Every other number on the page (KPI
+tiles, funnel, tables) still reflects the fixed trailing window from the
+most recent sync — turning those into true date-range queries would need
+daily buckets for every metric, not just calls, which is a bigger change.
+
 ## Activity points (200/day standard)
 
 Computed per the org plan's exact formula: 1 pt per outbound call (from the
