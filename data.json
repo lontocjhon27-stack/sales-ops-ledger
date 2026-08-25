@@ -1,13 +1,17 @@
 {
-  "generatedAt": "2026-08-25T20:50:46.758Z",
+  "generatedAt": "2026-08-25T20:53:31.918Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
+    "Failed to fetch calendars: GHL API 401 on /calendars/: Command timed out",
     "Custom field \"Overall Qualification\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Prospect Available Now?\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Live Transfer Attempted?\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
     "Custom field \"Live Transfer Accepted By\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
-    "Custom field \"Qualified Held Call\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?"
+    "Custom field \"Qualified Held Call\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Calendar \"Setter Qualification Calendar\" not found -- appointment/no-show metrics for it will be empty.",
+    "Calendar \"Jen Sales Calendar\" not found -- appointment/no-show metrics for it will be empty.",
+    "Calendar \"Jercori Sales Calendar\" not found -- appointment/no-show metrics for it will be empty."
   ],
   "data": {
     "funnel": {
@@ -58,22 +62,9 @@
         "qualified": 0,
         "liveTransferAttempted": 0,
         "liveTransferAccepted": 0,
-        "appointmentsBooked": 3,
+        "appointmentsBooked": 0,
         "heldCalls": 0,
         "noShows": 0,
-        "won": 0,
-        "contractValue": 0,
-        "cashCollected": 0
-      },
-      "Jercori Freeman": {
-        "outbound": 0,
-        "connected": 0,
-        "qualified": 0,
-        "liveTransferAttempted": 0,
-        "liveTransferAccepted": 0,
-        "appointmentsBooked": 2,
-        "heldCalls": 0,
-        "noShows": 1,
         "won": 0,
         "contractValue": 0,
         "cashCollected": 0
@@ -514,6 +505,10 @@
     },
     {
       "t": "2026-08-25T20:50:46.758Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-08-25T20:53:31.918Z",
       "closeRate": 0
     }
   ],
