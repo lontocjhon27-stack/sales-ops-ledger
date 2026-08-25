@@ -15,10 +15,31 @@ async function loadPrevious() {
     return {
       history: Array.isArray(prev?.history) ? prev.history : [],
       callLogHistory: Array.isArray(prev?.callLogHistory) ? prev.callLogHistory : [],
+      cache: prev?.cache && typeof prev.cache === "object" ? prev.cache : {},
     };
   } catch {
-    return { history: [], callLogHistory: [] };
+    return { history: [], callLogHistory: [], cache: {} };
   }
+}
+
+const MAX_CACHED_CONTACTS = 3000;
+const MAX_CACHED_CONVERSATIONS = 3000;
+
+// Keeps the persisted cache from growing forever as the contact/conversation
+// base grows -- evicts the oldest entries once over the cap rather than
+// letting data.json balloon indefinitely.
+function pruneCache(cache) {
+  const contactEntries = Object.entries(cache.contactFields ?? {});
+  if (contactEntries.length > MAX_CACHED_CONTACTS) {
+    contactEntries.sort((a, b) => new Date(b[1].cachedAt) - new Date(a[1].cachedAt));
+    cache.contactFields = Object.fromEntries(contactEntries.slice(0, MAX_CACHED_CONTACTS));
+  }
+  const convoEntries = Object.entries(cache.processedConversations ?? {});
+  if (convoEntries.length > MAX_CACHED_CONVERSATIONS) {
+    convoEntries.sort((a, b) => new Date(b[1]) - new Date(a[1]));
+    cache.processedConversations = Object.fromEntries(convoEntries.slice(0, MAX_CACHED_CONVERSATIONS));
+  }
+  return cache;
 }
 
 // Each sync only re-fetches the trailing windowDays, so the same real calls
@@ -51,13 +72,16 @@ async function main() {
     data: null,
     history: previous.history,
     callLogHistory: previous.callLogHistory,
+    cache: previous.cache,
   };
 
   try {
     const client = createClient({ token, locationId });
     const shape = await resolveAccountShape(client, CONFIG, warnings);
     const since = new Date(Date.now() - CONFIG.windowDays * 24 * 60 * 60 * 1000);
-    const metrics = await computeMetrics({ client, shape, config: CONFIG, warnings, since });
+    // computeMetrics mutates `cache` in place (reads what's fresh, fills in
+    // what it fetches) so the same object gets persisted back below.
+    const metrics = await computeMetrics({ client, shape, config: CONFIG, warnings, since, cache: output.cache });
 
     output.ok = true;
     output.data = metrics;
@@ -66,6 +90,7 @@ async function main() {
       { t: output.generatedAt, closeRate: metrics.totals.closeRate },
     ].slice(-MAX_HISTORY);
     output.callLogHistory = mergeCallLogHistory(previous.callLogHistory, metrics.callLog ?? []);
+    output.cache = pruneCache(output.cache);
   } catch (err) {
     const detail = err instanceof GhlError
       ? `${err.message} -- ${JSON.stringify(err.body)}`

@@ -39,7 +39,11 @@ function emptyRepRow() {
   };
 }
 
-export async function computeMetrics({ client, shape, config, warnings, since }) {
+const CONTACT_CACHE_TTL_MS = 6 * 60 * 60 * 1000; // 6 hours -- qualification fields rarely change faster than this
+
+export async function computeMetrics({ client, shape, config, warnings, since, cache }) {
+  cache.contactFields ??= {};
+  cache.processedConversations ??= {};
   const { fieldId, pipeline, stageBucketById, calendarId, reps } = shape;
 
   const funnel = { outbound: 0, connected: 0, qualified: 0, held: 0, won: 0 };
@@ -79,13 +83,29 @@ export async function computeMetrics({ client, shape, config, warnings, since })
     // so contact data wins if a field somehow exists in both places.
     const contactIds = [...new Set(opportunities.map((o) => o.contactId).filter(Boolean))];
     const contactFieldsById = new Map();
-    await mapWithConcurrency(contactIds, 3, async (contactId) => {
+    const staleContactIds = contactIds.filter((id) => {
+      const cached = cache.contactFields[id];
+      if (cached && Date.now() - new Date(cached.cachedAt).getTime() < CONTACT_CACHE_TTL_MS) {
+        contactFieldsById.set(id, cached.fields);
+        return false;
+      }
+      return true;
+    });
+    if (contactIds.length) {
+      // Action-log only (not surfaced as a dashboard warning) -- confirms
+      // the cache is actually cutting request volume, without alarming
+      // whoever's looking at the dashboard.
+      console.log(`Contact fields: ${contactIds.length - staleContactIds.length} from cache, ${staleContactIds.length} fetched fresh (of ${contactIds.length} total).`);
+    }
+    await mapWithConcurrency(staleContactIds, 3, async (contactId) => {
       try {
         const contact = await client.getContact(contactId);
-        contactFieldsById.set(contactId, contact?.customFields ?? []);
+        const fields = contact?.customFields ?? [];
+        contactFieldsById.set(contactId, fields);
+        cache.contactFields[contactId] = { fields, cachedAt: new Date().toISOString() };
       } catch (err) {
         warnings.push(`Failed to fetch contact ${contactId}: ${err.message}`);
-        contactFieldsById.set(contactId, []);
+        contactFieldsById.set(contactId, cache.contactFields[contactId]?.fields ?? []);
       }
     });
 
@@ -241,12 +261,22 @@ export async function computeMetrics({ client, shape, config, warnings, since })
       );
     }
 
-    // Per-call detail: who called, when, what happened. Bounded concurrency
-    // since this is one extra request per conversation with an outbound call.
+    // Per-call detail: who called, when, what happened. Skip conversations
+    // we've already pulled messages for on a previous run AND that haven't
+    // changed since -- those calls are already sitting in the persisted
+    // callLogHistory, so re-fetching them every 30 minutes is pure waste
+    // and a big chunk of what triggered the rate-limit incident.
+    const conversationsToFetch = callConversations.filter((conv) => {
+      const lastSeen = cache.processedConversations[conv.id];
+      return !lastSeen || lastSeen !== conv.dateUpdated;
+    });
+    console.log(`Conversations: ${callConversations.length - conversationsToFetch.length} already processed & unchanged, ${conversationsToFetch.length} fetched fresh (of ${callConversations.length} total).`);
+
     let missingFieldsSeen = false;
-    await mapWithConcurrency(callConversations, 3, async (conv) => {
+    await mapWithConcurrency(conversationsToFetch, 3, async (conv) => {
       try {
         const messages = await client.getConversationMessages(conv.id);
+        cache.processedConversations[conv.id] = conv.dateUpdated ?? new Date().toISOString();
         const callMsgs = messages.filter((m) => (m.type ?? m.messageType) === "TYPE_CALL" && m.direction === "outbound");
         for (const m of callMsgs) {
           const userId = m.userId ?? m.addedBy ?? null;

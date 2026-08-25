@@ -53,15 +53,34 @@ for the specific one that matters next.
 
 ## Rate limiting
 
-GHL rate-limits per location. As real lead volume grows, this sync makes
-more API calls per run (one contact fetch per opportunity, one message
-fetch per outbound call), and a run on 2026-08-25 hit 429s across most
-endpoints for the first time. `ghl-client.mjs`'s `request()` now retries
-automatically on 429/5xx with backoff (honoring `Retry-After` when GHL
-sends it), and contact/message fetch concurrency dropped from 5 to 3. If
-runs start taking noticeably longer or still show 429 warnings, the next
-lever is fetching contacts in bulk (a `/contacts/search` batch call instead
-of one request per contact) rather than more backoff.
+GHL rate-limits per location. As real lead volume grew, this sync started
+making enough API calls per run (one contact fetch per opportunity, one
+message fetch per outbound call, every 30 minutes) to hit 429s across most
+endpoints on 2026-08-25.
+
+Two layers of fix, both in `scripts/`:
+
+1. **Retry with backoff** (`ghl-client.mjs`'s `request()`) — retries 429/5xx
+   automatically, honoring `Retry-After` when GHL sends it. Handles
+   occasional bursts, not sustained overload.
+2. **Persistent caching** (`data.json`'s `cache` field, wired through
+   `fetch-data.mjs` → `computeMetrics`) — this is the real fix:
+   - Contact custom fields are cached per contact for 6 hours. Most
+     contacts don't need re-fetching every 30 minutes since qualification
+     fields rarely change that fast.
+   - Conversation messages are only re-fetched if that conversation's
+     `dateUpdated` changed since last run — unchanged conversations are
+     skipped entirely, since their calls are already in the persisted
+     `callLogHistory`.
+
+   Both caches are capped (3000 entries each) and evict oldest-first so
+   `data.json` doesn't grow unbounded. Verified locally with a stub client
+   before shipping: run 2 with the same contacts/conversations as run 1
+   made zero redundant fetches.
+
+If 429s come back under real Monday-scale volume despite this, the next
+lever is a genuine bulk contacts endpoint (fetching many contacts in one
+request) rather than more caching or backoff.
 
 ## Call history & date range
 
