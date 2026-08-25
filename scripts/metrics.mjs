@@ -14,10 +14,11 @@ const dollars = (n) => Math.round(n);
 // Setter Attribution row -- same person, silently fragmented data.
 function canonicalRepName(fullName, roster) {
   if (!fullName) return fullName;
-  const norm = fullName.trim().toLowerCase();
+  const firstWord = fullName.trim().toLowerCase().split(/\s+/)[0] ?? "";
   for (const r of roster) {
-    const rn = r.toLowerCase();
-    if (norm === rn || norm.startsWith(rn + " ")) return r;
+    // Prefix match on the first word so "Jen" (roster) matches "Jennifer"
+    // (real GHL name), not just an exact/space-delimited match.
+    if (firstWord.startsWith(r.toLowerCase())) return r;
   }
   return fullName;
 }
@@ -133,8 +134,13 @@ export async function computeMetrics({ client, shape, config, warnings, since, c
       const bucket = stageBucketById.get(opp.pipelineStageId);
       const cf = [...(contactFieldsById.get(opp.contactId) ?? []), ...(opp.customFields ?? [])];
 
-      const setter = fieldValue(cf, fieldId.setterAttribution);
-      const closer = fieldValue(cf, fieldId.closerAssignment);
+      // The "Setter Attribution"/"Closer Assignment" fields hold full names
+      // ("Rianna Nava") in practice, same mismatch as the GHL user records
+      // -- canonicalize here too, since this is the PRIMARY source that
+      // populates the Setters/Closers tables (calendar/call paths are
+      // secondary and already fixed above).
+      const setter = canonicalRepName(fieldValue(cf, fieldId.setterAttribution), roster);
+      const closer = canonicalRepName(fieldValue(cf, fieldId.closerAssignment), roster);
       const tac = toNumber(fieldValue(cf, fieldId.totalAccessibleCapital));
       const highTicket = String(fieldValue(cf, fieldId.highTicketFit) ?? "").toLowerCase() === "true";
       const liveTransferAttempted = String(fieldValue(cf, fieldId.liveTransferAttempted) ?? "").toLowerCase() === "true";
