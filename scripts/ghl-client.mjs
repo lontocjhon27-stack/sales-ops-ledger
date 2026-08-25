@@ -13,6 +13,8 @@
 
 const BASE_URL = "https://services.leadconnectorhq.com";
 const API_VERSION = "2021-07-28";
+const MAX_RETRIES = 5;
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 export class GhlError extends Error {
   constructor(message, { status, url, body } = {}) {
@@ -28,6 +30,10 @@ export function createClient({ token, locationId }) {
   if (!token) throw new Error("GHL_PIT is required (Private Integration Token).");
   if (!locationId) throw new Error("GHL_LOCATION_ID is required.");
 
+  // GHL rate-limits per location (burst + daily). The number of calls this
+  // sync makes scales with real lead volume now (one contact fetch per
+  // opportunity, one message fetch per call), so 429s are expected under
+  // load, not a bug -- retry with backoff instead of failing the whole run.
   async function request(path, { query = {}, method = "GET" } = {}) {
     const url = new URL(BASE_URL + path);
     for (const [key, value] of Object.entries(query)) {
@@ -35,30 +41,40 @@ export function createClient({ token, locationId }) {
       url.searchParams.set(key, String(value));
     }
 
-    const res = await fetch(url, {
-      method,
-      headers: {
-        Authorization: `Bearer ${token}`,
-        Version: API_VERSION,
-        Accept: "application/json",
-      },
-    });
+    for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+      const res = await fetch(url, {
+        method,
+        headers: {
+          Authorization: `Bearer ${token}`,
+          Version: API_VERSION,
+          Accept: "application/json",
+        },
+      });
 
-    const text = await res.text();
-    let body;
-    try {
-      body = text ? JSON.parse(text) : {};
-    } catch {
-      body = { raw: text };
-    }
+      const text = await res.text();
+      let body;
+      try {
+        body = text ? JSON.parse(text) : {};
+      } catch {
+        body = { raw: text };
+      }
 
-    if (!res.ok) {
-      throw new GhlError(
-        `GHL API ${res.status} on ${path}: ${body?.message || res.statusText}`,
-        { status: res.status, url: url.toString(), body }
-      );
+      if (res.ok) return body;
+
+      const retryable = res.status === 429 || res.status >= 500;
+      if (!retryable || attempt === MAX_RETRIES) {
+        throw new GhlError(
+          `GHL API ${res.status} on ${path}: ${body?.message || res.statusText}`,
+          { status: res.status, url: url.toString(), body }
+        );
+      }
+
+      const retryAfterHeader = Number(res.headers.get("retry-after"));
+      const delayMs = Number.isFinite(retryAfterHeader) && retryAfterHeader > 0
+        ? retryAfterHeader * 1000
+        : Math.min(1000 * 2 ** attempt, 15000) + Math.random() * 300;
+      await sleep(delayMs);
     }
-    return body;
   }
 
   async function paginate(path, { query = {}, listKey, pageSize = 100, maxPages = 50 } = {}) {

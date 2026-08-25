@@ -51,6 +51,18 @@ chargebacks. Most of these need fields we're not fetching yet (Original
 Lead Source, Product, invoice-level refund status) — buildable, just ask
 for the specific one that matters next.
 
+## Rate limiting
+
+GHL rate-limits per location. As real lead volume grows, this sync makes
+more API calls per run (one contact fetch per opportunity, one message
+fetch per outbound call), and a run on 2026-08-25 hit 429s across most
+endpoints for the first time. `ghl-client.mjs`'s `request()` now retries
+automatically on 429/5xx with backoff (honoring `Retry-After` when GHL
+sends it), and contact/message fetch concurrency dropped from 5 to 3. If
+runs start taking noticeably longer or still show 429 warnings, the next
+lever is fetching contacts in bulk (a `/contacts/search` batch call instead
+of one request per contact) rather than more backoff.
+
 ## Call history & date range
 
 Every sync only re-fetches the trailing `windowDays` window, but

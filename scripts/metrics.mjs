@@ -79,7 +79,7 @@ export async function computeMetrics({ client, shape, config, warnings, since })
     // so contact data wins if a field somehow exists in both places.
     const contactIds = [...new Set(opportunities.map((o) => o.contactId).filter(Boolean))];
     const contactFieldsById = new Map();
-    await mapWithConcurrency(contactIds, 5, async (contactId) => {
+    await mapWithConcurrency(contactIds, 3, async (contactId) => {
       try {
         const contact = await client.getContact(contactId);
         contactFieldsById.set(contactId, contact?.customFields ?? []);
@@ -244,7 +244,7 @@ export async function computeMetrics({ client, shape, config, warnings, since })
     // Per-call detail: who called, when, what happened. Bounded concurrency
     // since this is one extra request per conversation with an outbound call.
     let missingFieldsSeen = false;
-    await mapWithConcurrency(callConversations, 5, async (conv) => {
+    await mapWithConcurrency(callConversations, 3, async (conv) => {
       try {
         const messages = await client.getConversationMessages(conv.id);
         const callMsgs = messages.filter((m) => (m.type ?? m.messageType) === "TYPE_CALL" && m.direction === "outbound");
