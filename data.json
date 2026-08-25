@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T21:16:09.829Z",
+  "generatedAt": "2026-08-25T21:18:00.199Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -11,7 +11,7 @@
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 17,
+      "outboundAttempts": 16,
       "connected": 12,
       "qualified": 2,
       "heldCall": 0,
@@ -94,7 +94,176 @@
       "Rianna",
       "Jen"
     ],
-    "callLog": [],
+    "callLog": [
+      {
+        "time": "2026-08-18T21:03:52.663Z",
+        "setter": "The Processing Team",
+        "contact": "Nathan Parker",
+        "status": "completed",
+        "durationSec": 382
+      },
+      {
+        "time": "2026-08-18T20:28:39.785Z",
+        "setter": "Jen",
+        "contact": "Amber Moore",
+        "status": "completed",
+        "durationSec": 304
+      },
+      {
+        "time": "2026-08-18T19:03:02.015Z",
+        "setter": "Sophia Cruz",
+        "contact": "TOLL FREE CALL",
+        "status": "completed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-18T18:15:38.516Z",
+        "setter": "Rianna",
+        "contact": "Shawn Darrell",
+        "status": "completed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-18T18:14:26.735Z",
+        "setter": "Rianna",
+        "contact": "Will Occelin",
+        "status": "completed",
+        "durationSec": 22
+      },
+      {
+        "time": "2026-08-18T17:30:46.006Z",
+        "setter": "Rianna",
+        "contact": "Lynette Preston",
+        "status": "completed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-18T17:17:12.140Z",
+        "setter": "Rianna",
+        "contact": "Edward Parker",
+        "status": "completed",
+        "durationSec": 56
+      },
+      {
+        "time": "2026-08-18T00:41:48.698Z",
+        "setter": "Rianna",
+        "contact": "Anita John",
+        "status": "completed",
+        "durationSec": 10
+      },
+      {
+        "time": "2026-08-18T00:40:23.587Z",
+        "setter": "Rianna",
+        "contact": "Jorge",
+        "status": "no-answer",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-18T00:38:34.986Z",
+        "setter": "Rianna",
+        "contact": "Chris Monroe",
+        "status": "completed",
+        "durationSec": 46
+      },
+      {
+        "time": "2026-08-17T23:57:02.778Z",
+        "setter": "Rianna",
+        "contact": "Shawn Darrell",
+        "status": "completed",
+        "durationSec": 41
+      },
+      {
+        "time": "2026-08-17T21:04:27.037Z",
+        "setter": "Jen",
+        "contact": "Arthnez parkinson",
+        "status": "no-answer",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-17T20:28:47.118Z",
+        "setter": "Jercori",
+        "contact": "Matthew Noorda",
+        "status": "no-answer",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-17T20:28:36.852Z",
+        "setter": "Jercori",
+        "contact": "Sasha Lewis",
+        "status": "no-answer",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-17T20:28:06.199Z",
+        "setter": "Jercori",
+        "contact": "Doug French",
+        "status": "no-answer",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-17T20:27:45.934Z",
+        "setter": "Jercori",
+        "contact": "Dahlia Pierce-Mitchell",
+        "status": "no-answer",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-17T20:27:11.177Z",
+        "setter": "Jercori",
+        "contact": "David L Adams Jr",
+        "status": "no-answer",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-17T20:17:34.267Z",
+        "setter": "Rianna",
+        "contact": "Will Occelin",
+        "status": "completed",
+        "durationSec": 42
+      },
+      {
+        "time": "2026-08-13T23:07:50.393Z",
+        "setter": "Jen",
+        "contact": "Amber Moore",
+        "status": "completed",
+        "durationSec": 31
+      },
+      {
+        "time": "2026-08-05T17:53:53.352Z",
+        "setter": "Rianna",
+        "contact": "Will Occelin",
+        "status": "completed",
+        "durationSec": 377
+      },
+      {
+        "time": "2026-07-27T16:54:21.862Z",
+        "setter": "Jen",
+        "contact": "Arthnez parkinson",
+        "status": "no-answer",
+        "durationSec": null
+      },
+      {
+        "time": "2026-05-21T19:33:44.585Z",
+        "setter": "Unknown",
+        "contact": "Chris Monroe",
+        "status": "completed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-04-30T17:52:26.134Z",
+        "setter": "Rianna",
+        "contact": "Anita John",
+        "status": "completed",
+        "durationSec": 27
+      },
+      {
+        "time": "2026-04-01T20:36:58.014Z",
+        "setter": "Unknown",
+        "contact": "David L Adams Jr",
+        "status": "completed",
+        "durationSec": 57
+      }
+    ],
     "activityPoints": {
       "Marshell": {
         "points": 0,
@@ -104,26 +273,22 @@
         "heldClosingCalls": 0
       },
       "Rianna": {
-        "points": 0,
+        "points": 11,
         "goal": 1400,
-        "outboundCalls": 0,
+        "outboundCalls": 11,
         "heldQualCalls": 0,
         "heldClosingCalls": 0
       },
       "Jen": {
-        "points": 120,
+        "points": 124,
         "goal": 1400,
-        "outboundCalls": 0,
+        "outboundCalls": 4,
         "heldQualCalls": 0,
         "heldClosingCalls": 3
       }
     }
   },
   "history": [
-    {
-      "t": "2026-08-19T21:29:12.010Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-19T21:44:43.322Z",
       "closeRate": 0
@@ -519,9 +684,175 @@
     {
       "t": "2026-08-25T21:16:09.829Z",
       "closeRate": 0
+    },
+    {
+      "t": "2026-08-25T21:18:00.199Z",
+      "closeRate": 0
     }
   ],
-  "callLogHistory": [],
+  "callLogHistory": [
+    {
+      "time": "2026-08-18T21:03:52.663Z",
+      "setter": "The Processing Team",
+      "contact": "Nathan Parker",
+      "status": "completed",
+      "durationSec": 382
+    },
+    {
+      "time": "2026-08-18T20:28:39.785Z",
+      "setter": "Jen",
+      "contact": "Amber Moore",
+      "status": "completed",
+      "durationSec": 304
+    },
+    {
+      "time": "2026-08-18T19:03:02.015Z",
+      "setter": "Sophia Cruz",
+      "contact": "TOLL FREE CALL",
+      "status": "completed",
+      "durationSec": null
+    },
+    {
+      "time": "2026-08-18T18:15:38.516Z",
+      "setter": "Rianna",
+      "contact": "Shawn Darrell",
+      "status": "completed",
+      "durationSec": null
+    },
+    {
+      "time": "2026-08-18T18:14:26.735Z",
+      "setter": "Rianna",
+      "contact": "Will Occelin",
+      "status": "completed",
+      "durationSec": 22
+    },
+    {
+      "time": "2026-08-18T17:30:46.006Z",
+      "setter": "Rianna",
+      "contact": "Lynette Preston",
+      "status": "completed",
+      "durationSec": null
+    },
+    {
+      "time": "2026-08-18T17:17:12.140Z",
+      "setter": "Rianna",
+      "contact": "Edward Parker",
+      "status": "completed",
+      "durationSec": 56
+    },
+    {
+      "time": "2026-08-18T00:41:48.698Z",
+      "setter": "Rianna",
+      "contact": "Anita John",
+      "status": "completed",
+      "durationSec": 10
+    },
+    {
+      "time": "2026-08-18T00:40:23.587Z",
+      "setter": "Rianna",
+      "contact": "Jorge",
+      "status": "no-answer",
+      "durationSec": null
+    },
+    {
+      "time": "2026-08-18T00:38:34.986Z",
+      "setter": "Rianna",
+      "contact": "Chris Monroe",
+      "status": "completed",
+      "durationSec": 46
+    },
+    {
+      "time": "2026-08-17T23:57:02.778Z",
+      "setter": "Rianna",
+      "contact": "Shawn Darrell",
+      "status": "completed",
+      "durationSec": 41
+    },
+    {
+      "time": "2026-08-17T21:04:27.037Z",
+      "setter": "Jen",
+      "contact": "Arthnez parkinson",
+      "status": "no-answer",
+      "durationSec": null
+    },
+    {
+      "time": "2026-08-17T20:28:47.118Z",
+      "setter": "Jercori",
+      "contact": "Matthew Noorda",
+      "status": "no-answer",
+      "durationSec": null
+    },
+    {
+      "time": "2026-08-17T20:28:36.852Z",
+      "setter": "Jercori",
+      "contact": "Sasha Lewis",
+      "status": "no-answer",
+      "durationSec": null
+    },
+    {
+      "time": "2026-08-17T20:28:06.199Z",
+      "setter": "Jercori",
+      "contact": "Doug French",
+      "status": "no-answer",
+      "durationSec": null
+    },
+    {
+      "time": "2026-08-17T20:27:45.934Z",
+      "setter": "Jercori",
+      "contact": "Dahlia Pierce-Mitchell",
+      "status": "no-answer",
+      "durationSec": null
+    },
+    {
+      "time": "2026-08-17T20:27:11.177Z",
+      "setter": "Jercori",
+      "contact": "David L Adams Jr",
+      "status": "no-answer",
+      "durationSec": null
+    },
+    {
+      "time": "2026-08-17T20:17:34.267Z",
+      "setter": "Rianna",
+      "contact": "Will Occelin",
+      "status": "completed",
+      "durationSec": 42
+    },
+    {
+      "time": "2026-08-13T23:07:50.393Z",
+      "setter": "Jen",
+      "contact": "Amber Moore",
+      "status": "completed",
+      "durationSec": 31
+    },
+    {
+      "time": "2026-08-05T17:53:53.352Z",
+      "setter": "Rianna",
+      "contact": "Will Occelin",
+      "status": "completed",
+      "durationSec": 377
+    },
+    {
+      "time": "2026-07-27T16:54:21.862Z",
+      "setter": "Jen",
+      "contact": "Arthnez parkinson",
+      "status": "no-answer",
+      "durationSec": null
+    },
+    {
+      "time": "2026-05-21T19:33:44.585Z",
+      "setter": "Unknown",
+      "contact": "Chris Monroe",
+      "status": "completed",
+      "durationSec": null
+    },
+    {
+      "time": "2026-04-30T17:52:26.134Z",
+      "setter": "Rianna",
+      "contact": "Anita John",
+      "status": "completed",
+      "durationSec": 27
+    }
+  ],
   "cache": {
     "contactFields": {
       "oe7yrmqbpTinH1UhTpX4": {
@@ -3212,8 +3543,78 @@
           }
         ],
         "cachedAt": "2026-08-25T21:16:33.390Z"
+      },
+      "IrgauaKoq6fLkkFOdOPa": {
+        "fields": [
+          {
+            "id": "ZbAnImdexdzvCvi2UUVx",
+            "value": "fb"
+          },
+          {
+            "id": "dbUTgrW5dQKVZVsuwM8v",
+            "value": "paid"
+          },
+          {
+            "id": "mgsmQlxFBNWYuip1l8p7",
+            "value": "52541583877769"
+          },
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 3
+          },
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Facebook Ads"
+          },
+          {
+            "id": "T4ZT5aAZtG33vDyaBjPb",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=TuwP4JhuPc_G4GH-kMWJqW7bela6I8kyqC-_w5oKuSE.DQkAAAAUkTIerBZVYVVoUWx4NlNwNnc2RHQyNDhXUjV3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "TFsovIwk95EombaFai6b",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=TuwP4JhuPc_G4GH-kMWJqW7bela6I8kyqC-_w5oKuSE.DQkAAAAUkTIerBZVYVVoUWx4NlNwNnc2RHQyNDhXUjV3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "aCvXpWdkghIqmtA4Mtbx",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=TuwP4JhuPc_G4GH-kMWJqW7bela6I8kyqC-_w5oKuSE.DQkAAAAUkTIerBZVYVVoUWx4NlNwNnc2RHQyNDhXUjV3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "azlatcryAviD4l2HgOm2",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=TuwP4JhuPc_G4GH-kMWJqW7bela6I8kyqC-_w5oKuSE.DQkAAAAUkTIerBZVYVVoUWx4NlNwNnc2RHQyNDhXUjV3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "tHiNIUaWLbLaOQ2sG6lC",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=TuwP4JhuPc_G4GH-kMWJqW7bela6I8kyqC-_w5oKuSE.DQkAAAAUkTIerBZVYVVoUWx4NlNwNnc2RHQyNDhXUjV3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "lXBcdsaqCaLyo5dOpNkm",
+            "value": "August 26 2026 17:00:00"
+          },
+          {
+            "id": "7gikZhd5m3ODkXrxAYGK",
+            "value": "https://www.google.com/calendar/event?eid=NmVtaGY0MzQ4ZzZoZTU2aGtqNDI3Y3FmZzAgamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
+          }
+        ],
+        "cachedAt": "2026-08-25T21:18:01.917Z"
       }
     },
-    "processedConversations": {}
+    "processedConversations": {
+      "Q23AT2Tc4jiYlDorl9at": 1787682907739,
+      "A0BG5rXdXIjtQkSZWLHN": 1787681162625,
+      "w7VMKGXtEtOdQHXdP7Gw": 1787682909427,
+      "03pWw8clrEXRP6JiuLop": 1787681163848,
+      "N74P8Yw48vMBOHYe8LUy": 1787681243121,
+      "gwL79cdHHlpcN1u5v7ig": 1787681145666,
+      "ytLL7g5wTt2i0XsJWlwT": 1787681195133,
+      "hOeduFqjzCXdXtc8vfs0": 1787681409453,
+      "RZQkiDqmppI9yDhpCFdD": 1787681410508,
+      "389fcxlcwUbPT19mVRVQ": 1787681233300,
+      "TcXLhHORIeBjspuZTvbl": 1787681405503,
+      "oYF56mOz9UIeKj6RI0lN": 1786998527072,
+      "y6ffpECDvLDVvUL4JQPb": 1786998516693,
+      "O2r8rqS0TqRSH47u6P25": 1786998465886,
+      "1f515Tnpop5EryAaf2wU": 1786998431132,
+      "7ABWDsn87X0KdFaJpSDA": 1786998486151
+    }
   }
 }
