@@ -333,7 +333,12 @@ function wireCallLogRange(callLogHistory, windowDays) {
   if (!fromInput || !toInput || !applyBtn) return;
 
   const today = new Date();
-  const defaultFrom = new Date(today.getTime() - (windowDays - 1) * 24 * 60 * 60 * 1000);
+  // +1 padding day: the backend's `since` is a rolling windowDays*24h look-
+  // back from the exact sync timestamp, while this default range is
+  // calendar-day based -- without the pad, a call from exactly windowDays
+  // ago can fall just outside "today back N-1 days" and look like data
+  // loss when it isn't.
+  const defaultFrom = new Date(today.getTime() - windowDays * 24 * 60 * 60 * 1000);
   fromInput.value = isoDate(defaultFrom);
   toInput.value = isoDate(today);
   fromInput.max = isoDate(today);
