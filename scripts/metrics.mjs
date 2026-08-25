@@ -273,20 +273,14 @@ export async function computeMetrics({ client, shape, config, warnings, since, c
     console.log(`Conversations: ${callConversations.length - conversationsToFetch.length} already processed & unchanged, ${conversationsToFetch.length} fetched fresh (of ${callConversations.length} total).`);
 
     let missingFieldsSeen = false;
-    let sampleLogged = false;
     await mapWithConcurrency(conversationsToFetch, 3, async (conv) => {
       try {
         const messages = await client.getConversationMessages(conv.id);
-        // TEMP DIAGNOSTIC: dump one real message payload to the Action log
-        // so the field names below (type/direction/userId/status/duration)
-        // can be verified against reality instead of guessed. Remove once
-        // confirmed -- see README "Rate limiting" / call log section.
-        if (!sampleLogged && messages.length > 0) {
-          sampleLogged = true;
-          console.log("SAMPLE MESSAGE PAYLOAD:", JSON.stringify(messages[0]));
-          console.log(`(conversation ${conv.id} had ${messages.length} message(s) total)`);
-        }
-        const callMsgs = messages.filter((m) => (m.type ?? m.messageType) === "TYPE_CALL" && m.direction === "outbound");
+        // Confirmed against a real payload on 2026-08-25: `type` is a
+        // numeric internal code (not the string enum) -- the real type
+        // string lives in `messageType`. Duration lives nested under
+        // `meta.call.duration`, not top-level.
+        const callMsgs = messages.filter((m) => m.messageType === "TYPE_CALL" && m.direction === "outbound");
         // Only mark as "processed" if we actually extracted something --
         // otherwise a parsing mismatch would permanently blackhole this
         // conversation's calls even after the field names get fixed.
@@ -298,8 +292,8 @@ export async function computeMetrics({ client, shape, config, warnings, since, c
           const setterName = userId
             ? (shape.usersById.get(userId)?.name ?? `${shape.usersById.get(userId)?.firstName ?? ""}`.trim())
             : null;
-          const status = m.status ?? m.callStatus ?? null;
-          const durationSec = m.callDuration ?? m.duration ?? null;
+          const status = m.status ?? m.meta?.call?.status ?? m.callStatus ?? null;
+          const durationSec = m.meta?.call?.duration ?? m.callDuration ?? m.duration ?? null;
           if (!setterName && !status && durationSec == null) missingFieldsSeen = true;
           callLog.push({
             time: m.dateAdded ?? m.timestamp ?? m.createdAt ?? conv.dateUpdated ?? null,
