@@ -7,6 +7,21 @@ const toNumber = (v) => {
 
 const dollars = (n) => Math.round(n);
 
+// GHL user records carry full names ("Rianna Nava"), but the org roster
+// and every custom-field-based attribution in this file use short names
+// ("Rianna"). Without normalizing, calendar/call-derived stats would land
+// on a completely separate "Rianna Nava" row, split off from her real
+// Setter Attribution row -- same person, silently fragmented data.
+function canonicalRepName(fullName, roster) {
+  if (!fullName) return fullName;
+  const norm = fullName.trim().toLowerCase();
+  for (const r of roster) {
+    const rn = r.toLowerCase();
+    if (norm === rn || norm.startsWith(rn + " ")) return r;
+  }
+  return fullName;
+}
+
 // Runs `fn` over `items` with at most `limit` in flight at once -- GHL rate
 // limits per-location API calls, and this can mean one contact fetch per
 // opportunity in the window.
@@ -44,6 +59,7 @@ const CONTACT_CACHE_TTL_MS = 6 * 60 * 60 * 1000; // 6 hours -- qualification fie
 export async function computeMetrics({ client, shape, config, warnings, since, cache }) {
   cache.contactFields ??= {};
   cache.processedConversations ??= {};
+  const roster = [...new Set([...(config.reps.setters ?? []), ...(config.reps.closers ?? [])])];
   const { fieldId, pipeline, stageBucketById, calendarId, reps } = shape;
 
   const funnel = { outbound: 0, connected: 0, qualified: 0, held: 0, won: 0 };
@@ -222,8 +238,9 @@ export async function computeMetrics({ client, shape, config, warnings, since, c
         endTime: Date.now(),
       });
       for (const ev of events) {
-        const ownerName = shape.usersById.get(ev.assignedUserId)?.name
+        const rawOwnerName = shape.usersById.get(ev.assignedUserId)?.name
           ?? `${shape.usersById.get(ev.assignedUserId)?.firstName ?? ""}`.trim();
+        const ownerName = canonicalRepName(rawOwnerName, roster);
         const row = ownerName ? getRow(ownerName) : null;
         const showed = ev.appointmentStatus === "showed" || ev.appointmentStatus === "confirmed";
         if (showed) {
@@ -289,9 +306,10 @@ export async function computeMetrics({ client, shape, config, warnings, since, c
         }
         for (const m of callMsgs) {
           const userId = m.userId ?? m.addedBy ?? null;
-          const setterName = userId
+          const rawSetterName = userId
             ? (shape.usersById.get(userId)?.name ?? `${shape.usersById.get(userId)?.firstName ?? ""}`.trim())
             : null;
+          const setterName = rawSetterName ? canonicalRepName(rawSetterName, roster) : null;
           const status = m.status ?? m.meta?.call?.status ?? m.callStatus ?? null;
           const durationSec = m.meta?.call?.duration ?? m.callDuration ?? m.duration ?? null;
           if (!setterName && !status && durationSec == null) missingFieldsSeen = true;
