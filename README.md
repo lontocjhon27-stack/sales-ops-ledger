@@ -19,6 +19,29 @@ client-side. No server, no exposed token.
 
 After that it runs automatically every 30 minutes and commits `data.json` only when something changed.
 
+## SALES | HANDOFF was deleted (confirmed 2026-08-25)
+
+The user confirmed this field group no longer exists in GHL (Handoff Type
+survives, but moved into SALES | QUALIFICATION). Three metrics that read
+from it now work differently:
+
+- **Qualified Held Call** → replaced by a real signal: whether the
+  contact has a "showed" event on any of the three calendars this window
+  (`heldContactIds` in `metrics.mjs`, built before the opportunity loop
+  runs so it's ready when needed).
+- **Live Transfer Attempted** → replaced by checking whether the
+  opportunity is currently sitting in the "Qualified - Live Transfer"
+  pipeline stage (a real, still-existing stage) — see
+  `liveTransferStageIds` in `resolve.mjs`.
+- **Live Transfer Accepted** → no substitute exists. Always reads 0, with
+  a standing warning explaining why. Fixing this needs either a new field
+  or logging pipeline stage-transition history (GHL doesn't expose that
+  directly today as far as this integration uses it).
+
+`Overall Qualification` and `Prospect Available Now?` were dropped from
+`config.mjs` entirely — they were never consumed by any metric, so keeping
+them just produced permanent noise warnings for fields that don't exist.
+
 ## Rep roster
 
 Per the approved sales org plan: **Jercori** (Head of Sales) and **Jen**

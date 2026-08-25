@@ -74,12 +74,7 @@ export const CONFIG = {
     setterAttribution: env("GHL_FIELD_SETTER_ATTR", "Setter Attribution"),
     closerAssignment: env("GHL_FIELD_CLOSER_ASSIGN", "Closer Assignment"),
 
-    overallQualification: env("GHL_FIELD_OVERALL_QUAL", "Overall Qualification"),
     handoffType: env("GHL_FIELD_HANDOFF_TYPE", "Handoff Type"),
-    prospectAvailableNow: env("GHL_FIELD_PROSPECT_AVAILABLE", "Prospect Available Now?"),
-    liveTransferAttempted: env("GHL_FIELD_LT_ATTEMPTED", "Live Transfer Attempted?"),
-    liveTransferAcceptedBy: env("GHL_FIELD_LT_ACCEPTED_BY", "Live Transfer Accepted By"),
-    qualifiedHeldCall: env("GHL_FIELD_QUALIFIED_HELD", "Qualified Held Call"),
     // "Lost Reason" is intentionally not here: it's a native opportunity
     // field ({{opportunity.lost_reason}}), not a custom field, so it isn't
     // resolved through the customFields lookup at all. Read it directly
@@ -87,6 +82,22 @@ export const CONFIG = {
     // "Cash Collected" is intentionally not here either -- it comes from
     // real GHL Payments transactions (client.listTransactions), not a
     // custom field. See metrics.mjs.
+    //
+    // Confirmed with the user on 2026-08-25 that the standalone SALES |
+    // HANDOFF field group was deleted (Handoff Type now lives inside
+    // SALES | QUALIFICATION instead, see above). These are intentionally
+    // NOT listed here anymore -- listing them just produced permanent
+    // "not found" warnings for fields that no longer exist:
+    //   - Overall Qualification, Prospect Available Now? -- weren't
+    //     consumed by any metric anyway.
+    //   - Live Transfer Attempted? -- replaced by checking whether the
+    //     opportunity is currently in the "Qualified - Live Transfer"
+    //     pipeline stage (a real, still-existing stage). See metrics.mjs.
+    //   - Live Transfer Accepted By, Qualified Held Call -- no field-based
+    //     substitute exists; Qualified Held Call now comes from calendar
+    //     show-ups instead (see metrics.mjs). Live Transfer Accepted has
+    //     no remaining data source at all -- would need a new field or
+    //     stage-history logging to bring back.
   },
 
   routingTiers: [

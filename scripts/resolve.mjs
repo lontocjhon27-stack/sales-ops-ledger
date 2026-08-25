@@ -51,6 +51,11 @@ export async function resolveAccountShape(client, config, warnings) {
     warnings.push(`Pipeline "${config.pipeline.name}" not found -- outbound/funnel/won metrics will be empty until it exists.`);
   }
   const stageBucketById = new Map();
+  // SALES | HANDOFF (the field group tracking Live Transfer Attempted/
+  // Accepted) was deleted from this location -- "Qualified - Live Transfer"
+  // is its own real pipeline stage though, so an opportunity sitting there
+  // right now is a legitimate substitute signal for "attempted."
+  const liveTransferStageIds = new Set();
   if (pipeline) {
     for (const stage of pipeline.stages ?? []) {
       const bucket = config.pipeline.stageBuckets[norm(stage.name)];
@@ -59,6 +64,7 @@ export async function resolveAccountShape(client, config, warnings) {
         continue;
       }
       stageBucketById.set(stage.id, bucket);
+      if (norm(stage.name) === "qualified - live transfer") liveTransferStageIds.add(stage.id);
     }
   }
 
@@ -71,7 +77,7 @@ export async function resolveAccountShape(client, config, warnings) {
     calendarId[key] = id ?? null;
   }
 
-  return { usersById, reps, fieldId, pipeline, stageBucketById, calendarId };
+  return { usersById, reps, fieldId, pipeline, stageBucketById, liveTransferStageIds, calendarId };
 }
 
 export function fieldValue(customFieldsArray, fieldId) {

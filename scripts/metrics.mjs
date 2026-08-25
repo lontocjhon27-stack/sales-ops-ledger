@@ -61,7 +61,7 @@ export async function computeMetrics({ client, shape, config, warnings, since, c
   cache.contactFields ??= {};
   cache.processedConversations ??= {};
   const roster = [...new Set([...(config.reps.setters ?? []), ...(config.reps.closers ?? [])])];
-  const { fieldId, pipeline, stageBucketById, calendarId, reps } = shape;
+  const { fieldId, pipeline, stageBucketById, liveTransferStageIds, calendarId } = shape;
 
   const funnel = { outbound: 0, connected: 0, qualified: 0, held: 0, won: 0 };
   const repRows = new Map(); // key: setter or closer name -> row
@@ -75,6 +75,52 @@ export async function computeMetrics({ client, shape, config, warnings, since, c
   const attributionChains = [];
   let cashCollectedTotal = 0;
   let contractValueTotal = 0;
+
+  // ---------------- Calendar events: appointments, no-shows, held calls ----------------
+  // Runs BEFORE the opportunity loop below because "was this opportunity's
+  // contact held on a call" (heldContactIds) now comes from a calendar
+  // show-up, not the deleted "Qualified Held Call" custom field.
+  //
+  // Which calendar an appointment lives on tells us what KIND of held call
+  // it is for activity-point purposes (org plan section: Setter/Jen Daily
+  // Activity Standard) -- a showed event on the Setter Qualification
+  // Calendar is a held qualification call (15 pts); a showed event on Jen's
+  // own sales calendar is a held closing call for her (40 pts).
+  const heldQualByRep = new Map();
+  const heldClosingByRep = new Map();
+  const heldContactIds = new Set();
+  const calendarEntries = Object.entries(calendarId).filter(([, id]) => id);
+  for (const [calKey, calId] of calendarEntries) {
+    try {
+      const events = await client.listCalendarEvents({
+        calendarId: calId,
+        startTime: since.getTime(),
+        endTime: Date.now(),
+      });
+      for (const ev of events) {
+        const rawOwnerName = shape.usersById.get(ev.assignedUserId)?.name
+          ?? `${shape.usersById.get(ev.assignedUserId)?.firstName ?? ""}`.trim();
+        const ownerName = canonicalRepName(rawOwnerName, roster);
+        const row = ownerName ? getRow(ownerName) : null;
+        const showed = ev.appointmentStatus === "showed" || ev.appointmentStatus === "confirmed";
+        if (showed) {
+          if (row) row.appointmentsBooked += 1;
+          if (ev.contactId) heldContactIds.add(ev.contactId);
+          if (ownerName && calKey === "setterQualification") {
+            heldQualByRep.set(ownerName, (heldQualByRep.get(ownerName) ?? 0) + 1);
+          }
+          if (ownerName && calKey === "jenSales") {
+            heldClosingByRep.set(ownerName, (heldClosingByRep.get(ownerName) ?? 0) + 1);
+          }
+        }
+        if (ev.appointmentStatus === "noshow") {
+          if (row) row.noShows += 1;
+        }
+      }
+    } catch (err) {
+      warnings.push(`Failed to fetch events for calendar "${calKey}": ${err.message}`);
+    }
+  }
 
   // ---------------- Opportunities: funnel, won, $, attribution ----------------
   if (pipeline) {
@@ -143,15 +189,23 @@ export async function computeMetrics({ client, shape, config, warnings, since, c
       const closer = canonicalRepName(fieldValue(cf, fieldId.closerAssignment), roster);
       const tac = toNumber(fieldValue(cf, fieldId.totalAccessibleCapital));
       const highTicket = String(fieldValue(cf, fieldId.highTicketFit) ?? "").toLowerCase() === "true";
-      const liveTransferAttempted = String(fieldValue(cf, fieldId.liveTransferAttempted) ?? "").toLowerCase() === "true";
-      const liveTransferAcceptedBy = fieldValue(cf, fieldId.liveTransferAcceptedBy);
-      const qualifiedHeldCall = String(fieldValue(cf, fieldId.qualifiedHeldCall) ?? "").toLowerCase() === "true";
+      // SALES | HANDOFF was deleted (confirmed with the user 2026-08-25).
+      // "Live Transfer Attempted?" is replaced by a real substitute: is
+      // this opportunity currently sitting in the "Qualified - Live
+      // Transfer" pipeline stage. "Live Transfer Accepted By" has no
+      // substitute at all -- liveTransferAccepted stays permanently 0
+      // until a new field or stage-history log exists for it.
+      const liveTransferAttempted = liveTransferStageIds.has(opp.pipelineStageId);
+      // "Qualified Held Call" is replaced by a real substitute too: did
+      // this contact actually show up for a scheduled call (calendar
+      // "showed" event), computed above before this loop runs.
+      const heldCall = heldContactIds.has(opp.contactId);
       const contractValue = toNumber(opp.monetaryValue);
 
       if (bucket === "connected_attempted") funnel.outbound += 1;
       if (bucket === "connected") funnel.connected += 1;
       if (bucket === "qualified") funnel.qualified += 1;
-      if (qualifiedHeldCall) funnel.held += 1;
+      if (heldCall) funnel.held += 1;
       if (opp.status === "won" || bucket === "won") funnel.won += 1;
 
       if (setter) {
@@ -160,12 +214,13 @@ export async function computeMetrics({ client, shape, config, warnings, since, c
         if (bucket === "connected" || bucket === "qualified" || opp.status === "won") row.connected += 1;
         if (bucket === "qualified" || opp.status === "won") row.qualified += 1;
         if (liveTransferAttempted) row.liveTransferAttempted += 1;
-        if (liveTransferAttempted && liveTransferAcceptedBy) row.liveTransferAccepted += 1;
+        // row.liveTransferAccepted intentionally never increments -- see
+        // comment above on why that field has no data source anymore.
       }
 
       if (closer) {
         const row = getRow(closer);
-        if (qualifiedHeldCall) row.heldCalls += 1;
+        if (heldCall) row.heldCalls += 1;
         if (opp.status === "won") {
           row.won += 1;
           row.contractValue += contractValue;
@@ -190,7 +245,7 @@ export async function computeMetrics({ client, shape, config, warnings, since, c
         highTicketFlagged.routedNormally += 1; // policy: flag never overrides routing
       }
 
-      if (setter && closer && (opp.status === "won" || qualifiedHeldCall)) {
+      if (setter && closer && (opp.status === "won" || heldCall)) {
         attributionChains.push({
           setter,
           closer,
@@ -199,6 +254,10 @@ export async function computeMetrics({ client, shape, config, warnings, since, c
         });
       }
     }
+
+    warnings.push(
+      "\"Live Transfers Accepted\" always reads 0 -- SALES | HANDOFF (the field that tracked this) was deleted and nothing replaces it. \"Live Transfers Attempted\" still works (inferred from the \"Qualified - Live Transfer\" pipeline stage). Fixing Accepted needs either a new field or logging stage-transition history."
+    );
 
     // ---------------- Payments: real cash collected, by contact ----------------
     try {
@@ -224,46 +283,6 @@ export async function computeMetrics({ client, shape, config, warnings, since, c
       }
     } catch (err) {
       warnings.push(`Failed to fetch payment transactions: ${err.message}`);
-    }
-  }
-
-  // ---------------- Calendar events: appointments, no-shows, held calls ----------------
-  // Which calendar an appointment lives on tells us what KIND of held call it
-  // is for activity-point purposes (org plan section: Setter/Jen Daily
-  // Activity Standard) -- a showed event on the Setter Qualification
-  // Calendar is a held qualification call (15 pts); a showed event on Jen's
-  // own sales calendar is a held closing call for her (40 pts).
-  const heldQualByRep = new Map();
-  const heldClosingByRep = new Map();
-  const calendarEntries = Object.entries(calendarId).filter(([, id]) => id);
-  for (const [calKey, calId] of calendarEntries) {
-    try {
-      const events = await client.listCalendarEvents({
-        calendarId: calId,
-        startTime: since.getTime(),
-        endTime: Date.now(),
-      });
-      for (const ev of events) {
-        const rawOwnerName = shape.usersById.get(ev.assignedUserId)?.name
-          ?? `${shape.usersById.get(ev.assignedUserId)?.firstName ?? ""}`.trim();
-        const ownerName = canonicalRepName(rawOwnerName, roster);
-        const row = ownerName ? getRow(ownerName) : null;
-        const showed = ev.appointmentStatus === "showed" || ev.appointmentStatus === "confirmed";
-        if (showed) {
-          if (row) row.appointmentsBooked += 1;
-          if (ownerName && calKey === "setterQualification") {
-            heldQualByRep.set(ownerName, (heldQualByRep.get(ownerName) ?? 0) + 1);
-          }
-          if (ownerName && calKey === "jenSales") {
-            heldClosingByRep.set(ownerName, (heldClosingByRep.get(ownerName) ?? 0) + 1);
-          }
-        }
-        if (ev.appointmentStatus === "noshow") {
-          if (row) row.noShows += 1;
-        }
-      }
-    } catch (err) {
-      warnings.push(`Failed to fetch events for calendar "${calKey}": ${err.message}`);
     }
   }
 
