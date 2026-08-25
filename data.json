@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T22:27:15.569Z",
+  "generatedAt": "2026-08-25T23:00:00.795Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -90,71 +90,7 @@
       "Rianna",
       "Jen"
     ],
-    "callLog": [
-      {
-        "time": "2026-08-18T22:04:26.136Z",
-        "setter": "Jen",
-        "contact": "Arletha Mariland",
-        "status": "completed",
-        "durationSec": 51
-      },
-      {
-        "time": "2026-08-18T22:04:15.835Z",
-        "setter": "Jen",
-        "contact": "Arletha Mariland",
-        "status": "completed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-18T22:04:09.540Z",
-        "setter": "Jen",
-        "contact": "Tonya Poynter",
-        "status": "completed",
-        "durationSec": 51
-      },
-      {
-        "time": "2026-08-18T22:03:55.723Z",
-        "setter": "Jen",
-        "contact": "Arletha Mariland",
-        "status": "completed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-18T19:00:10.626Z",
-        "setter": "Jen",
-        "contact": "Tonya Poynter",
-        "status": "failed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-18T18:59:07.671Z",
-        "setter": "Jen",
-        "contact": "Tonya Poynter",
-        "status": "failed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-18T18:56:29.194Z",
-        "setter": "Jen",
-        "contact": "Tonya Poynter",
-        "status": "failed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-07-30T21:51:50.000Z",
-        "setter": "Jen",
-        "contact": "Tonya Poynter",
-        "status": "completed",
-        "durationSec": 28
-      },
-      {
-        "time": "2026-05-23T17:56:00.461Z",
-        "setter": "Jen",
-        "contact": "Arletha Mariland",
-        "status": "completed",
-        "durationSec": 31
-      }
-    ],
+    "callLog": [],
     "activityPoints": {
       "Marshell": {
         "points": 0,
@@ -171,19 +107,15 @@
         "heldClosingCalls": 0
       },
       "Jen": {
-        "points": 169,
+        "points": 160,
         "goal": 1400,
-        "outboundCalls": 9,
+        "outboundCalls": 0,
         "heldQualCalls": 0,
         "heldClosingCalls": 4
       }
     }
   },
   "history": [
-    {
-      "t": "2026-08-19T22:54:36.596Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-19T23:48:57.418Z",
       "closeRate": 0
@@ -578,6 +510,10 @@
     },
     {
       "t": "2026-08-25T22:27:15.569Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-08-25T23:00:00.795Z",
       "closeRate": 0
     }
   ],
