@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T21:07:28.801Z",
+  "generatedAt": "2026-08-25T21:09:11.752Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -94,7 +94,15 @@
       "Rianna",
       "Jen"
     ],
-    "callLog": [],
+    "callLog": [
+      {
+        "time": "2026-08-18T21:03:52.663Z",
+        "setter": "The Processing Team",
+        "contact": "Nathan Parker",
+        "status": "completed",
+        "durationSec": 382
+      }
+    ],
     "activityPoints": {
       "Marshell": {
         "points": 0,
@@ -120,10 +128,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-19T19:55:14.884Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-19T20:02:17.779Z",
       "closeRate": 0
@@ -519,9 +523,21 @@
     {
       "t": "2026-08-25T21:07:28.801Z",
       "closeRate": 0
+    },
+    {
+      "t": "2026-08-25T21:09:11.752Z",
+      "closeRate": 0
     }
   ],
-  "callLogHistory": [],
+  "callLogHistory": [
+    {
+      "time": "2026-08-18T21:03:52.663Z",
+      "setter": "The Processing Team",
+      "contact": "Nathan Parker",
+      "status": "completed",
+      "durationSec": 382
+    }
+  ],
   "cache": {
     "contactFields": {
       "oe7yrmqbpTinH1UhTpX4": {
@@ -3021,7 +3037,8 @@
       "RT8QMifXag9PNv7FZTd7": 1786998319633,
       "bwzoBzrIgku2dhTE6QDe": 1786998281946,
       "aRr6m6Wllf1fPBngjEVa": 1786998242013,
-      "Xo45bbCX7V4pifm7JKpR": 1786998391698
+      "Xo45bbCX7V4pifm7JKpR": 1786998391698,
+      "Q23AT2Tc4jiYlDorl9at": 1787682907739
     }
   }
 }
