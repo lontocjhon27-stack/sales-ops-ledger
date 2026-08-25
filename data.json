@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T21:14:09.939Z",
+  "generatedAt": "2026-08-25T21:16:09.829Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -39,7 +39,7 @@
       "routedNormally": 0
     },
     "reps": {
-      "Rianna Nava": {
+      "Rianna": {
         "outbound": 2,
         "connected": 2,
         "qualified": 1,
@@ -52,7 +52,7 @@
         "contractValue": 0,
         "cashCollected": 0
       },
-      "Jennifer Pascual": {
+      "Jen": {
         "outbound": 0,
         "connected": 0,
         "qualified": 0,
@@ -111,19 +111,15 @@
         "heldClosingCalls": 0
       },
       "Jen": {
-        "points": 0,
+        "points": 120,
         "goal": 1400,
         "outboundCalls": 0,
         "heldQualCalls": 0,
-        "heldClosingCalls": 0
+        "heldClosingCalls": 3
       }
     }
   },
   "history": [
-    {
-      "t": "2026-08-19T20:36:53.508Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-19T21:29:12.010Z",
       "closeRate": 0
@@ -518,6 +514,10 @@
     },
     {
       "t": "2026-08-25T21:14:09.939Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-08-25T21:16:09.829Z",
       "closeRate": 0
     }
   ],
@@ -3328,6 +3328,59 @@
           }
         ],
         "cachedAt": "2026-08-25T21:14:11.814Z"
+      },
+      "iKw0VHGKz34gHdUIwmCN": {
+        "fields": [
+          {
+            "id": "ZbAnImdexdzvCvi2UUVx",
+            "value": "fb"
+          },
+          {
+            "id": "dbUTgrW5dQKVZVsuwM8v",
+            "value": "paid"
+          },
+          {
+            "id": "mgsmQlxFBNWYuip1l8p7",
+            "value": "52541583877769"
+          },
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 3
+          },
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Facebook Ads"
+          },
+          {
+            "id": "T4ZT5aAZtG33vDyaBjPb",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=DRInHLIt3CNoCGw80Cp5oHSzkN5RVWq-qxBhjXSarow.DQkAAAAUkTIerBZyWTJkVlptd1FfRzV2a2RudXB2MHJnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "TFsovIwk95EombaFai6b",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=DRInHLIt3CNoCGw80Cp5oHSzkN5RVWq-qxBhjXSarow.DQkAAAAUkTIerBZyWTJkVlptd1FfRzV2a2RudXB2MHJnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "aCvXpWdkghIqmtA4Mtbx",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=DRInHLIt3CNoCGw80Cp5oHSzkN5RVWq-qxBhjXSarow.DQkAAAAUkTIerBZyWTJkVlptd1FfRzV2a2RudXB2MHJnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "azlatcryAviD4l2HgOm2",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=DRInHLIt3CNoCGw80Cp5oHSzkN5RVWq-qxBhjXSarow.DQkAAAAUkTIerBZyWTJkVlptd1FfRzV2a2RudXB2MHJnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "tHiNIUaWLbLaOQ2sG6lC",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=DRInHLIt3CNoCGw80Cp5oHSzkN5RVWq-qxBhjXSarow.DQkAAAAUkTIerBZyWTJkVlptd1FfRzV2a2RudXB2MHJnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "lXBcdsaqCaLyo5dOpNkm",
+            "value": "August 26 2026 17:00:00"
+          },
+          {
+            "id": "7gikZhd5m3ODkXrxAYGK",
+            "value": "https://www.google.com/calendar/event?eid=bjg5M2F2MDc0aWQ4Z3BocnZsdTA4MzJlZDQgamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
+          }
+        ],
+        "cachedAt": "2026-08-25T21:16:33.390Z"
       }
     },
     "processedConversations": {
