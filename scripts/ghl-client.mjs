@@ -61,7 +61,13 @@ export function createClient({ token, locationId }) {
 
       if (res.ok) return body;
 
-      const retryable = res.status === 429 || res.status >= 500;
+      // GHL's gateway has been observed returning 401 with a body message
+      // like "Command timed out" for what's actually a transient upstream
+      // timeout, not a real auth failure -- retry that specific shape too.
+      // A genuine bad/expired token gives a different message and isn't
+      // matched by this.
+      const looksLikeTransientTimeout = res.status === 401 && /timed?\s*out/i.test(String(body?.message ?? ""));
+      const retryable = res.status === 429 || res.status >= 500 || looksLikeTransientTimeout;
       if (!retryable || attempt === MAX_RETRIES) {
         throw new GhlError(
           `GHL API ${res.status} on ${path}: ${body?.message || res.statusText}`,

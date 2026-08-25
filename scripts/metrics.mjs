@@ -273,11 +273,26 @@ export async function computeMetrics({ client, shape, config, warnings, since, c
     console.log(`Conversations: ${callConversations.length - conversationsToFetch.length} already processed & unchanged, ${conversationsToFetch.length} fetched fresh (of ${callConversations.length} total).`);
 
     let missingFieldsSeen = false;
+    let sampleLogged = false;
     await mapWithConcurrency(conversationsToFetch, 3, async (conv) => {
       try {
         const messages = await client.getConversationMessages(conv.id);
-        cache.processedConversations[conv.id] = conv.dateUpdated ?? new Date().toISOString();
+        // TEMP DIAGNOSTIC: dump one real message payload to the Action log
+        // so the field names below (type/direction/userId/status/duration)
+        // can be verified against reality instead of guessed. Remove once
+        // confirmed -- see README "Rate limiting" / call log section.
+        if (!sampleLogged && messages.length > 0) {
+          sampleLogged = true;
+          console.log("SAMPLE MESSAGE PAYLOAD:", JSON.stringify(messages[0]));
+          console.log(`(conversation ${conv.id} had ${messages.length} message(s) total)`);
+        }
         const callMsgs = messages.filter((m) => (m.type ?? m.messageType) === "TYPE_CALL" && m.direction === "outbound");
+        // Only mark as "processed" if we actually extracted something --
+        // otherwise a parsing mismatch would permanently blackhole this
+        // conversation's calls even after the field names get fixed.
+        if (callMsgs.length > 0) {
+          cache.processedConversations[conv.id] = conv.dateUpdated ?? new Date().toISOString();
+        }
         for (const m of callMsgs) {
           const userId = m.userId ?? m.addedBy ?? null;
           const setterName = userId
