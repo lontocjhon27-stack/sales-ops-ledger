@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T10:18:36.423Z",
+  "generatedAt": "2026-08-26T11:55:47.762Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -116,10 +116,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-20T10:57:54.899Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-20T11:58:08.839Z",
       "closeRate": 0
@@ -514,6 +510,10 @@
     },
     {
       "t": "2026-08-26T10:18:36.423Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-08-26T11:55:47.762Z",
       "closeRate": 0
     }
   ],
@@ -3566,7 +3566,7 @@
             "value": "https://www.google.com/calendar/event?eid=am5nYTM3MnZ1ZTlnaGMzajRvbmVzMXRmcWMgamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
           }
         ],
-        "cachedAt": "2026-08-26T05:20:34.391Z"
+        "cachedAt": "2026-08-26T11:55:55.380Z"
       },
       "OhQZsUfHdSwDabNV7ZJe": {
         "fields": [
@@ -3615,7 +3615,7 @@
             "value": "https://www.google.com/calendar/event?eid=cjgwdjRzN3ZoaGc2NGJzaWtkOW43YXE1ajAgamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
           }
         ],
-        "cachedAt": "2026-08-26T05:20:34.520Z"
+        "cachedAt": "2026-08-26T11:55:55.281Z"
       },
       "eXjY4SyjdmnOVdwo1NxC": {
         "fields": [
@@ -3668,7 +3668,7 @@
             "value": "https://www.google.com/calendar/event?eid=cDg2aGluZ2tlZzM5ZnVucGMyYjNtbWhmYW8gamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
           }
         ],
-        "cachedAt": "2026-08-26T05:20:34.463Z"
+        "cachedAt": "2026-08-26T11:55:55.368Z"
       },
       "GYztNsVt7grtdP8EuLTh": {
         "fields": [
@@ -3725,7 +3725,7 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-08-26T05:20:34.424Z"
+        "cachedAt": "2026-08-26T11:55:55.271Z"
       },
       "gkKeZq9u3zhGPKowC8Hu": {
         "fields": [
