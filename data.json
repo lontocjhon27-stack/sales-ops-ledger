@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T03:34:41.561Z",
+  "generatedAt": "2026-08-26T05:20:29.038Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -90,29 +90,7 @@
       "Rianna",
       "Jen"
     ],
-    "callLog": [
-      {
-        "time": "2026-08-19T00:04:43.267Z",
-        "setter": "Rianna",
-        "contact": "Keonna Mcghee",
-        "status": "completed",
-        "durationSec": 11
-      },
-      {
-        "time": "2026-08-19T00:03:25.931Z",
-        "setter": "Rianna",
-        "contact": "Madelyn Bacerott",
-        "status": "failed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-19T00:02:56.817Z",
-        "setter": "Rianna",
-        "contact": "Madelyn Bacerott",
-        "status": "failed",
-        "durationSec": null
-      }
-    ],
+    "callLog": [],
     "activityPoints": {
       "Marshell": {
         "points": 0,
@@ -122,9 +100,9 @@
         "heldClosingCalls": 0
       },
       "Rianna": {
-        "points": 3,
+        "points": 0,
         "goal": 1400,
-        "outboundCalls": 3,
+        "outboundCalls": 0,
         "heldQualCalls": 0,
         "heldClosingCalls": 0
       },
@@ -138,10 +116,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-20T05:07:36.361Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-20T07:29:35.498Z",
       "closeRate": 0
@@ -536,6 +510,10 @@
     },
     {
       "t": "2026-08-26T03:34:41.561Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-08-26T05:20:29.038Z",
       "closeRate": 0
     }
   ],
@@ -3588,7 +3566,7 @@
             "value": "https://www.google.com/calendar/event?eid=am5nYTM3MnZ1ZTlnaGMzajRvbmVzMXRmcWMgamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
           }
         ],
-        "cachedAt": "2026-08-25T21:56:12.488Z"
+        "cachedAt": "2026-08-26T05:20:34.391Z"
       },
       "OhQZsUfHdSwDabNV7ZJe": {
         "fields": [
@@ -3637,7 +3615,7 @@
             "value": "https://www.google.com/calendar/event?eid=cjgwdjRzN3ZoaGc2NGJzaWtkOW43YXE1ajAgamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
           }
         ],
-        "cachedAt": "2026-08-25T21:56:12.494Z"
+        "cachedAt": "2026-08-26T05:20:34.520Z"
       },
       "eXjY4SyjdmnOVdwo1NxC": {
         "fields": [
@@ -3690,7 +3668,7 @@
             "value": "https://www.google.com/calendar/event?eid=cDg2aGluZ2tlZzM5ZnVucGMyYjNtbWhmYW8gamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
           }
         ],
-        "cachedAt": "2026-08-25T21:56:12.546Z"
+        "cachedAt": "2026-08-26T05:20:34.463Z"
       },
       "GYztNsVt7grtdP8EuLTh": {
         "fields": [
@@ -3747,7 +3725,7 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-08-25T21:56:12.563Z"
+        "cachedAt": "2026-08-26T05:20:34.424Z"
       },
       "gkKeZq9u3zhGPKowC8Hu": {
         "fields": [
