@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T18:43:35.603Z",
+  "generatedAt": "2026-08-29T21:26:45.996Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -129,10 +129,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-21T03:30:59.522Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-21T05:20:17.439Z",
       "closeRate": 0
@@ -527,6 +523,10 @@
     },
     {
       "t": "2026-08-29T18:43:35.603Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-08-29T21:26:45.996Z",
       "closeRate": 0
     }
   ],
@@ -7709,6 +7709,63 @@
           }
         ],
         "cachedAt": "2026-08-29T18:43:38.684Z"
+      },
+      "APD8eeaIhefgZeyYHwBU": {
+        "fields": [
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 2
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Jason Franklin was invited to join the live Fundable CEO Masterclass webinar hosted by Will Roundtree, with multiple reminders and links provided before and during the event. After the event, he received a replay link and was informed that additional resources would be sent to attendees. Will followed up to ask why Jason was unable to attend live, inquiring about any obstacles and offering a call to discuss Jason's business and funding goals. The conversation concluded with an open invitation for Jason to respond and schedule a follow-up call if interested."
+          },
+          {
+            "id": "T4ZT5aAZtG33vDyaBjPb",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=vJPQlRg3bTvqiNqcPbhMJ_-y2gUCUein97HFiN6wgVE.DQkAAAAUkTIerBZ5Q0Q5bU93Y1QwQ1gxLVhsYkZLRnN3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "TFsovIwk95EombaFai6b",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=vJPQlRg3bTvqiNqcPbhMJ_-y2gUCUein97HFiN6wgVE.DQkAAAAUkTIerBZ5Q0Q5bU93Y1QwQ1gxLVhsYkZLRnN3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "aCvXpWdkghIqmtA4Mtbx",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=vJPQlRg3bTvqiNqcPbhMJ_-y2gUCUein97HFiN6wgVE.DQkAAAAUkTIerBZ5Q0Q5bU93Y1QwQ1gxLVhsYkZLRnN3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "azlatcryAviD4l2HgOm2",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=vJPQlRg3bTvqiNqcPbhMJ_-y2gUCUein97HFiN6wgVE.DQkAAAAUkTIerBZ5Q0Q5bU93Y1QwQ1gxLVhsYkZLRnN3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "tHiNIUaWLbLaOQ2sG6lC",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=vJPQlRg3bTvqiNqcPbhMJ_-y2gUCUein97HFiN6wgVE.DQkAAAAUkTIerBZ5Q0Q5bU93Y1QwQ1gxLVhsYkZLRnN3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "lXBcdsaqCaLyo5dOpNkm",
+            "value": "August 26 2026 17:00:00"
+          },
+          {
+            "id": "7gikZhd5m3ODkXrxAYGK",
+            "value": "https://www.google.com/calendar/event?eid=anRvMHBmYW9xZHB2cHZkamExcHVrOGZwMXMgamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
+          },
+          {
+            "id": "FXwdHlPDWgqDW2CgdJLU",
+            "value": "Urgent"
+          },
+          {
+            "id": "PJTVjxsz7b1yqw5LUki2",
+            "value": "Jason Franklin"
+          },
+          {
+            "id": "dbONS8jsTmaC85wBOF5S",
+            "value": "Credit Repair"
+          },
+          {
+            "id": "t96kuubfJm6tBI9Fg9kO",
+            "value": "mortgage issue, derogatory item, recent attempts"
+          }
+        ],
+        "cachedAt": "2026-08-29T21:26:54.919Z"
       }
     },
     "processedConversations": {
