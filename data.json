@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T22:30:14.950Z",
+  "generatedAt": "2026-08-29T03:58:45.653Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -8,8 +8,8 @@
   "data": {
     "funnel": {
       "outboundAttempts": 17,
-      "connected": 25,
-      "qualified": 3,
+      "connected": 26,
+      "qualified": 2,
       "heldCall": 1,
       "won": 0
     },
@@ -22,7 +22,7 @@
       {
         "label": "$10k-$19,999",
         "closer": "50/50",
-        "count": 1
+        "count": 0
       },
       {
         "label": "$20k+",
@@ -90,7 +90,7 @@
     },
     "totals": {
       "contractValue": 0,
-      "cashCollected": 5267,
+      "cashCollected": 10266,
       "closeRate": 0
     },
     "attributionChains": [],
@@ -105,242 +105,18 @@
     ],
     "callLog": [
       {
-        "time": "2026-08-21T20:39:51.151Z",
-        "setter": "Jen",
-        "contact": "Kevin Williams",
+        "time": "2026-08-21T22:36:47.148Z",
+        "setter": "The Processing Team",
+        "contact": "Charles Robert OConnor",
         "status": "completed",
-        "durationSec": 89
+        "durationSec": 194
       },
       {
-        "time": "2026-08-21T20:37:05.376Z",
+        "time": "2026-07-18T21:14:33.888Z",
         "setter": "Jen",
-        "contact": "Sirrene Derrick",
+        "contact": "Charles Robert OConnor",
         "status": "completed",
         "durationSec": 59
-      },
-      {
-        "time": "2026-08-21T20:26:55.753Z",
-        "setter": "Jen",
-        "contact": "Joey Foty",
-        "status": "completed",
-        "durationSec": 26
-      },
-      {
-        "time": "2026-08-21T20:26:31.252Z",
-        "setter": "Jen",
-        "contact": "Joey Foty",
-        "status": "completed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-21T20:24:53.757Z",
-        "setter": "Jen",
-        "contact": "Rhamere Coleman",
-        "status": "no-answer",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-21T20:17:48.366Z",
-        "setter": "Jen",
-        "contact": "Magaly Arce",
-        "status": "completed",
-        "durationSec": 55
-      },
-      {
-        "time": "2026-08-21T19:43:05.579Z",
-        "setter": "The Processing Team",
-        "contact": "Kevian Leary",
-        "status": "completed",
-        "durationSec": 38
-      },
-      {
-        "time": "2026-08-21T19:42:14.648Z",
-        "setter": "The Processing Team",
-        "contact": "Kevian Leary",
-        "status": "completed",
-        "durationSec": 19
-      },
-      {
-        "time": "2026-08-21T19:39:23.220Z",
-        "setter": "Jen",
-        "contact": "Damian Farr Brannon",
-        "status": "completed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-21T19:26:51.354Z",
-        "setter": "Rianna",
-        "contact": "Frank Littleton",
-        "status": "completed",
-        "durationSec": 30
-      },
-      {
-        "time": "2026-08-21T19:21:55.482Z",
-        "setter": "Jen",
-        "contact": "Abraham Zarate",
-        "status": "completed",
-        "durationSec": 45
-      },
-      {
-        "time": "2026-08-21T19:12:01.592Z",
-        "setter": "Jen",
-        "contact": "Shamourn Powell",
-        "status": "completed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-21T18:50:00.699Z",
-        "setter": "Rianna",
-        "contact": "Tyrone Harrison",
-        "status": "completed",
-        "durationSec": 52
-      },
-      {
-        "time": "2026-08-21T18:38:09.225Z",
-        "setter": "Rianna",
-        "contact": "Aneisha",
-        "status": "completed",
-        "durationSec": 26
-      },
-      {
-        "time": "2026-08-21T17:58:43.066Z",
-        "setter": "Jen",
-        "contact": "Hakeem | Credit Repair/ Funding& Passiveincome Expert",
-        "status": "completed",
-        "durationSec": 76
-      },
-      {
-        "time": "2026-08-21T17:16:14.391Z",
-        "setter": "Rianna",
-        "contact": "Evelyn Rivera",
-        "status": "completed",
-        "durationSec": 45
-      },
-      {
-        "time": "2026-08-10T22:58:04.416Z",
-        "setter": "Jen",
-        "contact": "Magaly Arce",
-        "status": "completed",
-        "durationSec": 56
-      },
-      {
-        "time": "2026-06-30T19:25:49.181Z",
-        "setter": "The Processing Team",
-        "contact": "Kevian Leary",
-        "status": "completed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-06-24T23:20:29.915Z",
-        "setter": "Jen",
-        "contact": "Hakeem | Credit Repair/ Funding& Passiveincome Expert",
-        "status": "completed",
-        "durationSec": 128
-      },
-      {
-        "time": "2026-06-24T17:05:39.357Z",
-        "setter": "Jen",
-        "contact": "Shamourn Powell",
-        "status": "completed",
-        "durationSec": 12
-      },
-      {
-        "time": "2026-06-23T22:22:08.583Z",
-        "setter": "Jen",
-        "contact": "Hakeem | Credit Repair/ Funding& Passiveincome Expert",
-        "status": "no-answer",
-        "durationSec": null
-      },
-      {
-        "time": "2026-06-23T22:18:59.278Z",
-        "setter": "Jen",
-        "contact": "Hakeem | Credit Repair/ Funding& Passiveincome Expert",
-        "status": "no-answer",
-        "durationSec": null
-      },
-      {
-        "time": "2026-06-23T22:17:02.962Z",
-        "setter": "Jen",
-        "contact": "Hakeem | Credit Repair/ Funding& Passiveincome Expert",
-        "status": "no-answer",
-        "durationSec": null
-      },
-      {
-        "time": "2026-06-23T22:15:11.941Z",
-        "setter": "Jen",
-        "contact": "Hakeem | Credit Repair/ Funding& Passiveincome Expert",
-        "status": "no-answer",
-        "durationSec": null
-      },
-      {
-        "time": "2026-06-23T00:53:46.041Z",
-        "setter": "Jen",
-        "contact": "Hakeem | Credit Repair/ Funding& Passiveincome Expert",
-        "status": "completed",
-        "durationSec": 80
-      },
-      {
-        "time": "2026-06-22T22:13:46.547Z",
-        "setter": "Jen",
-        "contact": "Hakeem | Credit Repair/ Funding& Passiveincome Expert",
-        "status": "completed",
-        "durationSec": 150
-      },
-      {
-        "time": "2026-06-16T17:10:44.392Z",
-        "setter": "Jen",
-        "contact": "Hakeem | Credit Repair/ Funding& Passiveincome Expert",
-        "status": "completed",
-        "durationSec": 8
-      },
-      {
-        "time": "2026-06-16T16:56:44.135Z",
-        "setter": "Jen",
-        "contact": "Hakeem | Credit Repair/ Funding& Passiveincome Expert",
-        "status": "no-answer",
-        "durationSec": null
-      },
-      {
-        "time": "2026-03-16T23:10:08.252Z",
-        "setter": "Jen",
-        "contact": "Joey Foty",
-        "status": "completed",
-        "durationSec": 32
-      },
-      {
-        "time": "2026-03-16T22:37:08.184Z",
-        "setter": "Jen",
-        "contact": "Rhamere Coleman",
-        "status": "no-answer",
-        "durationSec": null
-      },
-      {
-        "time": "2026-03-16T21:59:36.156Z",
-        "setter": "Jen",
-        "contact": "Magaly Arce",
-        "status": "completed",
-        "durationSec": 18
-      },
-      {
-        "time": "2026-03-16T21:57:38.336Z",
-        "setter": "Jen",
-        "contact": "Magaly Arce",
-        "status": "completed",
-        "durationSec": 59
-      },
-      {
-        "time": "2026-02-06T21:37:15.775Z",
-        "setter": "Jen",
-        "contact": "Damian Farr Brannon",
-        "status": "completed",
-        "durationSec": 42
-      },
-      {
-        "time": "2025-09-01T18:25:50.799Z",
-        "setter": "Jen",
-        "contact": "Rhamere Coleman",
-        "status": "no-answer",
-        "durationSec": null
       }
     ],
     "activityPoints": {
@@ -352,26 +128,22 @@
         "heldClosingCalls": 0
       },
       "Rianna": {
-        "points": 4,
+        "points": 0,
         "goal": 1400,
-        "outboundCalls": 4,
+        "outboundCalls": 0,
         "heldQualCalls": 0,
         "heldClosingCalls": 0
       },
       "Jen": {
-        "points": 187,
+        "points": 161,
         "goal": 1400,
-        "outboundCalls": 27,
+        "outboundCalls": 1,
         "heldQualCalls": 0,
         "heldClosingCalls": 4
       }
     }
   },
   "history": [
-    {
-      "t": "2026-08-20T19:45:27.914Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-20T21:01:42.548Z",
       "closeRate": 0
@@ -767,9 +539,20 @@
     {
       "t": "2026-08-28T22:30:14.950Z",
       "closeRate": 0
+    },
+    {
+      "t": "2026-08-29T03:58:45.653Z",
+      "closeRate": 0
     }
   ],
   "callLogHistory": [
+    {
+      "time": "2026-08-21T22:36:47.148Z",
+      "setter": "The Processing Team",
+      "contact": "Charles Robert OConnor",
+      "status": "completed",
+      "durationSec": 194
+    },
     {
       "time": "2026-08-21T20:39:51.151Z",
       "setter": "Jen",
@@ -1217,6 +1000,13 @@
       "contact": "Arthnez parkinson",
       "status": "no-answer",
       "durationSec": null
+    },
+    {
+      "time": "2026-07-18T21:14:33.888Z",
+      "setter": "Jen",
+      "contact": "Charles Robert OConnor",
+      "status": "completed",
+      "durationSec": 59
     },
     {
       "time": "2026-06-30T19:25:49.181Z",
@@ -7864,6 +7654,76 @@
           }
         ],
         "cachedAt": "2026-08-28T22:30:19.331Z"
+      },
+      "YcYB5kjphtyNc90tJPaA": {
+        "fields": [
+          {
+            "id": "PLwmO9HRpVtMQgJCCz3x",
+            "value": 1
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Connie Murray Thomas was seeking information and support on improving her credit, accessing funding, and potentially securing real estate without using her own money. She received details about live training sessions, funding strategies to get approved for $50K-$250K, and multiple offers for discounted credit coaching and counseling services. Specific technical information offered included credit and funding reviews, inquiry removal, credit improvement strategies, and funding options. The conversation concluded with ongoing invitations for Connie to connect for a personalized review and take advantage of limited-time discounts on credit improvement programs."
+          }
+        ],
+        "cachedAt": "2026-08-29T03:58:48.137Z"
+      },
+      "FvDteDArPdJTM26S2ToL": {
+        "fields": [
+          {
+            "id": "PLwmO9HRpVtMQgJCCz3x",
+            "value": 1
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Gerald Eric Johnson was contacted by WE Management Services regarding opportunities to improve his credit, access funding, and potentially secure real estate without using his own money. The communications included invitations to live training sessions and replays on how to get approved for $50K–$250K in funding, as well as offers for discounted credit coaching and counseling. Specific technical information offered included credit inquiry removal, credit improvement strategies, and funding options. The conversation concluded with multiple follow-ups and invitations for a quick conversation to discuss Gerald’s financial goals and how the service could support him."
+          }
+        ],
+        "cachedAt": "2026-08-29T03:58:48.161Z"
+      },
+      "knE8VsTBazDcVWJNYH1h": {
+        "fields": [
+          {
+            "id": "PLwmO9HRpVtMQgJCCz3x",
+            "value": 1
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Brenda Person-Gates was contacted by WE Management Services regarding opportunities to improve her credit, access funding, and potentially secure real estate without using her own money. The communications included invitations to live and replay training sessions on obtaining $50K-$250K in funding, as well as offers for discounted credit coaching and counseling services. Specific technical information offered included credit and funding reviews, inquiry removal, and credit improvement strategies. The conversation concluded with repeated invitations for Brenda to engage in a quick conversation to discuss her financial goals and take advantage of limited-time offers."
+          }
+        ],
+        "cachedAt": "2026-08-29T03:58:48.161Z"
+      },
+      "gOoaeRLBIThG4Onm98HW": {
+        "fields": [
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Jonarthur Leath was contacted by WE Management Services and Will Roundtree’s team regarding opportunities to improve his credit, access funding, and secure real estate without using his own money. The communications included invitations to live training sessions, links to funding resources, and promotional offers for credit repair and financial programs. The team specifically requested to discuss Jonarthur’s financial goals and offered a Credit & Funding Review, detailing inquiry removal, credit improvement, and funding options. The conversation concluded with an open invitation for Jonarthur to engage in a quick conversation to explore these services further."
+          }
+        ],
+        "cachedAt": "2026-08-29T03:58:48.236Z"
+      },
+      "XeC6uEK509kbORndSkPt": {
+        "fields": [
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Dedric was contacted by WE Management Services regarding opportunities to secure $50K-$250K in funding, with invitations to live training sessions and a replay link for those who missed the event. The communications highlighted strategies for getting approved by banks and promoted a limited-time discount on their programs. Dedric was also offered a personalized Credit & Funding Review, including inquiry removal, credit improvement, and funding options. The conversation concluded with an invitation for a quick discussion to better understand Dedric's financial goals and offer tailored support."
+          }
+        ],
+        "cachedAt": "2026-08-29T03:58:48.241Z"
+      },
+      "N6gp884vizNn8tasB0Vd": {
+        "fields": [
+          {
+            "id": "PLwmO9HRpVtMQgJCCz3x",
+            "value": 1
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Eddie was contacted by representatives from WE Management Services, who offered him access to a funding-focused community and invited him to book a free 15-minute Funding Readiness Call to discuss business funding strategies. The messages included links to schedule calls and join programs, as well as a special 50% off promotion for their services. Additionally, Rianna reached out to offer a Credit & Funding Review, asking if Eddie would be open to a conversation about improving his credit profile and exploring funding options. The conversation concluded with an open invitation for Eddie to engage further if interested."
+          }
+        ],
+        "cachedAt": "2026-08-29T03:58:48.643Z"
       }
     },
     "processedConversations": {
@@ -7911,7 +7771,8 @@
       "4MjXuzT8qA11rjHwdiDv": 1787681234564,
       "cL6OKGGtyZ7qyxJGsRdM": 1787681709230,
       "1HYZatxCy0wbmSFe4R5E": 1787681123935,
-      "LYiwY9fXxjHish0CCd5d": 1787695749005
+      "LYiwY9fXxjHish0CCd5d": 1787695749005,
+      "hWX4gKjWKVOaZ9THfQWy": 1787681236090
     }
   }
 }
