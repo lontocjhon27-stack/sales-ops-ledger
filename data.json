@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T15:14:36.445Z",
+  "generatedAt": "2026-08-31T20:55:39.798Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -7,8 +7,8 @@
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 16,
-      "connected": 26,
+      "outboundAttempts": 18,
+      "connected": 29,
       "qualified": 2,
       "heldCall": 1,
       "won": 0
@@ -103,7 +103,169 @@
       "Rianna",
       "Jen"
     ],
-    "callLog": [],
+    "callLog": [
+      {
+        "time": "2026-08-24T20:45:44.200Z",
+        "setter": "Jen",
+        "contact": "Kdubb 44",
+        "status": "completed",
+        "durationSec": 11
+      },
+      {
+        "time": "2026-08-24T20:39:17.203Z",
+        "setter": "Jen",
+        "contact": "Kdubb 44",
+        "status": "completed",
+        "durationSec": 49
+      },
+      {
+        "time": "2026-08-24T20:15:13.877Z",
+        "setter": "Jen",
+        "contact": "Pat Wright",
+        "status": "completed",
+        "durationSec": 12
+      },
+      {
+        "time": "2026-08-24T19:05:59.716Z",
+        "setter": "Jen",
+        "contact": "Pat Wright",
+        "status": "completed",
+        "durationSec": 48
+      },
+      {
+        "time": "2026-08-24T17:54:24.940Z",
+        "setter": "Jen",
+        "contact": "Alton Rowe",
+        "status": "completed",
+        "durationSec": 42
+      },
+      {
+        "time": "2026-08-24T17:46:26.612Z",
+        "setter": "Jen",
+        "contact": "Pat Wright",
+        "status": "completed",
+        "durationSec": 56
+      },
+      {
+        "time": "2026-08-24T17:01:02.287Z",
+        "setter": "Rianna",
+        "contact": "Beverley Blake",
+        "status": "completed",
+        "durationSec": 21
+      },
+      {
+        "time": "2026-08-24T16:59:13.589Z",
+        "setter": "Rianna",
+        "contact": "Christopher Copeland",
+        "status": "completed",
+        "durationSec": 40
+      },
+      {
+        "time": "2026-08-19T17:36:10.346Z",
+        "setter": "Rianna",
+        "contact": "Beverley Blake",
+        "status": "completed",
+        "durationSec": 11
+      },
+      {
+        "time": "2026-08-05T20:54:34.622Z",
+        "setter": "Rianna",
+        "contact": "Beverley Blake",
+        "status": "completed",
+        "durationSec": 59
+      },
+      {
+        "time": "2026-07-30T18:08:13.419Z",
+        "setter": "Rianna",
+        "contact": "Beverley Blake",
+        "status": "completed",
+        "durationSec": 77
+      },
+      {
+        "time": "2026-07-28T16:20:11.369Z",
+        "setter": "Rianna",
+        "contact": "Christopher Copeland",
+        "status": "completed",
+        "durationSec": 51
+      },
+      {
+        "time": "2026-07-24T16:44:18.551Z",
+        "setter": "Unknown",
+        "contact": "Kdubb 44",
+        "status": "completed",
+        "durationSec": 33
+      },
+      {
+        "time": "2026-07-24T16:16:16.142Z",
+        "setter": "Rianna",
+        "contact": "Christopher Copeland",
+        "status": "completed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-07-17T21:47:49.192Z",
+        "setter": "Rianna",
+        "contact": "Christopher Copeland",
+        "status": "completed",
+        "durationSec": 41
+      },
+      {
+        "time": "2026-07-11T21:22:02.717Z",
+        "setter": "Rianna",
+        "contact": "Christopher Copeland",
+        "status": "completed",
+        "durationSec": 40
+      },
+      {
+        "time": "2026-07-11T21:19:53.863Z",
+        "setter": "Rianna",
+        "contact": "Beverley Blake",
+        "status": "completed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-07-09T18:38:19.419Z",
+        "setter": "Rianna",
+        "contact": "Beverley Blake",
+        "status": "completed",
+        "durationSec": 13
+      },
+      {
+        "time": "2026-07-07T21:16:21.515Z",
+        "setter": "Rianna",
+        "contact": "Christopher Copeland",
+        "status": "completed",
+        "durationSec": 35
+      },
+      {
+        "time": "2026-06-29T22:03:26.583Z",
+        "setter": "Rianna",
+        "contact": "Christopher Copeland",
+        "status": "completed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-06-29T18:05:07.383Z",
+        "setter": "Rianna",
+        "contact": "Christopher Copeland",
+        "status": "completed",
+        "durationSec": 39
+      },
+      {
+        "time": "2026-06-27T23:16:27.821Z",
+        "setter": "Rianna",
+        "contact": "Christopher Copeland",
+        "status": "completed",
+        "durationSec": 6
+      },
+      {
+        "time": "2026-06-27T17:50:57.527Z",
+        "setter": "Rianna",
+        "contact": "Christopher Copeland",
+        "status": "completed",
+        "durationSec": null
+      }
+    ],
     "activityPoints": {
       "Marshell": {
         "points": 0,
@@ -113,26 +275,22 @@
         "heldClosingCalls": 0
       },
       "Rianna": {
-        "points": 0,
+        "points": 16,
         "goal": 1400,
-        "outboundCalls": 0,
+        "outboundCalls": 16,
         "heldQualCalls": 0,
         "heldClosingCalls": 0
       },
       "Jen": {
-        "points": 120,
+        "points": 126,
         "goal": 1400,
-        "outboundCalls": 0,
+        "outboundCalls": 6,
         "heldQualCalls": 0,
         "heldClosingCalls": 3
       }
     }
   },
   "history": [
-    {
-      "t": "2026-08-21T21:53:03.085Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-21T22:54:52.861Z",
       "closeRate": 0
@@ -528,9 +686,69 @@
     {
       "t": "2026-08-31T15:14:36.445Z",
       "closeRate": 0
+    },
+    {
+      "t": "2026-08-31T20:55:39.798Z",
+      "closeRate": 0
     }
   ],
   "callLogHistory": [
+    {
+      "time": "2026-08-24T20:45:44.200Z",
+      "setter": "Jen",
+      "contact": "Kdubb 44",
+      "status": "completed",
+      "durationSec": 11
+    },
+    {
+      "time": "2026-08-24T20:39:17.203Z",
+      "setter": "Jen",
+      "contact": "Kdubb 44",
+      "status": "completed",
+      "durationSec": 49
+    },
+    {
+      "time": "2026-08-24T20:15:13.877Z",
+      "setter": "Jen",
+      "contact": "Pat Wright",
+      "status": "completed",
+      "durationSec": 12
+    },
+    {
+      "time": "2026-08-24T19:05:59.716Z",
+      "setter": "Jen",
+      "contact": "Pat Wright",
+      "status": "completed",
+      "durationSec": 48
+    },
+    {
+      "time": "2026-08-24T17:54:24.940Z",
+      "setter": "Jen",
+      "contact": "Alton Rowe",
+      "status": "completed",
+      "durationSec": 42
+    },
+    {
+      "time": "2026-08-24T17:46:26.612Z",
+      "setter": "Jen",
+      "contact": "Pat Wright",
+      "status": "completed",
+      "durationSec": 56
+    },
+    {
+      "time": "2026-08-24T17:01:02.287Z",
+      "setter": "Rianna",
+      "contact": "Beverley Blake",
+      "status": "completed",
+      "durationSec": 21
+    },
+    {
+      "time": "2026-08-24T16:59:13.589Z",
+      "setter": "Rianna",
+      "contact": "Christopher Copeland",
+      "status": "completed",
+      "durationSec": 40
+    },
     {
       "time": "2026-08-21T22:36:47.148Z",
       "setter": "The Processing Team",
@@ -726,6 +944,13 @@
       "contact": "Thomas Rowland",
       "status": "completed",
       "durationSec": null
+    },
+    {
+      "time": "2026-08-19T17:36:10.346Z",
+      "setter": "Rianna",
+      "contact": "Beverley Blake",
+      "status": "completed",
+      "durationSec": 11
     },
     {
       "time": "2026-08-19T00:04:43.267Z",
@@ -945,6 +1170,13 @@
       "durationSec": 56
     },
     {
+      "time": "2026-08-05T20:54:34.622Z",
+      "setter": "Rianna",
+      "contact": "Beverley Blake",
+      "status": "completed",
+      "durationSec": 59
+    },
+    {
       "time": "2026-08-05T19:42:31.927Z",
       "setter": "Jen",
       "contact": "Michael Matthews",
@@ -973,6 +1205,13 @@
       "durationSec": 28
     },
     {
+      "time": "2026-07-30T18:08:13.419Z",
+      "setter": "Rianna",
+      "contact": "Beverley Blake",
+      "status": "completed",
+      "durationSec": 77
+    },
+    {
       "time": "2026-07-29T17:38:15.524Z",
       "setter": "Jen",
       "contact": "Michael Matthews",
@@ -980,10 +1219,31 @@
       "durationSec": null
     },
     {
+      "time": "2026-07-28T16:20:11.369Z",
+      "setter": "Rianna",
+      "contact": "Christopher Copeland",
+      "status": "completed",
+      "durationSec": 51
+    },
+    {
       "time": "2026-07-27T16:54:21.862Z",
       "setter": "Jen",
       "contact": "Arthnez parkinson",
       "status": "no-answer",
+      "durationSec": null
+    },
+    {
+      "time": "2026-07-24T16:44:18.551Z",
+      "setter": "Unknown",
+      "contact": "Kdubb 44",
+      "status": "completed",
+      "durationSec": 33
+    },
+    {
+      "time": "2026-07-24T16:16:16.142Z",
+      "setter": "Rianna",
+      "contact": "Christopher Copeland",
+      "status": "completed",
       "durationSec": null
     },
     {
@@ -994,9 +1254,72 @@
       "durationSec": 59
     },
     {
+      "time": "2026-07-17T21:47:49.192Z",
+      "setter": "Rianna",
+      "contact": "Christopher Copeland",
+      "status": "completed",
+      "durationSec": 41
+    },
+    {
+      "time": "2026-07-11T21:22:02.717Z",
+      "setter": "Rianna",
+      "contact": "Christopher Copeland",
+      "status": "completed",
+      "durationSec": 40
+    },
+    {
+      "time": "2026-07-11T21:19:53.863Z",
+      "setter": "Rianna",
+      "contact": "Beverley Blake",
+      "status": "completed",
+      "durationSec": null
+    },
+    {
+      "time": "2026-07-09T18:38:19.419Z",
+      "setter": "Rianna",
+      "contact": "Beverley Blake",
+      "status": "completed",
+      "durationSec": 13
+    },
+    {
+      "time": "2026-07-07T21:16:21.515Z",
+      "setter": "Rianna",
+      "contact": "Christopher Copeland",
+      "status": "completed",
+      "durationSec": 35
+    },
+    {
       "time": "2026-06-30T19:25:49.181Z",
       "setter": "The Processing Team",
       "contact": "Kevian Leary",
+      "status": "completed",
+      "durationSec": null
+    },
+    {
+      "time": "2026-06-29T22:03:26.583Z",
+      "setter": "Rianna",
+      "contact": "Christopher Copeland",
+      "status": "completed",
+      "durationSec": null
+    },
+    {
+      "time": "2026-06-29T18:05:07.383Z",
+      "setter": "Rianna",
+      "contact": "Christopher Copeland",
+      "status": "completed",
+      "durationSec": 39
+    },
+    {
+      "time": "2026-06-27T23:16:27.821Z",
+      "setter": "Rianna",
+      "contact": "Christopher Copeland",
+      "status": "completed",
+      "durationSec": 6
+    },
+    {
+      "time": "2026-06-27T17:50:57.527Z",
+      "setter": "Rianna",
+      "contact": "Christopher Copeland",
       "status": "completed",
       "durationSec": null
     },
@@ -7770,6 +8093,49 @@
           }
         ],
         "cachedAt": "2026-08-31T15:14:42.025Z"
+      },
+      "ln4lhMdDZsce8T0afe6X": {
+        "fields": [
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 2
+          },
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Organic Leads"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Harison Sanchez reached out seeking assistance to boost his personal credit score from 600 to 720 or higher and to obtain working capital for his businesses. He shared that he currently has an 88 Paydex score and a 600 personal credit score. The conversation focused on confirming that Harison is interested in credit optimization services. The discussion concluded with Harison affirming his goal to raise his credit score through the offered services."
+          }
+        ],
+        "cachedAt": "2026-08-31T20:55:52.597Z"
+      },
+      "pEF3jq0jJ0WDRsnDTRwy": {
+        "fields": [
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 2
+          },
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Organic Leads"
+          }
+        ],
+        "cachedAt": "2026-08-31T20:55:52.615Z"
+      },
+      "DIoEJiUZIrWsYozcIO6E": {
+        "fields": [
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 2
+          },
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Organic Leads"
+          }
+        ],
+        "cachedAt": "2026-08-31T20:55:52.697Z"
       }
     },
     "processedConversations": {
@@ -7818,7 +8184,12 @@
       "cL6OKGGtyZ7qyxJGsRdM": 1787681709230,
       "1HYZatxCy0wbmSFe4R5E": 1787681123935,
       "LYiwY9fXxjHish0CCd5d": 1787695749005,
-      "hWX4gKjWKVOaZ9THfQWy": 1787681236090
+      "hWX4gKjWKVOaZ9THfQWy": 1787681236090,
+      "z5dE1Ar8SV6VP7xU0GSs": 1787681412460,
+      "VIJ0jzSk3zteAaik59AR": 1787681407776,
+      "Q64nPIeTDwtqYXyKbZXQ": 1787681409696,
+      "FfRuOeCZs5ogo8AqlOsx": 1787681243422,
+      "Rh3vELSuK4za6pHWYTyn": 1787681407329
     }
   }
 }
