@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T10:17:08.511Z",
+  "generatedAt": "2026-09-01T15:01:02.358Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -7,7 +7,7 @@
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 12,
+      "outboundAttempts": 11,
       "connected": 28,
       "qualified": 2,
       "heldCall": 1,
@@ -129,10 +129,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-22T05:01:39.081Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-22T06:02:50.234Z",
       "closeRate": 0
@@ -527,6 +523,10 @@
     },
     {
       "t": "2026-09-01T10:17:08.511Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-01T15:01:02.358Z",
       "closeRate": 0
     }
   ],
@@ -8024,7 +8024,7 @@
             "value": "Harison Sanchez reached out seeking assistance to boost his personal credit score from 600 to 720 or higher and to obtain working capital for his businesses. He shared that he currently has an 88 Paydex score and a 600 personal credit score. The conversation focused on confirming that Harison is interested in credit optimization services. The discussion concluded with Harison affirming his goal to raise his credit score through the offered services."
           }
         ],
-        "cachedAt": "2026-09-01T05:23:53.034Z"
+        "cachedAt": "2026-09-01T15:01:09.841Z"
       },
       "pEF3jq0jJ0WDRsnDTRwy": {
         "fields": [
@@ -8037,7 +8037,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-01T05:23:53.013Z"
+        "cachedAt": "2026-09-01T15:01:10.051Z"
       },
       "DIoEJiUZIrWsYozcIO6E": {
         "fields": [
@@ -8050,7 +8050,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-01T05:23:53.073Z"
+        "cachedAt": "2026-09-01T15:01:09.834Z"
       },
       "7vX4kxNDEDWjzjXl9R75": {
         "fields": [
