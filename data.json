@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T00:18:46.702Z",
+  "generatedAt": "2026-09-01T05:23:50.200Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -90,7 +90,7 @@
     },
     "totals": {
       "contractValue": 0,
-      "cashCollected": 11183,
+      "cashCollected": 16183,
       "closeRate": 0
     },
     "attributionChains": [],
@@ -103,85 +103,7 @@
       "Rianna",
       "Jen"
     ],
-    "callLog": [
-      {
-        "time": "2026-08-25T00:07:37.925Z",
-        "setter": "Jen",
-        "contact": "Bianca Gibson",
-        "status": "completed",
-        "durationSec": 52
-      },
-      {
-        "time": "2026-08-24T23:13:42.814Z",
-        "setter": "Jen",
-        "contact": "Natasha DoGood",
-        "status": "completed",
-        "durationSec": 36
-      },
-      {
-        "time": "2026-08-24T22:23:29.785Z",
-        "setter": "Rianna",
-        "contact": "Wanjrioa Wilkins",
-        "status": "completed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-14T00:52:50.151Z",
-        "setter": "Unknown",
-        "contact": "Wanjrioa Wilkins",
-        "status": "completed",
-        "durationSec": 64
-      },
-      {
-        "time": "2026-08-13T20:07:51.745Z",
-        "setter": "Rianna",
-        "contact": "Wanjrioa Wilkins",
-        "status": "completed",
-        "durationSec": 35
-      },
-      {
-        "time": "2026-08-12T19:29:34.618Z",
-        "setter": "Jen",
-        "contact": "Natasha DoGood",
-        "status": "no-answer",
-        "durationSec": null
-      },
-      {
-        "time": "2026-06-25T19:13:10.937Z",
-        "setter": "Jen",
-        "contact": "Natasha DoGood",
-        "status": "completed",
-        "durationSec": 27
-      },
-      {
-        "time": "2026-06-25T19:11:52.767Z",
-        "setter": "Jen",
-        "contact": "Natasha DoGood",
-        "status": "completed",
-        "durationSec": 12
-      },
-      {
-        "time": "2026-06-08T22:52:09.101Z",
-        "setter": "Jen",
-        "contact": "Bianca Gibson",
-        "status": "completed",
-        "durationSec": 4
-      },
-      {
-        "time": "2026-06-08T16:45:12.050Z",
-        "setter": "Jen",
-        "contact": "Bianca Gibson",
-        "status": "completed",
-        "durationSec": 63
-      },
-      {
-        "time": "2026-06-05T19:05:19.852Z",
-        "setter": "Rianna",
-        "contact": "Bianca Gibson",
-        "status": "completed",
-        "durationSec": 27
-      }
-    ],
+    "callLog": [],
     "activityPoints": {
       "Marshell": {
         "points": 0,
@@ -191,26 +113,22 @@
         "heldClosingCalls": 0
       },
       "Rianna": {
-        "points": 3,
+        "points": 0,
         "goal": 1400,
-        "outboundCalls": 3,
+        "outboundCalls": 0,
         "heldQualCalls": 0,
         "heldClosingCalls": 0
       },
       "Jen": {
-        "points": 127,
+        "points": 120,
         "goal": 1400,
-        "outboundCalls": 7,
+        "outboundCalls": 0,
         "heldQualCalls": 0,
         "heldClosingCalls": 3
       }
     }
   },
   "history": [
-    {
-      "t": "2026-08-21T23:51:27.956Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-22T03:08:26.717Z",
       "closeRate": 0
@@ -605,6 +523,10 @@
     },
     {
       "t": "2026-09-01T00:18:46.702Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-01T05:23:50.200Z",
       "closeRate": 0
     }
   ],
@@ -8102,7 +8024,7 @@
             "value": "Harison Sanchez reached out seeking assistance to boost his personal credit score from 600 to 720 or higher and to obtain working capital for his businesses. He shared that he currently has an 88 Paydex score and a 600 personal credit score. The conversation focused on confirming that Harison is interested in credit optimization services. The discussion concluded with Harison affirming his goal to raise his credit score through the offered services."
           }
         ],
-        "cachedAt": "2026-08-31T20:55:52.597Z"
+        "cachedAt": "2026-09-01T05:23:53.034Z"
       },
       "pEF3jq0jJ0WDRsnDTRwy": {
         "fields": [
@@ -8115,7 +8037,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-08-31T20:55:52.615Z"
+        "cachedAt": "2026-09-01T05:23:53.013Z"
       },
       "DIoEJiUZIrWsYozcIO6E": {
         "fields": [
@@ -8128,7 +8050,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-08-31T20:55:52.697Z"
+        "cachedAt": "2026-09-01T05:23:53.073Z"
       },
       "7vX4kxNDEDWjzjXl9R75": {
         "fields": [
