@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T18:40:48.021Z",
+  "generatedAt": "2026-09-01T21:31:07.885Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -7,8 +7,8 @@
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 11,
-      "connected": 24,
+      "outboundAttempts": 9,
+      "connected": 22,
       "qualified": 2,
       "heldCall": 1,
       "won": 0
@@ -103,43 +103,7 @@
       "Rianna",
       "Jen"
     ],
-    "callLog": [
-      {
-        "time": "2026-08-25T16:36:01.411Z",
-        "setter": "Rianna",
-        "contact": "Cindy Leiva",
-        "status": "completed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-25T16:32:25.186Z",
-        "setter": "Rianna",
-        "contact": "Kierra Craig",
-        "status": "completed",
-        "durationSec": 50
-      },
-      {
-        "time": "2026-08-25T15:19:39.369Z",
-        "setter": "Jercori",
-        "contact": "Dillon Lawrence",
-        "status": "completed",
-        "durationSec": 612
-      },
-      {
-        "time": "2026-08-07T21:34:46.738Z",
-        "setter": "Unknown",
-        "contact": "Dillon Lawrence",
-        "status": "completed",
-        "durationSec": 18
-      },
-      {
-        "time": "2026-07-24T16:52:16.661Z",
-        "setter": "Unknown",
-        "contact": "Dillon Lawrence",
-        "status": "completed",
-        "durationSec": 18
-      }
-    ],
+    "callLog": [],
     "activityPoints": {
       "Marshell": {
         "points": 0,
@@ -149,9 +113,9 @@
         "heldClosingCalls": 0
       },
       "Rianna": {
-        "points": 2,
+        "points": 0,
         "goal": 1400,
-        "outboundCalls": 2,
+        "outboundCalls": 0,
         "heldQualCalls": 0,
         "heldClosingCalls": 0
       },
@@ -165,10 +129,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-22T07:52:06.526Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-22T09:02:37.112Z",
       "closeRate": 0
@@ -563,6 +523,10 @@
     },
     {
       "t": "2026-09-01T18:40:48.021Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-01T21:31:07.885Z",
       "closeRate": 0
     }
   ],
@@ -8095,7 +8059,7 @@
             "value": "Harison Sanchez reached out seeking assistance to boost his personal credit score from 600 to 720 or higher and to obtain working capital for his businesses. He shared that he currently has an 88 Paydex score and a 600 personal credit score. The conversation focused on confirming that Harison is interested in credit optimization services. The discussion concluded with Harison affirming his goal to raise his credit score through the offered services."
           }
         ],
-        "cachedAt": "2026-09-01T15:01:09.841Z"
+        "cachedAt": "2026-09-01T21:31:24.834Z"
       },
       "pEF3jq0jJ0WDRsnDTRwy": {
         "fields": [
@@ -8108,7 +8072,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-01T15:01:10.051Z"
+        "cachedAt": "2026-09-01T21:31:24.699Z"
       },
       "DIoEJiUZIrWsYozcIO6E": {
         "fields": [
@@ -8121,7 +8085,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-01T15:01:09.834Z"
+        "cachedAt": "2026-09-01T21:31:24.689Z"
       },
       "7vX4kxNDEDWjzjXl9R75": {
         "fields": [
