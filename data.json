@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T21:31:07.885Z",
+  "generatedAt": "2026-09-01T23:42:45.182Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -7,10 +7,10 @@
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 9,
-      "connected": 22,
+      "outboundAttempts": 10,
+      "connected": 21,
       "qualified": 2,
-      "heldCall": 1,
+      "heldCall": 0,
       "won": 0
     },
     "routingMix": [
@@ -103,7 +103,36 @@
       "Rianna",
       "Jen"
     ],
-    "callLog": [],
+    "callLog": [
+      {
+        "time": "2026-08-25T23:00:19.805Z",
+        "setter": "Jen",
+        "contact": "THOMAS HOLLAND",
+        "status": "completed",
+        "durationSec": 14
+      },
+      {
+        "time": "2026-08-24T21:55:43.046Z",
+        "setter": "Unknown",
+        "contact": "THOMAS HOLLAND",
+        "status": "completed",
+        "durationSec": 50
+      },
+      {
+        "time": "2026-06-29T23:49:24.474Z",
+        "setter": "Unknown",
+        "contact": "THOMAS HOLLAND",
+        "status": "completed",
+        "durationSec": 11
+      },
+      {
+        "time": "2026-06-26T19:40:22.100Z",
+        "setter": "Unknown",
+        "contact": "THOMAS HOLLAND",
+        "status": "completed",
+        "durationSec": 36
+      }
+    ],
     "activityPoints": {
       "Marshell": {
         "points": 0,
@@ -120,19 +149,15 @@
         "heldClosingCalls": 0
       },
       "Jen": {
-        "points": 80,
+        "points": 81,
         "goal": 1400,
-        "outboundCalls": 0,
+        "outboundCalls": 1,
         "heldQualCalls": 0,
         "heldClosingCalls": 2
       }
     }
   },
   "history": [
-    {
-      "t": "2026-08-22T09:02:37.112Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-22T10:01:27.961Z",
       "closeRate": 0
@@ -528,9 +553,20 @@
     {
       "t": "2026-09-01T21:31:07.885Z",
       "closeRate": 0
+    },
+    {
+      "t": "2026-09-01T23:42:45.182Z",
+      "closeRate": 0
     }
   ],
   "callLogHistory": [
+    {
+      "time": "2026-08-25T23:00:19.805Z",
+      "setter": "Jen",
+      "contact": "THOMAS HOLLAND",
+      "status": "completed",
+      "durationSec": 14
+    },
     {
       "time": "2026-08-25T16:36:01.411Z",
       "setter": "Rianna",
@@ -572,6 +608,13 @@
       "contact": "Wanjrioa Wilkins",
       "status": "completed",
       "durationSec": null
+    },
+    {
+      "time": "2026-08-24T21:55:43.046Z",
+      "setter": "Unknown",
+      "contact": "THOMAS HOLLAND",
+      "status": "completed",
+      "durationSec": 50
     },
     {
       "time": "2026-08-24T20:45:44.200Z",
@@ -1211,6 +1254,13 @@
       "durationSec": null
     },
     {
+      "time": "2026-06-29T23:49:24.474Z",
+      "setter": "Unknown",
+      "contact": "THOMAS HOLLAND",
+      "status": "completed",
+      "durationSec": 11
+    },
+    {
       "time": "2026-06-29T22:03:26.583Z",
       "setter": "Rianna",
       "contact": "Christopher Copeland",
@@ -1237,6 +1287,13 @@
       "contact": "Christopher Copeland",
       "status": "completed",
       "durationSec": null
+    },
+    {
+      "time": "2026-06-26T19:40:22.100Z",
+      "setter": "Unknown",
+      "contact": "THOMAS HOLLAND",
+      "status": "completed",
+      "durationSec": 36
     },
     {
       "time": "2026-06-25T19:13:10.937Z",
@@ -8182,7 +8239,8 @@
       "Fy9wU0jVqHItymVuooef": 1787681240040,
       "sUNAQOBHZnYqcxQSCkuw": 1787681192812,
       "NGVvopA4DIzcoKRCBSVt": 1787681148472,
-      "Lx6jJwaOiQMW52FmBLqj": 1787682612706
+      "Lx6jJwaOiQMW52FmBLqj": 1787682612706,
+      "WtXjnRfH1O1ecyfiJAEy": 1787698819760
     }
   }
 }
