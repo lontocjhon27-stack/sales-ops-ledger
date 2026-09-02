@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T16:44:26.308Z",
+  "generatedAt": "2026-09-02T19:34:56.107Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -7,8 +7,8 @@
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 10,
-      "connected": 21,
+      "outboundAttempts": 11,
+      "connected": 22,
       "qualified": 2,
       "heldCall": 0,
       "won": 0
@@ -103,7 +103,22 @@
       "Rianna",
       "Jen"
     ],
-    "callLog": [],
+    "callLog": [
+      {
+        "time": "2026-08-26T18:36:51.689Z",
+        "setter": "Unknown",
+        "contact": "Sequoya Richard",
+        "status": "completed",
+        "durationSec": 15
+      },
+      {
+        "time": "2026-08-26T18:34:13.069Z",
+        "setter": "Unknown",
+        "contact": "Sequoya Richard",
+        "status": "completed",
+        "durationSec": 14
+      }
+    ],
     "activityPoints": {
       "Marshell": {
         "points": 0,
@@ -129,10 +144,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-22T14:50:54.502Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-22T15:44:10.307Z",
       "closeRate": 0
@@ -528,9 +539,27 @@
     {
       "t": "2026-09-02T16:44:26.308Z",
       "closeRate": 0
+    },
+    {
+      "t": "2026-09-02T19:34:56.107Z",
+      "closeRate": 0
     }
   ],
   "callLogHistory": [
+    {
+      "time": "2026-08-26T18:36:51.689Z",
+      "setter": "Unknown",
+      "contact": "Sequoya Richard",
+      "status": "completed",
+      "durationSec": 15
+    },
+    {
+      "time": "2026-08-26T18:34:13.069Z",
+      "setter": "Unknown",
+      "contact": "Sequoya Richard",
+      "status": "completed",
+      "durationSec": 14
+    },
     {
       "time": "2026-08-25T23:00:19.805Z",
       "setter": "Jen",
@@ -1457,7 +1486,7 @@
             "value": "Leonardo Buckner was invited to attend the Fundable CEO Live Masterclass webinar hosted by Will Roundtree, with multiple reminders and links provided for joining the session. After the event, he received follow-up messages offering a replay link and additional resources, as well as a personal thank you and an invitation to ask further questions or express interest in the program. The conversation also included inquiries about why Leonardo was unable to attend live, his current business and funding goals, and whether he had previously applied for business funding. The discussion concluded with an offer to schedule a call to discuss his situation further."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:16.004Z"
+        "cachedAt": "2026-09-02T19:35:08.048Z"
       },
       "BY2Mwn6aqxFYBND76F7p": {
         "fields": [
@@ -1559,7 +1588,7 @@
             "value": "Tamara Price was trying to join and participate in the Will Roundtree Live Masterclass webinar. She received multiple reminders with Zoom links and was informed when the event was live, as well as provided with a replay link afterward. No specific technical information was requested by Tamara during the conversation. The conversation concluded with a thank-you message from the event team, offering further assistance if needed."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.892Z"
+        "cachedAt": "2026-09-02T19:35:08.107Z"
       },
       "tc5gdF6udAEDklZHpHap": {
         "fields": [
@@ -1630,7 +1659,7 @@
             "value": "Preston Harris was trying to join a live online masterclass and needed the correct Zoom link and joining information. He specifically requested the access details and clarified his time zone to ensure he joined at the right time. After some confusion, Preston found the information in his spam folder and was able to join. The conversation concluded with confirmation of his attendance and a follow-up message providing a replay link and information about additional resources."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.945Z"
+        "cachedAt": "2026-09-02T19:35:08.174Z"
       },
       "s7fqsd5pRx0n7k2bR9pG": {
         "fields": [
@@ -1961,7 +1990,7 @@
             "value": "Completed"
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.952Z"
+        "cachedAt": "2026-09-02T19:35:08.155Z"
       },
       "iVcIzPpTSIsnF1Ih4kQL": {
         "fields": [
@@ -2067,7 +2096,7 @@
             "value": "Eliakim Isilayeli interacted with WE Management Services regarding a webinar, credit monitoring registration, and received invoices for services. The customer was prompted to share what they hoped to learn from the webinar and whether they had previously applied for business funding. Specific technical information requested included registration for IdentityIQ credit monitoring and details about invoice payments. The conversation concluded with a follow-up question about Eliakim's experience with business funding, indicating ongoing engagement."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:16.010Z"
+        "cachedAt": "2026-09-02T19:35:08.206Z"
       },
       "uy45B9IOjqBb10BDNzw2": {
         "fields": [
@@ -3468,7 +3497,7 @@
             "value": 4
           }
         ],
-        "cachedAt": "2026-09-02T12:12:16.035Z"
+        "cachedAt": "2026-09-02T19:35:08.269Z"
       },
       "AEiA4JQxElfOK1hD4DLM": {
         "fields": [
@@ -3811,7 +3840,7 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.839Z"
+        "cachedAt": "2026-09-02T19:35:08.012Z"
       },
       "NiKenFdNKzioL0TECGpz": {
         "fields": [
@@ -3868,7 +3897,7 @@
             "value": "Doug Stroud registered for Will Roundtree's upcoming Live Masterclass webinar and received confirmation details, including the event link and calendar invitation. The team reached out to learn more about Doug's financial goals and offered a Credit & Funding Review, which covers inquiry removal, credit improvement, and funding options. No specific technical information was requested by Doug during the conversation. The interaction concluded with reminders about the webinar and a prompt for Doug to confirm his attendance."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.860Z"
+        "cachedAt": "2026-09-02T19:35:08.049Z"
       },
       "LjJ0nxvgb6TRuvZXkXQh": {
         "fields": [
@@ -3982,7 +4011,7 @@
             "value": "Robin Jackson was trying to attend the Fundable CEO Live Masterclass webinar and learn about business funding. She received multiple reminders and links to join the webinar, as well as a replay link afterward. Robin was asked if she had ever applied for business funding and what prevented her from joining the live session, but she indicated she had not applied before and did not specify why she missed the event. The conversation concluded with an offer for a follow-up call to discuss her business and funding goals further."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.798Z"
+        "cachedAt": "2026-09-02T19:35:07.941Z"
       },
       "uP1bUmkpVK5mg2PSnU1n": {
         "fields": [
@@ -4039,7 +4068,7 @@
             "value": "Halise Johnson registered for Will Roundtree's Live Masterclass webinar and received multiple confirmations with the event details and Zoom link. The conversation included an outreach from Rianna offering a Credit & Funding Review to discuss Halise's financial goals and credit improvement opportunities. No specific technical information was requested by Halise during the exchange. The conversation concluded with reminders about the webinar and a prompt for Halise to confirm attendance."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.803Z"
+        "cachedAt": "2026-09-02T19:35:07.878Z"
       },
       "VQ62EvP9yOdeCB05DMEV": {
         "fields": [
@@ -4157,7 +4186,7 @@
             "value": "Lekota Broaden Daniels registered for Will Roundtree's Live Masterclass webinar and received confirmation details, including the date, time, and Zoom link. The customer was invited to share what they hoped to learn and was also offered an optional $125K Blueprint resource. Additionally, Rianna from WE Management Services reached out to discuss Lekota's financial goals and offer a Credit & Funding Review, covering inquiry removal, credit improvement, and funding options. The conversation concluded with reminders about the webinar and a request for Lekota to confirm attendance."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.770Z"
+        "cachedAt": "2026-09-02T19:35:07.887Z"
       },
       "IrgauaKoq6fLkkFOdOPa": {
         "fields": [
@@ -4214,7 +4243,7 @@
             "value": "Charmaine Watson registered for Will Roundtree's Live Masterclass webinar and received confirmation details, including the date, time, and Zoom link, along with reminders to add the event to her calendar. She was also offered an optional $125K Blueprint resource and invited to participate in a Credit & Funding Review to discuss her financial goals and credit profile improvement opportunities. The conversation included multiple reminders and invitations to connect further, but there is no record of Charmaine requesting specific technical information. The interaction concluded with a prompt for Charmaine to confirm her attendance at the webinar."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.706Z"
+        "cachedAt": "2026-09-02T19:35:07.836Z"
       },
       "zCfCbbq56gV7d4dBvZg8": {
         "fields": [
@@ -4271,7 +4300,7 @@
             "value": "Kisha Willis attended the Will Roundtree Live Masterclass and expressed interest in joining the related program but mentioned she is waiting to secure additional funds before enrolling. She did not request specific technical information but communicated her determination to participate in the future. The conversation concluded with encouragement from the team, an offer for further information, and a follow-up from Will Roundtree offering a call to discuss her business and funding goals. Kisha thanked the team and was invited to reach out when ready."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.688Z"
+        "cachedAt": "2026-09-02T19:35:07.759Z"
       },
       "OhQZsUfHdSwDabNV7ZJe": {
         "fields": [
@@ -4324,7 +4353,7 @@
             "value": "Beverly Wilson was registering and preparing to attend Will Roundtree's Live Masterclass webinar, aiming to learn more about business funding and credit building. She was asked about her interests for the webinar and whether she had previously applied for business funding. Additionally, she received information about an optional $125K Blueprint resource and was offered a Credit & Funding Review to discuss her financial goals and credit profile. The conversation concluded with multiple reminders and links to join the webinar, along with a request for her attendance confirmation."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.650Z"
+        "cachedAt": "2026-09-02T19:35:07.719Z"
       },
       "eXjY4SyjdmnOVdwo1NxC": {
         "fields": [
@@ -4381,7 +4410,7 @@
             "value": "Kay Pierson registered for Will Roundtree's Live Masterclass webinar and received confirmation details, including the event link and calendar invitation. The customer was invited to share what they hoped to learn and was also offered a Credit & Funding Review to discuss financial goals and credit improvement opportunities. No specific technical information was requested by Kay during the conversation. The interaction concluded with reminders about the webinar and a prompt to confirm attendance."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.726Z"
+        "cachedAt": "2026-09-02T19:35:07.749Z"
       },
       "GYztNsVt7grtdP8EuLTh": {
         "fields": [
@@ -4442,7 +4471,7 @@
             "value": "Terrilynn Drew registered for Will Roundtree's upcoming Live Masterclass webinar and received confirmation details, including the date, time, and Zoom link. The conversation included outreach from Rianna offering a Credit & Funding Review to discuss Terrilynn's financial goals and credit improvement opportunities. Terrilynn was repeatedly reminded of the webinar details and encouraged to confirm attendance. The conversation concluded with a prompt for Terrilynn to reply YES or NO regarding her participation in the event."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.638Z"
+        "cachedAt": "2026-09-02T19:35:07.639Z"
       },
       "gkKeZq9u3zhGPKowC8Hu": {
         "fields": [
@@ -4618,11 +4647,11 @@
       },
       "195JqlImOBFPF7XPzhVR": {
         "fields": [],
-        "cachedAt": "2026-09-02T12:12:06.033Z"
+        "cachedAt": "2026-09-02T19:35:03.295Z"
       },
       "vvape1DovHp0MGMr4gDU": {
         "fields": [],
-        "cachedAt": "2026-09-02T12:12:06.106Z"
+        "cachedAt": "2026-09-02T19:35:03.522Z"
       },
       "0toSQdbY3ojBFI60ENZH": {
         "fields": [
@@ -4635,7 +4664,7 @@
             "value": 2
           }
         ],
-        "cachedAt": "2026-09-02T12:12:06.049Z"
+        "cachedAt": "2026-09-02T19:35:03.333Z"
       },
       "g0814tR0doZfheBv19AK": {
         "fields": [
@@ -4644,11 +4673,11 @@
             "value": "Joelle Simon contacted WE Management Services to follow up on a missed call and confirm communication. No specific technical information was requested during the conversation. The discussion concluded with both parties agreeing to talk during a scheduled call the following day."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:06.534Z"
+        "cachedAt": "2026-09-02T19:35:03.512Z"
       },
       "KDWqO0h3Xt7nJFvBG1mw": {
         "fields": [],
-        "cachedAt": "2026-09-02T12:12:06.097Z"
+        "cachedAt": "2026-09-02T19:35:03.502Z"
       },
       "wfmiRxMRjNtdjTv4huWl": {
         "fields": [
@@ -4717,7 +4746,7 @@
             "value": "Jennifer Pascual"
           }
         ],
-        "cachedAt": "2026-09-02T12:12:06.153Z"
+        "cachedAt": "2026-09-02T19:35:03.625Z"
       },
       "cgCGWgo7LPMmYEgbIt4b": {
         "fields": [
@@ -4790,7 +4819,7 @@
             "value": "Jennifer Pascual"
           }
         ],
-        "cachedAt": "2026-09-02T12:12:06.187Z"
+        "cachedAt": "2026-09-02T19:35:03.624Z"
       },
       "kYGsXYmRbqVGjbr5fhwg": {
         "fields": [
@@ -4803,7 +4832,7 @@
             "value": 2
           }
         ],
-        "cachedAt": "2026-09-02T12:12:06.243Z"
+        "cachedAt": "2026-09-02T19:35:03.637Z"
       },
       "SnJ4DJpgjjrqQDLlL5H8": {
         "fields": [
@@ -4812,11 +4841,11 @@
             "value": "Brett Constant was contacted by WE Management Services to discuss his financial goals, specifically regarding personal credit optimization and business funding. The team, including Will Roundtree and several associates, offered Brett a free Credit & Funding Analysis and inquired about his previous experience with business funding, as well as his current financial challenges. They requested information about Brett’s availability for a conversation and encouraged him to share any questions or concerns. The conversation concluded with an open invitation for Brett to connect at his convenience to explore tailored financial strategies and support."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:06.344Z"
+        "cachedAt": "2026-09-02T19:35:03.785Z"
       },
       "OwruV5jXVPEsYdFSDnUu": {
         "fields": [],
-        "cachedAt": "2026-09-02T12:12:06.294Z"
+        "cachedAt": "2026-09-02T19:35:03.859Z"
       },
       "sbxAMlNaCOmNejZRTZM8": {
         "fields": [
@@ -4841,11 +4870,11 @@
             "value": "Improve credit, grow business and acquire asset"
           }
         ],
-        "cachedAt": "2026-09-02T12:12:06.389Z"
+        "cachedAt": "2026-09-02T19:35:03.882Z"
       },
       "56nM3amcAOAKASzdHGwh": {
         "fields": [],
-        "cachedAt": "2026-09-02T12:12:06.399Z"
+        "cachedAt": "2026-09-02T19:35:03.938Z"
       },
       "ohMVSI9Sv1zG0SFfBCaT": {
         "fields": [
@@ -4854,7 +4883,7 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-09-02T12:12:06.460Z"
+        "cachedAt": "2026-09-02T19:35:03.984Z"
       },
       "OpZS0KELaI5Jrg33FDIh": {
         "fields": [
@@ -4871,7 +4900,7 @@
             "value": 2
           }
         ],
-        "cachedAt": "2026-09-02T12:12:06.459Z"
+        "cachedAt": "2026-09-02T19:35:03.968Z"
       },
       "q7B6pUCwRXtNaCA0yXZs": {
         "fields": [
@@ -4880,11 +4909,11 @@
             "value": "Josiah Ellis reached out to WE Management Services seeking help with credit rebuilding. He was offered a free credit and funding analysis, along with information about additional services like credit repair and business funding. Josiah responded that he is currently focused on paying off all his debt. The conversation concluded with an offer for a complimentary credit assessment to further assist him if interested."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:06.573Z"
+        "cachedAt": "2026-09-02T19:35:04.039Z"
       },
       "3Oekc2bAMV96iwCdUiUv": {
         "fields": [],
-        "cachedAt": "2026-09-02T12:12:06.517Z"
+        "cachedAt": "2026-09-02T19:35:04.121Z"
       },
       "Tsg4tPYo41idNrhf1OdL": {
         "fields": [
@@ -4941,7 +4970,7 @@
             "value": "Kevin Canady was registering for and attending Will Roundtree's Fundable CEO Live Masterclass. He received multiple reminders with the Zoom webinar link, confirmation of his registration, and instructions to check his email and calendar for details. The communication also included an optional resource offer and asked what he was most looking forward to learning, but no specific technical information was requested by Kevin. The conversation concluded with a final reminder that the webinar was live and an invitation to join if he hadn't already."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:06.593Z"
+        "cachedAt": "2026-09-02T19:35:04.078Z"
       },
       "UvJsR3920oq3XLTvInns": {
         "fields": [
@@ -4978,7 +5007,7 @@
             "value": "https://www.google.com/calendar/event?eid=Z3VzaGQ2bjlzdDFrMXBubDFqMW0yaGtobmMgamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
           }
         ],
-        "cachedAt": "2026-09-02T12:12:06.617Z"
+        "cachedAt": "2026-09-02T19:35:04.150Z"
       },
       "istN3q3VUAEUS1d5aUon": {
         "fields": [
@@ -5067,7 +5096,7 @@
             "value": "Sheree Bailey was seeking to learn about real estate investing, business funding, and credit improvement through various masterclasses, webinars, and coaching programs offered by Will Roundtree and WE Management Services. She received multiple reminders and invitations to live sessions, as well as information about special offers, program details, and event registrations. The communications included technical details such as Zoom links, event times, payment options, and follow-up instructions for accessing replays and resources. The conversation concluded with confirmations of her registrations, access to webinar replays, and offers for further support or program enrollment."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:06.643Z"
+        "cachedAt": "2026-09-02T19:35:04.177Z"
       },
       "3qvom5LURE7Dw02cjNPB": {
         "fields": [
@@ -5132,7 +5161,7 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-09-02T12:12:06.658Z"
+        "cachedAt": "2026-09-02T19:35:04.240Z"
       },
       "9Q1SXCCjyZ1W6jFmsdjl": {
         "fields": [
@@ -5225,7 +5254,7 @@
             "value": 3
           }
         ],
-        "cachedAt": "2026-09-02T12:12:06.690Z"
+        "cachedAt": "2026-09-02T19:35:04.262Z"
       },
       "owTLC0C1RAClVDzE3vev": {
         "fields": [
@@ -5270,11 +5299,11 @@
             "value": "Robert White registered for Will Roundtree's Live Masterclass and received confirmation details, including the webinar link and a calendar invite. He was provided with access to an optional $125K Blueprint resource and received reminders to join the live session, as well as a replay link after the event. The conversation included follow-up messages offering further assistance and asking what Robert was most interested in learning. The interaction concluded with an invitation for Robert to share any questions or interests regarding the program."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:06.706Z"
+        "cachedAt": "2026-09-02T19:35:04.312Z"
       },
       "Z6JrnEPM1xHWcNL4wL2w": {
         "fields": [],
-        "cachedAt": "2026-09-02T12:12:06.704Z"
+        "cachedAt": "2026-09-02T19:35:04.388Z"
       },
       "pO54nYbPuchJ6eKGuXjt": {
         "fields": [
@@ -5283,11 +5312,11 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-09-02T12:12:06.783Z"
+        "cachedAt": "2026-09-02T19:35:04.362Z"
       },
       "bBi8A0FzOTbmqaiAJWUB": {
         "fields": [],
-        "cachedAt": "2026-09-02T12:12:06.328Z"
+        "cachedAt": "2026-09-02T19:35:03.728Z"
       },
       "OU2rO2BUymMwaUihMoNL": {
         "fields": [
@@ -5296,11 +5325,11 @@
             "value": "Paula Winlock received a series of promotional messages from WE Management Services about a \"Get Funded Training Live\" event and a limited-time 50% off offer for Credit Coaching & Counseling, aimed at helping individuals improve their credit and access funding. The messages included event details, enrollment updates, and repeated prompts to reply \"MEMDAY\" for more information. No specific technical information was requested by Paula. The conversation concluded with Paula replying \"STOP\" to unsubscribe from further messages."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:06.763Z"
+        "cachedAt": "2026-09-02T19:35:04.410Z"
       },
       "L8AT5xBfxSiYUove53dy": {
         "fields": [],
-        "cachedAt": "2026-09-02T12:12:06.819Z"
+        "cachedAt": "2026-09-02T19:35:04.578Z"
       },
       "hUN7F189O6aJGm84QjJk": {
         "fields": [
@@ -5313,11 +5342,11 @@
             "value": "Naomi Bell was contacted multiple times with offers to join real estate investment and funding masterclasses, as well as promotions for credit coaching and REI software. The communications aimed to help her access up to $1M in 0% interest funding, learn about $0 down real estate investing, and improve her credit to secure business funding. Specific technical information requested included details about her biggest challenges in getting business funding and her interest in credit repair or coaching services. The conversation concluded with reminders about limited-time discounts and enrollment spots, prompting Naomi to reply if interested in further details."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:06.879Z"
+        "cachedAt": "2026-09-02T19:35:04.506Z"
       },
       "86vlSRuwviwGqjtApWIr": {
         "fields": [],
-        "cachedAt": "2026-09-02T12:12:06.801Z"
+        "cachedAt": "2026-09-02T19:35:04.503Z"
       },
       "qk2Rx7YDUIrPQMSdCISH": {
         "fields": [
@@ -5350,11 +5379,11 @@
             "value": "Terrence Jenkins was seeking information and assistance regarding business funding and credit repair services. He specifically requested the phone number he should expect a call from for a scheduled consultation. The conversation included details about setting up appointments, instructions to provide credit monitoring login information for a funding analysis, invitations to free training sessions on securing funding, and several promotional offers for credit repair and coaching services. The interaction concluded with an offer for a discounted credit repair program and instructions on how to proceed if interested."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:06.882Z"
+        "cachedAt": "2026-09-02T19:35:04.642Z"
       },
       "7HD8fKia6wcxpuLJCYcf": {
         "fields": [],
-        "cachedAt": "2026-09-02T12:12:06.955Z"
+        "cachedAt": "2026-09-02T19:35:04.730Z"
       },
       "cVEUTrPlA3YxluBWSaBS": {
         "fields": [
@@ -5363,7 +5392,7 @@
             "value": "Kimmith Sanders was invited to participate in a live training event focused on securing $50K-$250K in funding, with follow-up messages offering a replay and a discounted credit coaching program. The communications highlighted strategies for getting approved by banks and addressed potential credit issues that could hinder funding approval. Kimmith was asked if they were interested in the discounted offer and to reply for more details. The conversation concluded with Kimmith replying \"Stop,\" indicating they wished to unsubscribe from further messages."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:06.880Z"
+        "cachedAt": "2026-09-02T19:35:04.613Z"
       },
       "D61uPZCYKsSjzxWKoACM": {
         "fields": [
@@ -5404,7 +5433,7 @@
             "value": "Tonya was seeking information and opportunities related to real estate investing, credit improvement, and funding options. She received invitations to attend live webinars and masterclasses hosted by Will Roundtree, with offers for free credit and funding analyses, discounted credit coaching, and access to real estate programs. Tonya was provided with technical details such as webinar dates, times, registration links, and follow-up resources including replays and bonus materials. The conversation concluded with Tonya successfully registering for multiple webinars, receiving confirmation and resources, and being offered additional optional materials to further her real estate and credit goals."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:06.960Z"
+        "cachedAt": "2026-09-02T19:35:04.769Z"
       },
       "FlnGPasL7sTbV544wJFF": {
         "fields": [
@@ -5457,7 +5486,7 @@
             "value": "https://www.google.com/calendar/event?eid=ODhxZjRnNzBpbnFvNTk1MHNvbmxiMzJxaWMgamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
           }
         ],
-        "cachedAt": "2026-09-02T12:12:07.043Z"
+        "cachedAt": "2026-09-02T19:35:04.859Z"
       },
       "ztUyBCGAguNgtJlofMKx": {
         "fields": [
@@ -5514,7 +5543,7 @@
             "value": "Troy Ellis registered for Will Roundtree's Live Masterclass webinar and received confirmation details, including the event link and a replay link for later viewing. The team followed up to offer assistance, ask what Troy was most interested in learning, and provided additional resources such as the optional $125K Blueprint. No specific technical information was requested by Troy during the conversation. The interaction concluded with open invitations for Troy to ask further questions or express interest in the program."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:07.025Z"
+        "cachedAt": "2026-09-02T19:35:04.854Z"
       },
       "AttOWdrsyTISNpbdc4Ou": {
         "fields": [
@@ -5527,7 +5556,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-02T12:12:06.971Z"
+        "cachedAt": "2026-09-02T19:35:04.720Z"
       },
       "sGTVgV4Ks00ULNULUxed": {
         "fields": [
@@ -5626,9 +5655,13 @@
           {
             "id": "LjvzAPtsqJVnP2KV0KuA",
             "value": "Jercori Freeman"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Marsha Pipher registered for Will Roundtree's Live Masterclass and received confirmation details, including webinar access links and a FICO Blueprint resource. She was provided with follow-up information such as a replay link and notification about upcoming webinar resources. The conversation included questions from Will Roundtree about Marsha’s learning goals, reasons for missing a live session, her business funding objectives, and whether she had previously applied for business funding. The interaction concluded with an offer to schedule a call to discuss her business and funding needs further."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:07.032Z"
+        "cachedAt": "2026-09-02T19:35:04.881Z"
       },
       "LsoOAGgvMLFPqZ1qJUQt": {
         "fields": [
@@ -5673,7 +5706,7 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-09-02T12:12:07.096Z"
+        "cachedAt": "2026-09-02T19:35:04.966Z"
       },
       "9FwHkkG7QTq3wM4JYwa8": {
         "fields": [
@@ -5726,7 +5759,7 @@
             "value": "https://www.google.com/calendar/event?eid=Z2R0NHJ2OXNxdWtjMGxqdXE0YzdoanZscG8gamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
           }
         ],
-        "cachedAt": "2026-09-02T12:12:07.083Z"
+        "cachedAt": "2026-09-02T19:35:04.973Z"
       },
       "LD6ojp73mpK80pQD2SrU": {
         "fields": [
@@ -5811,7 +5844,7 @@
             "value": "Melvin Childs was seeking information and support to begin or advance his real estate investing journey, particularly focusing on funding options and credit improvement. He received multiple invitations to live webinars and masterclasses on topics such as $0 down investing, accessing up to $250K in funding, and credit repair/coaching, along with offers for discounted enrollment in coaching programs. The technical information requested centered on credit profile assessments, credit monitoring setup, and program eligibility, with instructions to provide credit monitoring credentials for personalized analysis. The conversation concluded with Melvin being registered for masterclasses, receiving follow-up emails with resources and offers, and being encouraged to schedule further consultations for tailored support."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:07.124Z"
+        "cachedAt": "2026-09-02T19:35:05.002Z"
       },
       "Od0TiT30orUb5PyX55id": {
         "fields": [
@@ -5892,7 +5925,7 @@
             "value": "Jercori Freeman"
           }
         ],
-        "cachedAt": "2026-09-02T12:12:07.151Z"
+        "cachedAt": "2026-09-02T19:35:05.094Z"
       },
       "MFaKx1pZFHZxxNF4Iv5e": {
         "fields": [
@@ -5929,7 +5962,7 @@
             "value": "Aselina Tember was seeking information and support regarding business funding, specifically related to the Fundable CEO Masterclass hosted by Will Roundtree. She received several follow-up messages offering a replay of the webinar, resources, and invitations to schedule a call to discuss her business funding goals. The communications also inquired about her previous experience with business funding and any challenges she might be facing. The conversation concluded with an open invitation for Aselina to share her story or book a call for further assistance."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:07.188Z"
+        "cachedAt": "2026-09-02T19:35:05.110Z"
       },
       "mzbUsUAMoIoQchT9lQz7": {
         "fields": [
@@ -5966,7 +5999,7 @@
             "value": "Kecia Thomas was seeking information and support regarding business funding, specifically related to the Fundable CEO Masterclass hosted by Will Roundtree. She was prompted to watch a replay of the masterclass, and was asked about her experience with applying for business funding, as well as any obstacles that prevented her from attending the live session. The conversation included offers to schedule a call to discuss her business funding goals and provided links to resources and the webinar replay. The interaction concluded with an invitation for Kecia to share her biggest current business challenge."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:07.210Z"
+        "cachedAt": "2026-09-02T19:35:06.477Z"
       },
       "LpNKARi2fJjTBewsOrJv": {
         "fields": [
@@ -5995,7 +6028,7 @@
             "value": "Not yet, just gathering info"
           }
         ],
-        "cachedAt": "2026-09-02T12:12:07.251Z"
+        "cachedAt": "2026-09-02T19:35:05.114Z"
       },
       "qFBPcWmCePt00rS6tr1i": {
         "fields": [
@@ -6020,7 +6053,7 @@
             "value": "Sam Leroi was trying to attend Will Roundtree's Live Masterclass webinar. He received multiple reminders with the Zoom link and instructions to join the session, and he confirmed his attendance. No specific technical information was requested by Sam; he simply acknowledged his participation. The conversation concluded with Sam confirming he was on the webinar and the agent encouraging him to enjoy the session and reach out with any questions."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:07.251Z"
+        "cachedAt": "2026-09-02T19:35:05.217Z"
       },
       "1oUH1bBqS79zNAGzVcEd": {
         "fields": [
@@ -6033,7 +6066,7 @@
             "value": 2
           }
         ],
-        "cachedAt": "2026-09-02T12:12:07.262Z"
+        "cachedAt": "2026-09-02T19:35:05.232Z"
       },
       "fQp750zwjxDrfxNGXzpg": {
         "fields": [
@@ -6042,11 +6075,11 @@
             "value": "Quincy Guinyard was contacted by several representatives aiming to engage him in a conversation about his financial goals and potential business funding opportunities. The team inquired whether Quincy had previously applied for business funding and asked about his current financial challenges. They also offered a Credit & Funding Review, detailing services such as inquiry removal, credit improvement, and funding options. The conversation concluded with an invitation for Quincy to have a quick discussion to explore how they could support his credit and funding needs."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:14.985Z"
+        "cachedAt": "2026-09-02T19:35:06.409Z"
       },
       "yN6yje8GCrDTcIstcxyX": {
         "fields": [],
-        "cachedAt": "2026-09-02T12:12:07.325Z"
+        "cachedAt": "2026-09-02T19:35:06.759Z"
       },
       "IPnmq7hjnoQY86TPo3NP": {
         "fields": [
@@ -6055,7 +6088,7 @@
             "value": "Ray Armstrong was contacted by representatives from WE Management Services to discuss his financial goals and explore how they could assist him in building his credit profile. The team specifically offered a Credit & Funding Review, which includes inquiry removal, credit improvement strategies, and funding options. They inquired if Ray had previously applied for business funding and asked about his biggest financial challenges. The conversation concluded with an invitation for Ray to have a quick conversation to discuss his needs further."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.129Z"
+        "cachedAt": "2026-09-02T19:35:06.536Z"
       },
       "a8XzrgNrRAFfH9NEUVZO": {
         "fields": [
@@ -6068,7 +6101,7 @@
             "value": "Nicki Jones was contacted by WE Management Services after reaching out, with the team aiming to understand her goals and offer assistance in areas such as personal credit optimization and business funding. The team inquired whether Nicki had previously applied for business funding and asked about her biggest current challenges. They also offered a Free Credit & Funding Analysis and detailed their services, including credit repair, profile enhancement, business funding, and a real estate growth program. The conversation concluded with an invitation for Nicki to schedule a convenient time to connect for further assistance."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.069Z"
+        "cachedAt": "2026-09-02T19:35:06.675Z"
       },
       "mC2Dfh7zVMPeUnHGL0sU": {
         "fields": [
@@ -6105,7 +6138,7 @@
             "value": "Brandon Broome registered for the Will Roundtree Fundable CEO Masterclass, aiming to learn how to prepare his business for funding and understand what lenders look for. The messages provided replay links to the masterclass, offered free webinar resources, and invited Brandon to schedule a call to discuss his business and funding goals. The workflow also inquired about Brandon's previous experience with business funding and his current challenges. The conversation concluded with an open invitation for Brandon to share his biggest business challenge or schedule a call for further assistance."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.082Z"
+        "cachedAt": "2026-09-02T19:35:06.746Z"
       },
       "FTXfAxuaFLULsQdnUQoQ": {
         "fields": [
@@ -6170,7 +6203,7 @@
             "value": 2
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.176Z"
+        "cachedAt": "2026-09-02T19:35:06.865Z"
       },
       "VJMlxXv2AxvaqsUBZhGx": {
         "fields": [
@@ -6203,7 +6236,7 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-09-02T12:12:14.982Z"
+        "cachedAt": "2026-09-02T19:35:06.587Z"
       },
       "D69COiRDBBJcJol69bqf": {
         "fields": [
@@ -6240,7 +6273,7 @@
             "value": "Eric Wyns was registering for and preparing to attend Will Roundtree's Live Masterclass webinar on August 26, 2026. Throughout the conversation, he received multiple reminders with the Zoom link, calendar invite, and encouragement to add the event to his calendar. The messages also asked Eric about his learning goals, prior experience with business funding, and current challenges, but no specific technical information was requested by Eric. The conversation concluded with a final confirmation request for his attendance at the event."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.178Z"
+        "cachedAt": "2026-09-02T19:35:06.867Z"
       },
       "HVPOaWF4ZIP3XFalk3wk": {
         "fields": [
@@ -6297,7 +6330,7 @@
             "value": "Randy McDaniel registered for Will Roundtree's Fundable CEO Live Masterclass webinar and received multiple reminders and access links leading up to the event. The communications focused on ensuring Randy had the correct webinar details, offering a replay link afterward, and following up to see if he had questions or was interested in further programs. The team also inquired about Randy's business funding experience and whether he wanted to discuss his funding goals with a team member. The conversation concluded with a direct question about Randy's prior experience applying for business funding, awaiting his response."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.184Z"
+        "cachedAt": "2026-09-02T19:35:06.862Z"
       },
       "CBHSqZ56vVu6z5VDh9Rx": {
         "fields": [
@@ -6346,7 +6379,7 @@
             "value": "Annette Baker was registering for and preparing to attend Will Roundtree's Live Masterclass on August 26, 2026. Throughout the conversation, she received multiple reminders with the webinar link, calendar invite, and event details, and was asked about her learning goals, experience with business funding, and current challenges. The technical information provided included the Zoom webinar link, calendar event link, and instructions for adding the event to her calendar. The conversation concluded with a final confirmation request for her attendance at the event."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.238Z"
+        "cachedAt": "2026-09-02T19:35:06.986Z"
       },
       "Dby6rck4iZyOIbtIP3Mg": {
         "fields": [
@@ -6395,7 +6428,7 @@
             "value": "Darryl Nolan was invited to participate in Will Roundtree's Live Masterclass, with the goal of supporting his financial goals and credit profile development. The conversation included multiple reminders about the event date, time, and provided the Zoom webinar link, as well as instructions to check his email and calendar for the invitation. The messages also offered to resend the calendar invite if needed and requested confirmation of attendance. The conversation concluded with a final reminder and a prompt for Darryl to reply YES or NO regarding his attendance."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.258Z"
+        "cachedAt": "2026-09-02T19:35:06.972Z"
       },
       "kD2z88ewM1sXAjmiHazM": {
         "fields": [
@@ -6440,7 +6473,7 @@
             "value": "Darius Jackson was invited to join the live Fundable CEO Masterclass webinar hosted by Will Roundtree, with multiple reminders and a direct Zoom link provided. After the event, Darius received a replay link and was informed that additional webinar resources would be sent to attendees. Will followed up to ask why Darius was unable to attend live, inquiring about any obstacles and offering a call to discuss Darius's business and funding goals. The conversation concluded with an open invitation for Darius to reply if interested in further assistance."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.243Z"
+        "cachedAt": "2026-09-02T19:35:06.962Z"
       },
       "o7IO4BGYp9zjPnoZ6fb4": {
         "fields": [
@@ -6485,7 +6518,7 @@
             "value": "K Ferguson registered for Will Roundtree's Live Masterclass and received multiple reminders with the webinar link, calendar invites, and encouragement to join the session. The communications focused on ensuring K had access to the event details and offered an optional resource for purchase. No specific technical information was requested by K during the conversation. The interaction concluded with a follow-up message providing a replay link and notice that additional resources would be sent to attendees."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.294Z"
+        "cachedAt": "2026-09-02T19:35:07.092Z"
       },
       "R8FYp3DHfUWjst5zBOox": {
         "fields": [
@@ -6530,7 +6563,7 @@
             "value": "https://www.google.com/calendar/event?eid=aWJrdjY1czNtMmV2bWQ5OHQ1ZWxtbDZsazggamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.311Z"
+        "cachedAt": "2026-09-02T19:35:07.081Z"
       },
       "PfvpK9VcGnFZP1sgUZH2": {
         "fields": [
@@ -6579,7 +6612,7 @@
             "value": "Vernon Sadler was registering for and preparing to attend Will Roundtree's Live Masterclass on August 26, 2026. Throughout the conversation, he received multiple confirmations, webinar links, calendar invites, and reminders about the event, along with an access code for additional resources. The organizers also asked Vernon about his expectations, prior experience with business funding, and current challenges, seeking engagement and feedback. The conversation concluded with a final reminder and a request for Vernon to confirm his attendance at the event."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.427Z"
+        "cachedAt": "2026-09-02T19:35:07.333Z"
       },
       "9Pmx9zalVxT9jayHU6f9": {
         "fields": [
@@ -6704,7 +6737,7 @@
             "value": "Jennifer Pascual"
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.360Z"
+        "cachedAt": "2026-09-02T19:35:07.244Z"
       },
       "FSGidmwc3Mf5dS1JlsBk": {
         "fields": [
@@ -6721,7 +6754,7 @@
             "value": "The customer reached out because they are interested in getting started with real estate investing and wanted to learn about the different ways to invest and how to begin. They specifically requested information on methods and steps for starting in real estate. The conversation concluded with the agent asking if the customer was available for a call in 30 minutes, to which the customer responded affirmatively."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.385Z"
+        "cachedAt": "2026-09-02T19:35:07.240Z"
       },
       "USzgQMNDytghda4E9FOu": {
         "fields": [
@@ -6770,7 +6803,7 @@
             "value": "Anita Lim registered for Will Roundtree's Live Masterclass webinar and was guided through the registration process, receiving multiple reminders with the webinar link and calendar invite. The messages aimed to ensure she had all necessary details to join the event and encouraged her to add it to her calendar. The conversation also included questions about her expectations for the webinar, her experience with business funding, and her current challenges, but did not indicate any specific technical information requested by Anita. The conversation concluded with a final confirmation request for her attendance at the event."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.415Z"
+        "cachedAt": "2026-09-02T19:35:07.336Z"
       },
       "D9cf4Wk0QHciQP5oE4NQ": {
         "fields": [
@@ -6823,7 +6856,7 @@
             "value": "Safiallah Nelson was registered for Will Roundtree's Live Masterclass and received multiple reminders with the webinar link and calendar invite, aiming to ensure attendance and preparation for the event. The messages also inquired about Safiallah's learning goals, prior experience with business funding, and current challenges, seeking to engage and personalize the experience. Safiallah was repeatedly provided with technical details such as the Zoom webinar link, event date and time, and calendar invite links. The conversation concluded with a final confirmation request, asking Safiallah to reply YES or NO regarding attendance."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.451Z"
+        "cachedAt": "2026-09-02T19:35:07.358Z"
       },
       "ZjWCHb2rQlNQYT9OCtes": {
         "fields": [
@@ -6872,7 +6905,7 @@
             "value": "Twanna Ingram was registered for Will Roundtree's Live Masterclass and received multiple reminders and instructions to join the event, including webinar links and calendar invites. The messages also asked Twanna about her learning goals, experience with business funding, and current challenges. Specific technical information provided included the Zoom webinar link, event date and time, and calendar invite links. The conversation concluded with a final confirmation request asking if Twanna would attend the masterclass."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.481Z"
+        "cachedAt": "2026-09-02T19:35:07.523Z"
       },
       "P8bWCV91UDQ9NZNvWklP": {
         "fields": [
@@ -6921,7 +6954,7 @@
             "value": "James Goode was registering and preparing to attend Will Roundtree's Live Masterclass scheduled for August 26, 2026. Throughout the conversation, he received multiple reminders with the webinar link, calendar invite, and encouragement to add the event to his calendar. The messages also included questions about his learning goals, prior experience with business funding, and current challenges, seeking specific feedback from James. The conversation concluded with a final confirmation request for his attendance at the event."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.503Z"
+        "cachedAt": "2026-09-02T19:35:07.433Z"
       },
       "7TlBEDkpXQYxILcsmad3": {
         "fields": [
@@ -6970,7 +7003,7 @@
             "value": "Julia Rodriguez was registered for Will Roundtree's Live Masterclass and received multiple reminders with webinar links and calendar invites to ensure she could attend the event. The messages also asked her about her learning goals, prior experience with business funding, and current challenges, seeking to engage her and tailor the session to her needs. Julia was repeatedly provided with technical details such as the Zoom webinar link, event date and time, and instructions to add the event to her calendar. The conversation concluded with a final confirmation request, asking Julia to reply whether she would attend the masterclass."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.512Z"
+        "cachedAt": "2026-09-02T19:35:07.480Z"
       },
       "2cfGnBcrO2plWUF4q30y": {
         "fields": [
@@ -7027,7 +7060,7 @@
             "value": "Adrian Parris was registering for and preparing to attend Will Roundtree's Live Masterclass on August 26, 2026. Throughout the conversation, Adrian received multiple reminders with the webinar link, calendar invite details, and was asked about his expectations and prior experience with business funding. No specific technical information was requested by Adrian; the communication was primarily informational and confirmatory. The conversation concluded with Adrian acknowledging the reminders by responding \"Thanks.\""
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.543Z"
+        "cachedAt": "2026-09-02T19:35:07.535Z"
       },
       "idGO6XcJVJLD3U3MDI7K": {
         "fields": [
@@ -7076,7 +7109,7 @@
             "value": "Cleo Meeks was registered for Will Roundtree's Live Masterclass and received multiple reminders with the webinar link and calendar invite, aiming to ensure her attendance and preparation for the event. The organizers inquired about her learning goals, prior experience with business funding, and current challenges, seeking to engage her and tailor the experience. Cleo was repeatedly provided with technical details such as the Zoom webinar link, event date and time, and instructions for adding the event to her calendar. The conversation concluded with a final confirmation request asking if she would attend the masterclass."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.581Z"
+        "cachedAt": "2026-09-02T19:35:07.612Z"
       },
       "KKgeREPM8PzrWfLN4uSm": {
         "fields": [
@@ -7129,7 +7162,7 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-09-02T12:12:15.569Z"
+        "cachedAt": "2026-09-02T19:35:07.647Z"
       },
       "Ieqfk2xe1qtkULZiA0tF": {
         "fields": [
@@ -7176,7 +7209,7 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-09-02T12:12:04.809Z"
+        "cachedAt": "2026-09-02T19:35:02.078Z"
       },
       "H7quW0LypYFgI9f2M5bU": {
         "fields": [
@@ -7205,7 +7238,7 @@
             "value": "Yes, I’m ready to get started"
           }
         ],
-        "cachedAt": "2026-09-02T12:12:04.902Z"
+        "cachedAt": "2026-09-02T19:35:01.708Z"
       },
       "JV245MBcmyhg3gHTJlbo": {
         "fields": [
@@ -7214,7 +7247,7 @@
             "value": "Joshua J Webb was contacted by representatives from WE Management Services, including Will Roundtree and Rianna, who offered him access to a funding-focused community and invited him to book a free 15-minute Funding Readiness Call to discuss business funding strategies. The messages included links to schedule calls and highlighted a special 50% off promotion for their programs. Additionally, Rianna reached out to offer a Credit & Funding Review, aiming to discuss Joshua's financial goals and potential credit improvement opportunities. The conversation concluded with an invitation for Joshua to have a quick conversation about his credit and funding options."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:04.755Z"
+        "cachedAt": "2026-09-02T19:35:01.740Z"
       },
       "0KkI49hUP5knfsfEBva4": {
         "fields": [
@@ -7223,7 +7256,7 @@
             "value": "https://us02web.zoom.us/w/85781395902?tk=kYACUK49IBANC81p49BLFSG-2rEQTvQoskwX_lkRzKo.DQkAAAAT-Pg5vhYtZlhpRmpXSlJWV2Z2cXY2QlREdGJRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=g2ET9aZ4KTVKT9SrHWGaajEme2sC9n.1"
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.410Z"
+        "cachedAt": "2026-09-02T19:35:01.897Z"
       },
       "2UhHMtDT2HA1xYLkuSIc": {
         "fields": [
@@ -7232,7 +7265,7 @@
             "value": "Maurice Cooper was contacted by WE Management Services to encourage him to join their funding community, book a free Funding Readiness Call, and take advantage of a limited-time program discount. The team also offered a Credit & Funding Review to discuss inquiry removal, credit improvement, and funding options. Maurice was invited to share his financial goals and consider a quick conversation for personalized support. The conversation concluded with an open invitation for Maurice to connect and explore these services further."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:04.876Z"
+        "cachedAt": "2026-09-02T19:35:01.861Z"
       },
       "YI20HyrhVzmJr71KgEnC": {
         "fields": [
@@ -7261,11 +7294,11 @@
             "value": "Yes, I’m ready to get started"
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.013Z"
+        "cachedAt": "2026-09-02T19:35:01.973Z"
       },
       "1HjyAMm6yqaNIuIPYYAZ": {
         "fields": [],
-        "cachedAt": "2026-09-02T12:12:05.134Z"
+        "cachedAt": "2026-09-02T19:35:02.048Z"
       },
       "6xitVrfwSySW0xtC4ka6": {
         "fields": [
@@ -7294,7 +7327,7 @@
             "value": "Yes, I’m ready to get started"
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.155Z"
+        "cachedAt": "2026-09-02T19:35:02.084Z"
       },
       "BnpvTdS71Osq012IlJx9": {
         "fields": [
@@ -7303,7 +7336,7 @@
             "value": "https://us02web.zoom.us/w/85781395902?tk=RSsb38n4q3CEq2OEx7g50MhBHOZAbsG9yP0g9ys1FeY.DQkAAAAT-Pg5vhZmWW1hX2JsNVJwU1BDSDYwTTZ0QVZ3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=g2ET9aZ4KTVKT9SrHWGaajEme2sC9n.1"
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.207Z"
+        "cachedAt": "2026-09-02T19:35:02.264Z"
       },
       "1NOncZ5ECbKTHZm01AP7": {
         "fields": [
@@ -7316,7 +7349,7 @@
             "value": "Mo Rodgers was trying to attend a free live training session with Will Roundtree, as confirmed by the initial message. The workflow provided Mo with the Zoom link and multiple reminders leading up to and during the event, but there is no indication Mo requested any specific technical information. The conversation concluded with a follow-up message noting Mo missed the session and offering to add him to the next available masterclass if interested."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.247Z"
+        "cachedAt": "2026-09-02T19:35:02.171Z"
       },
       "5N7ocSO9JbQ2Wh39QmyM": {
         "fields": [
@@ -7329,7 +7362,7 @@
             "value": "Chris Samuel was trying to attend a free live training session on funding, hosted by Will Roundtree. The conversation included multiple reminders with Zoom links for joining the session, but no specific technical information was requested by Chris. After the session, a follow-up message offered Chris the opportunity to book a next step and later invited him to another upcoming masterclass. The conversation concluded with an invitation for Chris to reply if he wanted to be added to the next session."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.321Z"
+        "cachedAt": "2026-09-02T19:35:02.286Z"
       },
       "7CrLJcp1Un982w8SOtp3": {
         "fields": [
@@ -7346,7 +7379,7 @@
             "value": "Marshell Green was invited and reminded multiple times to attend a free live training webinar with Will Roundtree, aiming to participate in a funding masterclass. The conversation included logistical details such as the date, time, and Zoom links for joining the session, and offered support for any questions Marshell might have before attending. After the event, Marshell received a follow-up message with a link to book a next step and was later invited to another session after missing the previous one. The conversation concluded with an offer to register Marshell for the upcoming session upon confirmation."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.261Z"
+        "cachedAt": "2026-09-02T19:35:02.200Z"
       },
       "Bwjs4u2hOLSdj2pYGjBe": {
         "fields": [
@@ -7355,7 +7388,7 @@
             "value": "Kevin Nelson was invited and confirmed for Will's free live masterclass scheduled for July 8, 2026. He received reminders about the event and, after the webinar, was informed about a missed enrollment opportunity with a link to secure a spot, as well as a note that webinar bonuses would be emailed the next day. No specific technical information was requested by Kevin during the conversation. The conversation concluded with an offer to add Kevin to another upcoming masterclass session if he replied \"YES.\""
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.396Z"
+        "cachedAt": "2026-09-02T19:35:02.436Z"
       },
       "Fi9BZRgNngcheRlXxXwx": {
         "fields": [
@@ -7368,7 +7401,7 @@
             "value": "Lisa Greenslade was invited to attend a free live training session with Will Roundtree, receiving multiple reminders and the Zoom link leading up to the event. The communication included specific technical details such as the event date, time, and direct access links to the Zoom meeting. After the session, Lisa was thanked and offered a link to book a follow-up appointment. When it was noted that she missed the session, she was offered the opportunity to join another upcoming masterclass by replying to confirm her interest."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.394Z"
+        "cachedAt": "2026-09-02T19:35:02.310Z"
       },
       "qBh6ZLYurdnv8LnEndPK": {
         "fields": [
@@ -7385,7 +7418,7 @@
             "value": "Cheryl Adams registered for and attended Will Roundtree's Fundable CEO Live Masterclass, aiming to learn about building her credit profile and funding opportunities. She received multiple reminders, the webinar link, access to a preparatory eBook, and a replay link after the event. No specific technical information was requested by Cheryl during the conversation. The exchange concluded with an offer from Rianna at WE Management Services to connect for a personalized Credit & Funding Review to further support Cheryl's financial goals."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.486Z"
+        "cachedAt": "2026-09-02T19:35:02.419Z"
       },
       "vnE3vcFPrJuIgTzS0VxJ": {
         "fields": [
@@ -7414,7 +7447,7 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.486Z"
+        "cachedAt": "2026-09-02T19:35:02.504Z"
       },
       "348SVpUVOwvfNiFnYBOU": {
         "fields": [
@@ -7427,7 +7460,7 @@
             "value": "Santresa Perry was trying to attend live masterclasses and training sessions hosted by Will Roundtree and WE Management Services, focused on financial education and credit building. She received multiple reminders and Zoom links for these events, as well as follow-up offers for program discounts and opportunities to book further consultations. No specific technical information was requested by Santresa during the conversation. The interaction concluded with an invitation for a Credit & Funding Review and an offer to connect for a conversation about her financial goals."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.541Z"
+        "cachedAt": "2026-09-02T19:35:02.600Z"
       },
       "EL3qbH0S4LEeCu7AmhQF": {
         "fields": [
@@ -7440,7 +7473,7 @@
             "value": "Jenimah was invited and confirmed for Will's free live masterclass on July 2, 2026, and received reminders and follow-up messages about the event and enrollment opportunities. She was informed that webinar bonuses would be emailed to her and was offered another chance to attend a similar session after missing the previous one. Additionally, Ram from WE Management Services reached out to discuss Jenimah's financial goals and offered a Credit & Funding Review, detailing services such as inquiry removal and credit improvement. The conversation concluded with an invitation for Jenimah to reply YES to proceed with a quick consultation."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.501Z"
+        "cachedAt": "2026-09-02T19:35:02.520Z"
       },
       "6ynTUlXySxhplyJuU5Hx": {
         "fields": [
@@ -7461,7 +7494,7 @@
             "value": "https://us02web.zoom.us/w/86058370895?tk=AXGWcFdxrM_9-f7hwEzmCheaoUE_BMxstPy4M9LKhJI.DQkAAAAUCXqHTxZIaF95UTROVlFfQ0RXRzFGSG1Id0h3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=pktSabx8jLLfsTYGSDqQ2jUzPDjcbb.1"
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.561Z"
+        "cachedAt": "2026-09-02T19:35:02.604Z"
       },
       "8nRIbBd3pWkhEhbGVVR0": {
         "fields": [
@@ -7470,7 +7503,7 @@
             "value": "Eric Kilbourne was trying to attend Will's free live masterclass hosted by WE Management Services, which focused on the topic \"7 days vs 7 years.\" He received multiple reminders with the Zoom registration link and was informed about the webinar's start and completion, as well as post-event enrollment opportunities and upcoming bonuses. No specific technical information was requested by Eric during the conversation. The conversation concluded with an invitation to join another upcoming session, asking Eric to reply if he wished to be added."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.444Z"
+        "cachedAt": "2026-09-02T19:35:02.403Z"
       },
       "63ozozejcoKAVfV26ywY": {
         "fields": [
@@ -7503,7 +7536,7 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.650Z"
+        "cachedAt": "2026-09-02T19:35:02.625Z"
       },
       "SdqbT0Z0P6XqF2keDfST": {
         "fields": [
@@ -7524,7 +7557,7 @@
             "value": "Frederick Wright was trying to attend Will Roundtree's live masterclass on business funding, having registered and received multiple reminders and join links from WE Management Services. He was provided with technical information such as the webinar access links, calendar invitations, and a link to a preparatory e-book. After the event, Frederick received follow-up messages with replay links and offers to join future sessions. The conversation concluded with continued outreach, offering Frederick additional opportunities to participate in upcoming masterclasses."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.612Z"
+        "cachedAt": "2026-09-02T19:35:02.753Z"
       },
       "O1EX24Wm2cXD0vAu8oHG": {
         "fields": [
@@ -7553,7 +7586,7 @@
             "value": "Holly Endres was trying to attend Will Roundtree's live masterclass on business funding and credit improvement, and receive related resources such as the webinar replay and educational materials. She received multiple reminders, join links, and follow-up messages, including offers to watch the replay and invitations to future sessions. No specific technical information was requested by Holly during the conversation. The interaction concluded with an offer from Rianna at WE Management Services to connect for a personalized Credit & Funding Review to support Holly's financial goals."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.633Z"
+        "cachedAt": "2026-09-02T19:35:02.742Z"
       },
       "NycfmDKmarKpgf44rVMN": {
         "fields": [
@@ -7570,7 +7603,7 @@
             "value": "Yuetrice Jackson was trying to attend Will Roundtree's live masterclass on business funding, for which she received multiple reminders, join links, and follow-up messages. She was provided with technical information such as the webinar access links, replay links, and a link to a preparatory $125K Blueprint ebook. The conversation concluded with offers to watch the replay of the missed session and invitations to upcoming masterclasses, ensuring Yuetrice had multiple opportunities to participate or catch up."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.713Z"
+        "cachedAt": "2026-09-02T19:35:02.869Z"
       },
       "mLOmIuSjPptTF9equeCk": {
         "fields": [
@@ -7579,7 +7612,7 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.753Z"
+        "cachedAt": "2026-09-02T19:35:02.869Z"
       },
       "PcTt9g4Jf2tt7kzd3VZw": {
         "fields": [
@@ -7596,7 +7629,7 @@
             "value": "Charles Lang was trying to attend Will Roundtree's live masterclass on business funding, for which he received multiple reminders, access links, and follow-up messages. The communications included technical information such as webinar join links, replay links, and resources like the $125K Blueprint. The conversation concluded with offers to watch the replay, opportunities to ask questions, and invitations to future sessions after Charles missed the live event. No specific technical questions were asked by Charles during the exchange."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.965Z"
+        "cachedAt": "2026-09-02T19:35:02.730Z"
       },
       "C4iIG23dxpoeiTpuP4mS": {
         "fields": [
@@ -7613,7 +7646,7 @@
             "value": "Faith Speaks was trying to confirm and attend a scheduled Credit & Funding Assessment appointment, clarifying the correct time due to a time zone difference. She requested confirmation for a 4:30 PM Pacific (7:30 PM Eastern) slot and indicated she could not meet earlier. The conversation included instructions to activate an IdentityIQ account and provide login credentials and the last four digits of her SSN for the assessment. The conversation concluded with the agent confirming the appointment time, attempting to reach Faith, and offering to reschedule if needed."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.802Z"
+        "cachedAt": "2026-09-02T19:35:02.917Z"
       },
       "7niZwOK4U2J17pFDogDP": {
         "fields": [
@@ -7650,7 +7683,7 @@
             "value": "Janna Melson was invited to attend Will Roundtree's Fundable CEO Live Masterclass and received multiple reminders with the Zoom access link. She was provided with technical information on how to join the webinar, including direct links and timing updates. After the event, she was sent a replay link and informed that additional resources would be provided to attendees. The conversation concluded with confirmation of access to the replay and a promise of follow-up resources."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.820Z"
+        "cachedAt": "2026-09-02T19:35:02.977Z"
       },
       "xgfbRctV0lQx38N47dGA": {
         "fields": [
@@ -7687,7 +7720,7 @@
             "value": "Stephanie was being encouraged to participate in the Fundable CEO Masterclass to help prepare her business for funding. She was asked about her current business challenges, reasons for missing the live session, and whether she wanted to schedule a call to discuss her funding goals. The conversation provided technical information about what lenders look for, links to watch the masterclass replay, and options to book a call. The conversation concluded with a final reminder and a live webinar link, inviting her to join or watch the replay and connect with the team if interested."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.883Z"
+        "cachedAt": "2026-09-02T19:35:02.980Z"
       },
       "SqaLmNIYZKbfoofCtCOc": {
         "fields": [
@@ -7732,7 +7765,7 @@
             "value": "Jade Hughes was seeking assistance with business positioning and funding approval. She received information about booking a call to discuss her business and funding goals, as well as details regarding an invoice for $4,999.00 from WE Management Services. The conversation included confirmation of the invoice, a payment reminder, and ultimately an acknowledgment of payment received. The interaction concluded with confirmation that Jade was all set following her payment."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.873Z"
+        "cachedAt": "2026-09-02T19:35:03.045Z"
       },
       "YGdF6q4ADB1BujG5QaHF": {
         "fields": [
@@ -7745,7 +7778,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.974Z"
+        "cachedAt": "2026-09-02T19:35:03.097Z"
       },
       "iN7e098vJP8QMdC0TFMk": {
         "fields": [
@@ -7890,7 +7923,7 @@
             "value": "Jercori Freeman"
           }
         ],
-        "cachedAt": "2026-09-02T12:12:06.010Z"
+        "cachedAt": "2026-09-02T19:35:03.180Z"
       },
       "zD90LxnP3D58yFwaLNgG": {
         "fields": [
@@ -7943,7 +7976,7 @@
             "value": "https://www.google.com/calendar/event?eid=NDVsZG1raGducnVxY2d0cDZocTNhZjdrMTAgamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.952Z"
+        "cachedAt": "2026-09-02T19:35:03.404Z"
       },
       "YcYB5kjphtyNc90tJPaA": {
         "fields": [
@@ -7956,7 +7989,7 @@
             "value": "Connie Murray Thomas was seeking information and support on improving her credit, accessing funding, and potentially securing real estate without using her own money. She received details about live training sessions, funding strategies to get approved for $50K-$250K, and multiple offers for discounted credit coaching and counseling services. Specific technical information offered included credit and funding reviews, inquiry removal, credit improvement strategies, and funding options. The conversation concluded with ongoing invitations for Connie to connect for a personalized review and take advantage of limited-time discounts on credit improvement programs."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:04.638Z"
+        "cachedAt": "2026-09-02T19:35:01.473Z"
       },
       "FvDteDArPdJTM26S2ToL": {
         "fields": [
@@ -7969,7 +8002,7 @@
             "value": "Gerald Eric Johnson was contacted by WE Management Services regarding opportunities to improve his credit, access funding, and potentially secure real estate without using his own money. The communications included invitations to live training sessions and replays on how to get approved for $50K–$250K in funding, as well as offers for discounted credit coaching and counseling. Specific technical information offered included credit inquiry removal, credit improvement strategies, and funding options. The conversation concluded with multiple follow-ups and invitations for a quick conversation to discuss Gerald’s financial goals and how the service could support him."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:04.691Z"
+        "cachedAt": "2026-09-02T19:35:01.423Z"
       },
       "knE8VsTBazDcVWJNYH1h": {
         "fields": [
@@ -7982,7 +8015,7 @@
             "value": "Brenda Person-Gates was contacted by WE Management Services regarding opportunities to improve her credit, access funding, and potentially secure real estate without using her own money. The communications included invitations to live and replay training sessions on obtaining $50K-$250K in funding, as well as offers for discounted credit coaching and counseling services. Specific technical information offered included credit and funding reviews, inquiry removal, and credit improvement strategies. The conversation concluded with repeated invitations for Brenda to engage in a quick conversation to discuss her financial goals and take advantage of limited-time offers."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:04.670Z"
+        "cachedAt": "2026-09-02T19:35:01.601Z"
       },
       "gOoaeRLBIThG4Onm98HW": {
         "fields": [
@@ -7991,7 +8024,7 @@
             "value": "Jonarthur Leath was contacted by WE Management Services and Will Roundtree’s team regarding opportunities to improve his credit, access funding, and secure real estate without using his own money. The communications included invitations to live training sessions, links to funding resources, and promotional offers for credit repair and financial programs. The team specifically requested to discuss Jonarthur’s financial goals and offered a Credit & Funding Review, detailing inquiry removal, credit improvement, and funding options. The conversation concluded with an open invitation for Jonarthur to engage in a quick conversation to explore these services further."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:04.750Z"
+        "cachedAt": "2026-09-02T19:35:01.745Z"
       },
       "XeC6uEK509kbORndSkPt": {
         "fields": [
@@ -8000,7 +8033,7 @@
             "value": "Dedric was contacted by WE Management Services regarding opportunities to secure $50K-$250K in funding, with invitations to live training sessions and a replay link for those who missed the event. The communications highlighted strategies for getting approved by banks and promoted a limited-time discount on their programs. Dedric was also offered a personalized Credit & Funding Review, including inquiry removal, credit improvement, and funding options. The conversation concluded with an invitation for a quick discussion to better understand Dedric's financial goals and offer tailored support."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:05.087Z"
+        "cachedAt": "2026-09-02T19:35:01.609Z"
       },
       "N6gp884vizNn8tasB0Vd": {
         "fields": [
@@ -8013,7 +8046,7 @@
             "value": "Eddie was contacted by representatives from WE Management Services, who offered him access to a funding-focused community and invited him to book a free 15-minute Funding Readiness Call to discuss business funding strategies. The messages included links to schedule calls and join programs, as well as a special 50% off promotion for their services. Additionally, Rianna reached out to offer a Credit & Funding Review, asking if Eddie would be open to a conversation about improving his credit profile and exploring funding options. The conversation concluded with an open invitation for Eddie to engage further if interested."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:04.700Z"
+        "cachedAt": "2026-09-02T19:35:01.608Z"
       },
       "APD8eeaIhefgZeyYHwBU": {
         "fields": [
@@ -8070,7 +8103,7 @@
             "value": "mortgage issue, derogatory item, recent attempts"
           }
         ],
-        "cachedAt": "2026-09-02T12:12:04.590Z"
+        "cachedAt": "2026-09-02T19:35:01.362Z"
       },
       "ln4lhMdDZsce8T0afe6X": {
         "fields": [
@@ -8158,7 +8191,7 @@
             "value": "Quinn Elton Goodlow was managing invoices and payments related to services from WE Management Services. The conversation included notifications about two invoices: one for $6,800 due in October 2026 and another for $2,300 due in August 2026, along with confirmation of payment received for the $2,300 invoice. No specific technical information was requested by Quinn. The conversation concluded with a welcome message and access link to the Credit Mastery program and related resources."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:04.582Z"
+        "cachedAt": "2026-09-02T19:35:01.480Z"
       },
       "1XjAuCbPcDOhilURVR5W": {
         "fields": [
@@ -8175,7 +8208,97 @@
             "value": "Tee Turpin was seeking to confirm whether they were communicating directly with Mr. Will Roundtree. The customer received outreach from Jen at WE Management Services, who offered credit-building assistance and requested credit monitoring login details to review Tee's credit profile. The technical information specifically requested included the username, password, and last four digits of Tee's Social Security number for credit monitoring access. The conversation concluded with Tee asking for confirmation of Mr. Roundtree's involvement, indicating a need for verification before proceeding."
           }
         ],
-        "cachedAt": "2026-09-02T12:12:04.572Z"
+        "cachedAt": "2026-09-02T19:35:01.286Z"
+      },
+      "XBvT0274bcCPfzqDVHvW": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 668978
+          },
+          {
+            "id": "T4ZT5aAZtG33vDyaBjPb",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=brae8kdjOfORA5Zny2kUXY21rTFElyCLb8qKpnbZjNE.DQkAAAAUkTIerBZxSGVqa0R4VVNkV2FsRHJaYnJNUXFBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "TFsovIwk95EombaFai6b",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=brae8kdjOfORA5Zny2kUXY21rTFElyCLb8qKpnbZjNE.DQkAAAAUkTIerBZxSGVqa0R4VVNkV2FsRHJaYnJNUXFBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "aCvXpWdkghIqmtA4Mtbx",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=brae8kdjOfORA5Zny2kUXY21rTFElyCLb8qKpnbZjNE.DQkAAAAUkTIerBZxSGVqa0R4VVNkV2FsRHJaYnJNUXFBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "azlatcryAviD4l2HgOm2",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=brae8kdjOfORA5Zny2kUXY21rTFElyCLb8qKpnbZjNE.DQkAAAAUkTIerBZxSGVqa0R4VVNkV2FsRHJaYnJNUXFBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "tHiNIUaWLbLaOQ2sG6lC",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=brae8kdjOfORA5Zny2kUXY21rTFElyCLb8qKpnbZjNE.DQkAAAAUkTIerBZxSGVqa0R4VVNkV2FsRHJaYnJNUXFBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "lXBcdsaqCaLyo5dOpNkm",
+            "value": "August 26 2026 17:00:00"
+          },
+          {
+            "id": "7gikZhd5m3ODkXrxAYGK",
+            "value": "https://www.google.com/calendar/event?eid=M2NmN2Q5azh2Zjh1aTgzMGhyNXBwZmMzNHMgamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Edrick Davis was seeking guidance on securing business funding and learning how to acquire his first property using other people’s money (OPM). He received multiple invitations to live webinars and masterclasses focused on funding strategies, credit improvement, and real estate investment, along with offers for discounted coaching and software. Edrick registered for and attended a masterclass, after which he was offered a follow-up call to discuss his business and funding goals in more detail. The conversation concluded with Edrick receiving an invoice for $4,999 from WE Management Services, likely related to the services or programs discussed."
+          }
+        ],
+        "cachedAt": "2026-09-02T19:35:01.238Z"
+      },
+      "oHAgHsTZ03S6AVyw2xos": {
+        "fields": [
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Marva Gillis was seeking guidance on improving her credit and accessing funding to purchase her first investment property, potentially using other people’s money (OPM). She received multiple invitations to free masterclasses and live trainings focused on credit optimization, real estate investing, and securing up to $250K in funding, as well as promotional offers for credit coaching and related services. Specific technical information requested included strategies for credit improvement, funding access, and real estate investment readiness. The conversation concluded with a personal outreach from a team member offering to discuss Marva’s goals and tailor a strategy for her, inviting her to schedule a call for further assistance."
+          },
+          {
+            "id": "ZbAnImdexdzvCvi2UUVx",
+            "value": "fb"
+          },
+          {
+            "id": "dbUTgrW5dQKVZVsuwM8v",
+            "value": "paid"
+          },
+          {
+            "id": "mgsmQlxFBNWYuip1l8p7",
+            "value": "52541583877769"
+          },
+          {
+            "id": "T4ZT5aAZtG33vDyaBjPb",
+            "value": "https://us02web.zoom.us/w/89508144532?tk=1p5El-HWgZwtZZd9iHyJ7K3rlWqI9eGNW-0PtFiXtwQ.DQkAAAAU1xnllBZUdF9LbVdJWVFIVzdoUmdMaEZHYlpRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=dyVYPMgwE3BXX1iyq4APXBKM2zFGbZ.1"
+          },
+          {
+            "id": "TFsovIwk95EombaFai6b",
+            "value": "https://us02web.zoom.us/w/89508144532?tk=1p5El-HWgZwtZZd9iHyJ7K3rlWqI9eGNW-0PtFiXtwQ.DQkAAAAU1xnllBZUdF9LbVdJWVFIVzdoUmdMaEZHYlpRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=dyVYPMgwE3BXX1iyq4APXBKM2zFGbZ.1"
+          },
+          {
+            "id": "aCvXpWdkghIqmtA4Mtbx",
+            "value": "https://us02web.zoom.us/w/89508144532?tk=1p5El-HWgZwtZZd9iHyJ7K3rlWqI9eGNW-0PtFiXtwQ.DQkAAAAU1xnllBZUdF9LbVdJWVFIVzdoUmdMaEZHYlpRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=dyVYPMgwE3BXX1iyq4APXBKM2zFGbZ.1"
+          },
+          {
+            "id": "azlatcryAviD4l2HgOm2",
+            "value": "https://us02web.zoom.us/w/89508144532?tk=1p5El-HWgZwtZZd9iHyJ7K3rlWqI9eGNW-0PtFiXtwQ.DQkAAAAU1xnllBZUdF9LbVdJWVFIVzdoUmdMaEZHYlpRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=dyVYPMgwE3BXX1iyq4APXBKM2zFGbZ.1"
+          },
+          {
+            "id": "tHiNIUaWLbLaOQ2sG6lC",
+            "value": "https://us02web.zoom.us/w/89508144532?tk=1p5El-HWgZwtZZd9iHyJ7K3rlWqI9eGNW-0PtFiXtwQ.DQkAAAAU1xnllBZUdF9LbVdJWVFIVzdoUmdMaEZHYlpRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=dyVYPMgwE3BXX1iyq4APXBKM2zFGbZ.1"
+          },
+          {
+            "id": "lXBcdsaqCaLyo5dOpNkm",
+            "value": "September 09 2026 17:00:00"
+          },
+          {
+            "id": "7gikZhd5m3ODkXrxAYGK",
+            "value": "https://www.google.com/calendar/event?eid=bWE4ajI2MGhpZ2sza2RtNzVrNjBqanE3NWcgamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
+          }
+        ],
+        "cachedAt": "2026-09-02T19:35:01.256Z"
       }
     },
     "processedConversations": {
@@ -8236,7 +8359,8 @@
       "sUNAQOBHZnYqcxQSCkuw": 1787681192812,
       "NGVvopA4DIzcoKRCBSVt": 1787681148472,
       "Lx6jJwaOiQMW52FmBLqj": 1787682612706,
-      "WtXjnRfH1O1ecyfiJAEy": 1787698819760
+      "WtXjnRfH1O1ecyfiJAEy": 1787698819760,
+      "DyDJuuC9vZdD8YRj2cdm": 1787769411638
     }
   }
 }
