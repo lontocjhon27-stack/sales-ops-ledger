@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T19:34:56.107Z",
+  "generatedAt": "2026-09-02T22:13:20.168Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -7,8 +7,8 @@
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 11,
-      "connected": 22,
+      "outboundAttempts": 10,
+      "connected": 18,
       "qualified": 2,
       "heldCall": 0,
       "won": 0
@@ -103,22 +103,7 @@
       "Rianna",
       "Jen"
     ],
-    "callLog": [
-      {
-        "time": "2026-08-26T18:36:51.689Z",
-        "setter": "Unknown",
-        "contact": "Sequoya Richard",
-        "status": "completed",
-        "durationSec": 15
-      },
-      {
-        "time": "2026-08-26T18:34:13.069Z",
-        "setter": "Unknown",
-        "contact": "Sequoya Richard",
-        "status": "completed",
-        "durationSec": 14
-      }
-    ],
+    "callLog": [],
     "activityPoints": {
       "Marshell": {
         "points": 0,
@@ -144,10 +129,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-22T15:44:10.307Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-22T16:54:36.427Z",
       "closeRate": 0
@@ -542,6 +523,10 @@
     },
     {
       "t": "2026-09-02T19:34:56.107Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-02T22:13:20.168Z",
       "closeRate": 0
     }
   ],
