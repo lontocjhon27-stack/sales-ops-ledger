@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T19:59:40.101Z",
+  "generatedAt": "2026-09-03T22:26:21.590Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -8,8 +8,8 @@
   "data": {
     "funnel": {
       "outboundAttempts": 11,
-      "connected": 15,
-      "qualified": 2,
+      "connected": 14,
+      "qualified": 1,
       "heldCall": 0,
       "won": 0
     },
@@ -17,7 +17,7 @@
       {
         "label": "Under $10k",
         "closer": "Jen",
-        "count": 3
+        "count": 1
       },
       {
         "label": "$10k-$19,999",
@@ -61,23 +61,10 @@
         "contractValue": 0,
         "cashCollected": 0
       },
-      "Marshell": {
-        "outbound": 1,
-        "connected": 1,
-        "qualified": 0,
-        "liveTransferAttempted": 0,
-        "liveTransferAccepted": 0,
-        "appointmentsBooked": 0,
-        "heldCalls": 0,
-        "noShows": 0,
-        "won": 0,
-        "contractValue": 0,
-        "cashCollected": 0
-      },
       "Rianna": {
-        "outbound": 2,
-        "connected": 1,
-        "qualified": 1,
+        "outbound": 1,
+        "connected": 0,
+        "qualified": 0,
         "liveTransferAttempted": 0,
         "liveTransferAccepted": 0,
         "appointmentsBooked": 0,
@@ -103,29 +90,7 @@
       "Rianna",
       "Jen"
     ],
-    "callLog": [
-      {
-        "time": "2026-08-27T18:00:59.024Z",
-        "setter": "Rianna",
-        "contact": "Cleaning Angel's",
-        "status": "completed",
-        "durationSec": 31
-      },
-      {
-        "time": "2026-06-01T20:07:38.147Z",
-        "setter": "Ron Obsioma",
-        "contact": "Cleaning Angel's",
-        "status": "completed",
-        "durationSec": 90
-      },
-      {
-        "time": "2026-06-01T20:05:27.034Z",
-        "setter": "Ron Obsioma",
-        "contact": "Cleaning Angel's",
-        "status": "completed",
-        "durationSec": null
-      }
-    ],
+    "callLog": [],
     "activityPoints": {
       "Marshell": {
         "points": 0,
@@ -135,9 +100,9 @@
         "heldClosingCalls": 0
       },
       "Rianna": {
-        "points": 1,
+        "points": 0,
         "goal": 1400,
-        "outboundCalls": 1,
+        "outboundCalls": 0,
         "heldQualCalls": 0,
         "heldClosingCalls": 0
       },
@@ -151,10 +116,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-22T22:51:38.020Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-22T23:41:37.675Z",
       "closeRate": 0
@@ -549,6 +510,10 @@
     },
     {
       "t": "2026-09-03T19:59:40.101Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-03T22:26:21.590Z",
       "closeRate": 0
     }
   ],
@@ -4367,7 +4332,7 @@
             "value": "Kisha Willis attended the Will Roundtree Live Masterclass and expressed interest in joining the related program but mentioned she is waiting to secure additional funds before enrolling. She did not request specific technical information but communicated her determination to participate in the future. The conversation concluded with encouragement from the team, an offer for further information, and a follow-up from Will Roundtree offering a call to discuss her business and funding goals. Kisha thanked the team and was invited to reach out when ready."
           }
         ],
-        "cachedAt": "2026-09-02T19:35:07.759Z"
+        "cachedAt": "2026-09-03T22:26:24.449Z"
       },
       "OhQZsUfHdSwDabNV7ZJe": {
         "fields": [
@@ -8482,6 +8447,64 @@
           }
         ],
         "cachedAt": "2026-09-03T19:59:44.388Z"
+      },
+      "dSJQiflXmmlFT8Ju2u2m": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 6548
+          },
+          {
+            "id": "1VtcVQwuNshjk4mbWYWX",
+            "value": "https://us02web.zoom.us/w/86363682198?tk=wFU9REEZZNs8Jc0VjHf36JxdFxNaOmTNo-aTRLpSSu4.DQkAAAAUG601lhZqWkdPaDVoQVJ0LUd1ZkFmWlZhcTd3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=NDXpUbaXdQnFOBzVoZIEoed3bf8pk1.1"
+          },
+          {
+            "id": "T4ZT5aAZtG33vDyaBjPb",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=9EMwEtpuWbBoTN6tzisC0oMKyojvqNn-n--T230J_io.DQkAAAAUkTIerBZRa0JwSzNXZFNVNjFWbXVyYTlyR09RAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "TFsovIwk95EombaFai6b",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=9EMwEtpuWbBoTN6tzisC0oMKyojvqNn-n--T230J_io.DQkAAAAUkTIerBZRa0JwSzNXZFNVNjFWbXVyYTlyR09RAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "aCvXpWdkghIqmtA4Mtbx",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=9EMwEtpuWbBoTN6tzisC0oMKyojvqNn-n--T230J_io.DQkAAAAUkTIerBZRa0JwSzNXZFNVNjFWbXVyYTlyR09RAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "azlatcryAviD4l2HgOm2",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=9EMwEtpuWbBoTN6tzisC0oMKyojvqNn-n--T230J_io.DQkAAAAUkTIerBZRa0JwSzNXZFNVNjFWbXVyYTlyR09RAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "tHiNIUaWLbLaOQ2sG6lC",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=9EMwEtpuWbBoTN6tzisC0oMKyojvqNn-n--T230J_io.DQkAAAAUkTIerBZRa0JwSzNXZFNVNjFWbXVyYTlyR09RAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "lXBcdsaqCaLyo5dOpNkm",
+            "value": "August 26 2026 17:00:00"
+          },
+          {
+            "id": "7gikZhd5m3ODkXrxAYGK",
+            "value": "https://www.google.com/calendar/event?eid=bzVua3I3OGJpbnQybXRvM2hqMGgwdjBobzQgamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Johnnie West was invited to join a live Fundable CEO Masterclass webinar hosted by Will Roundtree, with multiple reminders and links provided for joining the session. After the event, Johnnie received a replay link and was informed that additional webinar resources would be sent. Will Roundtree followed up personally, offering a call to discuss Johnnie's business and funding goals, and provided a booking link for scheduling this consultation. The conversation concluded with a final reminder to book a call if interested in becoming more fundable; no specific technical information was requested by Johnnie."
+          }
+        ],
+        "cachedAt": "2026-09-03T22:26:24.441Z"
+      },
+      "wkDjJkGCvNOkcDN42T2T": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 9076
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Jakeen Cobb was seeking information and assistance regarding credit improvement, business funding, and real estate investing opportunities. He was invited to multiple webinars and masterclasses focused on funding strategies and $0 down real estate investing, and was offered free credit and funding analyses as well as discounted enrollment in credit coaching and real estate programs. Jakeen specifically requested to schedule a free review to assess his eligibility for the REI90 Elite Program. The conversation concluded with ongoing follow-ups and special promotional offers to encourage Jakeen to take advantage of credit repair and real estate coaching services."
+          }
+        ],
+        "cachedAt": "2026-09-03T22:26:24.490Z"
       }
     },
     "processedConversations": {
