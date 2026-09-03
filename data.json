@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T13:42:29.165Z",
+  "generatedAt": "2026-09-03T17:25:13.592Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -7,8 +7,8 @@
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 8,
-      "connected": 18,
+      "outboundAttempts": 13,
+      "connected": 16,
       "qualified": 2,
       "heldCall": 0,
       "won": 0
@@ -17,7 +17,7 @@
       {
         "label": "Under $10k",
         "closer": "Jen",
-        "count": 4
+        "count": 3
       },
       {
         "label": "$10k-$19,999",
@@ -27,7 +27,7 @@
       {
         "label": "$20k+",
         "closer": "Jercori",
-        "count": 2
+        "count": 1
       }
     ],
     "highTicketFlagged": {
@@ -49,8 +49,8 @@
         "cashCollected": 0
       },
       "Jercori": {
-        "outbound": 4,
-        "connected": 4,
+        "outbound": 2,
+        "connected": 2,
         "qualified": 1,
         "liveTransferAttempted": 0,
         "liveTransferAccepted": 0,
@@ -103,7 +103,43 @@
       "Rianna",
       "Jen"
     ],
-    "callLog": [],
+    "callLog": [
+      {
+        "time": "2026-08-27T17:24:39.462Z",
+        "setter": "Rianna",
+        "contact": "Mahalia Graham",
+        "status": "completed",
+        "durationSec": 29
+      },
+      {
+        "time": "2026-08-27T16:20:33.589Z",
+        "setter": "Jercori",
+        "contact": "Darryl Greene",
+        "status": "no-answer",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-27T16:19:49.065Z",
+        "setter": "Jercori",
+        "contact": "Robert Wyhe",
+        "status": "no-answer",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-27T16:19:40.799Z",
+        "setter": "Jercori",
+        "contact": "Alejandro Ramirez",
+        "status": "completed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-27T16:19:26.523Z",
+        "setter": "Jercori",
+        "contact": "Cam Mcelroy",
+        "status": "no-answer",
+        "durationSec": null
+      }
+    ],
     "activityPoints": {
       "Marshell": {
         "points": 0,
@@ -113,9 +149,9 @@
         "heldClosingCalls": 0
       },
       "Rianna": {
-        "points": 0,
+        "points": 1,
         "goal": 1400,
-        "outboundCalls": 0,
+        "outboundCalls": 1,
         "heldQualCalls": 0,
         "heldClosingCalls": 0
       },
@@ -129,10 +165,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-22T20:52:42.659Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-22T21:44:55.593Z",
       "closeRate": 0
@@ -528,9 +560,48 @@
     {
       "t": "2026-09-03T13:42:29.165Z",
       "closeRate": 0
+    },
+    {
+      "t": "2026-09-03T17:25:13.592Z",
+      "closeRate": 0
     }
   ],
   "callLogHistory": [
+    {
+      "time": "2026-08-27T17:24:39.462Z",
+      "setter": "Rianna",
+      "contact": "Mahalia Graham",
+      "status": "completed",
+      "durationSec": 29
+    },
+    {
+      "time": "2026-08-27T16:20:33.589Z",
+      "setter": "Jercori",
+      "contact": "Darryl Greene",
+      "status": "no-answer",
+      "durationSec": null
+    },
+    {
+      "time": "2026-08-27T16:19:49.065Z",
+      "setter": "Jercori",
+      "contact": "Robert Wyhe",
+      "status": "no-answer",
+      "durationSec": null
+    },
+    {
+      "time": "2026-08-27T16:19:40.799Z",
+      "setter": "Jercori",
+      "contact": "Alejandro Ramirez",
+      "status": "completed",
+      "durationSec": null
+    },
+    {
+      "time": "2026-08-27T16:19:26.523Z",
+      "setter": "Jercori",
+      "contact": "Cam Mcelroy",
+      "status": "no-answer",
+      "durationSec": null
+    },
     {
       "time": "2026-08-26T18:36:51.689Z",
       "setter": "Unknown",
@@ -8106,10 +8177,10 @@
           },
           {
             "id": "bivODsQj5TA8RhIKK6cZ",
-            "value": "Harison Sanchez reached out seeking assistance to boost his personal credit score from 600 to 720 or higher and to obtain working capital for his businesses. He shared that he currently has an 88 Paydex score and a 600 personal credit score. The conversation focused on confirming that Harison is interested in credit optimization services. The discussion concluded with Harison affirming his goal to raise his credit score through the offered services."
+            "value": "Harison Sanchez was coordinating payment for two invoices related to credit restoration services and confirmed that payment would be made on Thursday. He requested permission to refer others and provided a contact, Sammie, for outreach. Harison also asked that Sammie be informed about Will Roundtree, as he may not be familiar. The conversation concluded with the agent confirming outreach to Sammie and ongoing efforts to onboard Harison."
           }
         ],
-        "cachedAt": "2026-09-03T09:21:10.892Z"
+        "cachedAt": "2026-09-03T17:25:19.149Z"
       },
       "pEF3jq0jJ0WDRsnDTRwy": {
         "fields": [
@@ -8122,7 +8193,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-03T09:21:10.816Z"
+        "cachedAt": "2026-09-03T17:25:19.073Z"
       },
       "DIoEJiUZIrWsYozcIO6E": {
         "fields": [
@@ -8135,7 +8206,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-03T09:21:10.795Z"
+        "cachedAt": "2026-09-03T17:25:19.035Z"
       },
       "7vX4kxNDEDWjzjXl9R75": {
         "fields": [
@@ -8340,7 +8411,7 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-09-03T09:21:10.806Z"
+        "cachedAt": "2026-09-03T17:25:19.092Z"
       }
     },
     "processedConversations": {
@@ -8402,7 +8473,12 @@
       "NGVvopA4DIzcoKRCBSVt": 1787681148472,
       "Lx6jJwaOiQMW52FmBLqj": 1787682612706,
       "WtXjnRfH1O1ecyfiJAEy": 1787698819760,
-      "DyDJuuC9vZdD8YRj2cdm": 1787769411638
+      "DyDJuuC9vZdD8YRj2cdm": 1787769411638,
+      "XkzddOkJnMuQJ38K8DM1": 1787851479413,
+      "Kzj7KXvBPZWq9Q8nz7A2": 1787847633543,
+      "nlVYmRTVp6zZJWA4dwpu": 1787847589015,
+      "37GieMZ0fhU0QRvJe6cz": 1787847566472,
+      "7WTNj2qDmIRpoOQ6Jc9d": 1787847580755
     }
   }
 }
