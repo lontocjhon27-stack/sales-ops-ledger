@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T22:13:20.168Z",
+  "generatedAt": "2026-09-03T00:25:58.513Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -129,10 +129,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-22T16:54:36.427Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-22T17:44:06.682Z",
       "closeRate": 0
@@ -527,6 +523,10 @@
     },
     {
       "t": "2026-09-02T22:13:20.168Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-03T00:25:58.513Z",
       "closeRate": 0
     }
   ],
@@ -8105,7 +8105,7 @@
             "value": "Harison Sanchez reached out seeking assistance to boost his personal credit score from 600 to 720 or higher and to obtain working capital for his businesses. He shared that he currently has an 88 Paydex score and a 600 personal credit score. The conversation focused on confirming that Harison is interested in credit optimization services. The discussion concluded with Harison affirming his goal to raise his credit score through the offered services."
           }
         ],
-        "cachedAt": "2026-09-02T16:44:29.002Z"
+        "cachedAt": "2026-09-03T00:26:00.997Z"
       },
       "pEF3jq0jJ0WDRsnDTRwy": {
         "fields": [
@@ -8118,7 +8118,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-02T16:44:28.974Z"
+        "cachedAt": "2026-09-03T00:26:00.952Z"
       },
       "DIoEJiUZIrWsYozcIO6E": {
         "fields": [
@@ -8131,7 +8131,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-02T16:44:29.014Z"
+        "cachedAt": "2026-09-03T00:26:00.958Z"
       },
       "7vX4kxNDEDWjzjXl9R75": {
         "fields": [
@@ -8284,6 +8284,59 @@
           }
         ],
         "cachedAt": "2026-09-02T19:35:01.256Z"
+      },
+      "jFvyPapeBrzmyhxzPzAB": {
+        "fields": [
+          {
+            "id": "ZbAnImdexdzvCvi2UUVx",
+            "value": "fb"
+          },
+          {
+            "id": "dbUTgrW5dQKVZVsuwM8v",
+            "value": "paid"
+          },
+          {
+            "id": "mgsmQlxFBNWYuip1l8p7",
+            "value": "52541583877769"
+          },
+          {
+            "id": "T4ZT5aAZtG33vDyaBjPb",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=FBwn8yB_jykfzzXBNLn03OJaZLqvF9bIlu4wBAUZymk.DQkAAAAUkTIerBZxWGVDT2dOaVNzdU0yUzlRYWtXX0dRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "TFsovIwk95EombaFai6b",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=FBwn8yB_jykfzzXBNLn03OJaZLqvF9bIlu4wBAUZymk.DQkAAAAUkTIerBZxWGVDT2dOaVNzdU0yUzlRYWtXX0dRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "azlatcryAviD4l2HgOm2",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=FBwn8yB_jykfzzXBNLn03OJaZLqvF9bIlu4wBAUZymk.DQkAAAAUkTIerBZxWGVDT2dOaVNzdU0yUzlRYWtXX0dRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "tHiNIUaWLbLaOQ2sG6lC",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=FBwn8yB_jykfzzXBNLn03OJaZLqvF9bIlu4wBAUZymk.DQkAAAAUkTIerBZxWGVDT2dOaVNzdU0yUzlRYWtXX0dRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "aCvXpWdkghIqmtA4Mtbx",
+            "value": "https://us02web.zoom.us/w/88335326892?tk=FBwn8yB_jykfzzXBNLn03OJaZLqvF9bIlu4wBAUZymk.DQkAAAAUkTIerBZxWGVDT2dOaVNzdU0yUzlRYWtXX0dRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=W9aSihZgaQmsna3929YqxbGykQPls1.1"
+          },
+          {
+            "id": "lXBcdsaqCaLyo5dOpNkm",
+            "value": "August 26 2026 17:00:00"
+          },
+          {
+            "id": "7gikZhd5m3ODkXrxAYGK",
+            "value": "https://www.google.com/calendar/event?eid=ZWVwcGloMXJwYTYwZzhudGx1N3I5NnAya28gamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Chester Arterberry was invited to join and participate in the Fundable CEO Live Masterclass webinar hosted by Will Roundtree, with multiple reminders and links provided for joining the session. After the event, Chester received follow-up messages offering access to the webinar replay and an opportunity to schedule a call for a personalized business funding assessment. The conversation included offers for further support, such as answering questions, providing free resources, and booking a call to discuss business and funding goals. The interaction concluded with a final reminder to schedule a funding strategy call if interested."
+          },
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 1
+          }
+        ],
+        "cachedAt": "2026-09-03T00:26:00.937Z"
       }
     },
     "processedConversations": {
