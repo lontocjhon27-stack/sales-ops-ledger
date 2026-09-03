@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T04:49:55.390Z",
+  "generatedAt": "2026-09-03T09:21:05.397Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -59,7 +59,7 @@
         "noShows": 0,
         "won": 0,
         "contractValue": 0,
-        "cashCollected": 17
+        "cashCollected": 0
       },
       "Marshell": {
         "outbound": 1,
@@ -90,7 +90,7 @@
     },
     "totals": {
       "contractValue": 0,
-      "cashCollected": 16183,
+      "cashCollected": 14566,
       "closeRate": 0
     },
     "attributionChains": [],
@@ -129,10 +129,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-22T19:02:11.224Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-22T19:56:03.471Z",
       "closeRate": 0
@@ -527,6 +523,10 @@
     },
     {
       "t": "2026-09-03T04:49:55.390Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-03T09:21:05.397Z",
       "closeRate": 0
     }
   ],
@@ -8105,7 +8105,7 @@
             "value": "Harison Sanchez reached out seeking assistance to boost his personal credit score from 600 to 720 or higher and to obtain working capital for his businesses. He shared that he currently has an 88 Paydex score and a 600 personal credit score. The conversation focused on confirming that Harison is interested in credit optimization services. The discussion concluded with Harison affirming his goal to raise his credit score through the offered services."
           }
         ],
-        "cachedAt": "2026-09-03T00:26:00.997Z"
+        "cachedAt": "2026-09-03T09:21:10.892Z"
       },
       "pEF3jq0jJ0WDRsnDTRwy": {
         "fields": [
@@ -8118,7 +8118,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-03T00:26:00.952Z"
+        "cachedAt": "2026-09-03T09:21:10.816Z"
       },
       "DIoEJiUZIrWsYozcIO6E": {
         "fields": [
@@ -8131,7 +8131,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-03T00:26:00.958Z"
+        "cachedAt": "2026-09-03T09:21:10.795Z"
       },
       "7vX4kxNDEDWjzjXl9R75": {
         "fields": [
@@ -8336,7 +8336,7 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-09-03T00:26:00.937Z"
+        "cachedAt": "2026-09-03T09:21:10.806Z"
       }
     },
     "processedConversations": {
