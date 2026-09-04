@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T13:39:05.449Z",
+  "generatedAt": "2026-09-04T17:18:39.665Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -9,7 +9,7 @@
   "data": {
     "funnel": {
       "outboundAttempts": 11,
-      "connected": 12,
+      "connected": 13,
       "qualified": 1,
       "heldCall": 0,
       "won": 0
@@ -117,10 +117,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-23T08:57:49.382Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-23T09:56:02.015Z",
       "closeRate": 0
@@ -515,6 +511,10 @@
     },
     {
       "t": "2026-09-04T13:39:05.449Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-04T17:18:39.665Z",
       "closeRate": 0
     }
   ],
@@ -7097,7 +7097,7 @@
             "value": "Adrian Parris was trying to attend the Fundable CEO Live Masterclass but was unable to join due to poor internet service. He was provided with multiple Zoom links to join the live session and later received a replay link for the masterclass. The conversation included follow-up questions about his business challenges and funding goals, as well as an offer to schedule a call with the team. The interaction concluded with Adrian being encouraged to watch the replay and schedule a call if he wanted to discuss his funding needs further."
           }
         ],
-        "cachedAt": "2026-09-04T09:14:15.975Z"
+        "cachedAt": "2026-09-04T17:18:47.560Z"
       },
       "idGO6XcJVJLD3U3MDI7K": {
         "fields": [
@@ -8161,7 +8161,7 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-09-04T09:14:15.949Z"
+        "cachedAt": "2026-09-04T17:18:47.505Z"
       },
       "pEF3jq0jJ0WDRsnDTRwy": {
         "fields": [
@@ -8174,7 +8174,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-04T09:14:15.876Z"
+        "cachedAt": "2026-09-04T17:18:47.526Z"
       },
       "DIoEJiUZIrWsYozcIO6E": {
         "fields": [
@@ -8187,7 +8187,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-04T09:14:15.924Z"
+        "cachedAt": "2026-09-04T17:18:47.461Z"
       },
       "7vX4kxNDEDWjzjXl9R75": {
         "fields": [
@@ -8392,7 +8392,7 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-09-04T09:14:15.878Z"
+        "cachedAt": "2026-09-04T17:18:47.381Z"
       },
       "QU1a8bOt9NnFf4Yak7D2": {
         "fields": [
@@ -8723,6 +8723,84 @@
           }
         ],
         "cachedAt": "2026-09-04T13:39:12.495Z"
+      },
+      "JhKQ71IHfz0Db1FyWJid": {
+        "fields": [
+          {
+            "id": "ZbAnImdexdzvCvi2UUVx",
+            "value": "fb"
+          },
+          {
+            "id": "dbUTgrW5dQKVZVsuwM8v",
+            "value": "paid"
+          },
+          {
+            "id": "mgsmQlxFBNWYuip1l8p7",
+            "value": "52541583877769"
+          },
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 2
+          },
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Facebook Ads"
+          },
+          {
+            "id": "T4ZT5aAZtG33vDyaBjPb",
+            "value": "https://us02web.zoom.us/w/89508144532?tk=SaUWAHBouIFV8tn9qR57fz2FD-5LQVgQ_PpELhypns0.DQkAAAAU1xnllBZ3cHRBY2pyQlFxQ2dUZUxzRU5MUmFRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=dyVYPMgwE3BXX1iyq4APXBKM2zFGbZ.1"
+          },
+          {
+            "id": "TFsovIwk95EombaFai6b",
+            "value": "https://us02web.zoom.us/w/89508144532?tk=SaUWAHBouIFV8tn9qR57fz2FD-5LQVgQ_PpELhypns0.DQkAAAAU1xnllBZ3cHRBY2pyQlFxQ2dUZUxzRU5MUmFRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=dyVYPMgwE3BXX1iyq4APXBKM2zFGbZ.1"
+          },
+          {
+            "id": "aCvXpWdkghIqmtA4Mtbx",
+            "value": "https://us02web.zoom.us/w/89508144532?tk=SaUWAHBouIFV8tn9qR57fz2FD-5LQVgQ_PpELhypns0.DQkAAAAU1xnllBZ3cHRBY2pyQlFxQ2dUZUxzRU5MUmFRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=dyVYPMgwE3BXX1iyq4APXBKM2zFGbZ.1"
+          },
+          {
+            "id": "azlatcryAviD4l2HgOm2",
+            "value": "https://us02web.zoom.us/w/89508144532?tk=SaUWAHBouIFV8tn9qR57fz2FD-5LQVgQ_PpELhypns0.DQkAAAAU1xnllBZ3cHRBY2pyQlFxQ2dUZUxzRU5MUmFRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=dyVYPMgwE3BXX1iyq4APXBKM2zFGbZ.1"
+          },
+          {
+            "id": "tHiNIUaWLbLaOQ2sG6lC",
+            "value": "https://us02web.zoom.us/w/89508144532?tk=SaUWAHBouIFV8tn9qR57fz2FD-5LQVgQ_PpELhypns0.DQkAAAAU1xnllBZ3cHRBY2pyQlFxQ2dUZUxzRU5MUmFRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=dyVYPMgwE3BXX1iyq4APXBKM2zFGbZ.1"
+          },
+          {
+            "id": "lXBcdsaqCaLyo5dOpNkm",
+            "value": "September 09 2026 17:00:00"
+          },
+          {
+            "id": "7gikZhd5m3ODkXrxAYGK",
+            "value": "https://www.google.com/calendar/event?eid=bGE3b3Y2Mm9sNTFlbHR2cXRvMTgwYWQwZWcgamhvbkB3ZW1hbmFnZW1lbnRzZXJ2aWNlcy5jb20"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Porscha Taylor was registering for Will Roundtree's Live Masterclass and received confirmation details, including the webinar link and calendar invite. She was asked about her learning goals and whether she received the calendar invite. When asked if she had ever applied for business funding, Porscha responded that she had not, expressing uncertainty about how to proceed. The conversation concluded with Porscha indicating her interest in learning about the business funding application process."
+          }
+        ],
+        "cachedAt": "2026-09-04T17:18:47.348Z"
+      },
+      "U9aNOYpgYDPNrMrTRSve": {
+        "fields": [
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 2
+          },
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Organic Leads"
+          },
+          {
+            "id": "PLwmO9HRpVtMQgJCCz3x",
+            "value": 1
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Jack P. was trying to schedule and confirm his participation in a 15-minute Funding Readiness Call with the WE Management team. He received multiple reminders about the call times, Zoom links, and options to reschedule. No specific technical information was requested by Jack; the conversation focused on scheduling logistics and confirmation. The conversation concluded with Jack confirming his availability and a follow-up from the team to check if he had been placed into a service or program yet."
+          }
+        ],
+        "cachedAt": "2026-09-04T17:18:47.372Z"
       }
     },
     "processedConversations": {
