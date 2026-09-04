@@ -1,14 +1,15 @@
 {
-  "generatedAt": "2026-09-03T22:26:21.590Z",
+  "generatedAt": "2026-09-04T00:14:57.808Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
+    "Calendar \"Jercori Sales Calendar\" not found -- appointment/no-show metrics for it will be empty.",
     "\"Live Transfers Accepted\" always reads 0 -- SALES | HANDOFF (the field that tracked this) was deleted and nothing replaces it. \"Live Transfers Attempted\" still works (inferred from the \"Qualified - Live Transfer\" pipeline stage). Fixing Accepted needs either a new field or logging stage-transition history."
   ],
   "data": {
     "funnel": {
       "outboundAttempts": 11,
-      "connected": 14,
+      "connected": 12,
       "qualified": 1,
       "heldCall": 0,
       "won": 0
@@ -116,10 +117,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-22T23:41:37.675Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-23T03:30:37.951Z",
       "closeRate": 0
@@ -514,6 +511,10 @@
     },
     {
       "t": "2026-09-03T22:26:21.590Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-04T00:14:57.808Z",
       "closeRate": 0
     }
   ],
@@ -7089,10 +7090,10 @@
           },
           {
             "id": "bivODsQj5TA8RhIKK6cZ",
-            "value": "Adrian Parris was registering for and preparing to attend Will Roundtree's Live Masterclass on August 26, 2026. Throughout the conversation, Adrian received multiple reminders with the webinar link, calendar invite details, and was asked about his expectations and prior experience with business funding. No specific technical information was requested by Adrian; the communication was primarily informational and confirmatory. The conversation concluded with Adrian acknowledging the reminders by responding \"Thanks.\""
+            "value": "Adrian Parris was trying to attend the Fundable CEO Live Masterclass but was unable to join due to poor internet service. He was provided with multiple Zoom links to join the live session and later received a replay link for the masterclass. The conversation included follow-up questions about his business challenges and funding goals, as well as an offer to schedule a call with the team. The interaction concluded with Adrian being encouraged to watch the replay and schedule a call if he wanted to discuss his funding needs further."
           }
         ],
-        "cachedAt": "2026-09-02T19:35:07.535Z"
+        "cachedAt": "2026-09-04T00:15:00.591Z"
       },
       "idGO6XcJVJLD3U3MDI7K": {
         "fields": [
@@ -8149,10 +8150,14 @@
           },
           {
             "id": "bivODsQj5TA8RhIKK6cZ",
-            "value": "Harison Sanchez was coordinating payment for two invoices related to credit restoration services and confirmed that payment would be made on Thursday. He requested permission to refer others and provided a contact, Sammie, for outreach. Harison also asked that Sammie be informed about Will Roundtree, as he may not be familiar. The conversation concluded with the agent confirming outreach to Sammie and ongoing efforts to onboard Harison."
+            "value": "Harison Sanchez contacted WE Management Services to follow up after making invoice payments and inquired about the next steps. He specifically wanted to know what actions to take after payment. The conversation concluded with the agent providing a link to access the Credit Mastery program and related resources."
+          },
+          {
+            "id": "PLwmO9HRpVtMQgJCCz3x",
+            "value": 1
           }
         ],
-        "cachedAt": "2026-09-03T17:25:19.149Z"
+        "cachedAt": "2026-09-04T00:15:00.551Z"
       },
       "pEF3jq0jJ0WDRsnDTRwy": {
         "fields": [
@@ -8165,7 +8170,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-03T17:25:19.073Z"
+        "cachedAt": "2026-09-04T00:15:00.464Z"
       },
       "DIoEJiUZIrWsYozcIO6E": {
         "fields": [
@@ -8178,7 +8183,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-03T17:25:19.035Z"
+        "cachedAt": "2026-09-04T00:15:00.493Z"
       },
       "7vX4kxNDEDWjzjXl9R75": {
         "fields": [
@@ -8383,7 +8388,7 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-09-03T17:25:19.092Z"
+        "cachedAt": "2026-09-04T00:15:00.524Z"
       },
       "QU1a8bOt9NnFf4Yak7D2": {
         "fields": [
