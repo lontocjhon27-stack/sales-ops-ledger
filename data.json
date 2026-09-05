@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T20:51:46.176Z",
+  "generatedAt": "2026-09-05T22:32:21.881Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -92,29 +92,7 @@
       "Rianna",
       "Jen"
     ],
-    "callLog": [
-      {
-        "time": "2026-08-29T19:22:11.016Z",
-        "setter": "Jercori",
-        "contact": "(610) 972-5208",
-        "status": "completed",
-        "durationSec": 136
-      },
-      {
-        "time": "2026-08-29T18:49:55.844Z",
-        "setter": "Jercori",
-        "contact": "Codrin Coney",
-        "status": "completed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-29T18:44:14.998Z",
-        "setter": "Jercori",
-        "contact": "Codrin Coney",
-        "status": "completed",
-        "durationSec": null
-      }
-    ],
+    "callLog": [],
     "activityPoints": {
       "Marshell": {
         "points": 0,
@@ -140,10 +118,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-23T20:51:48.977Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-23T21:43:07.228Z",
       "closeRate": 0
@@ -538,6 +512,10 @@
     },
     {
       "t": "2026-09-05T20:51:46.176Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-05T22:32:21.881Z",
       "closeRate": 0
     }
   ],
