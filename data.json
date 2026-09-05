@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T02:19:18.643Z",
+  "generatedAt": "2026-09-05T07:01:40.606Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -79,7 +79,7 @@
     },
     "totals": {
       "contractValue": 0,
-      "cashCollected": 24766,
+      "cashCollected": 17517,
       "closeRate": 0
     },
     "attributionChains": [],
@@ -92,533 +92,7 @@
       "Rianna",
       "Jen"
     ],
-    "callLog": [
-      {
-        "time": "2026-08-28T23:11:08.007Z",
-        "setter": "Unknown",
-        "contact": "Gerald Eric Johnson",
-        "status": "completed",
-        "durationSec": 31
-      },
-      {
-        "time": "2026-08-28T23:10:02.861Z",
-        "setter": "Unknown",
-        "contact": "Connie Murray Thomas",
-        "status": "completed",
-        "durationSec": 7
-      },
-      {
-        "time": "2026-08-28T23:08:45.444Z",
-        "setter": "Unknown",
-        "contact": "Brenda Person-Gates",
-        "status": "completed",
-        "durationSec": 14
-      },
-      {
-        "time": "2026-08-28T23:06:26.166Z",
-        "setter": "Unknown",
-        "contact": "Eddie",
-        "status": "completed",
-        "durationSec": 53
-      },
-      {
-        "time": "2026-08-28T23:04:44.146Z",
-        "setter": "Unknown",
-        "contact": "Dedric",
-        "status": "completed",
-        "durationSec": 39
-      },
-      {
-        "time": "2026-08-28T22:15:26.328Z",
-        "setter": "Unknown",
-        "contact": "Joshua J Webb",
-        "status": "completed",
-        "durationSec": 3
-      },
-      {
-        "time": "2026-08-28T22:14:35.082Z",
-        "setter": "Unknown",
-        "contact": "Irving Bowman",
-        "status": "completed",
-        "durationSec": 4
-      },
-      {
-        "time": "2026-08-28T22:13:40.163Z",
-        "setter": "Unknown",
-        "contact": "Keith Campbell",
-        "status": "completed",
-        "durationSec": 37
-      },
-      {
-        "time": "2026-08-28T22:12:41.652Z",
-        "setter": "Unknown",
-        "contact": "Maurice Cooper",
-        "status": "completed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-28T22:05:13.656Z",
-        "setter": "Unknown",
-        "contact": "Eric White",
-        "status": "completed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-28T22:03:50.711Z",
-        "setter": "Unknown",
-        "contact": "Amber Brooks",
-        "status": "completed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-28T21:43:39.404Z",
-        "setter": "Unknown",
-        "contact": "Mo Rodgers",
-        "status": "completed",
-        "durationSec": 64
-      },
-      {
-        "time": "2026-08-28T21:39:47.384Z",
-        "setter": "Unknown",
-        "contact": "lisa Greenslade",
-        "status": "completed",
-        "durationSec": 52
-      },
-      {
-        "time": "2026-08-28T21:33:25.494Z",
-        "setter": "Unknown",
-        "contact": "Rhiannon Gutierrez",
-        "status": "completed",
-        "durationSec": 10
-      },
-      {
-        "time": "2026-08-28T21:17:30.766Z",
-        "setter": "Unknown",
-        "contact": "Charles Lang",
-        "status": "completed",
-        "durationSec": 9
-      },
-      {
-        "time": "2026-08-28T19:20:45.096Z",
-        "setter": "Unknown",
-        "contact": "JOELLE SIMON",
-        "status": "completed",
-        "durationSec": 35
-      },
-      {
-        "time": "2026-08-28T19:18:17.433Z",
-        "setter": "Unknown",
-        "contact": "Wilner Sainlot",
-        "status": "completed",
-        "durationSec": 50
-      },
-      {
-        "time": "2026-08-28T19:15:37.227Z",
-        "setter": "Unknown",
-        "contact": "Angela McTair",
-        "status": "completed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-28T19:15:07.015Z",
-        "setter": "Unknown",
-        "contact": "Gregory Dixon",
-        "status": "failed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-28T17:57:51.620Z",
-        "setter": "Jercori",
-        "contact": "Duane Austin",
-        "status": "completed",
-        "durationSec": 55
-      },
-      {
-        "time": "2026-08-28T17:52:13.677Z",
-        "setter": "Jercori",
-        "contact": "Glennel Glennel Gibson",
-        "status": "completed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-28T17:50:07.469Z",
-        "setter": "Jercori",
-        "contact": "Cashae Robinson",
-        "status": "failed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-28T17:48:42.485Z",
-        "setter": "Jercori",
-        "contact": "Cameo Powell",
-        "status": "completed",
-        "durationSec": 47
-      },
-      {
-        "time": "2026-08-28T17:47:52.267Z",
-        "setter": "Jercori",
-        "contact": "Clyde A. Long Jr",
-        "status": "no-answer",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-27T22:47:29.214Z",
-        "setter": "Unknown",
-        "contact": "Angela McTair",
-        "status": "completed",
-        "durationSec": 18
-      },
-      {
-        "time": "2026-08-27T22:36:12.803Z",
-        "setter": "Unknown",
-        "contact": "Gregory Dixon",
-        "status": "failed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-27T22:25:37.026Z",
-        "setter": "Unknown",
-        "contact": "Wilner Sainlot",
-        "status": "completed",
-        "durationSec": 156
-      },
-      {
-        "time": "2026-08-27T22:13:58.964Z",
-        "setter": "Unknown",
-        "contact": "JOELLE SIMON",
-        "status": "completed",
-        "durationSec": 39
-      },
-      {
-        "time": "2026-08-27T18:00:59.024Z",
-        "setter": "Unknown",
-        "contact": "Cleaning Angel's",
-        "status": "completed",
-        "durationSec": 31
-      },
-      {
-        "time": "2026-08-27T17:24:39.462Z",
-        "setter": "Unknown",
-        "contact": "Mahalia Graham",
-        "status": "completed",
-        "durationSec": 29
-      },
-      {
-        "time": "2026-08-27T16:20:33.589Z",
-        "setter": "Jercori",
-        "contact": "Darryl Greene",
-        "status": "no-answer",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-27T16:19:49.065Z",
-        "setter": "Jercori",
-        "contact": "Robert Wyhe",
-        "status": "no-answer",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-27T16:19:40.799Z",
-        "setter": "Jercori",
-        "contact": "Alejandro Ramirez",
-        "status": "completed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-27T16:19:26.523Z",
-        "setter": "Jercori",
-        "contact": "Cam Mcelroy",
-        "status": "no-answer",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-20T20:46:05.396Z",
-        "setter": "Unknown",
-        "contact": "Cameo Powell",
-        "status": "busy",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-20T20:45:57.023Z",
-        "setter": "Unknown",
-        "contact": "Cameo Powell",
-        "status": "busy",
-        "durationSec": null
-      },
-      {
-        "time": "2026-08-18T20:52:22.474Z",
-        "setter": "Unknown",
-        "contact": "Duane Austin",
-        "status": "completed",
-        "durationSec": 1637
-      },
-      {
-        "time": "2026-08-11T18:26:26.656Z",
-        "setter": "Unknown",
-        "contact": "Clyde A. Long Jr",
-        "status": "completed",
-        "durationSec": 26
-      },
-      {
-        "time": "2026-08-04T23:28:07.474Z",
-        "setter": "Unknown",
-        "contact": "Clyde A. Long Jr",
-        "status": "completed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-07-31T21:45:54.131Z",
-        "setter": "Unknown",
-        "contact": "Cameo Powell",
-        "status": "completed",
-        "durationSec": 11
-      },
-      {
-        "time": "2026-07-31T19:53:17.218Z",
-        "setter": "Unknown",
-        "contact": "Glennel Glennel Gibson",
-        "status": "completed",
-        "durationSec": 533
-      },
-      {
-        "time": "2026-07-31T18:58:38.821Z",
-        "setter": "Unknown",
-        "contact": "Glennel Glennel Gibson",
-        "status": "completed",
-        "durationSec": 102
-      },
-      {
-        "time": "2026-07-31T17:41:26.452Z",
-        "setter": "Unknown",
-        "contact": "Glennel Glennel Gibson",
-        "status": "completed",
-        "durationSec": 695
-      },
-      {
-        "time": "2026-07-31T17:40:17.393Z",
-        "setter": "Unknown",
-        "contact": "Glennel Glennel Gibson",
-        "status": "completed",
-        "durationSec": 11
-      },
-      {
-        "time": "2026-07-30T18:36:00.245Z",
-        "setter": "Unknown",
-        "contact": "Maurice Cooper",
-        "status": "completed",
-        "durationSec": 14
-      },
-      {
-        "time": "2026-07-30T18:34:30.032Z",
-        "setter": "Unknown",
-        "contact": "Keith Campbell",
-        "status": "completed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-07-30T18:17:29.758Z",
-        "setter": "Unknown",
-        "contact": "Irving Bowman",
-        "status": "completed",
-        "durationSec": 5
-      },
-      {
-        "time": "2026-07-30T18:13:01.996Z",
-        "setter": "Unknown",
-        "contact": "Joshua J Webb",
-        "status": "completed",
-        "durationSec": 33
-      },
-      {
-        "time": "2026-07-29T21:03:28.373Z",
-        "setter": "Unknown",
-        "contact": "Dedric",
-        "status": "completed",
-        "durationSec": 4
-      },
-      {
-        "time": "2026-07-29T20:40:26.242Z",
-        "setter": "Unknown",
-        "contact": "Eddie",
-        "status": "no-answer",
-        "durationSec": null
-      },
-      {
-        "time": "2026-07-29T20:39:47.583Z",
-        "setter": "Unknown",
-        "contact": "Brenda Person-Gates",
-        "status": "completed",
-        "durationSec": 14
-      },
-      {
-        "time": "2026-07-29T20:38:01.454Z",
-        "setter": "Unknown",
-        "contact": "Connie Murray Thomas",
-        "status": "completed",
-        "durationSec": 52
-      },
-      {
-        "time": "2026-07-29T20:34:35.124Z",
-        "setter": "Unknown",
-        "contact": "Gerald Eric Johnson",
-        "status": "completed",
-        "durationSec": 32
-      },
-      {
-        "time": "2026-07-28T21:32:22.160Z",
-        "setter": "Unknown",
-        "contact": "Rhiannon Gutierrez",
-        "status": "failed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-07-28T21:19:37.994Z",
-        "setter": "Unknown",
-        "contact": "Maurice Cooper",
-        "status": "completed",
-        "durationSec": 107
-      },
-      {
-        "time": "2026-07-28T21:18:12.932Z",
-        "setter": "Unknown",
-        "contact": "Keith Campbell",
-        "status": "completed",
-        "durationSec": 45
-      },
-      {
-        "time": "2026-07-27T16:56:38.387Z",
-        "setter": "Unknown",
-        "contact": "Charles Lang",
-        "status": "completed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-07-25T17:26:52.933Z",
-        "setter": "Unknown",
-        "contact": "Charles Lang",
-        "status": "completed",
-        "durationSec": 7
-      },
-      {
-        "time": "2026-07-24T17:15:25.975Z",
-        "setter": "Unknown",
-        "contact": "Charles Lang",
-        "status": "completed",
-        "durationSec": 9
-      },
-      {
-        "time": "2026-07-24T16:56:22.551Z",
-        "setter": "Unknown",
-        "contact": "Rhiannon Gutierrez",
-        "status": "failed",
-        "durationSec": 0
-      },
-      {
-        "time": "2026-07-23T19:47:08.616Z",
-        "setter": "Unknown",
-        "contact": "Rhiannon Gutierrez",
-        "status": "no-answer",
-        "durationSec": null
-      },
-      {
-        "time": "2026-07-23T19:47:06.128Z",
-        "setter": "Unknown",
-        "contact": "Rhiannon Gutierrez",
-        "status": "ringing",
-        "durationSec": null
-      },
-      {
-        "time": "2026-07-23T16:04:20.202Z",
-        "setter": "Unknown",
-        "contact": "Rhiannon Gutierrez",
-        "status": "failed",
-        "durationSec": 0
-      },
-      {
-        "time": "2026-07-13T20:41:53.493Z",
-        "setter": "Unknown",
-        "contact": "Cashae Robinson",
-        "status": "completed",
-        "durationSec": 892
-      },
-      {
-        "time": "2026-07-06T18:12:08.851Z",
-        "setter": "Unknown",
-        "contact": "Wilner Sainlot",
-        "status": "completed",
-        "durationSec": 78
-      },
-      {
-        "time": "2026-07-02T20:19:06.520Z",
-        "setter": "Unknown",
-        "contact": "Gregory Dixon",
-        "status": "failed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-06-22T21:34:41.855Z",
-        "setter": "Unknown",
-        "contact": "Brenda Person-Gates",
-        "status": "completed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-06-22T21:33:04.268Z",
-        "setter": "Unknown",
-        "contact": "Connie Murray Thomas",
-        "status": "completed",
-        "durationSec": 41
-      },
-      {
-        "time": "2026-06-22T21:28:57.239Z",
-        "setter": "Unknown",
-        "contact": "Gerald Eric Johnson",
-        "status": "completed",
-        "durationSec": 30
-      },
-      {
-        "time": "2026-06-16T17:16:47.443Z",
-        "setter": "Unknown",
-        "contact": "Keith Campbell",
-        "status": "completed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-06-01T20:07:38.147Z",
-        "setter": "Ron Obsioma",
-        "contact": "Cleaning Angel's",
-        "status": "completed",
-        "durationSec": 90
-      },
-      {
-        "time": "2026-06-01T20:05:27.034Z",
-        "setter": "Ron Obsioma",
-        "contact": "Cleaning Angel's",
-        "status": "completed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-05-27T19:06:01.044Z",
-        "setter": "Unknown",
-        "contact": "Clyde A. Long Jr",
-        "status": "completed",
-        "durationSec": 8
-      },
-      {
-        "time": "2026-05-21T23:28:26.969Z",
-        "setter": "Unknown",
-        "contact": "Brenda Person-Gates",
-        "status": "completed",
-        "durationSec": 29
-      },
-      {
-        "time": "2026-05-18T16:44:01.998Z",
-        "setter": "Unknown",
-        "contact": "Eddie",
-        "status": "completed",
-        "durationSec": 530
-      }
-    ],
+    "callLog": [],
     "activityPoints": {
       "Marshell": {
         "points": 0,
@@ -644,10 +118,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-23T14:53:19.759Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-23T15:48:42.186Z",
       "closeRate": 0
@@ -1042,6 +512,10 @@
     },
     {
       "t": "2026-09-05T02:19:18.643Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-05T07:01:40.606Z",
       "closeRate": 0
     }
   ],
@@ -8121,7 +7595,7 @@
             "value": "Adrian Parris was trying to attend the Fundable CEO Live Masterclass but was unable to join due to poor internet service. He was provided with multiple Zoom links to join the live session and later received a replay link for the masterclass. The conversation included follow-up questions about his business challenges and funding goals, as well as an offer to schedule a call with the team. The interaction concluded with Adrian being encouraged to watch the replay and schedule a call if he wanted to discuss his funding needs further."
           }
         ],
-        "cachedAt": "2026-09-04T23:50:16.362Z"
+        "cachedAt": "2026-09-05T07:01:45.096Z"
       },
       "idGO6XcJVJLD3U3MDI7K": {
         "fields": [
@@ -9183,9 +8657,13 @@
           {
             "id": "PLwmO9HRpVtMQgJCCz3x",
             "value": 1
+          },
+          {
+            "id": "yy7vmyBDaB4k4O7oCBvc",
+            "value": "563914202"
           }
         ],
-        "cachedAt": "2026-09-04T23:50:16.316Z"
+        "cachedAt": "2026-09-05T07:01:45.037Z"
       },
       "pEF3jq0jJ0WDRsnDTRwy": {
         "fields": [
@@ -9198,7 +8676,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-04T23:50:16.296Z"
+        "cachedAt": "2026-09-05T07:01:45.033Z"
       },
       "DIoEJiUZIrWsYozcIO6E": {
         "fields": [
@@ -9211,7 +8689,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-04T23:50:16.306Z"
+        "cachedAt": "2026-09-05T07:01:45.522Z"
       },
       "7vX4kxNDEDWjzjXl9R75": {
         "fields": [
@@ -9420,7 +8898,7 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-09-04T23:50:16.215Z"
+        "cachedAt": "2026-09-05T07:01:44.855Z"
       },
       "QU1a8bOt9NnFf4Yak7D2": {
         "fields": [
@@ -9811,7 +9289,7 @@
             "value": "Porscha Taylor was registering for Will Roundtree's Live Masterclass and received confirmation details, including the webinar link and calendar invite. She was asked about her learning goals and whether she received the calendar invite. When asked if she had ever applied for business funding, Porscha responded that she had not, expressing uncertainty about how to proceed. The conversation concluded with Porscha indicating her interest in learning about the business funding application process."
           }
         ],
-        "cachedAt": "2026-09-04T23:50:16.247Z"
+        "cachedAt": "2026-09-05T07:01:44.801Z"
       },
       "U9aNOYpgYDPNrMrTRSve": {
         "fields": [
@@ -9832,7 +9310,7 @@
             "value": "Jack P. was trying to schedule and confirm his participation in a 15-minute Funding Readiness Call with the WE Management team. He received multiple reminders about the call times, Zoom links, and options to reschedule. No specific technical information was requested by Jack; the conversation focused on scheduling logistics and confirmation. The conversation concluded with Jack confirming his availability and a follow-up from the team to check if he had been placed into a service or program yet."
           }
         ],
-        "cachedAt": "2026-09-04T23:50:16.211Z"
+        "cachedAt": "2026-09-05T07:01:44.887Z"
       },
       "fqqzJcf35XfHIuYgFGCC": {
         "fields": [
