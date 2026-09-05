@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T11:20:20.294Z",
+  "generatedAt": "2026-09-05T13:56:46.268Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -118,10 +118,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-23T16:56:16.688Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-23T17:43:13.937Z",
       "closeRate": 0
@@ -516,6 +512,10 @@
     },
     {
       "t": "2026-09-05T11:20:20.294Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-05T13:56:46.268Z",
       "closeRate": 0
     }
   ],
@@ -7595,7 +7595,7 @@
             "value": "Adrian Parris was trying to attend the Fundable CEO Live Masterclass but was unable to join due to poor internet service. He was provided with multiple Zoom links to join the live session and later received a replay link for the masterclass. The conversation included follow-up questions about his business challenges and funding goals, as well as an offer to schedule a call with the team. The interaction concluded with Adrian being encouraged to watch the replay and schedule a call if he wanted to discuss his funding needs further."
           }
         ],
-        "cachedAt": "2026-09-05T07:01:45.096Z"
+        "cachedAt": "2026-09-05T13:56:51.773Z"
       },
       "idGO6XcJVJLD3U3MDI7K": {
         "fields": [
@@ -8663,7 +8663,7 @@
             "value": "563914202"
           }
         ],
-        "cachedAt": "2026-09-05T07:01:45.037Z"
+        "cachedAt": "2026-09-05T13:56:51.707Z"
       },
       "pEF3jq0jJ0WDRsnDTRwy": {
         "fields": [
@@ -8676,7 +8676,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-05T07:01:45.033Z"
+        "cachedAt": "2026-09-05T13:56:51.697Z"
       },
       "DIoEJiUZIrWsYozcIO6E": {
         "fields": [
@@ -8689,7 +8689,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-05T07:01:45.522Z"
+        "cachedAt": "2026-09-05T13:56:51.687Z"
       },
       "7vX4kxNDEDWjzjXl9R75": {
         "fields": [
@@ -8898,7 +8898,7 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-09-05T07:01:44.855Z"
+        "cachedAt": "2026-09-05T13:56:51.613Z"
       },
       "QU1a8bOt9NnFf4Yak7D2": {
         "fields": [
@@ -9289,7 +9289,7 @@
             "value": "Porscha Taylor was registering for Will Roundtree's Live Masterclass and received confirmation details, including the webinar link and calendar invite. She was asked about her learning goals and whether she received the calendar invite. When asked if she had ever applied for business funding, Porscha responded that she had not, expressing uncertainty about how to proceed. The conversation concluded with Porscha indicating her interest in learning about the business funding application process."
           }
         ],
-        "cachedAt": "2026-09-05T07:01:44.801Z"
+        "cachedAt": "2026-09-05T13:56:51.577Z"
       },
       "U9aNOYpgYDPNrMrTRSve": {
         "fields": [
@@ -9310,7 +9310,7 @@
             "value": "Jack P. was trying to schedule and confirm his participation in a 15-minute Funding Readiness Call with the WE Management team. He received multiple reminders about the call times, Zoom links, and options to reschedule. No specific technical information was requested by Jack; the conversation focused on scheduling logistics and confirmation. The conversation concluded with Jack confirming his availability and a follow-up from the team to check if he had been placed into a service or program yet."
           }
         ],
-        "cachedAt": "2026-09-05T07:01:44.887Z"
+        "cachedAt": "2026-09-05T13:56:51.619Z"
       },
       "fqqzJcf35XfHIuYgFGCC": {
         "fields": [
