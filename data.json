@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T18:42:49.730Z",
+  "generatedAt": "2026-09-05T20:51:46.176Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -9,8 +9,8 @@
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 30,
-      "connected": 32,
+      "outboundAttempts": 32,
+      "connected": 31,
       "qualified": 1,
       "heldCall": 0,
       "won": 0
@@ -92,7 +92,29 @@
       "Rianna",
       "Jen"
     ],
-    "callLog": [],
+    "callLog": [
+      {
+        "time": "2026-08-29T19:22:11.016Z",
+        "setter": "Jercori",
+        "contact": "(610) 972-5208",
+        "status": "completed",
+        "durationSec": 136
+      },
+      {
+        "time": "2026-08-29T18:49:55.844Z",
+        "setter": "Jercori",
+        "contact": "Codrin Coney",
+        "status": "completed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-29T18:44:14.998Z",
+        "setter": "Jercori",
+        "contact": "Codrin Coney",
+        "status": "completed",
+        "durationSec": null
+      }
+    ],
     "activityPoints": {
       "Marshell": {
         "points": 0,
@@ -118,10 +140,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-23T19:55:48.568Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-23T20:51:48.977Z",
       "closeRate": 0
@@ -517,9 +535,34 @@
     {
       "t": "2026-09-05T18:42:49.730Z",
       "closeRate": 0
+    },
+    {
+      "t": "2026-09-05T20:51:46.176Z",
+      "closeRate": 0
     }
   ],
   "callLogHistory": [
+    {
+      "time": "2026-08-29T19:22:11.016Z",
+      "setter": "Jercori",
+      "contact": "(610) 972-5208",
+      "status": "completed",
+      "durationSec": 136
+    },
+    {
+      "time": "2026-08-29T18:49:55.844Z",
+      "setter": "Jercori",
+      "contact": "Codrin Coney",
+      "status": "completed",
+      "durationSec": null
+    },
+    {
+      "time": "2026-08-29T18:44:14.998Z",
+      "setter": "Jercori",
+      "contact": "Codrin Coney",
+      "status": "completed",
+      "durationSec": null
+    },
     {
       "time": "2026-08-28T23:11:08.007Z",
       "setter": "Unknown",
@@ -7595,7 +7638,7 @@
             "value": "Adrian Parris was trying to attend the Fundable CEO Live Masterclass but was unable to join due to poor internet service. He was provided with multiple Zoom links to join the live session and later received a replay link for the masterclass. The conversation included follow-up questions about his business challenges and funding goals, as well as an offer to schedule a call with the team. The interaction concluded with Adrian being encouraged to watch the replay and schedule a call if he wanted to discuss his funding needs further."
           }
         ],
-        "cachedAt": "2026-09-05T13:56:51.773Z"
+        "cachedAt": "2026-09-05T20:51:49.374Z"
       },
       "idGO6XcJVJLD3U3MDI7K": {
         "fields": [
@@ -8663,7 +8706,7 @@
             "value": "563914202"
           }
         ],
-        "cachedAt": "2026-09-05T13:56:51.707Z"
+        "cachedAt": "2026-09-05T20:51:49.314Z"
       },
       "pEF3jq0jJ0WDRsnDTRwy": {
         "fields": [
@@ -8676,7 +8719,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-05T13:56:51.697Z"
+        "cachedAt": "2026-09-05T20:51:49.303Z"
       },
       "DIoEJiUZIrWsYozcIO6E": {
         "fields": [
@@ -8689,7 +8732,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-05T13:56:51.687Z"
+        "cachedAt": "2026-09-05T20:51:49.271Z"
       },
       "7vX4kxNDEDWjzjXl9R75": {
         "fields": [
@@ -8898,7 +8941,7 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-09-05T13:56:51.613Z"
+        "cachedAt": "2026-09-05T20:51:49.146Z"
       },
       "QU1a8bOt9NnFf4Yak7D2": {
         "fields": [
@@ -9289,7 +9332,7 @@
             "value": "Porscha Taylor was registering for Will Roundtree's Live Masterclass and received confirmation details, including the webinar link and calendar invite. She was asked about her learning goals and whether she received the calendar invite. When asked if she had ever applied for business funding, Porscha responded that she had not, expressing uncertainty about how to proceed. The conversation concluded with Porscha indicating her interest in learning about the business funding application process."
           }
         ],
-        "cachedAt": "2026-09-05T13:56:51.577Z"
+        "cachedAt": "2026-09-05T20:51:49.123Z"
       },
       "U9aNOYpgYDPNrMrTRSve": {
         "fields": [
@@ -9310,7 +9353,7 @@
             "value": "Jack P. was trying to schedule and confirm his participation in a 15-minute Funding Readiness Call with the WE Management team. He received multiple reminders about the call times, Zoom links, and options to reschedule. No specific technical information was requested by Jack; the conversation focused on scheduling logistics and confirmation. The conversation concluded with Jack confirming his availability and a follow-up from the team to check if he had been placed into a service or program yet."
           }
         ],
-        "cachedAt": "2026-09-05T13:56:51.619Z"
+        "cachedAt": "2026-09-05T20:51:49.166Z"
       },
       "fqqzJcf35XfHIuYgFGCC": {
         "fields": [
@@ -9520,7 +9563,9 @@
       "g7A5dxhAtkNdYPZexzst": 1788567041517,
       "ml7PPcQr1IfE9PAUDD65": 1788566990561,
       "Zsd3zQMcOats5yd8IDwU": 1788566990805,
-      "oG49WcFCjeZsfvk7pQYz": 1788567037765
+      "oG49WcFCjeZsfvk7pQYz": 1788567037765,
+      "yxNAqKOyCtaFPQTTM1d6": 1788566970794,
+      "at2UiebiEuylseH8qLou": 1788029395806
     }
   }
 }
