@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T22:32:21.881Z",
+  "generatedAt": "2026-09-06T00:27:02.391Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -9,7 +9,7 @@
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 32,
+      "outboundAttempts": 33,
       "connected": 31,
       "qualified": 1,
       "heldCall": 0,
@@ -92,7 +92,43 @@
       "Rianna",
       "Jen"
     ],
-    "callLog": [],
+    "callLog": [
+      {
+        "time": "2026-08-29T23:34:44.348Z",
+        "setter": "Jercori",
+        "contact": "Oscar Olney",
+        "status": "completed",
+        "durationSec": 20
+      },
+      {
+        "time": "2026-08-29T19:11:57.779Z",
+        "setter": "Jercori",
+        "contact": "Oscar Olney",
+        "status": "completed",
+        "durationSec": 9
+      },
+      {
+        "time": "2026-08-29T19:11:28.667Z",
+        "setter": "Jercori",
+        "contact": "Oscar Olney",
+        "status": "completed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-18T17:36:30.815Z",
+        "setter": "Unknown",
+        "contact": "Oscar Olney",
+        "status": "completed",
+        "durationSec": 56
+      },
+      {
+        "time": "2026-08-12T17:46:39.360Z",
+        "setter": "Unknown",
+        "contact": "Oscar Olney",
+        "status": "completed",
+        "durationSec": 9
+      }
+    ],
     "activityPoints": {
       "Marshell": {
         "points": 0,
@@ -118,10 +154,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-23T21:43:07.228Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-23T22:51:16.782Z",
       "closeRate": 0
@@ -517,15 +549,40 @@
     {
       "t": "2026-09-05T22:32:21.881Z",
       "closeRate": 0
+    },
+    {
+      "t": "2026-09-06T00:27:02.391Z",
+      "closeRate": 0
     }
   ],
   "callLogHistory": [
+    {
+      "time": "2026-08-29T23:34:44.348Z",
+      "setter": "Jercori",
+      "contact": "Oscar Olney",
+      "status": "completed",
+      "durationSec": 20
+    },
     {
       "time": "2026-08-29T19:22:11.016Z",
       "setter": "Jercori",
       "contact": "(610) 972-5208",
       "status": "completed",
       "durationSec": 136
+    },
+    {
+      "time": "2026-08-29T19:11:57.779Z",
+      "setter": "Jercori",
+      "contact": "Oscar Olney",
+      "status": "completed",
+      "durationSec": 9
+    },
+    {
+      "time": "2026-08-29T19:11:28.667Z",
+      "setter": "Jercori",
+      "contact": "Oscar Olney",
+      "status": "completed",
+      "durationSec": null
     },
     {
       "time": "2026-08-29T18:49:55.844Z",
@@ -1256,6 +1313,13 @@
       "durationSec": 22
     },
     {
+      "time": "2026-08-18T17:36:30.815Z",
+      "setter": "Unknown",
+      "contact": "Oscar Olney",
+      "status": "completed",
+      "durationSec": 56
+    },
+    {
       "time": "2026-08-18T17:30:46.006Z",
       "setter": "Rianna",
       "contact": "Lynette Preston",
@@ -1373,6 +1437,13 @@
       "contact": "Natasha DoGood",
       "status": "no-answer",
       "durationSec": null
+    },
+    {
+      "time": "2026-08-12T17:46:39.360Z",
+      "setter": "Unknown",
+      "contact": "Oscar Olney",
+      "status": "completed",
+      "durationSec": 9
     },
     {
       "time": "2026-08-11T18:26:26.656Z",
@@ -9543,7 +9614,8 @@
       "Zsd3zQMcOats5yd8IDwU": 1788566990805,
       "oG49WcFCjeZsfvk7pQYz": 1788567037765,
       "yxNAqKOyCtaFPQTTM1d6": 1788566970794,
-      "at2UiebiEuylseH8qLou": 1788029395806
+      "at2UiebiEuylseH8qLou": 1788029395806,
+      "vu6RbdzSUAr6Hvsws4WV": 1788046484304
     }
   }
 }
