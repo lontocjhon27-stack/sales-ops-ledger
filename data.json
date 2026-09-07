@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T16:34:31.290Z",
+  "generatedAt": "2026-09-07T20:19:00.582Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -9,8 +9,8 @@
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 18,
-      "connected": 29,
+      "outboundAttempts": 15,
+      "connected": 30,
       "qualified": 1,
       "heldCall": 0,
       "won": 0
@@ -118,10 +118,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-24T21:04:46.268Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-24T22:48:28.035Z",
       "closeRate": 0
@@ -516,6 +512,10 @@
     },
     {
       "t": "2026-09-07T16:34:31.290Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-07T20:19:00.582Z",
       "closeRate": 0
     }
   ],
@@ -9503,6 +9503,74 @@
           }
         ],
         "cachedAt": "2026-09-07T16:34:33.833Z"
+      },
+      "HNEqBMYJBvX9Pl9VNxVp": {
+        "fields": [
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Christopher Johnson was contacted by WE Management Services regarding training and services to help secure funding and improve credit for real estate investment. He was invited to a live training session and offered promotional discounts on credit coaching and REI Ready software. Christopher was asked about his availability for a call and provided a preferred time, but ultimately responded with \"Stop\" to end further communications. The conversation concluded with Christopher opting out of further contact."
+          }
+        ],
+        "cachedAt": "2026-09-07T20:19:02.925Z"
+      },
+      "GMlZMS2tupibW5z2nAlA": {
+        "fields": [],
+        "cachedAt": "2026-09-07T20:19:02.928Z"
+      },
+      "z7bi6OkjYTbusDfbzZEP": {
+        "fields": [
+          {
+            "id": "PLwmO9HRpVtMQgJCCz3x",
+            "value": 1
+          },
+          {
+            "id": "ZbAnImdexdzvCvi2UUVx",
+            "value": "fb"
+          },
+          {
+            "id": "dbUTgrW5dQKVZVsuwM8v",
+            "value": "paid"
+          },
+          {
+            "id": "mgsmQlxFBNWYuip1l8p7",
+            "value": "52541583877769"
+          },
+          {
+            "id": "T4ZT5aAZtG33vDyaBjPb",
+            "value": "https://us02web.zoom.us/w/86058370895?tk=GujEbFQDbx0MFcUjhFW8XNwB4Ho653YKC4A10aK0gDY.DQkAAAAUCXqHTxZRMHFXY0dMM1J2Q0NKUnNqTW5yVHJ3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=pktSabx8jLLfsTYGSDqQ2jUzPDjcbb.1"
+          },
+          {
+            "id": "TFsovIwk95EombaFai6b",
+            "value": "https://us02web.zoom.us/w/86058370895?tk=GujEbFQDbx0MFcUjhFW8XNwB4Ho653YKC4A10aK0gDY.DQkAAAAUCXqHTxZRMHFXY0dMM1J2Q0NKUnNqTW5yVHJ3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=pktSabx8jLLfsTYGSDqQ2jUzPDjcbb.1"
+          },
+          {
+            "id": "azlatcryAviD4l2HgOm2",
+            "value": "https://us02web.zoom.us/w/86058370895?tk=GujEbFQDbx0MFcUjhFW8XNwB4Ho653YKC4A10aK0gDY.DQkAAAAUCXqHTxZRMHFXY0dMM1J2Q0NKUnNqTW5yVHJ3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=pktSabx8jLLfsTYGSDqQ2jUzPDjcbb.1"
+          }
+        ],
+        "cachedAt": "2026-09-07T20:19:02.930Z"
+      },
+      "caC1e4xPGdJOfxtaAOPz": {
+        "fields": [],
+        "cachedAt": "2026-09-07T20:19:03.014Z"
+      },
+      "Th49I6ncphMY0Xd3Gb1V": {
+        "fields": [
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Brenton Daye was contacted by Ram from We Management Services regarding general support, an affiliate program opportunity, a credit repair promotion, and the option to schedule a 1-on-1 strategy call with Will. Brenton expressed interest in the strategy call but mentioned financial constraints at the moment. No specific technical information was requested by Brenton during the conversation. The conversation concluded with Ram reassuring Brenton that there was no rush and offering to save a spot for the strategy call if desired."
+          }
+        ],
+        "cachedAt": "2026-09-07T20:19:03.015Z"
+      },
+      "NodVAaZBKYQhVnnx1DOu": {
+        "fields": [
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Brian Diakite was contacted by WE Management Services regarding opportunities to fix his credit, access funding, and secure real estate without using his own money. He received invitations to attend a live training and replay sessions focused on strategies for getting approved for $50K-$250K in funding, as well as promotional offers for discounted programs. The team specifically requested to discuss his financial goals and offered a Credit & Funding Review, asking if he would be open to a conversation about improving his credit and funding options. The conversation concluded with an open invitation for Brian to connect and explore these services further."
+          }
+        ],
+        "cachedAt": "2026-09-07T20:19:03.021Z"
       }
     },
     "processedConversations": {
