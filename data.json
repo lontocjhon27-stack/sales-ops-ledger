@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T14:40:58.999Z",
+  "generatedAt": "2026-09-08T18:13:21.466Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -9,8 +9,8 @@
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 14,
-      "connected": 29,
+      "outboundAttempts": 10,
+      "connected": 30,
       "qualified": 1,
       "heldCall": 0,
       "won": 0
@@ -118,10 +118,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-25T10:03:28.077Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-25T11:49:41.984Z",
       "closeRate": 0
@@ -516,6 +512,10 @@
     },
     {
       "t": "2026-09-08T14:40:58.999Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-08T18:13:21.466Z",
       "closeRate": 0
     }
   ],
@@ -9928,6 +9928,51 @@
           }
         ],
         "cachedAt": "2026-09-08T14:41:02.234Z"
+      },
+      "XEzAcT56dtsWzoVMU4IN": {
+        "fields": [
+          {
+            "id": "xEzocmcISRp5TYq1MUXa",
+            "value": "Yes, LLC or Corporation"
+          },
+          {
+            "id": "SRncczGfHWMPyAWLn8qN",
+            "value": "Over 1 year"
+          },
+          {
+            "id": "Nu8xztQJ7xP3SzwAXnrz",
+            "value": "$10K+"
+          },
+          {
+            "id": "9L06Ft5uU1ArpXm64dxW",
+            "value": "560"
+          },
+          {
+            "id": "wHwbfTcveD9F4EUz2gzn",
+            "value": "$50K–$100K+"
+          },
+          {
+            "id": "oMa6pamVoGPzAq0UhMPe",
+            "value": "Yes, I’m ready to get started"
+          },
+          {
+            "id": "K2YvF1Z6YeS6m7jYQD3h",
+            "value": 120
+          },
+          {
+            "id": "yy7vmyBDaB4k4O7oCBvc",
+            "value": "384191917"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Michael Lee was seeking to improve his credit profile and position himself for better funding opportunities by enrolling in WE Management Services’ Credit Repair Program, specifically opting for the 6-month, $850 Memorial Day special. He requested detailed information about what the credit repair program included and later expressed concerns about signing an Affidavit of Identity, as he was not a victim of fraud and was wary of committing credit fraud. The service provider clarified that the affidavit was a standard identity verification and security measure, not related to fraud, and reassured him about its purpose. The conversation concluded with Michael’s concerns acknowledged and the next steps in the onboarding process outlined, including document submission and ongoing support."
+          },
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 2
+          }
+        ],
+        "cachedAt": "2026-09-08T18:13:27.401Z"
       }
     },
     "processedConversations": {
