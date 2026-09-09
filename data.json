@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T15:41:44.371Z",
+  "generatedAt": "2026-09-09T18:58:53.002Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -10,7 +10,7 @@
   "data": {
     "funnel": {
       "outboundAttempts": 5,
-      "connected": 30,
+      "connected": 29,
       "qualified": 1,
       "heldCall": 0,
       "won": 0
@@ -79,7 +79,7 @@
     },
     "totals": {
       "contractValue": 0,
-      "cashCollected": 18200,
+      "cashCollected": 18217,
       "closeRate": 0
     },
     "attributionChains": [],
@@ -92,50 +92,7 @@
       "Rianna",
       "Jen"
     ],
-    "callLog": [
-      {
-        "time": "2026-09-02T13:52:44.029Z",
-        "setter": "Jercori",
-        "contact": "jimmie wright",
-        "status": "completed",
-        "durationSec": 7
-      },
-      {
-        "time": "2026-09-02T13:49:40.957Z",
-        "setter": "Jercori",
-        "contact": "Michael LeSure",
-        "status": "completed",
-        "durationSec": 4
-      },
-      {
-        "time": "2026-09-02T13:49:24.636Z",
-        "setter": "Jercori",
-        "contact": "Michael LeSure",
-        "status": "completed",
-        "durationSec": 8
-      },
-      {
-        "time": "2026-09-02T00:47:34.469Z",
-        "setter": "Jercori",
-        "contact": "Michael LeSure",
-        "status": "completed",
-        "durationSec": 17
-      },
-      {
-        "time": "2026-09-02T00:46:58.696Z",
-        "setter": "Jercori",
-        "contact": "Michael LeSure",
-        "status": "completed",
-        "durationSec": 3
-      },
-      {
-        "time": "2026-08-27T15:53:30.142Z",
-        "setter": "Jercori",
-        "contact": "jimmie wright",
-        "status": "completed",
-        "durationSec": 9
-      }
-    ],
+    "callLog": [],
     "activityPoints": {
       "Marshell": {
         "points": 0,
@@ -161,10 +118,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-25T20:35:28.568Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-25T20:49:27.874Z",
       "closeRate": 0
@@ -559,6 +512,10 @@
     },
     {
       "t": "2026-09-09T15:41:44.371Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-09T18:58:53.002Z",
       "closeRate": 0
     }
   ],
@@ -10061,7 +10018,7 @@
             "value": 2
           }
         ],
-        "cachedAt": "2026-09-09T11:38:25.520Z"
+        "cachedAt": "2026-09-09T18:58:56.632Z"
       },
       "aMm2RILmzXpaxtFmemi1": {
         "fields": [
@@ -10083,6 +10040,27 @@
           }
         ],
         "cachedAt": "2026-09-09T15:41:48.565Z"
+      },
+      "q8JCodK1oU8TstouLqlf": {
+        "fields": [
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 2
+          },
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Organic Leads"
+          },
+          {
+            "id": "PLwmO9HRpVtMQgJCCz3x",
+            "value": 1
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Michael Williams reached out to WE Management Services seeking assistance with removing credit inquiries to help improve his and his wife's credit scores in preparation for purchasing a home. He provided background on past identity theft, credit score recovery, and specific issues with Regions Bank repeatedly pulling their credit reports. Michael requested technical information about inquiry removal services and pricing. The conversation concluded with WE Management Services quoting $850 for his wife and $1000 for him, sending an invoice, and providing a payment link."
+          }
+        ],
+        "cachedAt": "2026-09-09T18:58:56.880Z"
       }
     },
     "processedConversations": {
