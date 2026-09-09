@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T18:58:53.002Z",
+  "generatedAt": "2026-09-09T21:32:12.310Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -79,7 +79,7 @@
     },
     "totals": {
       "contractValue": 0,
-      "cashCollected": 18217,
+      "cashCollected": 19067,
       "closeRate": 0
     },
     "attributionChains": [],
@@ -118,10 +118,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-25T20:49:27.874Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-25T20:50:46.758Z",
       "closeRate": 0
@@ -516,6 +512,10 @@
     },
     {
       "t": "2026-09-09T18:58:53.002Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-09T21:32:12.310Z",
       "closeRate": 0
     }
   ],
