@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T19:23:57.896Z",
+  "generatedAt": "2026-09-10T21:43:40.369Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -9,8 +9,8 @@
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 34,
-      "connected": 29,
+      "outboundAttempts": 33,
+      "connected": 30,
       "qualified": 1,
       "heldCall": 0,
       "won": 0
@@ -37,6 +37,19 @@
       "routedNormally": 0
     },
     "reps": {
+      "Jercori": {
+        "outbound": 1,
+        "connected": 0,
+        "qualified": 0,
+        "liveTransferAttempted": 0,
+        "liveTransferAccepted": 0,
+        "appointmentsBooked": 0,
+        "heldCalls": 0,
+        "noShows": 0,
+        "won": 0,
+        "contractValue": 0,
+        "cashCollected": 0
+      },
       "Marshell": {
         "outbound": 1,
         "connected": 1,
@@ -118,10 +131,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-25T21:16:09.829Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-25T21:18:00.199Z",
       "closeRate": 0
@@ -516,6 +525,10 @@
     },
     {
       "t": "2026-09-10T19:23:57.896Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-10T21:43:40.369Z",
       "closeRate": 0
     }
   ],
@@ -10329,6 +10342,23 @@
           }
         ],
         "cachedAt": "2026-09-10T19:24:01.241Z"
+      },
+      "GCgerjZh4Du7ksorCzfM": {
+        "fields": [
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 3
+          },
+          {
+            "id": "3zdjIv5n0DSCYC8FTkP9",
+            "value": "Jercori Freeman"
+          },
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Organic Leads"
+          }
+        ],
+        "cachedAt": "2026-09-10T21:43:42.874Z"
       }
     },
     "processedConversations": {
