@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T16:34:30.662Z",
+  "generatedAt": "2026-09-10T19:23:57.896Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -118,10 +118,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-25T21:14:09.939Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-25T21:16:09.829Z",
       "closeRate": 0
@@ -516,6 +512,10 @@
     },
     {
       "t": "2026-09-10T16:34:30.662Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-10T19:23:57.896Z",
       "closeRate": 0
     }
   ],
@@ -10273,7 +10273,7 @@
             "value": 2
           }
         ],
-        "cachedAt": "2026-09-10T12:19:01.651Z"
+        "cachedAt": "2026-09-10T19:24:01.285Z"
       },
       "aMm2RILmzXpaxtFmemi1": {
         "fields": [
@@ -10312,10 +10312,23 @@
           },
           {
             "id": "bivODsQj5TA8RhIKK6cZ",
-            "value": "Michael Williams was working to process and pay invoices from WE Management Services, specifically invoice INV-000647 and its two schedules, each for $425.00, totaling $850.00. He received invoice links and confirmation messages for each payment made. The conversation included requests for payment processing and confirmation of receipt for both schedule-1 and schedule-2. The interaction concluded with WE Management Services confirming full payment of $850.00 and offering further assistance after a missed call from Michael."
+            "value": "Michael Williams contacted WE Management Services regarding an issue with IdentityIQ. He confirmed that the issue was resolved and, upon request, provided his login email, the last four digits of his social security number, and his password for account access. The conversation then shifted to an invitation for Michael to join a live masterclass event. The interaction concluded with the sharing of the event link and encouragement to join the session."
           }
         ],
-        "cachedAt": "2026-09-10T12:19:01.650Z"
+        "cachedAt": "2026-09-10T19:24:01.247Z"
+      },
+      "0HxDlfqWhq0JsYGRSSmp": {
+        "fields": [
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "BRIGGITT HARPER requested to be included in the loop for monthly live calls with the coach. She was then notified about a live masterclass session with Will Roundtree, including a Zoom link to join. Additionally, she received notifications regarding two invoices from WE Management Services—one for $15,000 due in October 2026 and another for $7,500 due in September 2026—and confirmation of payment received for the $7,500 invoice. The conversation concluded with all requested information and confirmations provided to BRIGGITT."
+          },
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 2
+          }
+        ],
+        "cachedAt": "2026-09-10T19:24:01.241Z"
       }
     },
     "processedConversations": {
