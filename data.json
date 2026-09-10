@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T07:27:11.695Z",
+  "generatedAt": "2026-09-10T12:18:50.281Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -118,10 +118,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-25T21:09:11.752Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-25T21:11:28.638Z",
       "closeRate": 0
@@ -516,6 +512,10 @@
     },
     {
       "t": "2026-09-10T07:27:11.695Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-10T12:18:50.281Z",
       "closeRate": 0
     }
   ],
@@ -10273,7 +10273,7 @@
             "value": 2
           }
         ],
-        "cachedAt": "2026-09-10T02:27:26.870Z"
+        "cachedAt": "2026-09-10T12:19:01.651Z"
       },
       "aMm2RILmzXpaxtFmemi1": {
         "fields": [
@@ -10315,7 +10315,7 @@
             "value": "Michael Williams was working to process and pay invoices from WE Management Services, specifically invoice INV-000647 and its two schedules, each for $425.00, totaling $850.00. He received invoice links and confirmation messages for each payment made. The conversation included requests for payment processing and confirmation of receipt for both schedule-1 and schedule-2. The interaction concluded with WE Management Services confirming full payment of $850.00 and offering further assistance after a missed call from Michael."
           }
         ],
-        "cachedAt": "2026-09-10T02:27:26.885Z"
+        "cachedAt": "2026-09-10T12:19:01.650Z"
       }
     },
     "processedConversations": {
