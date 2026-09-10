@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T23:43:21.187Z",
+  "generatedAt": "2026-09-10T02:27:24.636Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -9,7 +9,7 @@
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 5,
+      "outboundAttempts": 34,
       "connected": 29,
       "qualified": 1,
       "heldCall": 0,
@@ -79,7 +79,7 @@
     },
     "totals": {
       "contractValue": 0,
-      "cashCollected": 19067,
+      "cashCollected": 26567,
       "closeRate": 0
     },
     "attributionChains": [],
@@ -92,7 +92,309 @@
       "Rianna",
       "Jen"
     ],
-    "callLog": [],
+    "callLog": [
+      {
+        "time": "2026-09-03T00:00:18.831Z",
+        "setter": "Jercori",
+        "contact": "James Mocombe",
+        "status": "no-answer",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-27T18:50:23.706Z",
+        "setter": "Unknown",
+        "contact": "James Mocombe",
+        "status": "no-answer",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-25T16:36:01.411Z",
+        "setter": "Unknown",
+        "contact": "Cindy Leiva",
+        "status": "completed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-24T22:23:29.785Z",
+        "setter": "Unknown",
+        "contact": "Wanjrioa Wilkins",
+        "status": "completed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-21T20:37:05.376Z",
+        "setter": "Unknown",
+        "contact": "Sirrene Derrick",
+        "status": "completed",
+        "durationSec": 59
+      },
+      {
+        "time": "2026-08-21T20:24:53.757Z",
+        "setter": "Unknown",
+        "contact": "Rhamere Coleman",
+        "status": "no-answer",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-21T20:17:48.366Z",
+        "setter": "Unknown",
+        "contact": "Magaly Arce",
+        "status": "completed",
+        "durationSec": 55
+      },
+      {
+        "time": "2026-08-21T18:38:09.225Z",
+        "setter": "Unknown",
+        "contact": "Aneisha",
+        "status": "completed",
+        "durationSec": 26
+      },
+      {
+        "time": "2026-08-20T23:45:02.278Z",
+        "setter": "Unknown",
+        "contact": "Taqueena Wilkes",
+        "status": "completed",
+        "durationSec": 8
+      },
+      {
+        "time": "2026-08-20T22:01:18.794Z",
+        "setter": "Unknown",
+        "contact": "Christian Nobles-turner",
+        "status": "completed",
+        "durationSec": 27
+      },
+      {
+        "time": "2026-08-19T18:37:33.736Z",
+        "setter": "Unknown",
+        "contact": "Erin Mcclenny",
+        "status": "completed",
+        "durationSec": 35
+      },
+      {
+        "time": "2026-08-18T22:04:09.540Z",
+        "setter": "Unknown",
+        "contact": "Tonya Poynter",
+        "status": "completed",
+        "durationSec": 51
+      },
+      {
+        "time": "2026-08-18T19:03:02.015Z",
+        "setter": "Sophia Cruz",
+        "contact": "TOLL FREE CALL",
+        "status": "completed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-18T19:00:10.626Z",
+        "setter": "Unknown",
+        "contact": "Tonya Poynter",
+        "status": "failed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-18T18:59:07.671Z",
+        "setter": "Unknown",
+        "contact": "Tonya Poynter",
+        "status": "failed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-18T18:56:29.194Z",
+        "setter": "Unknown",
+        "contact": "Tonya Poynter",
+        "status": "failed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-18T17:17:12.140Z",
+        "setter": "Unknown",
+        "contact": "Edward Parker",
+        "status": "completed",
+        "durationSec": 56
+      },
+      {
+        "time": "2026-08-14T18:15:38.989Z",
+        "setter": "Unknown",
+        "contact": "Kaitlyn Kolybakos",
+        "status": "completed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-08-14T18:04:48.492Z",
+        "setter": "Unknown",
+        "contact": "Renee Todd",
+        "status": "completed",
+        "durationSec": 35
+      },
+      {
+        "time": "2026-08-14T17:54:45.207Z",
+        "setter": "Unknown",
+        "contact": "Jionte Ferguson",
+        "status": "completed",
+        "durationSec": 33
+      },
+      {
+        "time": "2026-08-14T17:39:27.106Z",
+        "setter": "Unknown",
+        "contact": "Nat Carter",
+        "status": "completed",
+        "durationSec": 37
+      },
+      {
+        "time": "2026-08-14T17:27:09.857Z",
+        "setter": "Unknown",
+        "contact": "Damion Stephens",
+        "status": "completed",
+        "durationSec": 56
+      },
+      {
+        "time": "2026-08-14T17:12:31.649Z",
+        "setter": "Unknown",
+        "contact": "Lakesia Jeffery",
+        "status": "completed",
+        "durationSec": 54
+      },
+      {
+        "time": "2026-08-14T16:59:42.541Z",
+        "setter": "Unknown",
+        "contact": "Rob Anika",
+        "status": "completed",
+        "durationSec": 25
+      },
+      {
+        "time": "2026-08-14T16:41:17.469Z",
+        "setter": "Unknown",
+        "contact": "Cory Sims",
+        "status": "completed",
+        "durationSec": 36
+      },
+      {
+        "time": "2026-08-14T16:26:22.417Z",
+        "setter": "Unknown",
+        "contact": "Myke Johnson",
+        "status": "completed",
+        "durationSec": 69
+      },
+      {
+        "time": "2026-08-14T16:23:18.443Z",
+        "setter": "Unknown",
+        "contact": "Nahaeisha Williams",
+        "status": "completed",
+        "durationSec": 54
+      },
+      {
+        "time": "2026-08-14T16:21:07.607Z",
+        "setter": "Unknown",
+        "contact": "Britney Raheem",
+        "status": "completed",
+        "durationSec": 50
+      },
+      {
+        "time": "2026-08-14T16:14:07.699Z",
+        "setter": "Unknown",
+        "contact": "Deonka Johnson",
+        "status": "completed",
+        "durationSec": 54
+      },
+      {
+        "time": "2026-08-14T00:52:50.151Z",
+        "setter": "Unknown",
+        "contact": "Wanjrioa Wilkins",
+        "status": "completed",
+        "durationSec": 64
+      },
+      {
+        "time": "2026-08-13T21:54:01.814Z",
+        "setter": "Unknown",
+        "contact": "Mia P",
+        "status": "completed",
+        "durationSec": 55
+      },
+      {
+        "time": "2026-08-13T20:07:51.745Z",
+        "setter": "Unknown",
+        "contact": "Wanjrioa Wilkins",
+        "status": "completed",
+        "durationSec": 35
+      },
+      {
+        "time": "2026-08-10T22:58:04.416Z",
+        "setter": "Unknown",
+        "contact": "Magaly Arce",
+        "status": "completed",
+        "durationSec": 56
+      },
+      {
+        "time": "2026-08-03T23:51:35.754Z",
+        "setter": "Unknown",
+        "contact": "Nahaeisha Williams",
+        "status": "completed",
+        "durationSec": 40
+      },
+      {
+        "time": "2026-07-30T21:51:50.000Z",
+        "setter": "Unknown",
+        "contact": "Tonya Poynter",
+        "status": "completed",
+        "durationSec": 28
+      },
+      {
+        "time": "2026-04-07T17:20:38.855Z",
+        "setter": "Unknown",
+        "contact": "Lakesia Jeffery",
+        "status": "completed",
+        "durationSec": 32
+      },
+      {
+        "time": "2026-03-23T18:43:37.615Z",
+        "setter": "Unknown",
+        "contact": "Myke Johnson",
+        "status": "completed",
+        "durationSec": 105
+      },
+      {
+        "time": "2026-03-18T23:57:07.011Z",
+        "setter": "Unknown",
+        "contact": "Britney Raheem",
+        "status": "completed",
+        "durationSec": 14
+      },
+      {
+        "time": "2026-03-18T00:54:39.651Z",
+        "setter": "Unknown",
+        "contact": "Deonka Johnson",
+        "status": "completed",
+        "durationSec": 23
+      },
+      {
+        "time": "2026-03-16T22:37:08.184Z",
+        "setter": "Unknown",
+        "contact": "Rhamere Coleman",
+        "status": "no-answer",
+        "durationSec": null
+      },
+      {
+        "time": "2026-03-16T21:59:36.156Z",
+        "setter": "Unknown",
+        "contact": "Magaly Arce",
+        "status": "completed",
+        "durationSec": 18
+      },
+      {
+        "time": "2026-03-16T21:57:38.336Z",
+        "setter": "Unknown",
+        "contact": "Magaly Arce",
+        "status": "completed",
+        "durationSec": 59
+      },
+      {
+        "time": "2025-09-01T18:25:50.799Z",
+        "setter": "Unknown",
+        "contact": "Rhamere Coleman",
+        "status": "no-answer",
+        "durationSec": null
+      }
+    ],
     "activityPoints": {
       "Marshell": {
         "points": 0,
@@ -118,10 +420,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-25T20:53:31.918Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-25T21:07:28.801Z",
       "closeRate": 0
@@ -517,9 +815,20 @@
     {
       "t": "2026-09-09T23:43:21.187Z",
       "closeRate": 0
+    },
+    {
+      "t": "2026-09-10T02:27:24.636Z",
+      "closeRate": 0
     }
   ],
   "callLogHistory": [
+    {
+      "time": "2026-09-03T00:00:18.831Z",
+      "setter": "Jercori",
+      "contact": "James Mocombe",
+      "status": "no-answer",
+      "durationSec": null
+    },
     {
       "time": "2026-09-02T13:52:44.029Z",
       "setter": "Jercori",
@@ -794,6 +1103,13 @@
       "durationSec": 39
     },
     {
+      "time": "2026-08-27T18:50:23.706Z",
+      "setter": "Unknown",
+      "contact": "James Mocombe",
+      "status": "no-answer",
+      "durationSec": null
+    },
+    {
       "time": "2026-08-27T18:00:59.024Z",
       "setter": "Rianna",
       "contact": "Cleaning Angel's",
@@ -885,6 +1201,13 @@
       "durationSec": null
     },
     {
+      "time": "2026-08-25T16:36:01.411Z",
+      "setter": "Unknown",
+      "contact": "Cindy Leiva",
+      "status": "completed",
+      "durationSec": null
+    },
+    {
       "time": "2026-08-25T16:32:25.186Z",
       "setter": "Rianna",
       "contact": "Kierra Craig",
@@ -915,6 +1238,13 @@
     {
       "time": "2026-08-24T22:23:29.785Z",
       "setter": "Rianna",
+      "contact": "Wanjrioa Wilkins",
+      "status": "completed",
+      "durationSec": null
+    },
+    {
+      "time": "2026-08-24T22:23:29.785Z",
+      "setter": "Unknown",
       "contact": "Wanjrioa Wilkins",
       "status": "completed",
       "durationSec": null
@@ -1004,6 +1334,13 @@
       "durationSec": 59
     },
     {
+      "time": "2026-08-21T20:37:05.376Z",
+      "setter": "Unknown",
+      "contact": "Sirrene Derrick",
+      "status": "completed",
+      "durationSec": 59
+    },
+    {
       "time": "2026-08-21T20:26:55.753Z",
       "setter": "Jen",
       "contact": "Joey Foty",
@@ -1025,8 +1362,22 @@
       "durationSec": null
     },
     {
+      "time": "2026-08-21T20:24:53.757Z",
+      "setter": "Unknown",
+      "contact": "Rhamere Coleman",
+      "status": "no-answer",
+      "durationSec": null
+    },
+    {
       "time": "2026-08-21T20:17:48.366Z",
       "setter": "Jen",
+      "contact": "Magaly Arce",
+      "status": "completed",
+      "durationSec": 55
+    },
+    {
+      "time": "2026-08-21T20:17:48.366Z",
+      "setter": "Unknown",
       "contact": "Magaly Arce",
       "status": "completed",
       "durationSec": 55
@@ -1088,6 +1439,13 @@
       "durationSec": 26
     },
     {
+      "time": "2026-08-21T18:38:09.225Z",
+      "setter": "Unknown",
+      "contact": "Aneisha",
+      "status": "completed",
+      "durationSec": 26
+    },
+    {
       "time": "2026-08-21T17:58:43.066Z",
       "setter": "Jen",
       "contact": "Hakeem | Credit Repair/ Funding& Passiveincome Expert",
@@ -1116,8 +1474,22 @@
       "durationSec": 8
     },
     {
+      "time": "2026-08-20T23:45:02.278Z",
+      "setter": "Unknown",
+      "contact": "Taqueena Wilkes",
+      "status": "completed",
+      "durationSec": 8
+    },
+    {
       "time": "2026-08-20T22:01:18.794Z",
       "setter": "Rianna",
+      "contact": "Christian Nobles-turner",
+      "status": "completed",
+      "durationSec": 27
+    },
+    {
+      "time": "2026-08-20T22:01:18.794Z",
+      "setter": "Unknown",
       "contact": "Christian Nobles-turner",
       "status": "completed",
       "durationSec": 27
@@ -1193,6 +1565,13 @@
       "durationSec": null
     },
     {
+      "time": "2026-08-19T18:37:33.736Z",
+      "setter": "Unknown",
+      "contact": "Erin Mcclenny",
+      "status": "completed",
+      "durationSec": 35
+    },
+    {
       "time": "2026-08-19T17:36:10.346Z",
       "setter": "Rianna",
       "contact": "Beverley Blake",
@@ -1249,6 +1628,13 @@
       "durationSec": 51
     },
     {
+      "time": "2026-08-18T22:04:09.540Z",
+      "setter": "Unknown",
+      "contact": "Tonya Poynter",
+      "status": "completed",
+      "durationSec": 51
+    },
+    {
       "time": "2026-08-18T22:03:55.723Z",
       "setter": "Jen",
       "contact": "Arletha Mariland",
@@ -1291,6 +1677,13 @@
       "durationSec": null
     },
     {
+      "time": "2026-08-18T19:00:10.626Z",
+      "setter": "Unknown",
+      "contact": "Tonya Poynter",
+      "status": "failed",
+      "durationSec": null
+    },
+    {
       "time": "2026-08-18T18:59:07.671Z",
       "setter": "Jen",
       "contact": "Tonya Poynter",
@@ -1298,8 +1691,22 @@
       "durationSec": null
     },
     {
+      "time": "2026-08-18T18:59:07.671Z",
+      "setter": "Unknown",
+      "contact": "Tonya Poynter",
+      "status": "failed",
+      "durationSec": null
+    },
+    {
       "time": "2026-08-18T18:56:29.194Z",
       "setter": "Jen",
+      "contact": "Tonya Poynter",
+      "status": "failed",
+      "durationSec": null
+    },
+    {
+      "time": "2026-08-18T18:56:29.194Z",
+      "setter": "Unknown",
       "contact": "Tonya Poynter",
       "status": "failed",
       "durationSec": null
@@ -1335,6 +1742,13 @@
     {
       "time": "2026-08-18T17:17:12.140Z",
       "setter": "Rianna",
+      "contact": "Edward Parker",
+      "status": "completed",
+      "durationSec": 56
+    },
+    {
+      "time": "2026-08-18T17:17:12.140Z",
+      "setter": "Unknown",
       "contact": "Edward Parker",
       "status": "completed",
       "durationSec": 56
@@ -1417,6 +1831,90 @@
       "durationSec": 42
     },
     {
+      "time": "2026-08-14T18:15:38.989Z",
+      "setter": "Unknown",
+      "contact": "Kaitlyn Kolybakos",
+      "status": "completed",
+      "durationSec": null
+    },
+    {
+      "time": "2026-08-14T18:04:48.492Z",
+      "setter": "Unknown",
+      "contact": "Renee Todd",
+      "status": "completed",
+      "durationSec": 35
+    },
+    {
+      "time": "2026-08-14T17:54:45.207Z",
+      "setter": "Unknown",
+      "contact": "Jionte Ferguson",
+      "status": "completed",
+      "durationSec": 33
+    },
+    {
+      "time": "2026-08-14T17:39:27.106Z",
+      "setter": "Unknown",
+      "contact": "Nat Carter",
+      "status": "completed",
+      "durationSec": 37
+    },
+    {
+      "time": "2026-08-14T17:27:09.857Z",
+      "setter": "Unknown",
+      "contact": "Damion Stephens",
+      "status": "completed",
+      "durationSec": 56
+    },
+    {
+      "time": "2026-08-14T17:12:31.649Z",
+      "setter": "Unknown",
+      "contact": "Lakesia Jeffery",
+      "status": "completed",
+      "durationSec": 54
+    },
+    {
+      "time": "2026-08-14T16:59:42.541Z",
+      "setter": "Unknown",
+      "contact": "Rob Anika",
+      "status": "completed",
+      "durationSec": 25
+    },
+    {
+      "time": "2026-08-14T16:41:17.469Z",
+      "setter": "Unknown",
+      "contact": "Cory Sims",
+      "status": "completed",
+      "durationSec": 36
+    },
+    {
+      "time": "2026-08-14T16:26:22.417Z",
+      "setter": "Unknown",
+      "contact": "Myke Johnson",
+      "status": "completed",
+      "durationSec": 69
+    },
+    {
+      "time": "2026-08-14T16:23:18.443Z",
+      "setter": "Unknown",
+      "contact": "Nahaeisha Williams",
+      "status": "completed",
+      "durationSec": 54
+    },
+    {
+      "time": "2026-08-14T16:21:07.607Z",
+      "setter": "Unknown",
+      "contact": "Britney Raheem",
+      "status": "completed",
+      "durationSec": 50
+    },
+    {
+      "time": "2026-08-14T16:14:07.699Z",
+      "setter": "Unknown",
+      "contact": "Deonka Johnson",
+      "status": "completed",
+      "durationSec": 54
+    },
+    {
       "time": "2026-08-14T00:52:50.151Z",
       "setter": "Unknown",
       "contact": "Wanjrioa Wilkins",
@@ -1431,8 +1929,22 @@
       "durationSec": 31
     },
     {
+      "time": "2026-08-13T21:54:01.814Z",
+      "setter": "Unknown",
+      "contact": "Mia P",
+      "status": "completed",
+      "durationSec": 55
+    },
+    {
       "time": "2026-08-13T20:07:51.745Z",
       "setter": "Rianna",
+      "contact": "Wanjrioa Wilkins",
+      "status": "completed",
+      "durationSec": 35
+    },
+    {
+      "time": "2026-08-13T20:07:51.745Z",
+      "setter": "Unknown",
       "contact": "Wanjrioa Wilkins",
       "status": "completed",
       "durationSec": 35
@@ -1461,6 +1973,13 @@
     {
       "time": "2026-08-10T22:58:04.416Z",
       "setter": "Jen",
+      "contact": "Magaly Arce",
+      "status": "completed",
+      "durationSec": 56
+    },
+    {
+      "time": "2026-08-10T22:58:04.416Z",
+      "setter": "Unknown",
       "contact": "Magaly Arce",
       "status": "completed",
       "durationSec": 56
@@ -1499,6 +2018,13 @@
       "contact": "Clyde A. Long Jr",
       "status": "completed",
       "durationSec": null
+    },
+    {
+      "time": "2026-08-03T23:51:35.754Z",
+      "setter": "Unknown",
+      "contact": "Nahaeisha Williams",
+      "status": "completed",
+      "durationSec": 40
     },
     {
       "time": "2026-07-31T21:45:54.131Z",
@@ -1559,6 +2085,13 @@
     {
       "time": "2026-07-30T21:51:50.000Z",
       "setter": "Jen",
+      "contact": "Tonya Poynter",
+      "status": "completed",
+      "durationSec": 28
+    },
+    {
+      "time": "2026-07-30T21:51:50.000Z",
+      "setter": "Unknown",
       "contact": "Tonya Poynter",
       "status": "completed",
       "durationSec": 28
@@ -10018,7 +10551,7 @@
             "value": 2
           }
         ],
-        "cachedAt": "2026-09-09T18:58:56.632Z"
+        "cachedAt": "2026-09-10T02:27:26.870Z"
       },
       "aMm2RILmzXpaxtFmemi1": {
         "fields": [
@@ -10057,19 +10590,19 @@
           },
           {
             "id": "bivODsQj5TA8RhIKK6cZ",
-            "value": "Michael Williams reached out to WE Management Services seeking assistance with removing credit inquiries to help improve his and his wife's credit scores in preparation for purchasing a home. He provided background on past identity theft, credit score recovery, and specific issues with Regions Bank repeatedly pulling their credit reports. Michael requested technical information about inquiry removal services and pricing. The conversation concluded with WE Management Services quoting $850 for his wife and $1000 for him, sending an invoice, and providing a payment link."
+            "value": "Michael Williams was working to process and pay invoices from WE Management Services, specifically invoice INV-000647 and its two schedules, each for $425.00, totaling $850.00. He received invoice links and confirmation messages for each payment made. The conversation included requests for payment processing and confirmation of receipt for both schedule-1 and schedule-2. The interaction concluded with WE Management Services confirming full payment of $850.00 and offering further assistance after a missed call from Michael."
           }
         ],
-        "cachedAt": "2026-09-09T18:58:56.880Z"
+        "cachedAt": "2026-09-10T02:27:26.885Z"
       }
     },
     "processedConversations": {
       "Q23AT2Tc4jiYlDorl9at": 1787682907739,
-      "A0BG5rXdXIjtQkSZWLHN": 1787681162625,
+      "A0BG5rXdXIjtQkSZWLHN": 1788566971038,
       "w7VMKGXtEtOdQHXdP7Gw": 1787682909427,
       "03pWw8clrEXRP6JiuLop": 1787681163848,
       "N74P8Yw48vMBOHYe8LUy": 1787681243121,
-      "gwL79cdHHlpcN1u5v7ig": 1787681145666,
+      "gwL79cdHHlpcN1u5v7ig": 1788567362195,
       "ytLL7g5wTt2i0XsJWlwT": 1787681195133,
       "hOeduFqjzCXdXtc8vfs0": 1787681409453,
       "RZQkiDqmppI9yDhpCFdD": 1787681410508,
@@ -10081,12 +10614,12 @@
       "1f515Tnpop5EryAaf2wU": 1786998431132,
       "7ABWDsn87X0KdFaJpSDA": 1786998486151,
       "p7nJabcZrnosRKQGUZq5": 1787682315309,
-      "Fk2KXYSPFjsCUhAy02fJ": 1787681232947,
+      "Fk2KXYSPFjsCUhAy02fJ": 1788566980797,
       "Ch91VJb2ufpwLFN1SaXZ": 1787687774170,
       "TA89Lp6wCNjJIhFjrdrj": 1787681408912,
       "jF1IFqCxF0IxweXTOf6j": 1787681204111,
-      "xCaXksWQOwzCbBi80yeq": 1787681193972,
-      "Tq1qgGSi05qLTZjlcvz3": 1787681230003,
+      "xCaXksWQOwzCbBi80yeq": 1788567901916,
+      "Tq1qgGSi05qLTZjlcvz3": 1788568398723,
       "Tl0piEengJQOu6fgKOcQ": 1787681405111,
       "UlffNFXWjR5QGTDoUpMY": 1787681244298,
       "mNU3FlVWxmlZSHqGLwQD": 1788568995754,
@@ -10095,16 +10628,16 @@
       "T2Bwe7Vuas381jgCFDOw": 1787681233641,
       "wQbWfUMYDwMOXc3hg1UZ": 1787681183944,
       "WL2VmGUTgXs0zgDEpko3": 1787681245292,
-      "dM3GjZdHu0evLdjhSRHc": 1787682006697,
-      "GS9hTTGh1shJSCDunYt1": 1787681408409,
+      "dM3GjZdHu0evLdjhSRHc": 1788567871439,
+      "GS9hTTGh1shJSCDunYt1": 1788567200028,
       "Oqg0cbUWgFlC8Q4ppjB7": 1787681707785,
       "tA7wTt6xOYJeIgTnWSVj": 1787681413025,
-      "BlfFhI3BIFQ0X33PRp57": 1787681414349,
+      "BlfFhI3BIFQ0X33PRp57": 1788567240374,
       "qOj7wjoWbqrhl9HU4fdi": 1787681215409,
       "j1pDKI5884y8ji9NoE1D": 1787681411295,
       "HyAM7yazqgiElmcH7VOt": 1787681409388,
       "hDX3M8HrbtqaR9Q2cTRM": 1787682007764,
-      "phWFteKa5o3WifEZq77d": 1787681143612,
+      "phWFteKa5o3WifEZq77d": 1788567291406,
       "4MjXuzT8qA11rjHwdiDv": 1787681234564,
       "cL6OKGGtyZ7qyxJGsRdM": 1787681709230,
       "1HYZatxCy0wbmSFe4R5E": 1787681123935,
@@ -10116,10 +10649,10 @@
       "FfRuOeCZs5ogo8AqlOsx": 1787681243422,
       "Rh3vELSuK4za6pHWYTyn": 1787681407329,
       "1OakvvO6s4NTpYFL6olM": 1787681235060,
-      "5JFEaQY1jiB409QQkQ70": 1787681712488,
+      "5JFEaQY1jiB409QQkQ70": 1788566980764,
       "Fy9wU0jVqHItymVuooef": 1787681240040,
       "sUNAQOBHZnYqcxQSCkuw": 1787681192812,
-      "NGVvopA4DIzcoKRCBSVt": 1787681148472,
+      "NGVvopA4DIzcoKRCBSVt": 1788567348423,
       "Lx6jJwaOiQMW52FmBLqj": 1787682612706,
       "WtXjnRfH1O1ecyfiJAEy": 1787698819760,
       "DyDJuuC9vZdD8YRj2cdm": 1787769411638,
@@ -10156,7 +10689,22 @@
       "at2UiebiEuylseH8qLou": 1788029395806,
       "vu6RbdzSUAr6Hvsws4WV": 1788046484304,
       "oVo0s355crfsYVq81D7y": 1788568997777,
-      "DMdn749OiIUlyG0v2HBx": 1788356980906
+      "DMdn749OiIUlyG0v2HBx": 1788356980906,
+      "TAcWb13SAgTAxHqxsF8M": 1788567373170,
+      "rGazANpj0TTiMI0I1Bal": 1788393622650,
+      "NCl3Yk9uUxK1h2uRdIB3": 1788567315528,
+      "u7hj3nfPBsvHVbWVZuB5": 1788567315290,
+      "guS8br2aaShq2cG7jOcW": 1788567311968,
+      "VFSLY1xHKj0EDKpWVixY": 1788567300553,
+      "RfKKxJl8EsAGSJm2mNl9": 1788567300978,
+      "uNrS9WSePxxzZ2pG0W9W": 1788567301239,
+      "JANjavGkoy5dD1MXEU9m": 1788567300348,
+      "a1Y51dRIuCtBVFfb1ApG": 1788567301070,
+      "RLGn8Cm4pZTix1Obuww5": 1788567290214,
+      "cCofRyeqflPpPMhJ3ARB": 1788567280796,
+      "s3UvDFK7pHAr13tfgB48": 1788567400897,
+      "xLweoPk6HzXZNB6EaLxs": 1788567281137,
+      "FlnvhoQh4OBnyUDTZaj2": 1788567280824
     }
   }
 }
