@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T23:35:47.477Z",
+  "generatedAt": "2026-09-11T02:21:46.143Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -131,10 +131,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-25T21:56:10.771Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-25T22:27:15.569Z",
       "closeRate": 0
@@ -529,6 +525,10 @@
     },
     {
       "t": "2026-09-10T23:35:47.477Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-11T02:21:46.143Z",
       "closeRate": 0
     }
   ],
@@ -10286,7 +10286,7 @@
             "value": 2
           }
         ],
-        "cachedAt": "2026-09-10T19:24:01.285Z"
+        "cachedAt": "2026-09-11T02:21:48.753Z"
       },
       "aMm2RILmzXpaxtFmemi1": {
         "fields": [
@@ -10313,7 +10313,7 @@
         "fields": [
           {
             "id": "8QsK7kGkZKWYvOdxbO5B",
-            "value": 2
+            "value": 3
           },
           {
             "id": "ewoypG7axSSTl1TFNZpM",
@@ -10328,7 +10328,7 @@
             "value": "Michael Williams contacted WE Management Services regarding an issue with IdentityIQ. He confirmed that the issue was resolved and, upon request, provided his login email, the last four digits of his social security number, and his password for account access. The conversation then shifted to an invitation for Michael to join a live masterclass event. The interaction concluded with the sharing of the event link and encouragement to join the session."
           }
         ],
-        "cachedAt": "2026-09-10T19:24:01.247Z"
+        "cachedAt": "2026-09-11T02:21:48.703Z"
       },
       "0HxDlfqWhq0JsYGRSSmp": {
         "fields": [
@@ -10338,10 +10338,10 @@
           },
           {
             "id": "8QsK7kGkZKWYvOdxbO5B",
-            "value": 2
+            "value": 3
           }
         ],
-        "cachedAt": "2026-09-10T19:24:01.241Z"
+        "cachedAt": "2026-09-11T02:21:48.697Z"
       },
       "GCgerjZh4Du7ksorCzfM": {
         "fields": [
