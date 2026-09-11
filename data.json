@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T19:22:38.357Z",
+  "generatedAt": "2026-09-11T21:48:51.337Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -131,10 +131,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-26T05:20:29.038Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-26T08:03:39.224Z",
       "closeRate": 0
@@ -529,6 +525,10 @@
     },
     {
       "t": "2026-09-11T19:22:38.357Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-11T21:48:51.337Z",
       "closeRate": 0
     }
   ],
@@ -2282,20 +2282,6 @@
       "contact": "Eddie",
       "status": "completed",
       "durationSec": 530
-    },
-    {
-      "time": "2026-05-14T20:48:37.999Z",
-      "setter": "Jen",
-      "contact": "Frankie King",
-      "status": "completed",
-      "durationSec": 31
-    },
-    {
-      "time": "2026-05-14T20:47:37.572Z",
-      "setter": "Jen",
-      "contact": "Frankie King",
-      "status": "completed",
-      "durationSec": 16
     }
   ],
   "cache": {
@@ -10367,6 +10353,23 @@
       "ai8F7knmb3P5WlYJSGpF": {
         "fields": [],
         "cachedAt": "2026-09-11T16:39:05.485Z"
+      },
+      "cgLPI7axOzhKY8Oxcn50": {
+        "fields": [
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 2
+          },
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Organic Leads"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Muhammad Lewis was working to finalize one last detail before proceeding with the onboarding process for a nightclub deal, for which a lender was being sourced. He did not request specific technical information but indicated he would notify the agent once ready to continue. The conversation included reminders about a live masterclass event and an invoice due for payment, as well as a follow-up question regarding prior experience with business funding. The discussion concluded with Muhammad planning to reach out when ready, while the agent awaited his response to proceed."
+          }
+        ],
+        "cachedAt": "2026-09-11T21:48:54.705Z"
       }
     },
     "processedConversations": {
