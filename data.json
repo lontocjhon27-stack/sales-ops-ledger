@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T23:45:01.842Z",
+  "generatedAt": "2026-09-12T02:29:21.781Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -10,8 +10,8 @@
   "data": {
     "funnel": {
       "outboundAttempts": 33,
-      "connected": 29,
-      "qualified": 1,
+      "connected": 4,
+      "qualified": 0,
       "heldCall": 0,
       "won": 0
     },
@@ -19,7 +19,7 @@
       {
         "label": "Under $10k",
         "closer": "Jen",
-        "count": 2
+        "count": 0
       },
       {
         "label": "$10k-$19,999",
@@ -41,45 +41,6 @@
         "outbound": 1,
         "connected": 0,
         "qualified": 0,
-        "liveTransferAttempted": 0,
-        "liveTransferAccepted": 0,
-        "appointmentsBooked": 0,
-        "heldCalls": 0,
-        "noShows": 0,
-        "won": 0,
-        "contractValue": 0,
-        "cashCollected": 0
-      },
-      "Marshell": {
-        "outbound": 1,
-        "connected": 1,
-        "qualified": 0,
-        "liveTransferAttempted": 0,
-        "liveTransferAccepted": 0,
-        "appointmentsBooked": 0,
-        "heldCalls": 0,
-        "noShows": 0,
-        "won": 0,
-        "contractValue": 0,
-        "cashCollected": 0
-      },
-      "Jen": {
-        "outbound": 0,
-        "connected": 0,
-        "qualified": 0,
-        "liveTransferAttempted": 0,
-        "liveTransferAccepted": 0,
-        "appointmentsBooked": 0,
-        "heldCalls": 0,
-        "noShows": 0,
-        "won": 0,
-        "contractValue": 0,
-        "cashCollected": 0
-      },
-      "Rianna": {
-        "outbound": 3,
-        "connected": 2,
-        "qualified": 1,
         "liveTransferAttempted": 0,
         "liveTransferAccepted": 0,
         "appointmentsBooked": 0,
@@ -131,10 +92,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-26T10:18:36.423Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-26T11:55:47.762Z",
       "closeRate": 0
@@ -529,6 +486,10 @@
     },
     {
       "t": "2026-09-11T23:45:01.842Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-12T02:29:21.781Z",
       "closeRate": 0
     }
   ],
@@ -10276,7 +10237,7 @@
             "value": 2
           }
         ],
-        "cachedAt": "2026-09-11T19:22:42.604Z"
+        "cachedAt": "2026-09-12T02:29:25.170Z"
       },
       "aMm2RILmzXpaxtFmemi1": {
         "fields": [
@@ -10318,7 +10279,7 @@
             "value": "Michael Williams contacted WE Management Services regarding an issue with IdentityIQ. He confirmed that the issue was resolved and, upon request, provided his login email, the last four digits of his social security number, and his password for account access. The conversation then shifted to an invitation for Michael to join a live masterclass event. The interaction concluded with the sharing of the event link and encouragement to join the session."
           }
         ],
-        "cachedAt": "2026-09-11T19:22:42.638Z"
+        "cachedAt": "2026-09-12T02:29:25.167Z"
       },
       "0HxDlfqWhq0JsYGRSSmp": {
         "fields": [
@@ -10331,7 +10292,7 @@
             "value": 3
           }
         ],
-        "cachedAt": "2026-09-11T19:22:42.663Z"
+        "cachedAt": "2026-09-12T02:29:25.174Z"
       },
       "GCgerjZh4Du7ksorCzfM": {
         "fields": [
