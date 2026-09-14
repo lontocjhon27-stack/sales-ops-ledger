@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T19:53:48.888Z",
+  "generatedAt": "2026-09-14T22:53:19.149Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -9,8 +9,8 @@
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 24,
-      "connected": 6,
+      "outboundAttempts": 31,
+      "connected": 5,
       "qualified": 0,
       "heldCall": 0,
       "won": 0
@@ -68,32 +68,95 @@
     ],
     "callLog": [
       {
-        "time": "2026-09-07T19:51:00.013Z",
+        "time": "2026-09-07T20:05:28.169Z",
         "setter": "Jercori",
-        "contact": "Abrar Malik |Credit|0% interest Funding",
+        "contact": "Jozefina Wells",
         "status": "completed",
-        "durationSec": 11
+        "durationSec": 5
       },
       {
-        "time": "2026-09-07T19:50:14.957Z",
+        "time": "2026-09-07T20:04:08.278Z",
         "setter": "Jercori",
-        "contact": "Karelis Gordillo",
+        "contact": "Christopher Johnson",
         "status": "completed",
-        "durationSec": 32
+        "durationSec": 43
       },
       {
-        "time": "2026-09-07T19:45:48.357Z",
+        "time": "2026-09-07T20:03:11.046Z",
         "setter": "Jercori",
-        "contact": "Yonga Yassa",
+        "contact": "Rebekah Jones",
         "status": "completed",
-        "durationSec": 27
+        "durationSec": 42
       },
       {
-        "time": "2026-04-14T22:25:18.435Z",
+        "time": "2026-09-07T20:01:11.000Z",
+        "setter": "Jercori",
+        "contact": "Brenton Daye",
+        "status": "completed",
+        "durationSec": 28
+      },
+      {
+        "time": "2026-09-07T20:00:12.406Z",
+        "setter": "Jercori",
+        "contact": "Brian Leakeas",
+        "status": "completed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-09-07T19:56:48.358Z",
+        "setter": "Jercori",
+        "contact": "Monique Legrow",
+        "status": "completed",
+        "durationSec": 25
+      },
+      {
+        "time": "2026-09-07T19:55:51.799Z",
+        "setter": "Jercori",
+        "contact": "Ross Raza",
+        "status": "no-answer",
+        "durationSec": null
+      },
+      {
+        "time": "2026-09-07T19:54:12.684Z",
+        "setter": "Jercori",
+        "contact": "Xavier Foster",
+        "status": "failed",
+        "durationSec": null
+      },
+      {
+        "time": "2026-05-11T18:37:29.616Z",
         "setter": "Unknown",
-        "contact": "Abrar Malik |Credit|0% interest Funding",
+        "contact": "Brenton Daye",
         "status": "completed",
-        "durationSec": 32
+        "durationSec": 248
+      },
+      {
+        "time": "2026-05-11T18:33:00.164Z",
+        "setter": "Unknown",
+        "contact": "Brenton Daye",
+        "status": "completed",
+        "durationSec": 4
+      },
+      {
+        "time": "2026-05-11T18:29:57.531Z",
+        "setter": "Unknown",
+        "contact": "Brenton Daye",
+        "status": "completed",
+        "durationSec": 38
+      },
+      {
+        "time": "2026-05-11T18:28:19.751Z",
+        "setter": "Unknown",
+        "contact": "Brenton Daye",
+        "status": "completed",
+        "durationSec": 9
+      },
+      {
+        "time": "2026-05-08T22:08:26.362Z",
+        "setter": "Unknown",
+        "contact": "Christopher Johnson",
+        "status": "completed",
+        "durationSec": 40
       }
     ],
     "activityPoints": {
@@ -121,10 +184,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-31T07:13:15.574Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-31T15:14:36.445Z",
       "closeRate": 0
@@ -520,9 +579,69 @@
     {
       "t": "2026-09-14T19:53:48.888Z",
       "closeRate": 0
+    },
+    {
+      "t": "2026-09-14T22:53:19.149Z",
+      "closeRate": 0
     }
   ],
   "callLogHistory": [
+    {
+      "time": "2026-09-07T20:05:28.169Z",
+      "setter": "Jercori",
+      "contact": "Jozefina Wells",
+      "status": "completed",
+      "durationSec": 5
+    },
+    {
+      "time": "2026-09-07T20:04:08.278Z",
+      "setter": "Jercori",
+      "contact": "Christopher Johnson",
+      "status": "completed",
+      "durationSec": 43
+    },
+    {
+      "time": "2026-09-07T20:03:11.046Z",
+      "setter": "Jercori",
+      "contact": "Rebekah Jones",
+      "status": "completed",
+      "durationSec": 42
+    },
+    {
+      "time": "2026-09-07T20:01:11.000Z",
+      "setter": "Jercori",
+      "contact": "Brenton Daye",
+      "status": "completed",
+      "durationSec": 28
+    },
+    {
+      "time": "2026-09-07T20:00:12.406Z",
+      "setter": "Jercori",
+      "contact": "Brian Leakeas",
+      "status": "completed",
+      "durationSec": null
+    },
+    {
+      "time": "2026-09-07T19:56:48.358Z",
+      "setter": "Jercori",
+      "contact": "Monique Legrow",
+      "status": "completed",
+      "durationSec": 25
+    },
+    {
+      "time": "2026-09-07T19:55:51.799Z",
+      "setter": "Jercori",
+      "contact": "Ross Raza",
+      "status": "no-answer",
+      "durationSec": null
+    },
+    {
+      "time": "2026-09-07T19:54:12.684Z",
+      "setter": "Jercori",
+      "contact": "Xavier Foster",
+      "status": "failed",
+      "durationSec": null
+    },
     {
       "time": "2026-09-07T19:51:00.013Z",
       "setter": "Jercori",
@@ -5576,7 +5695,7 @@
             "value": "Joelle Simon contacted WE Management Services to follow up on a missed call and confirm communication. No specific technical information was requested during the conversation. The discussion concluded with both parties agreeing to talk during a scheduled call the following day."
           }
         ],
-        "cachedAt": "2026-09-14T15:08:23.544Z"
+        "cachedAt": "2026-09-14T22:53:22.640Z"
       },
       "KDWqO0h3Xt7nJFvBG1mw": {
         "fields": [],
@@ -6751,7 +6870,7 @@
             "value": 3
           }
         ],
-        "cachedAt": "2026-09-14T15:08:23.535Z"
+        "cachedAt": "2026-09-14T22:53:22.718Z"
       },
       "Od0TiT30orUb5PyX55id": {
         "fields": [
@@ -10287,7 +10406,7 @@
             "value": 2
           }
         ],
-        "cachedAt": "2026-09-14T15:08:22.904Z"
+        "cachedAt": "2026-09-14T22:53:22.604Z"
       },
       "aMm2RILmzXpaxtFmemi1": {
         "fields": [
@@ -10308,7 +10427,7 @@
             "value": 3
           }
         ],
-        "cachedAt": "2026-09-14T15:08:22.824Z"
+        "cachedAt": "2026-09-14T22:53:22.507Z"
       },
       "q8JCodK1oU8TstouLqlf": {
         "fields": [
@@ -10333,7 +10452,7 @@
             "value": "412044082"
           }
         ],
-        "cachedAt": "2026-09-14T15:08:23.141Z"
+        "cachedAt": "2026-09-14T22:53:23.078Z"
       },
       "0HxDlfqWhq0JsYGRSSmp": {
         "fields": [
@@ -10346,7 +10465,7 @@
             "value": 3
           }
         ],
-        "cachedAt": "2026-09-14T15:08:22.807Z"
+        "cachedAt": "2026-09-14T22:53:22.523Z"
       },
       "GCgerjZh4Du7ksorCzfM": {
         "fields": [
@@ -10363,11 +10482,11 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-14T15:08:22.708Z"
+        "cachedAt": "2026-09-14T22:53:22.385Z"
       },
       "ai8F7knmb3P5WlYJSGpF": {
         "fields": [],
-        "cachedAt": "2026-09-14T15:08:22.699Z"
+        "cachedAt": "2026-09-14T22:53:22.407Z"
       },
       "cgLPI7axOzhKY8Oxcn50": {
         "fields": [
@@ -10384,7 +10503,7 @@
             "value": "Muhammad Lewis and his partner Steve confirmed their flagship store location at 1040 E. Flamingo Road, Las Vegas, to the AI agent \"manual.\" The customer was interested in exploring a strategic marketing campaign involving LV influencers, celebrities, or athletes, as suggested by the agent, who also mentioned having relevant connections. The specific technical information requested was the store's address. The conversation concluded with both parties agreeing to discuss potential collaborations further the next day."
           }
         ],
-        "cachedAt": "2026-09-14T15:08:22.713Z"
+        "cachedAt": "2026-09-14T22:53:22.403Z"
       },
       "Ks4nf2AwOtN7oz7ukwlJ": {
         "fields": [
@@ -10532,7 +10651,15 @@
       "FlnvhoQh4OBnyUDTZaj2": 1788567280824,
       "yr8UBgWM9dxwGmIyXraW": 1788810659972,
       "3TnWUiXgpIqkUtbH2X5c": 1788810614911,
-      "8VdphxBHc7PcqoDRVi3x": 1788810348311
+      "8VdphxBHc7PcqoDRVi3x": 1788810348311,
+      "RSTm89FEHh43E5A6gL8l": 1788811528125,
+      "BbSxjCKmWJb7aNy5hkwW": 1788811448237,
+      "iFlMXp6HT5VYL7ElkXYY": 1788811212366,
+      "JoMEB5xDZpEIn0h4qZa7": 1788811008308,
+      "ZHTyYLznKmP4mNgsB4Z0": 1788811390997,
+      "PvYKBlvwddz6CBZbpBmG": 1788810951752,
+      "s660ehl9CzgOpYDUjaeW": 1788810852634,
+      "yAjkqsAx3eTYwdJBuzch": 1788811270951
     }
   }
 }
