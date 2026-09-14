@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T15:08:18.559Z",
+  "generatedAt": "2026-09-14T19:53:48.888Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -9,8 +9,8 @@
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 31,
-      "connected": 4,
+      "outboundAttempts": 24,
+      "connected": 6,
       "qualified": 0,
       "heldCall": 0,
       "won": 0
@@ -53,7 +53,7 @@
     },
     "totals": {
       "contractValue": 0,
-      "cashCollected": 16894,
+      "cashCollected": 18394,
       "closeRate": 0
     },
     "attributionChains": [],
@@ -66,7 +66,36 @@
       "Rianna",
       "Jen"
     ],
-    "callLog": [],
+    "callLog": [
+      {
+        "time": "2026-09-07T19:51:00.013Z",
+        "setter": "Jercori",
+        "contact": "Abrar Malik |Credit|0% interest Funding",
+        "status": "completed",
+        "durationSec": 11
+      },
+      {
+        "time": "2026-09-07T19:50:14.957Z",
+        "setter": "Jercori",
+        "contact": "Karelis Gordillo",
+        "status": "completed",
+        "durationSec": 32
+      },
+      {
+        "time": "2026-09-07T19:45:48.357Z",
+        "setter": "Jercori",
+        "contact": "Yonga Yassa",
+        "status": "completed",
+        "durationSec": 27
+      },
+      {
+        "time": "2026-04-14T22:25:18.435Z",
+        "setter": "Unknown",
+        "contact": "Abrar Malik |Credit|0% interest Funding",
+        "status": "completed",
+        "durationSec": 32
+      }
+    ],
     "activityPoints": {
       "Marshell": {
         "points": 0,
@@ -92,10 +121,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-31T01:01:22.969Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-31T07:13:15.574Z",
       "closeRate": 0
@@ -491,9 +516,34 @@
     {
       "t": "2026-09-14T15:08:18.559Z",
       "closeRate": 0
+    },
+    {
+      "t": "2026-09-14T19:53:48.888Z",
+      "closeRate": 0
     }
   ],
   "callLogHistory": [
+    {
+      "time": "2026-09-07T19:51:00.013Z",
+      "setter": "Jercori",
+      "contact": "Abrar Malik |Credit|0% interest Funding",
+      "status": "completed",
+      "durationSec": 11
+    },
+    {
+      "time": "2026-09-07T19:50:14.957Z",
+      "setter": "Jercori",
+      "contact": "Karelis Gordillo",
+      "status": "completed",
+      "durationSec": 32
+    },
+    {
+      "time": "2026-09-07T19:45:48.357Z",
+      "setter": "Jercori",
+      "contact": "Yonga Yassa",
+      "status": "completed",
+      "durationSec": 27
+    },
     {
       "time": "2026-09-03T00:00:18.831Z",
       "setter": "Jercori",
@@ -10335,6 +10385,40 @@
           }
         ],
         "cachedAt": "2026-09-14T15:08:22.713Z"
+      },
+      "Ks4nf2AwOtN7oz7ukwlJ": {
+        "fields": [
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 2
+          },
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Organic Leads"
+          }
+        ],
+        "cachedAt": "2026-09-14T19:53:53.995Z"
+      },
+      "qXUF4td5edDWvPJaiuck": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 3488
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Sheddrick Williams was seeking to improve his credit and reduce high credit card utilization in order to qualify for more business funding and participate in real estate investment opportunities. He requested information about credit repair, business funding programs, and related coaching/masterclass events, and discussed scheduling calls to learn more about these services. The conversation included multiple offers for discounted program enrollments, event invitations, and follow-ups to confirm interest and availability, with Sheddrick ultimately agreeing to a scheduled call and expressing continued interest in funding and credit improvement. The interaction concluded with ongoing outreach from the service provider, offering further support, event access, and program renewal options."
+          },
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 2
+          },
+          {
+            "id": "PLwmO9HRpVtMQgJCCz3x",
+            "value": 1
+          }
+        ],
+        "cachedAt": "2026-09-14T19:53:54.027Z"
       }
     },
     "processedConversations": {
@@ -10445,7 +10529,10 @@
       "cCofRyeqflPpPMhJ3ARB": 1788567280796,
       "s3UvDFK7pHAr13tfgB48": 1788567400897,
       "xLweoPk6HzXZNB6EaLxs": 1788567281137,
-      "FlnvhoQh4OBnyUDTZaj2": 1788567280824
+      "FlnvhoQh4OBnyUDTZaj2": 1788567280824,
+      "yr8UBgWM9dxwGmIyXraW": 1788810659972,
+      "3TnWUiXgpIqkUtbH2X5c": 1788810614911,
+      "8VdphxBHc7PcqoDRVi3x": 1788810348311
     }
   }
 }
