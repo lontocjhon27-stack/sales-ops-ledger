@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T16:18:50.720Z",
+  "generatedAt": "2026-09-15T19:45:44.188Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -10,7 +10,7 @@
   "data": {
     "funnel": {
       "outboundAttempts": 31,
-      "connected": 4,
+      "connected": 5,
       "qualified": 0,
       "heldCall": 0,
       "won": 0
@@ -92,10 +92,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-09-01T10:17:08.511Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-09-01T15:01:02.358Z",
       "closeRate": 0
@@ -490,6 +486,10 @@
     },
     {
       "t": "2026-09-15T16:18:50.720Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-15T19:45:44.188Z",
       "closeRate": 0
     }
   ],
@@ -2313,13 +2313,6 @@
       "contact": "Chris Monroe",
       "status": "completed",
       "durationSec": null
-    },
-    {
-      "time": "2026-05-18T16:44:01.998Z",
-      "setter": "Unknown",
-      "contact": "Eddie",
-      "status": "completed",
-      "durationSec": 530
     }
   ],
   "cache": {
@@ -10446,6 +10439,129 @@
           }
         ],
         "cachedAt": "2026-09-15T16:18:57.469Z"
+      },
+      "WBUMyQAAUAltBSrBuRqr": {
+        "fields": [
+          {
+            "id": "YceGbSLBEhMyXECmPrOw",
+            "value": "PAcGRvZgJmZGlkFlDmusEjLvhV-c7hWeDQOhq5R69KBcNleHRuA2FlbQEwAGFkaWQAAC_N4E72-XNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp-ISwPKZH9ShAszDjzG6mffYfDIqB7KiY4e2oshaQdXG8dFPlsyEMy7bwFuT_aem_vbFLPmOa1aUs3ghS917GMQ"
+          },
+          {
+            "id": "ZbAnImdexdzvCvi2UUVx",
+            "value": "ig"
+          },
+          {
+            "id": "dbUTgrW5dQKVZVsuwM8v",
+            "value": "paid"
+          },
+          {
+            "id": "mgsmQlxFBNWYuip1l8p7",
+            "value": "52561276981569"
+          },
+          {
+            "id": "v5IBuOCy2F5k3U0Tf96k",
+            "value": "52561278054569"
+          },
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 3
+          },
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Organic Leads"
+          },
+          {
+            "id": "7OiH3GndwDioQRkiukw0",
+            "value": "Lead"
+          },
+          {
+            "id": "bxaLshajjYR8VqjGUm4P",
+            "value": "No"
+          }
+        ],
+        "cachedAt": "2026-09-15T19:45:47.523Z"
+      },
+      "YxFcaThzBW6mrnKjvsyV": {
+        "fields": [
+          {
+            "id": "rqp5jAgEM5JbIzCWTzKA",
+            "value": 732489
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Treveco Lucas was seeking to enroll in WE Management Services’ REI90 Elite Program and Credit Optimization Program but needed flexible payment options due to affordability concerns. He specifically requested information about payment plans, the ability to delay or transfer services, and program details. The conversation included technical details about invoice schedules, payment links, and the process for providing credit monitoring credentials for assessment. The discussion concluded with WE Management confirming flexible payment options (including holding the service for 60–90 days), clarifying non-refundable policies, and offering to review service transfers on a case-by-case basis, while Treveco continued to express interest and ask follow-up questions."
+          },
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 3
+          }
+        ],
+        "cachedAt": "2026-09-15T19:45:47.523Z"
+      },
+      "pRbLMqvErtDokVK0oFlz": {
+        "fields": [
+          {
+            "id": "R7RIbXGhCdlwWsUmbp3g",
+            "value": "Yes"
+          },
+          {
+            "id": "olcHQhTf03y2n1wAhnPh",
+            "value": "No, but I want to"
+          },
+          {
+            "id": "oCqSwiyt1T1uN3lAp437",
+            "value": "I don’t have funding yet"
+          },
+          {
+            "id": "v9slyImlKQHOsA5QoWFV",
+            "value": "Credit score holding me back"
+          },
+          {
+            "id": "aiKrCMuDCU8kWJcFYLav",
+            "value": "Within 3-6 months"
+          },
+          {
+            "id": "ZbAnImdexdzvCvi2UUVx",
+            "value": "fb"
+          },
+          {
+            "id": "dbUTgrW5dQKVZVsuwM8v",
+            "value": "paid"
+          },
+          {
+            "id": "mgsmQlxFBNWYuip1l8p7",
+            "value": "52561276981569"
+          },
+          {
+            "id": "T4ZT5aAZtG33vDyaBjPb",
+            "value": "https://us02web.zoom.us/w/89866998297?tk=X2H8Z7MyKW3rlY97a1iPZlhtdKJxyOX5-qzYKAaOk28.DQkAAAAU7H2SGRZMVTUwVmlyaFExU0JRRE8wZXRBd1ZBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=KGbjBqqLOnJfGVRJtTGFk0uJffUO3o.1"
+          },
+          {
+            "id": "azlatcryAviD4l2HgOm2",
+            "value": "https://us02web.zoom.us/w/89866998297?tk=X2H8Z7MyKW3rlY97a1iPZlhtdKJxyOX5-qzYKAaOk28.DQkAAAAU7H2SGRZMVTUwVmlyaFExU0JRRE8wZXRBd1ZBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=KGbjBqqLOnJfGVRJtTGFk0uJffUO3o.1"
+          },
+          {
+            "id": "YceGbSLBEhMyXECmPrOw",
+            "value": "IwcGRvZgVleHRuA2FlbQEwAGFkaWQAAC_OLqS3IXNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHqcjrAdZYmIK8DLx0yczIqqA06ZQTXJmHfooQxC1Ji6SXaWLdkRzjxc5ShMj_aem_60Z5UZnBSw5chg8Qo4CsDg"
+          },
+          {
+            "id": "v5IBuOCy2F5k3U0Tf96k",
+            "value": "52562592248969"
+          },
+          {
+            "id": "7OiH3GndwDioQRkiukw0",
+            "value": "Lead"
+          },
+          {
+            "id": "bxaLshajjYR8VqjGUm4P",
+            "value": "No"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Antione Pettaway reached out to WE Management Services seeking help to fix his credit. Throughout the conversation, he was offered various services including credit repair, business funding, and real estate coaching, and was repeatedly invited to free credit and funding analyses, webinars, and masterclasses. Antione specifically requested credit repair, and the team provided information about scheduling calls, enrollment promotions, and access to live training sessions. The conversation concluded with ongoing invitations to webinars, offers for free assessments, and opportunities to join educational programs, but there is no indication that Antione’s issue was fully resolved within the conversation."
+          }
+        ],
+        "cachedAt": "2026-09-15T19:45:47.530Z"
       }
     },
     "processedConversations": {
