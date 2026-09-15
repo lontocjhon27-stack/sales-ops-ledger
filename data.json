@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T11:57:17.985Z",
+  "generatedAt": "2026-09-15T16:18:50.720Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -10,7 +10,7 @@
   "data": {
     "funnel": {
       "outboundAttempts": 31,
-      "connected": 5,
+      "connected": 4,
       "qualified": 0,
       "heldCall": 0,
       "won": 0
@@ -92,10 +92,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-09-01T05:23:50.200Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-09-01T10:17:08.511Z",
       "closeRate": 0
@@ -490,6 +486,10 @@
     },
     {
       "t": "2026-09-15T11:57:17.985Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-15T16:18:50.720Z",
       "closeRate": 0
     }
   ],
@@ -5603,7 +5603,7 @@
             "value": "Joelle Simon contacted WE Management Services to follow up on a missed call and confirm communication. No specific technical information was requested during the conversation. The discussion concluded with both parties agreeing to talk during a scheduled call the following day."
           }
         ],
-        "cachedAt": "2026-09-15T06:21:07.986Z"
+        "cachedAt": "2026-09-15T16:18:57.634Z"
       },
       "KDWqO0h3Xt7nJFvBG1mw": {
         "fields": [],
@@ -6778,7 +6778,7 @@
             "value": 3
           }
         ],
-        "cachedAt": "2026-09-15T06:21:08.083Z"
+        "cachedAt": "2026-09-15T16:18:57.686Z"
       },
       "Od0TiT30orUb5PyX55id": {
         "fields": [
@@ -10335,7 +10335,7 @@
             "value": 3
           }
         ],
-        "cachedAt": "2026-09-15T06:21:07.916Z"
+        "cachedAt": "2026-09-15T16:18:57.544Z"
       },
       "q8JCodK1oU8TstouLqlf": {
         "fields": [
@@ -10360,7 +10360,7 @@
             "value": "412044082"
           }
         ],
-        "cachedAt": "2026-09-15T06:21:07.906Z"
+        "cachedAt": "2026-09-15T16:18:57.571Z"
       },
       "0HxDlfqWhq0JsYGRSSmp": {
         "fields": [
@@ -10373,7 +10373,7 @@
             "value": 3
           }
         ],
-        "cachedAt": "2026-09-15T06:21:07.840Z"
+        "cachedAt": "2026-09-15T16:18:57.567Z"
       },
       "GCgerjZh4Du7ksorCzfM": {
         "fields": [
@@ -10390,11 +10390,11 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-15T06:21:07.846Z"
+        "cachedAt": "2026-09-15T16:18:57.434Z"
       },
       "ai8F7knmb3P5WlYJSGpF": {
         "fields": [],
-        "cachedAt": "2026-09-15T06:21:08.255Z"
+        "cachedAt": "2026-09-15T16:18:57.390Z"
       },
       "cgLPI7axOzhKY8Oxcn50": {
         "fields": [
@@ -10411,7 +10411,7 @@
             "value": "Muhammad Lewis and his partner Steve confirmed their flagship store location at 1040 E. Flamingo Road, Las Vegas, to the AI agent \"manual.\" The customer was interested in exploring a strategic marketing campaign involving LV influencers, celebrities, or athletes, as suggested by the agent, who also mentioned having relevant connections. The specific technical information requested was the store's address. The conversation concluded with both parties agreeing to discuss potential collaborations further the next day."
           }
         ],
-        "cachedAt": "2026-09-15T06:21:07.769Z"
+        "cachedAt": "2026-09-15T16:18:57.323Z"
       },
       "Ks4nf2AwOtN7oz7ukwlJ": {
         "fields": [
@@ -10424,7 +10424,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-15T06:21:07.778Z"
+        "cachedAt": "2026-09-15T16:18:57.329Z"
       },
       "qXUF4td5edDWvPJaiuck": {
         "fields": [
@@ -10445,7 +10445,7 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-09-15T06:21:07.777Z"
+        "cachedAt": "2026-09-15T16:18:57.469Z"
       }
     },
     "processedConversations": {
