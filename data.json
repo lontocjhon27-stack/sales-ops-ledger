@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T19:45:44.188Z",
+  "generatedAt": "2026-09-15T22:35:44.005Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -10,7 +10,7 @@
   "data": {
     "funnel": {
       "outboundAttempts": 31,
-      "connected": 5,
+      "connected": 6,
       "qualified": 0,
       "heldCall": 0,
       "won": 0
@@ -92,10 +92,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-09-01T15:01:02.358Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-09-01T18:40:48.021Z",
       "closeRate": 0
@@ -490,6 +486,10 @@
     },
     {
       "t": "2026-09-15T19:45:44.188Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-15T22:35:44.005Z",
       "closeRate": 0
     }
   ],
@@ -5596,7 +5596,7 @@
             "value": "Joelle Simon contacted WE Management Services to follow up on a missed call and confirm communication. No specific technical information was requested during the conversation. The discussion concluded with both parties agreeing to talk during a scheduled call the following day."
           }
         ],
-        "cachedAt": "2026-09-15T16:18:57.634Z"
+        "cachedAt": "2026-09-15T22:35:49.911Z"
       },
       "KDWqO0h3Xt7nJFvBG1mw": {
         "fields": [],
@@ -10353,7 +10353,7 @@
             "value": "412044082"
           }
         ],
-        "cachedAt": "2026-09-15T16:18:57.571Z"
+        "cachedAt": "2026-09-15T22:35:49.874Z"
       },
       "0HxDlfqWhq0JsYGRSSmp": {
         "fields": [
@@ -10366,7 +10366,7 @@
             "value": 3
           }
         ],
-        "cachedAt": "2026-09-15T16:18:57.567Z"
+        "cachedAt": "2026-09-15T22:35:49.867Z"
       },
       "GCgerjZh4Du7ksorCzfM": {
         "fields": [
@@ -10383,11 +10383,11 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-15T16:18:57.434Z"
+        "cachedAt": "2026-09-15T22:35:49.808Z"
       },
       "ai8F7knmb3P5WlYJSGpF": {
         "fields": [],
-        "cachedAt": "2026-09-15T16:18:57.390Z"
+        "cachedAt": "2026-09-15T22:35:49.760Z"
       },
       "cgLPI7axOzhKY8Oxcn50": {
         "fields": [
@@ -10404,7 +10404,7 @@
             "value": "Muhammad Lewis and his partner Steve confirmed their flagship store location at 1040 E. Flamingo Road, Las Vegas, to the AI agent \"manual.\" The customer was interested in exploring a strategic marketing campaign involving LV influencers, celebrities, or athletes, as suggested by the agent, who also mentioned having relevant connections. The specific technical information requested was the store's address. The conversation concluded with both parties agreeing to discuss potential collaborations further the next day."
           }
         ],
-        "cachedAt": "2026-09-15T16:18:57.323Z"
+        "cachedAt": "2026-09-15T22:35:49.794Z"
       },
       "Ks4nf2AwOtN7oz7ukwlJ": {
         "fields": [
@@ -10417,7 +10417,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-15T16:18:57.329Z"
+        "cachedAt": "2026-09-15T22:35:49.650Z"
       },
       "qXUF4td5edDWvPJaiuck": {
         "fields": [
@@ -10438,7 +10438,7 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-09-15T16:18:57.469Z"
+        "cachedAt": "2026-09-15T22:35:49.726Z"
       },
       "WBUMyQAAUAltBSrBuRqr": {
         "fields": [
@@ -10562,6 +10562,64 @@
           }
         ],
         "cachedAt": "2026-09-15T19:45:47.530Z"
+      },
+      "vlYB9wFY3nl4gJ6fyGtz": {
+        "fields": [
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 3
+          },
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Organic Leads"
+          }
+        ],
+        "cachedAt": "2026-09-15T22:35:49.642Z"
+      },
+      "oNHIscNzQF88Oo9tkrOC": {
+        "fields": [
+          {
+            "id": "YceGbSLBEhMyXECmPrOw",
+            "value": "IwcGRvZgVmZGlkFlDg-4SSz2-BXC3eLSpB0mMR9IMxQGNleHRuA2FlbQEwAGFkaWQAAC_N4E6luXNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR62DG9aWjQl4PgiKkFHa9yO6yUiW99TAMjmUf7H-UArAgq2I3dV_Q2xXTrnrQ_aem_T5c_rLsNUihIBs43mNZc-Q"
+          },
+          {
+            "id": "ZbAnImdexdzvCvi2UUVx",
+            "value": "fb"
+          },
+          {
+            "id": "dbUTgrW5dQKVZVsuwM8v",
+            "value": "paid"
+          },
+          {
+            "id": "mgsmQlxFBNWYuip1l8p7",
+            "value": "52561276981569"
+          },
+          {
+            "id": "v5IBuOCy2F5k3U0Tf96k",
+            "value": "52561278045969"
+          },
+          {
+            "id": "7OiH3GndwDioQRkiukw0",
+            "value": "Lead"
+          },
+          {
+            "id": "bxaLshajjYR8VqjGUm4P",
+            "value": "No"
+          },
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 3
+          },
+          {
+            "id": "ewoypG7axSSTl1TFNZpM",
+            "value": "Facebook Ads"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "Willie Slade was contacted by Will Roundtree and the WE Management Services team, who welcomed him and inquired about his interest in their services. Willie was invited to join a live masterclass and later asked if he had previously applied for business funding, as well as about his current business challenges. The conversation included an invitation to access the FullTime CEO program with a 7-day free trial. No specific technical information was requested by Willie, and the conversation concluded with an open invitation for Willie to explore the offered resources."
+          }
+        ],
+        "cachedAt": "2026-09-15T22:35:49.659Z"
       }
     },
     "processedConversations": {
