@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T22:53:19.149Z",
+  "generatedAt": "2026-09-15T01:06:27.697Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -66,99 +66,7 @@
       "Rianna",
       "Jen"
     ],
-    "callLog": [
-      {
-        "time": "2026-09-07T20:05:28.169Z",
-        "setter": "Jercori",
-        "contact": "Jozefina Wells",
-        "status": "completed",
-        "durationSec": 5
-      },
-      {
-        "time": "2026-09-07T20:04:08.278Z",
-        "setter": "Jercori",
-        "contact": "Christopher Johnson",
-        "status": "completed",
-        "durationSec": 43
-      },
-      {
-        "time": "2026-09-07T20:03:11.046Z",
-        "setter": "Jercori",
-        "contact": "Rebekah Jones",
-        "status": "completed",
-        "durationSec": 42
-      },
-      {
-        "time": "2026-09-07T20:01:11.000Z",
-        "setter": "Jercori",
-        "contact": "Brenton Daye",
-        "status": "completed",
-        "durationSec": 28
-      },
-      {
-        "time": "2026-09-07T20:00:12.406Z",
-        "setter": "Jercori",
-        "contact": "Brian Leakeas",
-        "status": "completed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-09-07T19:56:48.358Z",
-        "setter": "Jercori",
-        "contact": "Monique Legrow",
-        "status": "completed",
-        "durationSec": 25
-      },
-      {
-        "time": "2026-09-07T19:55:51.799Z",
-        "setter": "Jercori",
-        "contact": "Ross Raza",
-        "status": "no-answer",
-        "durationSec": null
-      },
-      {
-        "time": "2026-09-07T19:54:12.684Z",
-        "setter": "Jercori",
-        "contact": "Xavier Foster",
-        "status": "failed",
-        "durationSec": null
-      },
-      {
-        "time": "2026-05-11T18:37:29.616Z",
-        "setter": "Unknown",
-        "contact": "Brenton Daye",
-        "status": "completed",
-        "durationSec": 248
-      },
-      {
-        "time": "2026-05-11T18:33:00.164Z",
-        "setter": "Unknown",
-        "contact": "Brenton Daye",
-        "status": "completed",
-        "durationSec": 4
-      },
-      {
-        "time": "2026-05-11T18:29:57.531Z",
-        "setter": "Unknown",
-        "contact": "Brenton Daye",
-        "status": "completed",
-        "durationSec": 38
-      },
-      {
-        "time": "2026-05-11T18:28:19.751Z",
-        "setter": "Unknown",
-        "contact": "Brenton Daye",
-        "status": "completed",
-        "durationSec": 9
-      },
-      {
-        "time": "2026-05-08T22:08:26.362Z",
-        "setter": "Unknown",
-        "contact": "Christopher Johnson",
-        "status": "completed",
-        "durationSec": 40
-      }
-    ],
+    "callLog": [],
     "activityPoints": {
       "Marshell": {
         "points": 0,
@@ -184,10 +92,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-08-31T15:14:36.445Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-08-31T20:55:39.798Z",
       "closeRate": 0
@@ -582,6 +486,10 @@
     },
     {
       "t": "2026-09-14T22:53:19.149Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-15T01:06:27.697Z",
       "closeRate": 0
     }
   ],
