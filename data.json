@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T00:55:52.165Z",
+  "generatedAt": "2026-09-16T05:34:46.012Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -92,10 +92,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-09-01T21:31:07.885Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-09-01T23:42:45.182Z",
       "closeRate": 0
@@ -490,6 +486,10 @@
     },
     {
       "t": "2026-09-16T00:55:52.165Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-16T05:34:46.012Z",
       "closeRate": 0
     }
   ],
@@ -5596,7 +5596,7 @@
             "value": "Joelle Simon contacted WE Management Services to follow up on a missed call and confirm communication. No specific technical information was requested during the conversation. The discussion concluded with both parties agreeing to talk during a scheduled call the following day."
           }
         ],
-        "cachedAt": "2026-09-15T22:35:49.911Z"
+        "cachedAt": "2026-09-16T05:34:48.747Z"
       },
       "KDWqO0h3Xt7nJFvBG1mw": {
         "fields": [],
@@ -10353,7 +10353,7 @@
             "value": "412044082"
           }
         ],
-        "cachedAt": "2026-09-15T22:35:49.874Z"
+        "cachedAt": "2026-09-16T05:34:48.800Z"
       },
       "0HxDlfqWhq0JsYGRSSmp": {
         "fields": [
@@ -10366,7 +10366,7 @@
             "value": 3
           }
         ],
-        "cachedAt": "2026-09-15T22:35:49.867Z"
+        "cachedAt": "2026-09-16T05:34:48.663Z"
       },
       "GCgerjZh4Du7ksorCzfM": {
         "fields": [
@@ -10383,11 +10383,11 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-15T22:35:49.808Z"
+        "cachedAt": "2026-09-16T05:34:48.664Z"
       },
       "ai8F7knmb3P5WlYJSGpF": {
         "fields": [],
-        "cachedAt": "2026-09-15T22:35:49.760Z"
+        "cachedAt": "2026-09-16T05:34:48.582Z"
       },
       "cgLPI7axOzhKY8Oxcn50": {
         "fields": [
@@ -10404,7 +10404,7 @@
             "value": "Muhammad Lewis and his partner Steve confirmed their flagship store location at 1040 E. Flamingo Road, Las Vegas, to the AI agent \"manual.\" The customer was interested in exploring a strategic marketing campaign involving LV influencers, celebrities, or athletes, as suggested by the agent, who also mentioned having relevant connections. The specific technical information requested was the store's address. The conversation concluded with both parties agreeing to discuss potential collaborations further the next day."
           }
         ],
-        "cachedAt": "2026-09-15T22:35:49.794Z"
+        "cachedAt": "2026-09-16T05:34:48.572Z"
       },
       "Ks4nf2AwOtN7oz7ukwlJ": {
         "fields": [
@@ -10417,7 +10417,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-15T22:35:49.650Z"
+        "cachedAt": "2026-09-16T05:34:48.489Z"
       },
       "qXUF4td5edDWvPJaiuck": {
         "fields": [
@@ -10438,7 +10438,7 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-09-15T22:35:49.726Z"
+        "cachedAt": "2026-09-16T05:34:48.660Z"
       },
       "WBUMyQAAUAltBSrBuRqr": {
         "fields": [
@@ -10479,7 +10479,7 @@
             "value": "No"
           }
         ],
-        "cachedAt": "2026-09-15T19:45:47.523Z"
+        "cachedAt": "2026-09-16T05:34:48.376Z"
       },
       "YxFcaThzBW6mrnKjvsyV": {
         "fields": [
@@ -10496,7 +10496,7 @@
             "value": 3
           }
         ],
-        "cachedAt": "2026-09-15T19:45:47.523Z"
+        "cachedAt": "2026-09-16T05:34:48.472Z"
       },
       "pRbLMqvErtDokVK0oFlz": {
         "fields": [
@@ -10561,7 +10561,7 @@
             "value": "Antione Pettaway reached out to WE Management Services seeking help to fix his credit. Throughout the conversation, he was offered various services including credit repair, business funding, and real estate coaching, and was repeatedly invited to free credit and funding analyses, webinars, and masterclasses. Antione specifically requested credit repair, and the team provided information about scheduling calls, enrollment promotions, and access to live training sessions. The conversation concluded with ongoing invitations to webinars, offers for free assessments, and opportunities to join educational programs, but there is no indication that Antione’s issue was fully resolved within the conversation."
           }
         ],
-        "cachedAt": "2026-09-15T19:45:47.530Z"
+        "cachedAt": "2026-09-16T05:34:48.476Z"
       },
       "vlYB9wFY3nl4gJ6fyGtz": {
         "fields": [
@@ -10574,7 +10574,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-15T22:35:49.642Z"
+        "cachedAt": "2026-09-16T05:34:48.376Z"
       },
       "oNHIscNzQF88Oo9tkrOC": {
         "fields": [
@@ -10619,7 +10619,7 @@
             "value": "Willie Slade was contacted by Will Roundtree and the WE Management Services team, who welcomed him and inquired about his interest in their services. Willie was invited to join a live masterclass and later asked if he had previously applied for business funding, as well as about his current business challenges. The conversation included an invitation to access the FullTime CEO program with a 7-day free trial. No specific technical information was requested by Willie, and the conversation concluded with an open invitation for Willie to explore the offered resources."
           }
         ],
-        "cachedAt": "2026-09-15T22:35:49.659Z"
+        "cachedAt": "2026-09-16T05:34:48.390Z"
       }
     },
     "processedConversations": {
