@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T15:14:38.449Z",
+  "generatedAt": "2026-09-16T18:59:30.340Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -10,7 +10,7 @@
   "data": {
     "funnel": {
       "outboundAttempts": 31,
-      "connected": 6,
+      "connected": 5,
       "qualified": 0,
       "heldCall": 0,
       "won": 0
@@ -53,7 +53,7 @@
     },
     "totals": {
       "contractValue": 0,
-      "cashCollected": 10394,
+      "cashCollected": 10994,
       "closeRate": 0
     },
     "attributionChains": [],
@@ -92,10 +92,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-09-02T07:13:03.326Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-09-02T12:12:00.571Z",
       "closeRate": 0
@@ -490,6 +486,10 @@
     },
     {
       "t": "2026-09-16T15:14:38.449Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-16T18:59:30.340Z",
       "closeRate": 0
     }
   ],
