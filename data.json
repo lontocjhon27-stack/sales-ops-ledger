@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T10:36:02.994Z",
+  "generatedAt": "2026-09-16T15:14:38.449Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -92,10 +92,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-09-02T02:16:38.441Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-09-02T07:13:03.326Z",
       "closeRate": 0
@@ -490,6 +486,10 @@
     },
     {
       "t": "2026-09-16T10:36:02.994Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-16T15:14:38.449Z",
       "closeRate": 0
     }
   ],
@@ -5594,9 +5594,13 @@
           {
             "id": "bivODsQj5TA8RhIKK6cZ",
             "value": "Joelle Simon contacted WE Management Services to follow up on a missed call and confirm communication. No specific technical information was requested during the conversation. The discussion concluded with both parties agreeing to talk during a scheduled call the following day."
+          },
+          {
+            "id": "8QsK7kGkZKWYvOdxbO5B",
+            "value": 1
           }
         ],
-        "cachedAt": "2026-09-16T05:34:48.747Z"
+        "cachedAt": "2026-09-16T15:14:41.766Z"
       },
       "KDWqO0h3Xt7nJFvBG1mw": {
         "fields": [],
@@ -9786,9 +9790,13 @@
           {
             "id": "ewoypG7axSSTl1TFNZpM",
             "value": "Organic Leads"
+          },
+          {
+            "id": "bivODsQj5TA8RhIKK6cZ",
+            "value": "The customer was seeking assistance related to business funding but revealed they were experiencing significant credit issues, specifically mentioning their Experian score dropping from 718 to not scorable. They requested information and support regarding credit restoration and optimization. The conversation included offers for personal credit optimization as part of service tiers and invitations to join a live masterclass for further guidance. The discussion concluded with a direct question from the service provider asking if the customer needed credit restoration services."
           }
         ],
-        "cachedAt": "2026-09-11T16:39:06.322Z"
+        "cachedAt": "2026-09-16T15:14:41.746Z"
       },
       "BudfNOxCMENNWFsC3Mlz": {
         "fields": [
@@ -10353,7 +10361,7 @@
             "value": "412044082"
           }
         ],
-        "cachedAt": "2026-09-16T05:34:48.800Z"
+        "cachedAt": "2026-09-16T15:14:41.847Z"
       },
       "0HxDlfqWhq0JsYGRSSmp": {
         "fields": [
@@ -10366,7 +10374,7 @@
             "value": 3
           }
         ],
-        "cachedAt": "2026-09-16T05:34:48.663Z"
+        "cachedAt": "2026-09-16T15:14:41.671Z"
       },
       "GCgerjZh4Du7ksorCzfM": {
         "fields": [
@@ -10383,11 +10391,11 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-16T05:34:48.664Z"
+        "cachedAt": "2026-09-16T15:14:41.667Z"
       },
       "ai8F7knmb3P5WlYJSGpF": {
         "fields": [],
-        "cachedAt": "2026-09-16T05:34:48.582Z"
+        "cachedAt": "2026-09-16T15:14:41.581Z"
       },
       "cgLPI7axOzhKY8Oxcn50": {
         "fields": [
@@ -10404,7 +10412,7 @@
             "value": "Muhammad Lewis and his partner Steve confirmed their flagship store location at 1040 E. Flamingo Road, Las Vegas, to the AI agent \"manual.\" The customer was interested in exploring a strategic marketing campaign involving LV influencers, celebrities, or athletes, as suggested by the agent, who also mentioned having relevant connections. The specific technical information requested was the store's address. The conversation concluded with both parties agreeing to discuss potential collaborations further the next day."
           }
         ],
-        "cachedAt": "2026-09-16T05:34:48.572Z"
+        "cachedAt": "2026-09-16T15:14:41.581Z"
       },
       "Ks4nf2AwOtN7oz7ukwlJ": {
         "fields": [
@@ -10417,7 +10425,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-16T05:34:48.489Z"
+        "cachedAt": "2026-09-16T15:14:41.363Z"
       },
       "qXUF4td5edDWvPJaiuck": {
         "fields": [
@@ -10427,18 +10435,18 @@
           },
           {
             "id": "bivODsQj5TA8RhIKK6cZ",
-            "value": "Sheddrick Williams was seeking to improve his credit and reduce high credit card utilization in order to qualify for more business funding and participate in real estate investment opportunities. He requested information about credit repair, business funding programs, and related coaching/masterclass events, and discussed scheduling calls to learn more about these services. The conversation included multiple offers for discounted program enrollments, event invitations, and follow-ups to confirm interest and availability, with Sheddrick ultimately agreeing to a scheduled call and expressing continued interest in funding and credit improvement. The interaction concluded with ongoing outreach from the service provider, offering further support, event access, and program renewal options."
+            "value": "Sheddrick Williams contacted WE Management Services to request detailed information about their credit optimization program, specifically asking for the cost, process, and whether credit repair could be completed within six months instead of the standard twelve. He wanted to understand the formality and feasibility of achieving his credit goals in a shorter timeframe. The representative explained that while the standard service window is twelve months, strategies can be tailored to aim for significant progress within six months, though exact timelines depend on external factors like bureaus and creditors. The conversation concluded with Sheddrick confirming his understanding and scheduling an onboarding call for further steps."
           },
           {
             "id": "8QsK7kGkZKWYvOdxbO5B",
-            "value": 2
+            "value": 1
           },
           {
             "id": "PLwmO9HRpVtMQgJCCz3x",
             "value": 1
           }
         ],
-        "cachedAt": "2026-09-16T05:34:48.660Z"
+        "cachedAt": "2026-09-16T15:14:41.464Z"
       },
       "WBUMyQAAUAltBSrBuRqr": {
         "fields": [
@@ -10479,7 +10487,7 @@
             "value": "No"
           }
         ],
-        "cachedAt": "2026-09-16T05:34:48.376Z"
+        "cachedAt": "2026-09-16T15:14:41.621Z"
       },
       "YxFcaThzBW6mrnKjvsyV": {
         "fields": [
@@ -10493,10 +10501,10 @@
           },
           {
             "id": "8QsK7kGkZKWYvOdxbO5B",
-            "value": 3
+            "value": 1
           }
         ],
-        "cachedAt": "2026-09-16T05:34:48.472Z"
+        "cachedAt": "2026-09-16T15:14:41.247Z"
       },
       "pRbLMqvErtDokVK0oFlz": {
         "fields": [
@@ -10561,7 +10569,7 @@
             "value": "Antione Pettaway reached out to WE Management Services seeking help to fix his credit. Throughout the conversation, he was offered various services including credit repair, business funding, and real estate coaching, and was repeatedly invited to free credit and funding analyses, webinars, and masterclasses. Antione specifically requested credit repair, and the team provided information about scheduling calls, enrollment promotions, and access to live training sessions. The conversation concluded with ongoing invitations to webinars, offers for free assessments, and opportunities to join educational programs, but there is no indication that Antione’s issue was fully resolved within the conversation."
           }
         ],
-        "cachedAt": "2026-09-16T05:34:48.476Z"
+        "cachedAt": "2026-09-16T15:14:41.400Z"
       },
       "vlYB9wFY3nl4gJ6fyGtz": {
         "fields": [
@@ -10574,7 +10582,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-16T05:34:48.376Z"
+        "cachedAt": "2026-09-16T15:14:41.269Z"
       },
       "oNHIscNzQF88Oo9tkrOC": {
         "fields": [
@@ -10619,7 +10627,7 @@
             "value": "Willie Slade was contacted by Will Roundtree and the WE Management Services team, who welcomed him and inquired about his interest in their services. Willie was invited to join a live masterclass and later asked if he had previously applied for business funding, as well as about his current business challenges. The conversation included an invitation to access the FullTime CEO program with a 7-day free trial. No specific technical information was requested by Willie, and the conversation concluded with an open invitation for Willie to explore the offered resources."
           }
         ],
-        "cachedAt": "2026-09-16T05:34:48.390Z"
+        "cachedAt": "2026-09-16T15:14:41.146Z"
       }
     },
     "processedConversations": {
