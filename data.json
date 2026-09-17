@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T00:10:54.850Z",
+  "generatedAt": "2026-09-17T05:04:22.935Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -93,10 +93,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-09-02T19:34:56.107Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-09-02T22:13:20.168Z",
       "closeRate": 0
@@ -491,6 +487,10 @@
     },
     {
       "t": "2026-09-17T00:10:54.850Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-17T05:04:22.935Z",
       "closeRate": 0
     }
   ],
@@ -5601,7 +5601,7 @@
             "value": 1
           }
         ],
-        "cachedAt": "2026-09-16T21:58:26.250Z"
+        "cachedAt": "2026-09-17T05:04:26.150Z"
       },
       "KDWqO0h3Xt7nJFvBG1mw": {
         "fields": [],
@@ -9797,7 +9797,7 @@
             "value": "The customer was seeking assistance related to business funding but revealed they were experiencing significant credit issues, specifically mentioning their Experian score dropping from 718 to not scorable. They requested information and support regarding credit restoration and optimization. The conversation included offers for personal credit optimization as part of service tiers and invitations to join a live masterclass for further guidance. The discussion concluded with a direct question from the service provider asking if the customer needed credit restoration services."
           }
         ],
-        "cachedAt": "2026-09-16T21:58:26.211Z"
+        "cachedAt": "2026-09-17T05:04:26.125Z"
       },
       "BudfNOxCMENNWFsC3Mlz": {
         "fields": [
@@ -10375,7 +10375,7 @@
             "value": 3
           }
         ],
-        "cachedAt": "2026-09-16T21:58:26.224Z"
+        "cachedAt": "2026-09-17T05:04:26.463Z"
       },
       "GCgerjZh4Du7ksorCzfM": {
         "fields": [
@@ -10392,11 +10392,11 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-16T21:58:26.134Z"
+        "cachedAt": "2026-09-17T05:04:26.058Z"
       },
       "ai8F7knmb3P5WlYJSGpF": {
         "fields": [],
-        "cachedAt": "2026-09-16T21:58:26.125Z"
+        "cachedAt": "2026-09-17T05:04:26.037Z"
       },
       "cgLPI7axOzhKY8Oxcn50": {
         "fields": [
@@ -10413,7 +10413,7 @@
             "value": "Muhammad Lewis and his partner Steve confirmed their flagship store location at 1040 E. Flamingo Road, Las Vegas, to the AI agent \"manual.\" The customer was interested in exploring a strategic marketing campaign involving LV influencers, celebrities, or athletes, as suggested by the agent, who also mentioned having relevant connections. The specific technical information requested was the store's address. The conversation concluded with both parties agreeing to discuss potential collaborations further the next day."
           }
         ],
-        "cachedAt": "2026-09-16T21:58:26.048Z"
+        "cachedAt": "2026-09-17T05:04:25.993Z"
       },
       "Ks4nf2AwOtN7oz7ukwlJ": {
         "fields": [
@@ -10426,7 +10426,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-16T21:58:25.969Z"
+        "cachedAt": "2026-09-17T05:04:25.945Z"
       },
       "qXUF4td5edDWvPJaiuck": {
         "fields": [
@@ -10445,9 +10445,13 @@
           {
             "id": "PLwmO9HRpVtMQgJCCz3x",
             "value": 1
+          },
+          {
+            "id": "yy7vmyBDaB4k4O7oCBvc",
+            "value": "258193138"
           }
         ],
-        "cachedAt": "2026-09-16T21:58:26.049Z"
+        "cachedAt": "2026-09-17T05:04:25.957Z"
       },
       "WBUMyQAAUAltBSrBuRqr": {
         "fields": [
@@ -10488,7 +10492,7 @@
             "value": "No"
           }
         ],
-        "cachedAt": "2026-09-16T21:58:25.864Z"
+        "cachedAt": "2026-09-17T05:04:25.854Z"
       },
       "YxFcaThzBW6mrnKjvsyV": {
         "fields": [
@@ -10502,10 +10506,10 @@
           },
           {
             "id": "8QsK7kGkZKWYvOdxbO5B",
-            "value": 1
+            "value": 2
           }
         ],
-        "cachedAt": "2026-09-16T21:58:25.893Z"
+        "cachedAt": "2026-09-17T05:04:25.865Z"
       },
       "pRbLMqvErtDokVK0oFlz": {
         "fields": [
@@ -10570,7 +10574,7 @@
             "value": "Antione Pettaway reached out to WE Management Services seeking help to fix his credit. Throughout the conversation, he was offered various services including credit repair, business funding, and real estate coaching, and was repeatedly invited to free credit and funding analyses, webinars, and masterclasses. Antione specifically requested credit repair, and the team provided information about scheduling calls, enrollment promotions, and access to live training sessions. The conversation concluded with ongoing invitations to webinars, offers for free assessments, and opportunities to join educational programs, but there is no indication that Antione’s issue was fully resolved within the conversation."
           }
         ],
-        "cachedAt": "2026-09-16T21:58:25.955Z"
+        "cachedAt": "2026-09-17T05:04:25.892Z"
       },
       "vlYB9wFY3nl4gJ6fyGtz": {
         "fields": [
@@ -10583,7 +10587,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-16T21:58:26.168Z"
+        "cachedAt": "2026-09-17T05:04:25.760Z"
       },
       "oNHIscNzQF88Oo9tkrOC": {
         "fields": [
@@ -10628,7 +10632,7 @@
             "value": "Willie Slade was contacted by Will Roundtree and the WE Management Services team, who welcomed him and inquired about his interest in their services. Willie was invited to join a live masterclass and later asked if he had previously applied for business funding, as well as about his current business challenges. The conversation included an invitation to access the FullTime CEO program with a 7-day free trial. No specific technical information was requested by Willie, and the conversation concluded with an open invitation for Willie to explore the offered resources."
           }
         ],
-        "cachedAt": "2026-09-16T21:58:25.786Z"
+        "cachedAt": "2026-09-17T05:04:25.768Z"
       },
       "4P7ROmwzOXUJKFtrNcZ4": {
         "fields": [
@@ -10641,7 +10645,7 @@
             "value": "Organic Leads"
           }
         ],
-        "cachedAt": "2026-09-16T21:58:25.789Z"
+        "cachedAt": "2026-09-17T05:04:25.799Z"
       }
     },
     "processedConversations": {
