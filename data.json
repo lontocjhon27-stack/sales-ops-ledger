@@ -1,15 +1,16 @@
 {
-  "generatedAt": "2026-09-16T21:58:23.098Z",
+  "generatedAt": "2026-09-17T00:10:54.850Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
     "No GHL user found matching rep name \"Jen\" -- check users are named/invited as expected.",
     "Calendar \"Jercori Sales Calendar\" not found -- appointment/no-show metrics for it will be empty.",
-    "\"Live Transfers Accepted\" always reads 0 -- SALES | HANDOFF (the field that tracked this) was deleted and nothing replaces it. \"Live Transfers Attempted\" still works (inferred from the \"Qualified - Live Transfer\" pipeline stage). Fixing Accepted needs either a new field or logging stage-transition history."
+    "\"Live Transfers Accepted\" always reads 0 -- SALES | HANDOFF (the field that tracked this) was deleted and nothing replaces it. \"Live Transfers Attempted\" still works (inferred from the \"Qualified - Live Transfer\" pipeline stage). Fixing Accepted needs either a new field or logging stage-transition history.",
+    "No outbound calls found in conversations for this window -- if dialing happens outside GHL's native phone system, raw attempt counts won't appear here."
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 31,
+      "outboundAttempts": 8,
       "connected": 6,
       "qualified": 0,
       "heldCall": 0,
@@ -92,10 +93,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-09-02T16:44:26.308Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-09-02T19:34:56.107Z",
       "closeRate": 0
@@ -490,6 +487,10 @@
     },
     {
       "t": "2026-09-16T21:58:23.098Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-17T00:10:54.850Z",
       "closeRate": 0
     }
   ],
