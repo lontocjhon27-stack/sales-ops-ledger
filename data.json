@@ -1,17 +1,41 @@
 {
-  "generatedAt": "2026-09-17T10:11:47.679Z",
+  "generatedAt": "2026-09-17T15:07:51.744Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
+    "Failed to fetch calendars: GHL API 401 on /calendars/: Invalid Private Integration token",
+    "Failed to fetch custom fields: GHL API 401 on /locations/pcY7ioQLTs15S0hJiOdG/customFields: Invalid Private Integration token",
+    "Failed to fetch pipelines: GHL API 401 on /opportunities/pipelines: Invalid Private Integration token",
+    "Failed to fetch users: GHL API 401 on /users/: Invalid Private Integration token",
     "No GHL user found matching rep name \"Jen\" -- check users are named/invited as expected.",
+    "No GHL user found matching rep name \"Jercori\" -- check users are named/invited as expected.",
+    "Custom field \"Primary Goal\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Primary Problem / Gap\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Timing / Urgency\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Decision-Maker Status\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Personal Monthly Income\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Business Monthly Income / Cash Flow\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Personal Monthly Expenses\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Personal Liquid Capital\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Business Liquid Capital\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Available Personal Credit\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Available Business Credit\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Total Accessible Capital\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Routing Tier\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Potential High-Ticket Fit\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Setter Attribution\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Closer Assignment\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Custom field \"Handoff Type\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
+    "Pipeline \"Sales Pipeline\" not found -- outbound/funnel/won metrics will be empty until it exists.",
+    "Calendar \"Setter Qualification Calendar\" not found -- appointment/no-show metrics for it will be empty.",
+    "Calendar \"Jen Sales Calendar\" not found -- appointment/no-show metrics for it will be empty.",
     "Calendar \"Jercori Sales Calendar\" not found -- appointment/no-show metrics for it will be empty.",
-    "\"Live Transfers Accepted\" always reads 0 -- SALES | HANDOFF (the field that tracked this) was deleted and nothing replaces it. \"Live Transfers Attempted\" still works (inferred from the \"Qualified - Live Transfer\" pipeline stage). Fixing Accepted needs either a new field or logging stage-transition history.",
-    "No outbound calls found in conversations for this window -- if dialing happens outside GHL's native phone system, raw attempt counts won't appear here."
+    "Failed to fetch conversations: GHL API 401 on /conversations/search: Invalid Private Integration token"
   ],
   "data": {
     "funnel": {
-      "outboundAttempts": 8,
-      "connected": 6,
+      "outboundAttempts": 0,
+      "connected": 0,
       "qualified": 0,
       "heldCall": 0,
       "won": 0
@@ -37,24 +61,10 @@
       "count": 0,
       "routedNormally": 0
     },
-    "reps": {
-      "Jercori": {
-        "outbound": 1,
-        "connected": 0,
-        "qualified": 0,
-        "liveTransferAttempted": 0,
-        "liveTransferAccepted": 0,
-        "appointmentsBooked": 0,
-        "heldCalls": 0,
-        "noShows": 0,
-        "won": 0,
-        "contractValue": 0,
-        "cashCollected": 0
-      }
-    },
+    "reps": {},
     "totals": {
       "contractValue": 0,
-      "cashCollected": 3877,
+      "cashCollected": 0,
       "closeRate": 0
     },
     "attributionChains": [],
@@ -93,10 +103,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-09-03T00:25:58.513Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-09-03T04:49:55.390Z",
       "closeRate": 0
@@ -491,6 +497,10 @@
     },
     {
       "t": "2026-09-17T10:11:47.679Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-17T15:07:51.744Z",
       "closeRate": 0
     }
   ],
