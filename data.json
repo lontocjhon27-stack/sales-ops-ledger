@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T22:42:34.244Z",
+  "generatedAt": "2026-09-19T00:51:22.853Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -103,10 +103,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-09-04T13:39:05.449Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-09-04T17:18:39.665Z",
       "closeRate": 0
@@ -501,6 +497,10 @@
     },
     {
       "t": "2026-09-18T22:42:34.244Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-19T00:51:22.853Z",
       "closeRate": 0
     }
   ],
@@ -2310,13 +2310,6 @@
       "contact": "Arletha Mariland",
       "status": "completed",
       "durationSec": 31
-    },
-    {
-      "time": "2026-05-21T23:28:26.969Z",
-      "setter": "Unknown",
-      "contact": "Brenda Person-Gates",
-      "status": "completed",
-      "durationSec": 29
     }
   ],
   "cache": {
