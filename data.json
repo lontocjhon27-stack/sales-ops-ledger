@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-20T02:43:59.309Z",
+  "generatedAt": "2026-09-20T08:09:45.212Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
     "Failed to fetch pipelines: GHL API 401 on /opportunities/pipelines: Invalid Private Integration token",
-    "Failed to fetch calendars: GHL API 401 on /calendars/: Invalid Private Integration token",
     "Failed to fetch custom fields: GHL API 401 on /locations/pcY7ioQLTs15S0hJiOdG/customFields: Invalid Private Integration token",
+    "Failed to fetch calendars: GHL API 401 on /calendars/: Invalid Private Integration token",
     "Failed to fetch users: GHL API 401 on /users/: Invalid Private Integration token",
     "No GHL user found matching rep name \"Jen\" -- check users are named/invited as expected.",
     "No GHL user found matching rep name \"Jercori\" -- check users are named/invited as expected.",
@@ -103,10 +103,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-09-05T16:31:03.718Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-09-05T18:42:49.730Z",
       "closeRate": 0
@@ -501,6 +497,10 @@
     },
     {
       "t": "2026-09-20T02:43:59.309Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-20T08:09:45.212Z",
       "closeRate": 0
     }
   ],
