@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-25T21:54:55.268Z",
+  "generatedAt": "2026-09-26T00:17:56.993Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
-    "Failed to fetch custom fields: GHL API 401 on /locations/pcY7ioQLTs15S0hJiOdG/customFields: Invalid Private Integration token",
-    "Failed to fetch calendars: GHL API 401 on /calendars/: Invalid Private Integration token",
-    "Failed to fetch pipelines: GHL API 401 on /opportunities/pipelines: Invalid Private Integration token",
     "Failed to fetch users: GHL API 401 on /users/: Invalid Private Integration token",
+    "Failed to fetch custom fields: GHL API 401 on /locations/pcY7ioQLTs15S0hJiOdG/customFields: Invalid Private Integration token",
+    "Failed to fetch pipelines: GHL API 401 on /opportunities/pipelines: Invalid Private Integration token",
+    "Failed to fetch calendars: GHL API 401 on /calendars/: Invalid Private Integration token",
     "No GHL user found matching rep name \"Jen\" -- check users are named/invited as expected.",
     "No GHL user found matching rep name \"Jercori\" -- check users are named/invited as expected.",
     "Custom field \"Primary Goal\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
@@ -103,10 +103,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-09-10T12:18:50.281Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-09-10T16:34:30.662Z",
       "closeRate": 0
@@ -501,6 +497,10 @@
     },
     {
       "t": "2026-09-25T21:54:55.268Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-09-26T00:17:56.993Z",
       "closeRate": 0
     }
   ],
