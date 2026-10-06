@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T19:38:07.248Z",
+  "generatedAt": "2026-10-06T23:29:18.080Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -103,10 +103,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-09-18T17:45:16.284Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-09-18T20:14:02.993Z",
       "closeRate": 0
@@ -501,6 +497,10 @@
     },
     {
       "t": "2026-10-06T19:38:07.248Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-10-06T23:29:18.080Z",
       "closeRate": 0
     }
   ],
@@ -2261,13 +2261,6 @@
       "contact": "Hakeem | Credit Repair/ Funding& Passiveincome Expert",
       "status": "no-answer",
       "durationSec": null
-    },
-    {
-      "time": "2026-06-08T22:52:09.101Z",
-      "setter": "Jen",
-      "contact": "Bianca Gibson",
-      "status": "completed",
-      "durationSec": 4
     }
   ],
   "cache": {
