@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T19:46:13.061Z",
+  "generatedAt": "2026-10-20T22:51:52.447Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -103,10 +103,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-10-01T15:33:12.966Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-10-01T20:43:06.606Z",
       "closeRate": 0
@@ -501,6 +497,10 @@
     },
     {
       "t": "2026-10-20T19:46:13.061Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-10-20T22:51:52.447Z",
       "closeRate": 0
     }
   ],
@@ -2212,34 +2212,6 @@
       "contact": "Hakeem | Credit Repair/ Funding& Passiveincome Expert",
       "status": "completed",
       "durationSec": 80
-    },
-    {
-      "time": "2026-06-22T22:13:46.547Z",
-      "setter": "Jen",
-      "contact": "Hakeem | Credit Repair/ Funding& Passiveincome Expert",
-      "status": "completed",
-      "durationSec": 150
-    },
-    {
-      "time": "2026-06-22T21:34:41.855Z",
-      "setter": "Unknown",
-      "contact": "Brenda Person-Gates",
-      "status": "completed",
-      "durationSec": null
-    },
-    {
-      "time": "2026-06-22T21:33:04.268Z",
-      "setter": "Unknown",
-      "contact": "Connie Murray Thomas",
-      "status": "completed",
-      "durationSec": 41
-    },
-    {
-      "time": "2026-06-22T21:28:57.239Z",
-      "setter": "Unknown",
-      "contact": "Gerald Eric Johnson",
-      "status": "completed",
-      "durationSec": 30
     }
   ],
   "cache": {
