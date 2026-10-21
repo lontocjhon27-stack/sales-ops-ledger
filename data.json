@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T20:48:41.686Z",
+  "generatedAt": "2026-10-21T23:50:47.242Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -103,10 +103,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-10-02T21:23:16.995Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-10-03T00:35:23.812Z",
       "closeRate": 0
@@ -501,6 +497,10 @@
     },
     {
       "t": "2026-10-21T20:48:41.686Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-10-21T23:50:47.242Z",
       "closeRate": 0
     }
   ],
@@ -2177,34 +2177,6 @@
       "contact": "Shamourn Powell",
       "status": "completed",
       "durationSec": 12
-    },
-    {
-      "time": "2026-06-23T22:22:08.583Z",
-      "setter": "Jen",
-      "contact": "Hakeem | Credit Repair/ Funding& Passiveincome Expert",
-      "status": "no-answer",
-      "durationSec": null
-    },
-    {
-      "time": "2026-06-23T22:18:59.278Z",
-      "setter": "Jen",
-      "contact": "Hakeem | Credit Repair/ Funding& Passiveincome Expert",
-      "status": "no-answer",
-      "durationSec": null
-    },
-    {
-      "time": "2026-06-23T22:17:02.962Z",
-      "setter": "Jen",
-      "contact": "Hakeem | Credit Repair/ Funding& Passiveincome Expert",
-      "status": "no-answer",
-      "durationSec": null
-    },
-    {
-      "time": "2026-06-23T22:15:11.941Z",
-      "setter": "Jen",
-      "contact": "Hakeem | Credit Repair/ Funding& Passiveincome Expert",
-      "status": "no-answer",
-      "durationSec": null
     }
   ],
   "cache": {
