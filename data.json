@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T14:44:36.796Z",
+  "generatedAt": "2026-10-28T20:00:20.055Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
@@ -103,10 +103,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-10-11T06:05:47.344Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-10-11T13:12:03.061Z",
       "closeRate": 0
@@ -501,6 +497,10 @@
     },
     {
       "t": "2026-10-28T14:44:36.796Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-10-28T20:00:20.055Z",
       "closeRate": 0
     }
   ],
@@ -2099,13 +2099,6 @@
       "setter": "Unknown",
       "contact": "Gregory Dixon",
       "status": "failed",
-      "durationSec": null
-    },
-    {
-      "time": "2026-06-30T19:25:49.181Z",
-      "setter": "The Processing Team",
-      "contact": "Kevian Leary",
-      "status": "completed",
       "durationSec": null
     }
   ],
