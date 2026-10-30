@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-30T16:06:38.011Z",
+  "generatedAt": "2026-10-30T20:56:39.255Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
     "Failed to fetch users: GHL API 401 on /users/: Invalid Private Integration token",
-    "Failed to fetch custom fields: GHL API 401 on /locations/pcY7ioQLTs15S0hJiOdG/customFields: Invalid Private Integration token",
     "Failed to fetch pipelines: GHL API 401 on /opportunities/pipelines: Invalid Private Integration token",
+    "Failed to fetch custom fields: GHL API 401 on /locations/pcY7ioQLTs15S0hJiOdG/customFields: Invalid Private Integration token",
     "Failed to fetch calendars: GHL API 401 on /calendars/: Invalid Private Integration token",
     "No GHL user found matching rep name \"Jen\" -- check users are named/invited as expected.",
     "No GHL user found matching rep name \"Jercori\" -- check users are named/invited as expected.",
@@ -103,10 +103,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-10-13T12:23:34.783Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-10-13T19:24:57.118Z",
       "closeRate": 0
@@ -501,6 +497,10 @@
     },
     {
       "t": "2026-10-30T16:06:38.011Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-10-30T20:56:39.255Z",
       "closeRate": 0
     }
   ],
@@ -2093,13 +2093,6 @@
       "contact": "Wilner Sainlot",
       "status": "completed",
       "durationSec": 78
-    },
-    {
-      "time": "2026-07-02T20:19:06.520Z",
-      "setter": "Unknown",
-      "contact": "Gregory Dixon",
-      "status": "failed",
-      "durationSec": null
     }
   ],
   "cache": {
