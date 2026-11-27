@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-27T08:53:20.797Z",
+  "generatedAt": "2026-11-27T18:36:46.604Z",
   "windowDays": 7,
   "ok": true,
   "warnings": [
+    "Failed to fetch custom fields: GHL API 401 on /locations/pcY7ioQLTs15S0hJiOdG/customFields: Invalid Private Integration token",
+    "Failed to fetch users: GHL API 401 on /users/: Invalid Private Integration token",
     "Failed to fetch calendars: GHL API 401 on /calendars/: Invalid Private Integration token",
     "Failed to fetch pipelines: GHL API 401 on /opportunities/pipelines: Invalid Private Integration token",
-    "Failed to fetch users: GHL API 401 on /users/: Invalid Private Integration token",
-    "Failed to fetch custom fields: GHL API 401 on /locations/pcY7ioQLTs15S0hJiOdG/customFields: Invalid Private Integration token",
     "No GHL user found matching rep name \"Jen\" -- check users are named/invited as expected.",
     "No GHL user found matching rep name \"Jercori\" -- check users are named/invited as expected.",
     "Custom field \"Primary Goal\" not found in this location -- has SALES | QUALIFICATION / SALES | HANDOFF (items 2-3) been built yet?",
@@ -103,10 +103,6 @@
     }
   },
   "history": [
-    {
-      "t": "2026-10-31T00:21:04.381Z",
-      "closeRate": 0
-    },
     {
       "t": "2026-10-31T06:02:14.537Z",
       "closeRate": 0
@@ -501,6 +497,10 @@
     },
     {
       "t": "2026-11-27T08:53:20.797Z",
+      "closeRate": 0
+    },
+    {
+      "t": "2026-11-27T18:36:46.604Z",
       "closeRate": 0
     }
   ],
@@ -1855,41 +1855,6 @@
       "contact": "Tonya Poynter",
       "status": "completed",
       "durationSec": 28
-    },
-    {
-      "time": "2026-07-30T18:36:00.245Z",
-      "setter": "Unknown",
-      "contact": "Maurice Cooper",
-      "status": "completed",
-      "durationSec": 14
-    },
-    {
-      "time": "2026-07-30T18:34:30.032Z",
-      "setter": "Unknown",
-      "contact": "Keith Campbell",
-      "status": "completed",
-      "durationSec": null
-    },
-    {
-      "time": "2026-07-30T18:17:29.758Z",
-      "setter": "Unknown",
-      "contact": "Irving Bowman",
-      "status": "completed",
-      "durationSec": 5
-    },
-    {
-      "time": "2026-07-30T18:13:01.996Z",
-      "setter": "Unknown",
-      "contact": "Joshua J Webb",
-      "status": "completed",
-      "durationSec": 33
-    },
-    {
-      "time": "2026-07-30T18:08:13.419Z",
-      "setter": "Rianna",
-      "contact": "Beverley Blake",
-      "status": "completed",
-      "durationSec": 77
     }
   ],
   "cache": {
